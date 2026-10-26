@@ -1,5 +1,20 @@
 # Registro di implementazione
 
+## Manutenzione Git — 26 ottobre 2026
+
+Esclusa `/source-material/` in `.gitignore`: tutti i 13 originali presenti
+(10 PDF, incluso Book.pdf, e 3 TXT) devono restare locali. Nessun originale
+modificato o cancellato; nessuna modifica all'indice Git, push o riscrittura
+della cronologia. I file già tracciati richiedono `git rm -r --cached -- source-material`
+e un commit/push per sparire dalla versione corrente remota: restano nella
+cronologia precedente. Repository privata e sito Vercel pubblico hanno visibilità
+indipendente. Il deploy senza originali richiede un successivo adeguamento della
+route `/sources/[id]`, che attualmente legge i PDF locali.
+
+Verifiche: regola confermata con `git check-ignore --no-index`; lint e typecheck
+superati, 531 test superati in 14 file, build superata (112 pagine).
+Nessun nuovo sprint o modifica ai progressi/contenuti.
+
 **Stato corrente: M5 / Sprint 5 implementato. Nessun ulteriore sprint iniziato.**
 Le sezioni precedenti sono mantenute come storico; per le funzioni attuali vedere
 la sezione Sprint 5 in fondo e README.md.

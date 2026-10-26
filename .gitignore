@@ -13,3 +13,7 @@ public/monaco/
 __pycache__/
 
 public/algebra/
+
+# Original course materials and book: local, read-only, never publish.
+# Files already tracked must also be removed from the Git index.
+/source-material/
