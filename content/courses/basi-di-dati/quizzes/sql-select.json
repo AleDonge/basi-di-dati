@@ -1,0 +1,130 @@
+{
+  "lessonId": "sql-select",
+  "version": 1,
+  "status": "needs-review",
+  "questions": [
+    {
+      "id": "sql-select-q1",
+      "version": 1,
+      "type": "single",
+      "prompt": "Sui dati (1,Ada),(2,Ada), SELECT DISTINCT sid,sname restituisce…",
+      "concepts": [
+        "SELECT",
+        "DISTINCT",
+        "ORDER BY"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 13,
+          "pageEnd": 17,
+          "section": "SELECT, alias, duplicati e ordinamento"
+        },
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 86,
+          "pageEnd": 86,
+          "section": "SELECT, alias, duplicati e ordinamento"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "Una sola Ada."
+        },
+        {
+          "id": "opzione-2",
+          "text": "Due righe, perché le tuple complete differiscono."
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-2"
+      ],
+      "explanation": "DISTINCT confronta entrambe le colonne: sid diversi impediscono l’eliminazione di una riga."
+    },
+    {
+      "id": "sql-select-q2",
+      "version": 1,
+      "type": "single",
+      "prompt": "ORDER BY rating DESC garantisce l’ordine tra persone con lo stesso rating?",
+      "concepts": [
+        "SELECT",
+        "DISTINCT",
+        "ORDER BY"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 13,
+          "pageEnd": 17,
+          "section": "SELECT, alias, duplicati e ordinamento"
+        },
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 86,
+          "pageEnd": 86,
+          "section": "SELECT, alias, duplicati e ordinamento"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "Sì, usa sempre sid crescente."
+        },
+        {
+          "id": "opzione-2",
+          "text": "No, occorre una chiave di spareggio esplicita se richiesta."
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-2"
+      ],
+      "explanation": "La clausola non specifica come ordinare parità del primo criterio. ORDER BY rating DESC,sid ASC esplicita un ordine deterministico."
+    },
+    {
+      "id": "sql-select-q3",
+      "version": 1,
+      "type": "single",
+      "prompt": "FROM Sailors AS s introduce…",
+      "concepts": [
+        "SELECT",
+        "DISTINCT",
+        "ORDER BY"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 13,
+          "pageEnd": 17,
+          "section": "SELECT, alias, duplicati e ordinamento"
+        },
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 86,
+          "pageEnd": 86,
+          "section": "SELECT, alias, duplicati e ordinamento"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "Un alias della sorgente, non una colonna persistente."
+        },
+        {
+          "id": "opzione-2",
+          "text": "Una nuova tabella salvata nel database."
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-1"
+      ],
+      "explanation": "L’alias vale nella query e serve a qualificare colonne. AS nome nella SELECT etichetta invece un risultato."
+    }
+  ]
+}

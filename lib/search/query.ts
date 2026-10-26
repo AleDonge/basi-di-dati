@@ -1,0 +1,3 @@
+import type {SearchEntry} from "./index";
+export const normalized=(s:string)=>s.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+export function searchLocal(rows:SearchEntry[],query:string){const words=normalized(query.trim()).split(/\s+/).filter(Boolean);if(!words.length)return[];return rows.map(r=>{const title=normalized(r.title),context=normalized(r.context);if(!words.every(w=>title.includes(w)||context.includes(w)))return null;const score=words.reduce((s,w)=>s+(title.includes(w)?4:1),0),at=Math.max(0,context.indexOf(words[0])-70);return{...r,context:r.context.slice(at,at+240).replace(/\s+/g," "),score};}).filter((r):r is NonNullable<typeof r>=>r!==null).sort((a,b)=>b.score-a.score||a.id.localeCompare(b.id)).slice(0,40);}

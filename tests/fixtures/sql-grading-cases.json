@@ -1,0 +1,67 @@
+[
+  {
+    "id": "sailors-01",
+    "correct": [
+      "SELECT b.color, SUM(s.rating) AS somma_rating FROM Sailors s JOIN Reserves r ON s.sid=r.sid JOIN Boats b ON r.bid=b.bid GROUP BY b.color HAVING AVG(s.rating)>7;",
+      "SELECT b.color, SUM(s.rating) FROM Boats b, Reserves r, Sailors s WHERE b.bid=r.bid AND r.sid=s.sid GROUP BY b.color HAVING SUM(s.rating)>7*COUNT(s.rating);"
+    ],
+    "incorrect": [
+      "SELECT b.color, SUM(DISTINCT s.rating) AS somma_rating FROM Sailors s JOIN Reserves r ON s.sid=r.sid JOIN Boats b ON r.bid=b.bid GROUP BY b.color HAVING AVG(s.rating)>7;",
+      "SELECT b.color, SUM(s.rating) AS somma_rating FROM Sailors s JOIN Reserves r ON s.sid=r.sid JOIN Boats b ON r.bid=b.bid GROUP BY b.color HAVING AVG(s.rating)>=7;",
+      "SELECT b.color, SUM(s.rating) AS somma_rating FROM Sailors s JOIN Reserves r ON 1=1 JOIN Boats b ON r.bid=b.bid GROUP BY b.color HAVING AVG(s.rating)>7;"
+    ],
+    "accidentallyCorrectOnOriginal": null
+  },
+  {
+    "id": "sailors-02",
+    "correct": [
+      "SELECT r.day FROM Reserves r JOIN Sailors s ON r.sid=s.sid WHERE s.age>=18 GROUP BY r.day HAVING COUNT(*)>=2;",
+      "SELECT day FROM (SELECT r.day, COUNT(*) AS n FROM Sailors s, Reserves r WHERE s.sid=r.sid AND s.age>=18 GROUP BY r.day) AS x WHERE n>1;"
+    ],
+    "incorrect": [
+      "SELECT r.day FROM Reserves r JOIN Sailors s ON r.sid=s.sid WHERE s.age>18 GROUP BY r.day HAVING COUNT(*)>=2;",
+      "SELECT r.day FROM Reserves r JOIN Sailors s ON r.sid=s.sid WHERE s.age>=18 GROUP BY r.day HAVING COUNT(DISTINCT s.sid)>=2;",
+      "SELECT r.day FROM Reserves r JOIN Sailors s ON r.sid=s.sid WHERE 1=1 GROUP BY r.day HAVING COUNT(*)>=2;"
+    ],
+    "accidentallyCorrectOnOriginal": "SELECT r.day FROM Reserves r JOIN Sailors s ON r.sid=s.sid WHERE s.age>18 GROUP BY r.day HAVING COUNT(*)>=2;"
+  },
+  {
+    "id": "sailors-03",
+    "correct": [
+      "SELECT sname FROM Sailors GROUP BY sname HAVING COUNT(*)>1 AND MAX(age)-MIN(age)<10;",
+      "SELECT n FROM (SELECT sname AS n, COUNT(*) AS c, MAX(age)-MIN(age) AS d FROM Sailors GROUP BY sname) AS x WHERE c>=2 AND d<10;"
+    ],
+    "incorrect": [
+      "SELECT sname FROM Sailors GROUP BY sname HAVING COUNT(*)>1 AND MAX(age)-MIN(age)<=10;",
+      "SELECT sname FROM Sailors GROUP BY sname HAVING MAX(age)-MIN(age)<10;",
+      "SELECT sname FROM Sailors GROUP BY sname HAVING COUNT(*)>1 AND MAX(age)-MIN(age)>10;"
+    ],
+    "accidentallyCorrectOnOriginal": "SELECT sname FROM Sailors GROUP BY sname HAVING COUNT(*)>1 AND MAX(age)-MIN(age)<=10;"
+  },
+  {
+    "id": "sailors-04",
+    "correct": [
+      "SELECT rating, AVG(age) AS eta_media, COUNT(*) AS numero_marinai FROM Sailors WHERE rating>5 GROUP BY rating HAVING COUNT(*)>=2;",
+      "SELECT rating, AVG(age), COUNT(sid) FROM Sailors GROUP BY rating HAVING rating>5 AND COUNT(sid)>1;"
+    ],
+    "incorrect": [
+      "SELECT rating, AVG(age) AS eta_media, COUNT(*) AS numero_marinai FROM Sailors WHERE rating>=5 GROUP BY rating HAVING COUNT(*)>=2;",
+      "SELECT rating, AVG(age) AS eta_media, COUNT(age) AS numero_marinai FROM Sailors WHERE rating>5 GROUP BY rating HAVING COUNT(age)>=2;",
+      "SELECT rating, SUM(age) AS eta_media, COUNT(*) AS numero_marinai FROM Sailors WHERE rating>5 GROUP BY rating HAVING COUNT(*)>=2;"
+    ],
+    "accidentallyCorrectOnOriginal": "SELECT rating, AVG(age) AS eta_media, COUNT(*) AS numero_marinai FROM Sailors WHERE rating>=5 GROUP BY rating HAVING COUNT(*)>=2;"
+  },
+  {
+    "id": "sailors-05",
+    "correct": [
+      "SELECT b.bid, b.bname FROM Boats b JOIN Reserves r ON b.bid=r.bid JOIN Sailors s ON s.sid=r.sid GROUP BY b.bid,b.bname HAVING AVG(s.age)>40 AND COUNT(*)>=2;",
+      "SELECT b.bid,b.bname FROM Boats b WHERE (SELECT AVG(s.age) FROM Sailors s JOIN Reserves r ON s.sid=r.sid WHERE r.bid=b.bid)>40 AND (SELECT COUNT(*) FROM Reserves r WHERE r.bid=b.bid)>=2;"
+    ],
+    "incorrect": [
+      "SELECT b.bid, b.bname FROM Boats b JOIN Reserves r ON b.bid=r.bid JOIN Sailors s ON s.sid=r.sid GROUP BY b.bid,b.bname HAVING AVG(s.age)>40 AND COUNT(DISTINCT s.sid)>=2;",
+      "SELECT b.bid, b.bname FROM Boats b JOIN Reserves r ON b.bid=r.bid JOIN Sailors s ON s.sid=r.sid GROUP BY b.bid,b.bname HAVING AVG(s.age)>=40 AND COUNT(*)>=2;",
+      "SELECT b.bid, b.bname FROM Boats b JOIN Reserves r ON b.bid=r.bid JOIN Sailors s ON s.sid=r.sid GROUP BY b.bid,b.bname HAVING AVG(s.age)>40;"
+    ],
+    "accidentallyCorrectOnOriginal": "SELECT b.bid, b.bname FROM Boats b JOIN Reserves r ON b.bid=r.bid JOIN Sailors s ON s.sid=r.sid GROUP BY b.bid,b.bname HAVING AVG(s.age)>40 AND COUNT(DISTINCT s.sid)>=2;"
+  }
+]

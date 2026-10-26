@@ -1,0 +1,109 @@
+{
+  "lessonId": "er-deboli",
+  "version": 2,
+  "status": "needs-review",
+  "questions": [
+    {
+      "id": "er-deboli-q1",
+      "version": 2,
+      "type": "single",
+      "prompt": "La chiave parziale di un familiare identifica…",
+      "concepts": [
+        "deboli",
+        "identificazione",
+        "chiave-parziale"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 31,
+          "pageEnd": 33,
+          "section": "Entità deboli e identificazione esterna"
+        }
+      ],
+      "options": [
+        {
+          "id": "errata",
+          "text": "Qualunque familiare dell’intero database da sola."
+        },
+        {
+          "id": "corretta",
+          "text": "Il familiare insieme all’identità del proprietario."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "Il valore parziale può ripetersi per proprietari diversi. L’identità completa combina proprietario e chiave parziale."
+    },
+    {
+      "id": "er-deboli-q2",
+      "version": 2,
+      "type": "single",
+      "prompt": "Il subset editoriale adottato per il lato debole usa…",
+      "concepts": [
+        "deboli",
+        "identificazione",
+        "chiave-parziale"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 31,
+          "pageEnd": 33,
+          "section": "Entità deboli e identificazione esterna"
+        }
+      ],
+      "options": [
+        {
+          "id": "corretta",
+          "text": "Una partecipazione (1,1) all’identificante con un proprietario."
+        },
+        {
+          "id": "errata",
+          "text": "Un collegamento senza proprietario."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "Il subset richiede esistenza del proprietario e una sola identificazione del debole. La semantica di modelli di identificazione più complessi resta manuale."
+    },
+    {
+      "id": "er-deboli-q3",
+      "version": 2,
+      "type": "single",
+      "prompt": "La figura p. 33 impone di adottare crow’s foot per tutto il corso?",
+      "concepts": [
+        "deboli",
+        "identificazione",
+        "chiave-parziale"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 31,
+          "pageEnd": 33,
+          "section": "Entità deboli e identificazione esterna"
+        }
+      ],
+      "options": [
+        {
+          "id": "errata",
+          "text": "Sì: sostituisce tutti i rombi e gli ovali."
+        },
+        {
+          "id": "corretta",
+          "text": "No: è uno screenshot logico usato nell’esempio."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "La p. 33 contiene una rappresentazione logica diversa, ma la notazione concettuale del percorso conserva i contorni spessi e la chiave parziale tratteggiata."
+    }
+  ]
+}

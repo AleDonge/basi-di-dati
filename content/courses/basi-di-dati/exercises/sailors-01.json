@@ -1,0 +1,45 @@
+{
+  "id": "sailors-01",
+  "title": "Rating per colore",
+  "version": 1,
+  "status": "needs-review",
+  "originalPrompt": "Per ogni colore di barca, trova la somma totale dei rating dei marinai \nche l'hanno prenotata, ma considera solo i colori con un rating\nmedio superiore a 7.",
+  "datasetId": "sailors",
+  "topics": [
+    "GROUP BY",
+    "HAVING",
+    "JOIN"
+  ],
+  "difficulty": "intermedio",
+  "gradingMode": "automatic",
+  "fixtureIds": [
+    "sailors",
+    "sailors-edges",
+    "sailors-reversed",
+    "sailors-empty",
+    "sailors-variation"
+  ],
+  "solutionPath": "solutions/sailors-01.sql",
+  "hints": [
+    "Collega Sailors, Reserves e Boats attraverso le chiavi.",
+    "Raggruppa per colore: SUM è nell’output, AVG filtra i gruppi."
+  ],
+  "outputContract": [
+    "color",
+    "somma_rating"
+  ],
+  "interpretation": "Interpretazione della piattaforma, da revisionare: si contano le righe di prenotazione, anche se la stessa persona compare più volte; AVG/SUM ignorano NULL. Non è una soluzione fornita dal docente.",
+  "limitations": [
+    "Confronto su cinque fixture finite, non prova di equivalenza generale.",
+    "Ordine delle righe ignorato perché non richiesto; numero e posizione delle colonne obbligatori. Alias liberi.",
+    "Tipi preservati: testo non equivale a numero, NULL distinto da zero; tolleranza relativa 1e-9 solo per valori non interi.",
+    "SQLite non controlla tutte le regole GROUP BY di MySQL; un esito sulle fixture non certifica la compatibilità MySQL."
+  ],
+  "sourceRefs": [
+    {
+      "sourceId": "sailors-exercises-source",
+      "file": "Esercizi 1 Sailor.txt",
+      "section": "Quesito #1"
+    }
+  ]
+}

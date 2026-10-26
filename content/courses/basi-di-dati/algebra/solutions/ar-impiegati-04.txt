@@ -1,0 +1,1 @@
+π_{E.Cognome}(ρ_{E}(Impiegato) ⋈_{E.Matricola=D.Direttore} ρ_{D}(Dipartimento))

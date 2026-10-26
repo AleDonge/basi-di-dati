@@ -1,0 +1,1 @@
+Con partecipazione totale e massimo uno, ogni impiegato compare esattamente una volta in WORKS_IN. Sul lato dipartimento il massimo può restare N: non segue che un dipartimento abbia un solo impiegato. La figura p. 29 rende esplicito il caso (1,1). Diagramma qui rielaborato dalla piattaforma.

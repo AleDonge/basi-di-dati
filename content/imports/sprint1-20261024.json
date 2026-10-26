@@ -1,0 +1,71 @@
+{
+  "importId": "sprint1-20261024",
+  "createdAt": "2026-10-24",
+  "reviewStatus": "needs-review",
+  "manifestVersionBefore": 1,
+  "manifestVersionAfter": 2,
+  "sources": [
+    {
+      "sourceName": "Argomento01 Basi di Dati e loro utenti.pdf",
+      "sourceId": "intro-source",
+      "checksum": "8f9dbee7feb1028b6da06f2fc65eeaeb31257eb84b1b35e72f0b1d536d87318a",
+      "change": "unchanged"
+    },
+    {
+      "sourceName": "Argomento02 Modello Relazionale.pdf",
+      "sourceId": "relational-source",
+      "checksum": "1c2ef3bc742ca0fd8d65583b800d51e3705d88f22f2ff6504e1527df64e16a7d",
+      "change": "unchanged"
+    }
+  ],
+  "addedIds": [
+    "dbms-dati",
+    "astrazione-indipendenza",
+    "transazioni-analisi",
+    "utenti-scelte",
+    "relazioni-domini",
+    "schema-istanza",
+    "chiavi-vincoli",
+    "integrita-riferimenti",
+    "aggiornamenti-integrita",
+    "dbms-dati-q1",
+    "dbms-dati-q2",
+    "dbms-dati-q3",
+    "astrazione-indipendenza-q1",
+    "astrazione-indipendenza-q2",
+    "astrazione-indipendenza-q3",
+    "transazioni-analisi-q1",
+    "transazioni-analisi-q2",
+    "transazioni-analisi-q3",
+    "utenti-scelte-q1",
+    "utenti-scelte-q2",
+    "utenti-scelte-q3",
+    "relazioni-domini-q1",
+    "relazioni-domini-q2",
+    "relazioni-domini-q3",
+    "schema-istanza-q1",
+    "schema-istanza-q2",
+    "schema-istanza-q3",
+    "chiavi-vincoli-q1",
+    "chiavi-vincoli-q2",
+    "chiavi-vincoli-q3",
+    "integrita-riferimenti-q1",
+    "integrita-riferimenti-q2",
+    "integrita-riferimenti-q3",
+    "aggiornamenti-integrita-q1",
+    "aggiornamenti-integrita-q2",
+    "aggiornamenti-integrita-q3"
+  ],
+  "updatedIds": [
+    "introduzione",
+    "modello-relazionale",
+    "intro-source",
+    "relational-source"
+  ],
+  "removedIds": [],
+  "notes": [
+    "Nessuna fonte modificata; nuove parafrasi e domande dichiarate needs-review.",
+    "Zero lezioni verified; aggiornate solo descrizioni di modulo e catalogo.",
+    "Aggiornate le note di lettura delle due fonti, non i PDF o i checksum."
+  ]
+}

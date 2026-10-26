@@ -1,0 +1,116 @@
+{
+  "lessonId": "sql-quantificatori",
+  "version": 1,
+  "status": "needs-review",
+  "questions": [
+    {
+      "id": "sql-quantificatori-q1",
+      "version": 1,
+      "type": "single",
+      "prompt": "Con Q vuoto, x>ALL(Q) vale…",
+      "concepts": [
+        "ANY",
+        "ALL",
+        "quantificazione",
+        "NULL"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 41,
+          "pageEnd": 42,
+          "section": "ANY e ALL: esistenza, universalità e NULL"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "TRUE."
+        },
+        {
+          "id": "opzione-2",
+          "text": "FALSE."
+        },
+        {
+          "id": "opzione-3",
+          "text": "Sempre x>NULL."
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-1"
+      ],
+      "explanation": "Non esiste un confronto falso: la quantificazione universale sul vuoto è vera. MAX sul vuoto darebbe NULL, quindi la sostituzione non è generale."
+    },
+    {
+      "id": "sql-quantificatori-q2",
+      "version": 1,
+      "type": "single",
+      "prompt": "Con x=8 e Q={7,NULL}, x>ANY(Q) vale…",
+      "concepts": [
+        "ANY",
+        "ALL",
+        "quantificazione",
+        "NULL"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 41,
+          "pageEnd": 42,
+          "section": "ANY e ALL: esistenza, universalità e NULL"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "UNKNOWN."
+        },
+        {
+          "id": "opzione-2",
+          "text": "TRUE."
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-2"
+      ],
+      "explanation": "Il confronto con 7 è vero e basta a ANY. Il NULL non annulla un vero già presente."
+    },
+    {
+      "id": "sql-quantificatori-q3",
+      "version": 1,
+      "type": "single",
+      "prompt": "SQL Lab esegue direttamente >ALL(SELECT…)?",
+      "concepts": [
+        "ANY",
+        "ALL",
+        "quantificazione",
+        "NULL"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 41,
+          "pageEnd": 42,
+          "section": "ANY e ALL: esistenza, universalità e NULL"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "No, il costrutto è teorico MySQL/MariaDB e richiede una riscrittura con ipotesi."
+        },
+        {
+          "id": "opzione-2",
+          "text": "Sì, qualsiasi sintassi del corso è supportata."
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-1"
+      ],
+      "explanation": "SQLite non supporta quei quantificatori. Una riscrittura deve controllare vuoto e NULL, non solo gli esempi non vuoti."
+    }
+  ]
+}

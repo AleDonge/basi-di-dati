@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "metadata": {
+    "id": "example-isa",
+    "title": "Specializzazione degli impiegati",
+    "revision": 0,
+    "createdAt": "2026-10-25T00:00:00Z",
+    "modifiedAt": "2026-10-25T00:00:00Z",
+    "notation": "unitn-er-v1",
+    "status": "needs-review"
+  },
+  "semantic": {
+    "entities": [
+      {
+        "id": "emp",
+        "name": "EMPLOYEE",
+        "weak": false
+      },
+      {
+        "id": "hourly",
+        "name": "HOURLY_EMPS",
+        "weak": false
+      },
+      {
+        "id": "contract",
+        "name": "CONTRACT_EMPS",
+        "weak": false
+      }
+    ],
+    "attributes": [
+      {
+        "id": "a-emp",
+        "name": "ssn",
+        "ownerId": "emp",
+        "domain": "testo"
+      },
+      {
+        "id": "hourly-rate",
+        "name": "hourly_wages",
+        "ownerId": "hourly",
+        "domain": "numero"
+      },
+      {
+        "id": "contractid",
+        "name": "contractid",
+        "ownerId": "contract",
+        "domain": "testo"
+      }
+    ],
+    "identifiers": [
+      {
+        "id": "k-emp",
+        "entityId": "emp",
+        "attributeIds": [
+          "a-emp"
+        ],
+        "kind": "primary"
+      }
+    ],
+    "relationships": [],
+    "participations": [],
+    "generalizations": [
+      {
+        "id": "isa",
+        "name": "ISA lavoro",
+        "parentId": "emp",
+        "childIds": [
+          "hourly",
+          "contract"
+        ],
+        "disjoint": true,
+        "complete": false
+      }
+    ],
+    "notes": "Rielaborazione Database Academy delle pp. 35–40; D e copertura parziale sono dichiarati, non verificati su dati. Nessuna nuova chiave primaria locale per le sottoclassi."
+  },
+  "layout": {
+    "positions": {
+      "emp": {
+        "x": 480,
+        "y": 140
+      },
+      "a-emp": {
+        "x": 480,
+        "y": 40
+      },
+      "hourly": {
+        "x": 180,
+        "y": 470
+      },
+      "contract": {
+        "x": 800,
+        "y": 470
+      },
+      "isa": {
+        "x": 480,
+        "y": 330
+      },
+      "hourly-rate": {
+        "x": 170,
+        "y": 590
+      },
+      "contractid": {
+        "x": 810,
+        "y": 590
+      }
+    },
+    "viewport": {
+      "x": 0,
+      "y": 0,
+      "zoom": 1
+    }
+  }
+}

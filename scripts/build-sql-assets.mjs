@@ -1,0 +1,11 @@
+import { build } from "esbuild";
+import { mkdir, copyFile } from "node:fs/promises";
+import { createRequire } from "node:module";
+const require = createRequire(import.meta.url);
+await mkdir("public/sql", { recursive: true });
+await mkdir("public/monaco", { recursive: true });
+await mkdir("public/algebra", { recursive: true });
+await build({ entryPoints: ["lib/algebra/worker.ts"], bundle: true, format: "esm", platform: "browser", outfile: "public/algebra/algebra-worker.js", minify: true, legalComments: "eof" });
+await copyFile(require.resolve("@sqlite.org/sqlite-wasm/sqlite3.wasm"), "public/sql/sqlite3.wasm");
+await build({ entryPoints: ["lib/sql/worker.ts"], bundle: true, format: "esm", platform: "browser", outfile: "public/sql/sql-worker.js", minify: true, legalComments: "eof" });
+await build({ entryPoints: ["node_modules/monaco-editor/esm/vs/editor/editor.worker.js"], bundle: true, format: "esm", platform: "browser", outfile: "public/monaco/editor.worker.js", minify: true, legalComments: "eof" });

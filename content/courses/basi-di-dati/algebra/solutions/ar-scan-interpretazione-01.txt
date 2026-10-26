@@ -1,0 +1,1 @@
+I cognomi degli impiegati responsabili di almeno un progetto. Rinominare Responsabile in Matricola rende esplicito il collegamento del join naturale. I cognomi duplicati sono eliminati. Non sono tutti i partecipanti ai progetti.

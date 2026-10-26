@@ -1,0 +1,109 @@
+{
+  "lessonId": "ar-proiezione",
+  "version": 2,
+  "status": "needs-review",
+  "questions": [
+    {
+      "id": "ar-proiezione-q1",
+      "version": 2,
+      "type": "single",
+      "prompt": "Cosa accade ai duplicati dopo una proiezione?",
+      "concepts": [
+        "proiezione",
+        "duplicati",
+        "chiusura"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 13,
+          "pageEnd": 20,
+          "section": "Proiezione, duplicati e identità"
+        }
+      ],
+      "options": [
+        {
+          "id": "errata",
+          "text": "Viene mantenuta una copia per ogni riga di ingresso."
+        },
+        {
+          "id": "corretta",
+          "text": "Le tuple identiche del risultato vengono eliminate."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "Proiettando sname da due persone Ada si ottiene una sola tupla Ada: la relazione risultante è un insieme."
+    },
+    {
+      "id": "ar-proiezione-q2",
+      "version": 2,
+      "type": "single",
+      "prompt": "Se proietti una chiave insieme al nome, che cosa accade alla cardinalità?",
+      "concepts": [
+        "proiezione",
+        "duplicati",
+        "chiusura"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 13,
+          "pageEnd": 20,
+          "section": "Proiezione, duplicati e identità"
+        }
+      ],
+      "options": [
+        {
+          "id": "corretta",
+          "text": "Rimane quella della relazione iniziale."
+        },
+        {
+          "id": "errata",
+          "text": "Si dimezza necessariamente."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "Una chiave distingue ogni tupla: conservarla impedisce che due tuple diverse diventino identiche nella proiezione."
+    },
+    {
+      "id": "ar-proiezione-q3",
+      "version": 2,
+      "type": "single",
+      "prompt": "Dopo π_sname, puoi selezionare age>30?",
+      "concepts": [
+        "proiezione",
+        "duplicati",
+        "chiusura"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 13,
+          "pageEnd": 20,
+          "section": "Proiezione, duplicati e identità"
+        }
+      ],
+      "options": [
+        {
+          "id": "errata",
+          "text": "Sì: il sistema ricorda le colonne nascoste."
+        },
+        {
+          "id": "corretta",
+          "text": "No: age è stato eliminato."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "Dopo la proiezione lo schema contiene soltanto sname: non esiste una colonna age nascosta su cui applicare il predicato."
+    }
+  ]
+}

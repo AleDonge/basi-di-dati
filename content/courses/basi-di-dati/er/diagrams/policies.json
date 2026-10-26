@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "metadata": {
+    "id": "example-policies",
+    "title": "Polizze: due associazioni distinte",
+    "revision": 0,
+    "createdAt": "2026-10-25T00:00:00Z",
+    "modifiedAt": "2026-10-25T00:00:00Z",
+    "notation": "unitn-er-v1",
+    "status": "needs-review"
+  },
+  "semantic": {
+    "entities": [
+      {
+        "id": "emp",
+        "name": "EMPLOYEES",
+        "weak": false
+      },
+      {
+        "id": "pol",
+        "name": "POLICIES",
+        "weak": false
+      },
+      {
+        "id": "dep",
+        "name": "DEPENDENTS",
+        "weak": true
+      }
+    ],
+    "attributes": [
+      {
+        "id": "a-emp",
+        "name": "ssn",
+        "ownerId": "emp",
+        "domain": "testo"
+      },
+      {
+        "id": "a-pol",
+        "name": "policyid",
+        "ownerId": "pol",
+        "domain": "testo"
+      },
+      {
+        "id": "a-dep",
+        "name": "pname",
+        "ownerId": "dep",
+        "domain": "testo"
+      }
+    ],
+    "identifiers": [
+      {
+        "id": "k-emp",
+        "entityId": "emp",
+        "attributeIds": [
+          "a-emp"
+        ],
+        "kind": "primary"
+      },
+      {
+        "id": "k-pol",
+        "entityId": "pol",
+        "attributeIds": [
+          "a-pol"
+        ],
+        "kind": "primary"
+      },
+      {
+        "id": "k-dep",
+        "entityId": "dep",
+        "attributeIds": [
+          "a-dep"
+        ],
+        "kind": "partial"
+      }
+    ],
+    "relationships": [
+      {
+        "id": "purchaser",
+        "name": "PURCHASER",
+        "identifying": false
+      },
+      {
+        "id": "beneficiary",
+        "name": "BENEFICIARY",
+        "identifying": true
+      }
+    ],
+    "participations": [
+      {
+        "id": "p-purchaser-0",
+        "entityId": "emp",
+        "relationshipId": "purchaser",
+        "role": "",
+        "min": 0,
+        "max": "N"
+      },
+      {
+        "id": "p-purchaser-1",
+        "entityId": "pol",
+        "relationshipId": "purchaser",
+        "role": "",
+        "min": 1,
+        "max": 1
+      },
+      {
+        "id": "p-beneficiary-0",
+        "entityId": "pol",
+        "relationshipId": "beneficiary",
+        "role": "",
+        "min": 0,
+        "max": "N"
+      },
+      {
+        "id": "p-beneficiary-1",
+        "entityId": "dep",
+        "relationshipId": "beneficiary",
+        "role": "",
+        "min": 1,
+        "max": 1
+      }
+    ],
+    "generalizations": [],
+    "notes": "Adattamento parziale della figura p. 58. L’identificazione dei familiari tramite la polizza e la portata di pname devono essere chiarite rispetto a p. 32: nessuna equivalenza semantica completa dichiarata."
+  },
+  "layout": {
+    "positions": {
+      "emp": {
+        "x": 160,
+        "y": 150
+      },
+      "a-emp": {
+        "x": 160,
+        "y": 50
+      },
+      "pol": {
+        "x": 480,
+        "y": 480
+      },
+      "a-pol": {
+        "x": 480,
+        "y": 380
+      },
+      "dep": {
+        "x": 850,
+        "y": 150
+      },
+      "a-dep": {
+        "x": 850,
+        "y": 50
+      },
+      "purchaser": {
+        "x": 180,
+        "y": 370
+      },
+      "beneficiary": {
+        "x": 790,
+        "y": 370
+      }
+    },
+    "viewport": {
+      "x": 0,
+      "y": 0,
+      "zoom": 1
+    }
+  }
+}

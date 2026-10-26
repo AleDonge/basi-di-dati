@@ -1,0 +1,109 @@
+{
+  "lessonId": "ar-estensioni",
+  "version": 2,
+  "status": "needs-review",
+  "questions": [
+    {
+      "id": "ar-estensioni-q1",
+      "version": 2,
+      "type": "single",
+      "prompt": "Cosa preserva un left outer join?",
+      "concepts": [
+        "outer-join",
+        "null",
+        "estensioni"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 40,
+          "pageEnd": 43,
+          "section": "Outer join e confini dell’algebra eseguibile"
+        }
+      ],
+      "options": [
+        {
+          "id": "errata",
+          "text": "Soltanto le tuple senza corrispondenza dell’operando destro."
+        },
+        {
+          "id": "corretta",
+          "text": "Anche le tuple senza corrispondenza dell’operando sinistro."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "Il left preserva le tuple sinistre senza match, completando le colonne destre con NULL. Il right preserva invece il lato destro."
+    },
+    {
+      "id": "ar-estensioni-q2",
+      "version": 2,
+      "type": "single",
+      "prompt": "Il laboratorio esegue gli outer join?",
+      "concepts": [
+        "outer-join",
+        "null",
+        "estensioni"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 40,
+          "pageEnd": 43,
+          "section": "Outer join e confini dell’algebra eseguibile"
+        }
+      ],
+      "options": [
+        {
+          "id": "corretta",
+          "text": "No: sono trattati nella lezione come estensione."
+        },
+        {
+          "id": "errata",
+          "text": "Sì: li converte automaticamente in join interni."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "Il parser/evaluator classico non comprende outer join o NULL. Convertirli in inner join perderebbe proprio le tuple che il requisito vuole mantenere."
+    },
+    {
+      "id": "ar-estensioni-q3",
+      "version": 2,
+      "type": "single",
+      "prompt": "Una tupla con NULL coincide con una relazione vuota?",
+      "concepts": [
+        "outer-join",
+        "null",
+        "estensioni"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 40,
+          "pageEnd": 43,
+          "section": "Outer join e confini dell’algebra eseguibile"
+        }
+      ],
+      "options": [
+        {
+          "id": "errata",
+          "text": "Sì: sono due notazioni per lo stesso risultato."
+        },
+        {
+          "id": "corretta",
+          "text": "No: la prima esiste con informazione mancante, la seconda non ha tuple."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "Una tupla con un campo mancante contribuisce alla cardinalità. Una relazione vuota ha cardinalità zero e può mantenere lo stesso schema."
+    }
+  ]
+}

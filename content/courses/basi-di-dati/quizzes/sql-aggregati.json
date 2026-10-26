@@ -1,0 +1,119 @@
+{
+  "lessonId": "sql-aggregati",
+  "version": 1,
+  "status": "needs-review",
+  "questions": [
+    {
+      "id": "sql-aggregati-q1",
+      "version": 1,
+      "type": "single",
+      "prompt": "Su age=20,20,NULL, COUNT(age) vale…",
+      "concepts": [
+        "COUNT",
+        "SUM",
+        "AVG",
+        "MIN",
+        "MAX"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 20,
+          "pageEnd": 24,
+          "section": "Aggregazioni e unità da contare"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "3"
+        },
+        {
+          "id": "opzione-2",
+          "text": "2"
+        },
+        {
+          "id": "opzione-3",
+          "text": "1"
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-2"
+      ],
+      "explanation": "COUNT(age) ignora NULL ma mantiene i due valori 20. COUNT(*) varrebbe 3; COUNT(DISTINCT age) varrebbe 1."
+    },
+    {
+      "id": "sql-aggregati-q2",
+      "version": 1,
+      "type": "single",
+      "prompt": "AVG su un input vuoto restituisce…",
+      "concepts": [
+        "COUNT",
+        "SUM",
+        "AVG",
+        "MIN",
+        "MAX"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 20,
+          "pageEnd": 24,
+          "section": "Aggregazioni e unità da contare"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "Sempre zero."
+        },
+        {
+          "id": "opzione-2",
+          "text": "NULL."
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-2"
+      ],
+      "explanation": "Non esiste un valore medio osservato. Sostituire NULL con zero richiede una scelta esplicita del contratto."
+    },
+    {
+      "id": "sql-aggregati-q3",
+      "version": 1,
+      "type": "single",
+      "prompt": "COUNT(DISTINCT age) conta persone distinte?",
+      "concepts": [
+        "COUNT",
+        "SUM",
+        "AVG",
+        "MIN",
+        "MAX"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 20,
+          "pageEnd": 24,
+          "section": "Aggregazioni e unità da contare"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "Sì, due persone non hanno mai la stessa età."
+        },
+        {
+          "id": "opzione-2",
+          "text": "No, conta valori di età distinti e non NULL."
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-2"
+      ],
+      "explanation": "L’identità delle persone è sid. Età uguali di individui diversi vengono fuse da DISTINCT age."
+    }
+  ]
+}

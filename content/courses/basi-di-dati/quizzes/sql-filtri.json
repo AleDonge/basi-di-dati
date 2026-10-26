@@ -1,0 +1,140 @@
+{
+  "lessonId": "sql-filtri",
+  "version": 1,
+  "status": "needs-review",
+  "questions": [
+    {
+      "id": "sql-filtri-q1",
+      "version": 1,
+      "type": "single",
+      "prompt": "Quale predicato trova valori mancanti di age?",
+      "concepts": [
+        "WHERE",
+        "NULL",
+        "LIKE",
+        "BETWEEN",
+        "IN"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 18,
+          "pageEnd": 19,
+          "section": "Predicati, NULL, intervalli e pattern"
+        },
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 89,
+          "pageEnd": 89,
+          "section": "Predicati, NULL, intervalli e pattern"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "age = NULL"
+        },
+        {
+          "id": "opzione-2",
+          "text": "age IS NULL"
+        },
+        {
+          "id": "opzione-3",
+          "text": "age = 0"
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-2"
+      ],
+      "explanation": "IS NULL verifica la mancanza. = NULL produce UNKNOWN e zero è un valore numerico presente."
+    },
+    {
+      "id": "sql-filtri-q2",
+      "version": 1,
+      "type": "single",
+      "prompt": "age BETWEEN 18 AND 40 include age=18 e age=40?",
+      "concepts": [
+        "WHERE",
+        "NULL",
+        "LIKE",
+        "BETWEEN",
+        "IN"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 18,
+          "pageEnd": 19,
+          "section": "Predicati, NULL, intervalli e pattern"
+        },
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 89,
+          "pageEnd": 89,
+          "section": "Predicati, NULL, intervalli e pattern"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "Sì, entrambi gli estremi."
+        },
+        {
+          "id": "opzione-2",
+          "text": "No, esclude entrambi."
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-1"
+      ],
+      "explanation": "BETWEEN è inclusivo. Per escludere gli estremi servono confronti stretti."
+    },
+    {
+      "id": "sql-filtri-q3",
+      "version": 1,
+      "type": "single",
+      "prompt": "Con age NULL, WHERE NOT(age>30) conserva la riga?",
+      "concepts": [
+        "WHERE",
+        "NULL",
+        "LIKE",
+        "BETWEEN",
+        "IN"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 18,
+          "pageEnd": 19,
+          "section": "Predicati, NULL, intervalli e pattern"
+        },
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 89,
+          "pageEnd": 89,
+          "section": "Predicati, NULL, intervalli e pattern"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "Sì, perché NULL è minore di 30."
+        },
+        {
+          "id": "opzione-2",
+          "text": "No: NOT UNKNOWN rimane UNKNOWN."
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-2"
+      ],
+      "explanation": "La negazione non trasforma informazione mancante in vero. Per includere NULL va dichiarato OR age IS NULL."
+    }
+  ]
+}

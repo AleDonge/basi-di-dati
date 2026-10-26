@@ -1,0 +1,123 @@
+{
+  "lessonId": "dbms-dati",
+  "version": 1,
+  "status": "needs-review",
+  "questions": [
+    {
+      "id": "dbms-dati-q1",
+      "version": 1,
+      "type": "single",
+      "prompt": "Che cosa indica DBMS?",
+      "concepts": [
+        "database",
+        "dbms",
+        "linguaggi"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "intro-source",
+          "file": "Argomento01 Basi di Dati e loro utenti.pdf",
+          "pageStart": 4,
+          "pageEnd": 4,
+          "section": "Dati, DBMS e sistemi di basi di dati"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "La raccolta dei dati"
+        },
+        {
+          "id": "opzione-2",
+          "text": "Il software che gestisce basi di dati"
+        },
+        {
+          "id": "opzione-3",
+          "text": "Il solo portale usato dall’utente"
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-2"
+      ],
+      "explanation": "Il DBMS è il gestore software. Database indica i dati; l’applicazione è un componente distinto."
+    },
+    {
+      "id": "dbms-dati-q2",
+      "version": 1,
+      "type": "true-false",
+      "prompt": "Una base di dati e il DBMS che la gestisce sono la stessa cosa.",
+      "concepts": [
+        "database",
+        "dbms",
+        "linguaggi"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "intro-source",
+          "file": "Argomento01 Basi di Dati e loro utenti.pdf",
+          "pageStart": 4,
+          "pageEnd": 4,
+          "section": "Dati, DBMS e sistemi di basi di dati"
+        }
+      ],
+      "options": [
+        {
+          "id": "vero",
+          "text": "Vero"
+        },
+        {
+          "id": "falso",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionIds": [
+        "falso"
+      ],
+      "explanation": "Le slide distinguono i dati dal software che li gestisce."
+    },
+    {
+      "id": "dbms-dati-q3",
+      "version": 1,
+      "type": "multiple",
+      "prompt": "Quali responsabilità sono attribuite al DBMS? Seleziona tutte quelle corrette.",
+      "concepts": [
+        "database",
+        "dbms",
+        "linguaggi"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "intro-source",
+          "file": "Argomento01 Basi di Dati e loro utenti.pdf",
+          "pageStart": 6,
+          "pageEnd": 7,
+          "section": "Dati, DBMS e sistemi di basi di dati"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "Recupero dopo guasti"
+        },
+        {
+          "id": "opzione-2",
+          "text": "Coordinamento degli accessi concorrenti"
+        },
+        {
+          "id": "opzione-3",
+          "text": "Eliminare la necessità di qualsiasi controllo nelle applicazioni"
+        },
+        {
+          "id": "opzione-4",
+          "text": "Supporto a linguaggi di gestione dei dati"
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-1",
+        "opzione-2",
+        "opzione-4"
+      ],
+      "explanation": "Il gestore offre recupero, concorrenza e linguaggi. La pagina 7 richiama anche le responsabilità delle applicazioni sugli accessi."
+    }
+  ]
+}

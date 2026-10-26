@@ -1,0 +1,1 @@
+π_{E.Cognome,E.Stipendio}(σ_{D.Sede='Roma'}((ρ_{E}(Impiegato) ⋈_{E.Dipartimento=D.Codice} ρ_{D}(Dipartimento))))

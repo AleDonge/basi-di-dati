@@ -1,0 +1,104 @@
+{
+  "id": "sailors",
+  "title": "Sailors",
+  "dialect": "sqlite",
+  "source": "Schema per generare DB Sailors.txt",
+  "sourceSha256": "cdb06a409a72340a1227fc4a24214be783ea06a2e434a5c65d84aeb47f47d19d",
+  "tables": [
+    {
+      "name": "Sailors",
+      "rowCount": 10,
+      "columns": [
+        {
+          "name": "sid",
+          "type": "INT",
+          "notNull": true,
+          "primaryKey": true
+        },
+        {
+          "name": "sname",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKey": false
+        },
+        {
+          "name": "rating",
+          "type": "INT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "age",
+          "type": "REAL",
+          "notNull": false,
+          "primaryKey": false
+        }
+      ],
+      "foreignKeys": [],
+      "ddl": "CREATE TABLE \"Sailors\" (\n  \"sid\" INT NOT NULL,\n  \"sname\" TEXT not null,\n  \"rating\" INT,\n  \"age\" REAL,\n  CONSTRAINT PK_S1 PRIMARY KEY (sid)\n);"
+    },
+    {
+      "name": "Boats",
+      "rowCount": 4,
+      "columns": [
+        {
+          "name": "bid",
+          "type": "INT",
+          "notNull": true,
+          "primaryKey": true
+        },
+        {
+          "name": "bname",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKey": false
+        },
+        {
+          "name": "color",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKey": false
+        }
+      ],
+      "foreignKeys": [],
+      "ddl": "CREATE TABLE \"Boats\" (\n  \"bid\" INT NOT NULL,\n  \"bname\" TEXT not null,\n  \"color\" TEXT,\n  CONSTRAINT PK_B PRIMARY KEY (bid)\n);"
+    },
+    {
+      "name": "Reserves",
+      "rowCount": 10,
+      "columns": [
+        {
+          "name": "sid",
+          "type": "INT",
+          "notNull": true,
+          "primaryKey": true
+        },
+        {
+          "name": "bid",
+          "type": "INT",
+          "notNull": true,
+          "primaryKey": true
+        },
+        {
+          "name": "day",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKey": true
+        }
+      ],
+      "foreignKeys": [
+        {
+          "table": "Boats",
+          "column": "bid",
+          "targetColumn": "bid"
+        },
+        {
+          "table": "Sailors",
+          "column": "sid",
+          "targetColumn": "sid"
+        }
+      ],
+      "ddl": "CREATE TABLE \"Reserves\" (\n  \"sid\" INT NOT NULL,\n  \"bid\" INT NOT NULL,\n  \"day\" TEXT NOT NULL,\n  CONSTRAINT PK_R1 PRIMARY KEY (sid,bid,day),\n  constraint FK1_R foreign key (sid) \r\nreferences Sailors (sid),\n  constraint FK2_R foreign key (bid) \r\nreferences Boats (bid)\n);"
+    }
+  ]
+}

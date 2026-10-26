@@ -1,0 +1,161 @@
+{
+  "id": "er-lavora",
+  "title": "Un vincolo di chiave su WORKS_IN",
+  "version": 1,
+  "status": "needs-review",
+  "origin": "course-question",
+  "prompt": "Cosa significherebbe mettere un vincolo di chiave da EMPLOYEES verso la relazione WORKS_IN?",
+  "difficulty": "intermedio",
+  "sourceRefs": [
+    {
+      "sourceId": "er-source",
+      "file": "Argomento05 Entity Relationship.pdf",
+      "pageStart": 27,
+      "pageEnd": 29
+    }
+  ],
+  "hints": [
+    "La freccia parte dall’entità vincolata e punta al rombo.",
+    "Combina massimo uno e partecipazione totale già presente nel diagramma."
+  ],
+  "initial": {
+    "schemaVersion": 1,
+    "metadata": {
+      "id": "example-works",
+      "title": "Dipendenti e dipartimenti",
+      "revision": 0,
+      "createdAt": "2026-10-25T00:00:00Z",
+      "modifiedAt": "2026-10-25T00:00:00Z",
+      "notation": "unitn-er-v1",
+      "status": "needs-review"
+    },
+    "semantic": {
+      "entities": [
+        {
+          "id": "emp",
+          "name": "EMPLOYEES",
+          "weak": false
+        },
+        {
+          "id": "dept",
+          "name": "DEPARTMENTS",
+          "weak": false
+        }
+      ],
+      "attributes": [
+        {
+          "id": "a-emp",
+          "name": "ssn",
+          "ownerId": "emp",
+          "domain": "testo"
+        },
+        {
+          "id": "a-dept",
+          "name": "did",
+          "ownerId": "dept",
+          "domain": "testo"
+        },
+        {
+          "id": "since",
+          "name": "since",
+          "ownerId": "works",
+          "domain": "data"
+        }
+      ],
+      "identifiers": [
+        {
+          "id": "k-emp",
+          "entityId": "emp",
+          "attributeIds": [
+            "a-emp"
+          ],
+          "kind": "primary"
+        },
+        {
+          "id": "k-dept",
+          "entityId": "dept",
+          "attributeIds": [
+            "a-dept"
+          ],
+          "kind": "primary"
+        }
+      ],
+      "relationships": [
+        {
+          "id": "works",
+          "name": "WORKS_IN",
+          "identifying": false
+        }
+      ],
+      "participations": [
+        {
+          "id": "p-works-0",
+          "entityId": "emp",
+          "relationshipId": "works",
+          "role": "",
+          "min": 1,
+          "max": "N"
+        },
+        {
+          "id": "p-works-1",
+          "entityId": "dept",
+          "relationshipId": "works",
+          "role": "",
+          "min": 1,
+          "max": "N"
+        }
+      ],
+      "generalizations": [],
+      "notes": "Adattamento Database Academy del caso p. 27. Non riproduce ogni attributo della figura; SSN e did come identificatori. Nessuna affermazione sulla correttezza completa dei requisiti."
+    },
+    "layout": {
+      "positions": {
+        "emp": {
+          "x": 170,
+          "y": 200
+        },
+        "a-emp": {
+          "x": 170,
+          "y": 100
+        },
+        "dept": {
+          "x": 800,
+          "y": 200
+        },
+        "a-dept": {
+          "x": 800,
+          "y": 100
+        },
+        "works": {
+          "x": 480,
+          "y": 200
+        },
+        "since": {
+          "x": 480,
+          "y": 80
+        }
+      },
+      "viewport": {
+        "x": 0,
+        "y": 0,
+        "zoom": 1
+      }
+    }
+  },
+  "solutionPath": "er/solutions/er-lavora.md",
+  "referenceDiagramPath": "er/diagrams/works-ref.json",
+  "checks": [
+    {
+      "kind": "participation",
+      "entity": "EMPLOYEES",
+      "name": "WORKS_IN",
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "limitations": [
+    "Validazione strutturale e osservazioni parziali sui nomi: nessuna equivalenza semantica generale.",
+    "Diagrammi e commenti eseguibili sono adattamenti Database Academy needs-review; il PDF contiene le figure del docente.",
+    "Tutti i vincoli non esplicitati vanno discussi e annotati, non inventati."
+  ]
+}

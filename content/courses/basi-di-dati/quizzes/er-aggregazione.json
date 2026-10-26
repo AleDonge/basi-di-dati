@@ -1,0 +1,130 @@
+{
+  "lessonId": "er-aggregazione",
+  "version": 2,
+  "status": "needs-review",
+  "questions": [
+    {
+      "id": "er-aggregazione-q1",
+      "version": 2,
+      "type": "single",
+      "prompt": "MONITORS e SPONSORS rappresentano…",
+      "concepts": [
+        "aggregazione",
+        "sponsorizzazione",
+        "limiti"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 41,
+          "pageEnd": 43,
+          "section": "Aggregazione e identità dei fatti"
+        },
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 60,
+          "pageEnd": 63,
+          "section": "Aggregazione e identità dei fatti"
+        }
+      ],
+      "options": [
+        {
+          "id": "errata",
+          "text": "Sempre un’unica relazione ternaria equivalente."
+        },
+        {
+          "id": "corretta",
+          "text": "Fatti distinti, con proprietà e vincoli potenzialmente diversi."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "Una sponsorizzazione può esistere senza monitoraggio e i due fatti hanno proprietà distinte. Una ternaria unica non conserva automaticamente questa indipendenza."
+    },
+    {
+      "id": "er-aggregazione-q2",
+      "version": 2,
+      "type": "single",
+      "prompt": "L’aggregazione è disegnabile nel subset dell’editor?",
+      "concepts": [
+        "aggregazione",
+        "sponsorizzazione",
+        "limiti"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 41,
+          "pageEnd": 43,
+          "section": "Aggregazione e identità dei fatti"
+        },
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 60,
+          "pageEnd": 63,
+          "section": "Aggregazione e identità dei fatti"
+        }
+      ],
+      "options": [
+        {
+          "id": "corretta",
+          "text": "No: va studiata nelle fonti e ragionata nelle note."
+        },
+        {
+          "id": "errata",
+          "text": "Sì: un qualsiasi rombo collega automaticamente altri rombi."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "Il costrutto non è nel modello editabile: note e fonte permettono lo studio guidato, senza fingere una verifica strutturale di aggregazioni."
+    },
+    {
+      "id": "er-aggregazione-q3",
+      "version": 2,
+      "type": "single",
+      "prompt": "until nel caso discusso appartiene…",
+      "concepts": [
+        "aggregazione",
+        "sponsorizzazione",
+        "limiti"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 41,
+          "pageEnd": 43,
+          "section": "Aggregazione e identità dei fatti"
+        },
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 60,
+          "pageEnd": 63,
+          "section": "Aggregazione e identità dei fatti"
+        }
+      ],
+      "options": [
+        {
+          "id": "errata",
+          "text": "Necessariamente al progetto come proprietà indipendente."
+        },
+        {
+          "id": "corretta",
+          "text": "Al monitoraggio, distinto dalla data since della sponsorizzazione."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "since descrive la sponsorizzazione e until il monitoraggio di quel fatto. Spostare until sul progetto cambierebbe la dipendenza informativa."
+    }
+  ]
+}

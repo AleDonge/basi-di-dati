@@ -1,0 +1,111 @@
+{
+  "importId": "sprint5-20261025",
+  "createdAt": "2026-10-25",
+  "reviewStatus": "needs-review",
+  "manifestVersionBefore": 5,
+  "manifestVersionAfter": 5,
+  "sources": [
+    {
+      "sourceId": "intro-source",
+      "sourceName": "Argomento01 Basi di Dati e loro utenti.pdf",
+      "checksum": "8f9dbee7feb1028b6da06f2fc65eeaeb31257eb84b1b35e72f0b1d536d87318a",
+      "change": "unchanged"
+    },
+    {
+      "sourceId": "relational-source",
+      "sourceName": "Argomento02 Modello Relazionale.pdf",
+      "checksum": "1c2ef3bc742ca0fd8d65583b800d51e3705d88f22f2ff6504e1527df64e16a7d",
+      "change": "unchanged"
+    },
+    {
+      "sourceId": "algebra-source",
+      "sourceName": "Argomento03 Algebra Relazionale.pdf",
+      "checksum": "8b988dacfdbbfb73f60ce9b2cfbfd53d883fb46d87cdb53caba01bf9d6b7d5d4",
+      "change": "unchanged"
+    },
+    {
+      "sourceId": "algebra-self-source",
+      "sourceName": "Argomento03.1 Algebra Relazionale Autoverifica.pdf",
+      "checksum": "b7962a385cb7b06ec4a9686b71430387db37ffd6cf6c6e4971e44c8597925911",
+      "change": "unchanged"
+    },
+    {
+      "sourceId": "sql-source",
+      "sourceName": "Argomento04 SQL.pdf",
+      "checksum": "d497fc9d464415ffb3911a51cdcbed82e90c12419c21ace817d3270aca38648f",
+      "change": "unchanged"
+    },
+    {
+      "sourceId": "er-source",
+      "sourceName": "Argomento05 Entity Relationship.pdf",
+      "checksum": "d78fc0a090bf4a0ab9c2f3dfd49ef24bd2b9e885d0cdb79ec5ba4f349b12fb99",
+      "change": "unchanged"
+    },
+    {
+      "sourceId": "course-source",
+      "sourceName": "Basi_di_dati_DISI 2026-27.pdf",
+      "checksum": "617ff6f4d673f438970d95e580b954561a5f9e7427f4db7fe6245cb935d34066",
+      "change": "unchanged"
+    },
+    {
+      "sourceId": "book-source",
+      "sourceName": "Book.pdf",
+      "checksum": "2ef94de7cb26e6fd8342846083d2c110d34d29fef6a8b5bae28846c0538778bc",
+      "change": "unchanged"
+    },
+    {
+      "sourceId": "algebra-scan-source",
+      "sourceName": "esercitazione_AR.pdf",
+      "checksum": "ff1eb2b07078df4358c54a38ff8b80ed31fd6b30292cc9d94d0031bc71f58d46",
+      "change": "unchanged"
+    },
+    {
+      "sourceId": "sailors-exercises-source",
+      "sourceName": "Esercizi 1 Sailor.txt",
+      "checksum": "f38bef66037e948a719b92e50bbf6a77957dc64a75c21046fee467a9cea1287c",
+      "change": "unchanged"
+    },
+    {
+      "sourceId": "tools-source",
+      "sourceName": "Introduzione MySQL e Dbeaver.pdf",
+      "checksum": "49cdbfdf3b7c1cb4ce83701cd8884b18cf31399ae651d5c588ee162899c6f570",
+      "change": "unchanged"
+    },
+    {
+      "sourceId": "northwind-source",
+      "sourceName": "Schema per generare DB NorthWind.txt",
+      "checksum": "ccc889df337696fbc890802a3efe6e2aa216f00a367545f36346a03ba4800e39",
+      "change": "unchanged"
+    },
+    {
+      "sourceId": "sailors-source",
+      "sourceName": "Schema per generare DB Sailors.txt",
+      "checksum": "cdb06a409a72340a1227fc4a24214be783ea06a2e434a5c65d84aeb47f47d19d",
+      "change": "unchanged"
+    }
+  ],
+  "addedIds": [],
+  "updatedIds": [],
+  "removedIds": [],
+  "verifiedIds": [],
+  "notes": [
+    "Nessuna nuova domanda o lezione: copie di 115 attività esistenti, distinte per tipo e versione.",
+    "78 quiz non classificati, 33 attività intermedie, quattro avanzate; nessun base.",
+    "Archivi con hash immutabili: conservare anche le copie precedenti per i piani salvati.",
+    "Progressi IndexedDB/backup v5: migrazioni non distruttive dai formati precedenti."
+  ],
+  "generatedFiles": [
+    {
+      "path": "content/exam/archives/1b518cd375582066ae588b23b5ecb69ef80b90028fe8d89714161d370e410a0e.json",
+      "sha256": "3637cef459057adab10b2f00f30e8bf6069f1bbe4f08e339e4476b3bacbaa07c"
+    },
+    {
+      "path": "content/exam/archives/dc2ba066827b6e4551b01dcb7b70cff1d16dfd84dc59d8cc7b9e7b3a053b5909.json",
+      "sha256": "48b00a09aa674ebcd3b33e244669948c21f7d7c8ed4bae5e2e75735c8eec2e4c"
+    },
+    {
+      "path": "content/exam/current.json",
+      "sha256": "f790168b8e971900a64e060175bb37305b19c02c76d7a111462b8a1399ca69ae"
+    }
+  ]
+}

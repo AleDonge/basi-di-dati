@@ -1,0 +1,15 @@
+node_modules/
+.next/
+out/
+test-results/
+playwright-report/
+tmp/
+*.tsbuildinfo
+.env*
+!.env.example
+
+public/sql/
+public/monaco/
+__pycache__/
+
+public/algebra/

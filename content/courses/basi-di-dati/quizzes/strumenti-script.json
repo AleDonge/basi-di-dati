@@ -1,0 +1,112 @@
+{
+  "lessonId": "strumenti-script",
+  "version": 1,
+  "status": "needs-review",
+  "questions": [
+    {
+      "id": "strumenti-script-q1",
+      "version": 1,
+      "type": "single",
+      "prompt": "Una connessione riuscita garantisce che NorthWind sia popolato?",
+      "concepts": [
+        "connessione",
+        "driver",
+        "script",
+        "NorthWind"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "tools-source",
+          "file": "Introduzione MySQL e Dbeaver.pdf",
+          "pageStart": 51,
+          "pageEnd": 63,
+          "section": "Connessione, schema e importazione con DBeaver"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "No: schema e importazione vanno verificati separatamente."
+        },
+        {
+          "id": "opzione-2",
+          "text": "Sì, la connessione importa tutti i dati."
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-1"
+      ],
+      "explanation": "La connessione identifica server e accesso; le tabelle e i dati dipendono dalle istruzioni eseguite sul database scelto."
+    },
+    {
+      "id": "strumenti-script-q2",
+      "version": 1,
+      "type": "single",
+      "prompt": "SHOW TABLES va eseguito in SQL Lab?",
+      "concepts": [
+        "connessione",
+        "driver",
+        "script",
+        "NorthWind"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "tools-source",
+          "file": "Introduzione MySQL e Dbeaver.pdf",
+          "pageStart": 51,
+          "pageEnd": 63,
+          "section": "Connessione, schema e importazione con DBeaver"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "No, usare l’esploratore delle tabelle."
+        },
+        {
+          "id": "opzione-2",
+          "text": "Sì, ogni comando MySQL è tradotto automaticamente."
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-1"
+      ],
+      "explanation": "Il lab SQLite è in sola lettura con una SELECT per richiesta; non interpreta comandi amministrativi MySQL."
+    },
+    {
+      "id": "strumenti-script-q3",
+      "version": 1,
+      "type": "single",
+      "prompt": "L’anteprima mostra dieci ordini: quanti ne contiene il dataset ufficiale convertito?",
+      "concepts": [
+        "connessione",
+        "driver",
+        "script",
+        "NorthWind"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "tools-source",
+          "file": "Introduzione MySQL e Dbeaver.pdf",
+          "pageStart": 51,
+          "pageEnd": 63,
+          "section": "Connessione, schema e importazione con DBeaver"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "Dieci necessariamente."
+        },
+        {
+          "id": "opzione-2",
+          "text": "830, verificabili con COUNT(*)."
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-2"
+      ],
+      "explanation": "L’anteprima è limitata per leggibilità. Il conteggio aggregato misura l’intera tabella, entro i limiti di esecuzione."
+    }
+  ]
+}

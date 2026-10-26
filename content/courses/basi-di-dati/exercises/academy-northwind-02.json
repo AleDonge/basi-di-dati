@@ -1,0 +1,55 @@
+{
+  "id": "academy-northwind-02",
+  "title": "Listino ordinato",
+  "version": 1,
+  "status": "needs-review",
+  "origin": "platform-activity",
+  "originalPrompt": "Restituisci ProductID e UnitPrice dei prodotti con prezzo noto, dal prezzo più alto al più basso, poi ProductID crescente a parità.",
+  "datasetId": "northwind",
+  "topics": [
+    "ORDER BY",
+    "NULL"
+  ],
+  "difficulty": "base",
+  "lessonIds": [
+    "sql-select"
+  ],
+  "orderMatters": true,
+  "gradingMode": "automatic",
+  "fixtureIds": [
+    "northwind",
+    "academy-northwind-edges",
+    "academy-northwind-reversed",
+    "academy-northwind-empty"
+  ],
+  "solutionPath": "solutions/academy-northwind-02.sql",
+  "hints": [
+    "Individua la popolazione richiesta e le colonne: ProductID, UnitPrice.",
+    "Prezzo DESC, identificativo ASC per le parità."
+  ],
+  "outputContract": [
+    "ProductID",
+    "UnitPrice"
+  ],
+  "interpretation": "Esercizio e soluzione originali Database Academy, needs-review. Rispetta esattamente l’ordine dichiarato. ",
+  "limitations": [
+    "Confronto su quattro fixture finite: coerenza osservata, non equivalenza generale.",
+    "Numero e posizione delle colonne obbligatori; alias liberi. NULL distinto da zero e testo; tolleranza relativa 1e-9 per numeri non interi.",
+    "LIMIT/OFFSET esclusi dalla verifica. SQLite non certifica le regole MySQL GROUP BY o le collazioni.",
+    "Ordine richiesto e confrontato, comprese le parità risolte dalla chiave."
+  ],
+  "sourceRefs": [
+    {
+      "sourceId": "sql-source",
+      "file": "Argomento04 SQL.pdf",
+      "pageStart": 14,
+      "pageEnd": 19,
+      "section": "Costrutti del corso; enunciato originale Database Academy"
+    },
+    {
+      "sourceId": "northwind-source",
+      "file": "Schema per generare DB NorthWind.txt",
+      "section": "Schema e dati ufficiali, invariati"
+    }
+  ]
+}

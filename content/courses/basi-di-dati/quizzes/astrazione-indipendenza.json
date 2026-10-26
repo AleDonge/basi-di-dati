@@ -1,0 +1,123 @@
+{
+  "lessonId": "astrazione-indipendenza",
+  "version": 1,
+  "status": "needs-review",
+  "questions": [
+    {
+      "id": "astrazione-indipendenza-q1",
+      "version": 1,
+      "type": "single",
+      "prompt": "Aggiungere un indice mantenendo lo schema logico riguarda principalmente…",
+      "concepts": [
+        "astrazione",
+        "schema",
+        "indipendenza"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "intro-source",
+          "file": "Argomento01 Basi di Dati e loro utenti.pdf",
+          "pageStart": 11,
+          "pageEnd": 11,
+          "section": "Astrazione e indipendenza dei dati"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "L’indipendenza fisica"
+        },
+        {
+          "id": "opzione-2",
+          "text": "L’eliminazione dello schema"
+        },
+        {
+          "id": "opzione-3",
+          "text": "L’indipendenza da ogni autorizzazione"
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-1"
+      ],
+      "explanation": "L’indice riguarda l’organizzazione fisica e le strutture di accesso."
+    },
+    {
+      "id": "astrazione-indipendenza-q2",
+      "version": 1,
+      "type": "true-false",
+      "prompt": "Indipendenza logica significa poter eliminare qualsiasi attributo senza conseguenze per qualunque applicazione.",
+      "concepts": [
+        "astrazione",
+        "schema",
+        "indipendenza"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "intro-source",
+          "file": "Argomento01 Basi di Dati e loro utenti.pdf",
+          "pageStart": 10,
+          "pageEnd": 10,
+          "section": "Astrazione e indipendenza dei dati"
+        }
+      ],
+      "options": [
+        {
+          "id": "vero",
+          "text": "Vero"
+        },
+        {
+          "id": "falso",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionIds": [
+        "falso"
+      ],
+      "explanation": "La compatibilità riguarda viste e applicazioni che usano la parte non modificata; non ogni cambiamento arbitrario."
+    },
+    {
+      "id": "astrazione-indipendenza-q3",
+      "version": 1,
+      "type": "multiple",
+      "prompt": "Quali associazioni fra livello ed esempio sono corrette?",
+      "concepts": [
+        "astrazione",
+        "schema",
+        "indipendenza"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "intro-source",
+          "file": "Argomento01 Basi di Dati e loro utenti.pdf",
+          "pageStart": 12,
+          "pageEnd": 12,
+          "section": "Astrazione e indipendenza dei dati"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "Esterno: vista per uno specifico gruppo di utenti"
+        },
+        {
+          "id": "opzione-2",
+          "text": "Logico: descrizione delle relazioni e degli attributi"
+        },
+        {
+          "id": "opzione-3",
+          "text": "Fisico: organizzazione dei file e degli indici"
+        },
+        {
+          "id": "opzione-4",
+          "text": "Esterno: disposizione dei settori del disco"
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-1",
+        "opzione-2",
+        "opzione-3"
+      ],
+      "explanation": "Viste, schema logico e archiviazione rispondono a domande diverse; i settori del disco non definiscono una vista esterna."
+    }
+  ]
+}

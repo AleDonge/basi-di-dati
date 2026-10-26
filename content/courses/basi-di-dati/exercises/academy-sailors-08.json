@@ -1,0 +1,57 @@
+{
+  "id": "academy-sailors-08",
+  "title": "Un risultato intermedio nominato",
+  "version": 1,
+  "status": "needs-review",
+  "origin": "platform-activity",
+  "originalPrompt": "Restituisci sid e numero di prenotazioni dei soli marinai con almeno due prenotazioni. Puoi usare CTE, sottoquery o HAVING.",
+  "datasetId": "sailors",
+  "topics": [
+    "CTE",
+    "COUNT",
+    "HAVING"
+  ],
+  "difficulty": "intermedio",
+  "lessonIds": [
+    "sql-cte"
+  ],
+  "orderMatters": false,
+  "gradingMode": "automatic",
+  "fixtureIds": [
+    "sailors",
+    "academy-sailors-edges",
+    "academy-sailors-reversed",
+    "academy-sailors-empty"
+  ],
+  "solutionPath": "solutions/academy-sailors-08.sql",
+  "hints": [
+    "Individua la popolazione richiesta e le colonne: sid, prenotazioni.",
+    "COUNT(*) include date diverse per la stessa barca; DISTINCT bid cambia misura."
+  ],
+  "outputContract": [
+    "sid",
+    "prenotazioni"
+  ],
+  "interpretation": "Esercizio e soluzione originali Database Academy, needs-review. Nessun ordine richiesto. Si contano prenotazioni, comprese date diverse per la stessa barca, non barche distinte.",
+  "limitations": [
+    "Confronto su quattro fixture finite: coerenza osservata, non equivalenza generale.",
+    "Numero e posizione delle colonne obbligatori; alias liberi. NULL distinto da zero e testo; tolleranza relativa 1e-9 per numeri non interi.",
+    "LIMIT/OFFSET esclusi dalla verifica. SQLite non certifica le regole MySQL GROUP BY o le collazioni.",
+    "Ordine delle righe ignorato; duplicati confrontati con la loro molteplicità.",
+    "Si contano prenotazioni, comprese date diverse per la stessa barca, non barche distinte."
+  ],
+  "sourceRefs": [
+    {
+      "sourceId": "sql-source",
+      "file": "Argomento04 SQL.pdf",
+      "pageStart": 46,
+      "pageEnd": 57,
+      "section": "Costrutti del corso; enunciato originale Database Academy"
+    },
+    {
+      "sourceId": "sailors-source",
+      "file": "Schema per generare DB Sailors.txt",
+      "section": "Schema e dati ufficiali, invariati"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "id": "sailors-algebra-empty",
+  "title": "Relazioni vuote",
+  "provenance": "Database Academy, dati sintetici separati dall’originale: omonimi, colori, confini, prenotazioni ripetute, barche mai prenotate.",
+  "relations": {
+    "Sailors": {
+      "columns": [
+        {
+          "name": "sid",
+          "type": "number"
+        },
+        {
+          "name": "sname",
+          "type": "string"
+        },
+        {
+          "name": "rating",
+          "type": "number"
+        },
+        {
+          "name": "age",
+          "type": "number"
+        }
+      ],
+      "rows": []
+    },
+    "Boats": {
+      "columns": [
+        {
+          "name": "bid",
+          "type": "number"
+        },
+        {
+          "name": "bname",
+          "type": "string"
+        },
+        {
+          "name": "color",
+          "type": "string"
+        }
+      ],
+      "rows": []
+    },
+    "Reserves": {
+      "columns": [
+        {
+          "name": "sid",
+          "type": "number"
+        },
+        {
+          "name": "bid",
+          "type": "number"
+        },
+        {
+          "name": "day",
+          "type": "date"
+        }
+      ],
+      "rows": []
+    }
+  }
+}

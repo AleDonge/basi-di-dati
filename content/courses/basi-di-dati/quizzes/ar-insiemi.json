@@ -1,0 +1,109 @@
+{
+  "lessonId": "ar-insiemi",
+  "version": 2,
+  "status": "needs-review",
+  "questions": [
+    {
+      "id": "ar-insiemi-q1",
+      "version": 2,
+      "type": "single",
+      "prompt": "Quale operazione restituisce gli elementi di R assenti da S?",
+      "concepts": [
+        "unione",
+        "intersezione",
+        "differenza"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 21,
+          "pageEnd": 25,
+          "section": "Unione, intersezione e differenza"
+        }
+      ],
+      "options": [
+        {
+          "id": "errata",
+          "text": "L’intersezione R ∩ S."
+        },
+        {
+          "id": "corretta",
+          "text": "La differenza R − S."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "R−S conserva chi appartiene a R e non a S. L’intersezione conserva invece soltanto chi appartiene a entrambi."
+    },
+    {
+      "id": "ar-insiemi-q2",
+      "version": 2,
+      "type": "single",
+      "prompt": "R − S è sempre uguale a S − R?",
+      "concepts": [
+        "unione",
+        "intersezione",
+        "differenza"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 21,
+          "pageEnd": 25,
+          "section": "Unione, intersezione e differenza"
+        }
+      ],
+      "options": [
+        {
+          "id": "corretta",
+          "text": "No: la differenza non è commutativa."
+        },
+        {
+          "id": "errata",
+          "text": "Sì: come unione e intersezione."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "Con R={1,2} e S={2,3}, R−S={1}, mentre S−R={3}: invertire gli operandi cambia la risposta."
+    },
+    {
+      "id": "ar-insiemi-q3",
+      "version": 2,
+      "type": "single",
+      "prompt": "Per richiedere due proprietà di una persona prima di proiettarne il nome, conviene intersecare…",
+      "concepts": [
+        "unione",
+        "intersezione",
+        "differenza"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 21,
+          "pageEnd": 25,
+          "section": "Unione, intersezione e differenza"
+        }
+      ],
+      "options": [
+        {
+          "id": "errata",
+          "text": "I soli nomi, anche se omonimi."
+        },
+        {
+          "id": "corretta",
+          "text": "Gli identificativi sid."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "Due omonimi possono soddisfare separatamente le proprietà. Intersecare identificativi richiede che entrambe valgano per la medesima persona."
+    }
+  ]
+}

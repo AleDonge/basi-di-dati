@@ -1,0 +1,200 @@
+[
+  {
+    "id": "ar-sailors-01",
+    "correct": [
+      "π_{sname}(σ_{bid=103}(Reserves) ⋈ Sailors)",
+      "π_{sname}(σ_{bid=103}(Reserves ⋈ Sailors))"
+    ],
+    "incorrect": [
+      "π_{sname}(σ_{bid=102}(Reserves) ⋈ Sailors)",
+      "(π_{sname}(σ_{bid=103}(Reserves) ⋈ Sailors)) − (π_{sname}(σ_{bid=103}(Reserves) ⋈ Sailors))"
+    ]
+  },
+  {
+    "id": "ar-sailors-02",
+    "correct": [
+      "π_{sname}(σ_{color='red'}(Boats) ⋈ Reserves ⋈ Sailors)",
+      "π_{sname}(σ_{color='red'}(Boats ⋈ Reserves ⋈ Sailors))"
+    ],
+    "incorrect": [
+      "π_{sname}(σ_{color='green'}(Boats) ⋈ Reserves ⋈ Sailors)",
+      "(π_{sname}(σ_{color='red'}(Boats) ⋈ Reserves ⋈ Sailors)) − (π_{sname}(σ_{color='red'}(Boats) ⋈ Reserves ⋈ Sailors))"
+    ]
+  },
+  {
+    "id": "ar-sailors-03",
+    "correct": [
+      "π_{sname}(σ_{color='red' OR color='green'}(Boats) ⋈ Reserves ⋈ Sailors)",
+      "π_{sname}(σ_{color='red'}(Boats) ⋈ Reserves ⋈ Sailors) ∪ π_{sname}(σ_{color='green'}(Boats) ⋈ Reserves ⋈ Sailors)"
+    ],
+    "incorrect": [
+      "π_{sname}(σ_{color='red'}(Boats) ⋈ Reserves ⋈ Sailors)",
+      "(π_{sname}(σ_{color='red' OR color='green'}(Boats) ⋈ Reserves ⋈ Sailors)) − (π_{sname}(σ_{color='red' OR color='green'}(Boats) ⋈ Reserves ⋈ Sailors))"
+    ]
+  },
+  {
+    "id": "ar-sailors-04",
+    "correct": [
+      "π_{sname}((π_{sid}(σ_{color='red'}(Boats) ⋈ Reserves) ∩ π_{sid}(σ_{color='green'}(Boats) ⋈ Reserves)) ⋈ Sailors)",
+      "π_{sname}((π_{sid}(σ_{color='red'}(Boats) ⋈ Reserves) − (π_{sid}(σ_{color='red'}(Boats) ⋈ Reserves) − π_{sid}(σ_{color='green'}(Boats) ⋈ Reserves))) ⋈ Sailors)"
+    ],
+    "incorrect": [
+      "π_{sname}(σ_{color='red'}(Boats) ⋈ Reserves ⋈ Sailors) ∩ π_{sname}(σ_{color='green'}(Boats) ⋈ Reserves ⋈ Sailors)",
+      "(π_{sname}((π_{sid}(σ_{color='red'}(Boats) ⋈ Reserves) ∩ π_{sid}(σ_{color='green'}(Boats) ⋈ Reserves)) ⋈ Sailors)) − (π_{sname}((π_{sid}(σ_{color='red'}(Boats) ⋈ Reserves) ∩ π_{sid}(σ_{color='green'}(Boats) ⋈ Reserves)) ⋈ Sailors))"
+    ]
+  },
+  {
+    "id": "ar-sailors-05",
+    "correct": [
+      "π_{sname}((π_{sid,bid}(Reserves) ÷ π_{bid}(Boats)) ⋈ Sailors)",
+      "π_{sname}((π_{sid}(Reserves) − π_{sid}((π_{sid}(Reserves) × π_{bid}(Boats)) − π_{sid,bid}(Reserves))) ⋈ Sailors)"
+    ],
+    "incorrect": [
+      "π_{sname}(Reserves ⋈ Sailors)",
+      "(π_{sname}((π_{sid,bid}(Reserves) ÷ π_{bid}(Boats)) ⋈ Sailors)) − (π_{sname}((π_{sid,bid}(Reserves) ÷ π_{bid}(Boats)) ⋈ Sailors))"
+    ]
+  },
+  {
+    "id": "ar-sailors-06",
+    "correct": [
+      "π_{sname}(Sailors ⋈ π_{Reserves.sid}(σ_{Reserves.sid=A.sid AND Reserves.bid!=A.bid}(Reserves × ρ_{A}(Reserves))))",
+      "π_{sname}(Sailors ⋈ π_{Reserves.sid}(Reserves ⋈_{Reserves.sid=A.sid AND Reserves.bid!=A.bid} ρ_{A}(Reserves)))"
+    ],
+    "incorrect": [
+      "π_{sname}(Sailors ⋈ Reserves)",
+      "(π_{sname}(Sailors ⋈ π_{Reserves.sid}(σ_{Reserves.sid=A.sid AND Reserves.bid!=A.bid}(Reserves × ρ_{A}(Reserves))))) − (π_{sname}(Sailors ⋈ π_{Reserves.sid}(σ_{Reserves.sid=A.sid AND Reserves.bid!=A.bid}(Reserves × ρ_{A}(Reserves)))))"
+    ]
+  },
+  {
+    "id": "ar-impiegati-01",
+    "correct": [
+      "π_{Matricola,Cognome}(σ_{Stipendio>50}(Impiegato))",
+      "(π_{Matricola,Cognome}(σ_{Stipendio>50}(Impiegato))) ∪ (π_{Matricola,Cognome}(σ_{Stipendio>50}(Impiegato)))"
+    ],
+    "incorrect": [
+      "π_{Matricola,Cognome}(σ_{Stipendio>=50}(Impiegato))",
+      "(π_{Matricola,Cognome}(σ_{Stipendio>50}(Impiegato))) − (π_{Matricola,Cognome}(σ_{Stipendio>50}(Impiegato)))"
+    ]
+  },
+  {
+    "id": "ar-impiegati-02",
+    "correct": [
+      "π_{E.Cognome,E.Stipendio}(σ_{D.Sede='Roma'}((ρ_{E}(Impiegato) ⋈_{E.Dipartimento=D.Codice} ρ_{D}(Dipartimento))))",
+      "(π_{E.Cognome,E.Stipendio}(σ_{D.Sede='Roma'}((ρ_{E}(Impiegato) ⋈_{E.Dipartimento=D.Codice} ρ_{D}(Dipartimento))))) ∪ (π_{E.Cognome,E.Stipendio}(σ_{D.Sede='Roma'}((ρ_{E}(Impiegato) ⋈_{E.Dipartimento=D.Codice} ρ_{D}(Dipartimento)))))"
+    ],
+    "incorrect": [
+      "π_{E.Cognome,E.Stipendio}(σ_{D.Sede='Trento'}((ρ_{E}(Impiegato) ⋈_{E.Dipartimento=D.Codice} ρ_{D}(Dipartimento))))",
+      "(π_{E.Cognome,E.Stipendio}(σ_{D.Sede='Roma'}((ρ_{E}(Impiegato) ⋈_{E.Dipartimento=D.Codice} ρ_{D}(Dipartimento))))) − (π_{E.Cognome,E.Stipendio}(σ_{D.Sede='Roma'}((ρ_{E}(Impiegato) ⋈_{E.Dipartimento=D.Codice} ρ_{D}(Dipartimento)))))"
+    ]
+  },
+  {
+    "id": "ar-impiegati-03",
+    "correct": [
+      "π_{E.Cognome,D.Nome}((ρ_{E}(Impiegato) ⋈_{E.Dipartimento=D.Codice} ρ_{D}(Dipartimento)))",
+      "(π_{E.Cognome,D.Nome}((ρ_{E}(Impiegato) ⋈_{E.Dipartimento=D.Codice} ρ_{D}(Dipartimento)))) ∪ (π_{E.Cognome,D.Nome}((ρ_{E}(Impiegato) ⋈_{E.Dipartimento=D.Codice} ρ_{D}(Dipartimento))))"
+    ],
+    "incorrect": [
+      "π_{E.Cognome,D.Nome}((ρ_{E}(Impiegato) ⋈_{E.Matricola=D.Codice} ρ_{D}(Dipartimento)))",
+      "(π_{E.Cognome,D.Nome}((ρ_{E}(Impiegato) ⋈_{E.Dipartimento=D.Codice} ρ_{D}(Dipartimento)))) − (π_{E.Cognome,D.Nome}((ρ_{E}(Impiegato) ⋈_{E.Dipartimento=D.Codice} ρ_{D}(Dipartimento))))"
+    ]
+  },
+  {
+    "id": "ar-impiegati-04",
+    "correct": [
+      "π_{E.Cognome}(ρ_{E}(Impiegato) ⋈_{E.Matricola=D.Direttore} ρ_{D}(Dipartimento))",
+      "(π_{E.Cognome}(ρ_{E}(Impiegato) ⋈_{E.Matricola=D.Direttore} ρ_{D}(Dipartimento))) ∪ (π_{E.Cognome}(ρ_{E}(Impiegato) ⋈_{E.Matricola=D.Direttore} ρ_{D}(Dipartimento)))"
+    ],
+    "incorrect": [
+      "π_{E.Cognome}(ρ_{E}(Impiegato) ⋈_{E.Dipartimento=D.Codice} ρ_{D}(Dipartimento))",
+      "(π_{E.Cognome}(ρ_{E}(Impiegato) ⋈_{E.Matricola=D.Direttore} ρ_{D}(Dipartimento))) − (π_{E.Cognome}(ρ_{E}(Impiegato) ⋈_{E.Matricola=D.Direttore} ρ_{D}(Dipartimento)))"
+    ]
+  },
+  {
+    "id": "ar-impiegati-05",
+    "correct": [
+      "π_{P.Nome,E.Cognome}(ρ_{P}(Progetto) ⋈_{P.Responsabile=E.Matricola} ρ_{E}(Impiegato))",
+      "(π_{P.Nome,E.Cognome}(ρ_{P}(Progetto) ⋈_{P.Responsabile=E.Matricola} ρ_{E}(Impiegato))) ∪ (π_{P.Nome,E.Cognome}(ρ_{P}(Progetto) ⋈_{P.Responsabile=E.Matricola} ρ_{E}(Impiegato)))"
+    ],
+    "incorrect": [
+      "π_{P.Nome,E.Cognome}(ρ_{P}(Progetto) ⋈_{P.Responsabile=E.Dipartimento} ρ_{E}(Impiegato))",
+      "(π_{P.Nome,E.Cognome}(ρ_{P}(Progetto) ⋈_{P.Responsabile=E.Matricola} ρ_{E}(Impiegato))) − (π_{P.Nome,E.Cognome}(ρ_{P}(Progetto) ⋈_{P.Responsabile=E.Matricola} ρ_{E}(Impiegato)))"
+    ]
+  },
+  {
+    "id": "ar-impiegati-06",
+    "correct": [
+      "π_{P.Nome,E.Cognome}(σ_{P.Bilancio>100}(((ρ_{E}(Impiegato) ⋈_{E.Matricola=A.Impiegato} ρ_{A}(Partecipazione)) ⋈_{A.Progetto=P.Sigla} ρ_{P}(Progetto))))",
+      "(π_{P.Nome,E.Cognome}(σ_{P.Bilancio>100}(((ρ_{E}(Impiegato) ⋈_{E.Matricola=A.Impiegato} ρ_{A}(Partecipazione)) ⋈_{A.Progetto=P.Sigla} ρ_{P}(Progetto))))) ∪ (π_{P.Nome,E.Cognome}(σ_{P.Bilancio>100}(((ρ_{E}(Impiegato) ⋈_{E.Matricola=A.Impiegato} ρ_{A}(Partecipazione)) ⋈_{A.Progetto=P.Sigla} ρ_{P}(Progetto)))))"
+    ],
+    "incorrect": [
+      "π_{P.Nome,E.Cognome}(σ_{P.Bilancio>=100}(((ρ_{E}(Impiegato) ⋈_{E.Matricola=A.Impiegato} ρ_{A}(Partecipazione)) ⋈_{A.Progetto=P.Sigla} ρ_{P}(Progetto))))",
+      "(π_{P.Nome,E.Cognome}(σ_{P.Bilancio>100}(((ρ_{E}(Impiegato) ⋈_{E.Matricola=A.Impiegato} ρ_{A}(Partecipazione)) ⋈_{A.Progetto=P.Sigla} ρ_{P}(Progetto))))) − (π_{P.Nome,E.Cognome}(σ_{P.Bilancio>100}(((ρ_{E}(Impiegato) ⋈_{E.Matricola=A.Impiegato} ρ_{A}(Partecipazione)) ⋈_{A.Progetto=P.Sigla} ρ_{P}(Progetto)))))"
+    ]
+  },
+  {
+    "id": "ar-impiegati-07",
+    "correct": [
+      "π_{E.Cognome}(σ_{E.Stipendio>B.Stipendio}((ρ_{E}(Impiegato) ⋈_{E.Dipartimento=D.Codice} ρ_{D}(Dipartimento)) ⋈_{D.Direttore=B.Matricola} ρ_{B}(Impiegato)))",
+      "(π_{E.Cognome}(σ_{E.Stipendio>B.Stipendio}((ρ_{E}(Impiegato) ⋈_{E.Dipartimento=D.Codice} ρ_{D}(Dipartimento)) ⋈_{D.Direttore=B.Matricola} ρ_{B}(Impiegato)))) ∪ (π_{E.Cognome}(σ_{E.Stipendio>B.Stipendio}((ρ_{E}(Impiegato) ⋈_{E.Dipartimento=D.Codice} ρ_{D}(Dipartimento)) ⋈_{D.Direttore=B.Matricola} ρ_{B}(Impiegato))))"
+    ],
+    "incorrect": [
+      "π_{E.Cognome}(σ_{E.Stipendio>=B.Stipendio}((ρ_{E}(Impiegato) ⋈_{E.Dipartimento=D.Codice} ρ_{D}(Dipartimento)) ⋈_{D.Direttore=B.Matricola} ρ_{B}(Impiegato)))",
+      "(π_{E.Cognome}(σ_{E.Stipendio>B.Stipendio}((ρ_{E}(Impiegato) ⋈_{E.Dipartimento=D.Codice} ρ_{D}(Dipartimento)) ⋈_{D.Direttore=B.Matricola} ρ_{B}(Impiegato)))) − (π_{E.Cognome}(σ_{E.Stipendio>B.Stipendio}((ρ_{E}(Impiegato) ⋈_{E.Dipartimento=D.Codice} ρ_{D}(Dipartimento)) ⋈_{D.Direttore=B.Matricola} ρ_{B}(Impiegato))))"
+    ]
+  },
+  {
+    "id": "ar-impiegati-08",
+    "correct": [
+      "π_{E.Cognome}(ρ_{E}(Impiegato) ⋈_{E.Matricola=D.Direttore} ρ_{D}(Dipartimento)) ∪ π_{E.Cognome}(ρ_{E}(Impiegato) ⋈_{E.Matricola=P.Responsabile} ρ_{P}(Progetto))",
+      "(π_{E.Cognome}(ρ_{E}(Impiegato) ⋈_{E.Matricola=D.Direttore} ρ_{D}(Dipartimento)) ∪ π_{E.Cognome}(ρ_{E}(Impiegato) ⋈_{E.Matricola=P.Responsabile} ρ_{P}(Progetto))) ∪ (π_{E.Cognome}(ρ_{E}(Impiegato) ⋈_{E.Matricola=D.Direttore} ρ_{D}(Dipartimento)) ∪ π_{E.Cognome}(ρ_{E}(Impiegato) ⋈_{E.Matricola=P.Responsabile} ρ_{P}(Progetto)))"
+    ],
+    "incorrect": [
+      "π_{E.Cognome}(ρ_{E}(Impiegato) ⋈_{E.Matricola=D.Direttore} ρ_{D}(Dipartimento)) ∩ π_{E.Cognome}(ρ_{E}(Impiegato) ⋈_{E.Matricola=P.Responsabile} ρ_{P}(Progetto))",
+      "(π_{E.Cognome}(ρ_{E}(Impiegato) ⋈_{E.Matricola=D.Direttore} ρ_{D}(Dipartimento)) ∪ π_{E.Cognome}(ρ_{E}(Impiegato) ⋈_{E.Matricola=P.Responsabile} ρ_{P}(Progetto))) − (π_{E.Cognome}(ρ_{E}(Impiegato) ⋈_{E.Matricola=D.Direttore} ρ_{D}(Dipartimento)) ∪ π_{E.Cognome}(ρ_{E}(Impiegato) ⋈_{E.Matricola=P.Responsabile} ρ_{P}(Progetto)))"
+    ]
+  },
+  {
+    "id": "ar-impiegati-11",
+    "correct": [
+      "π_{Cognome}(Impiegato − π_{E.Matricola,E.Cognome,E.Stipendio,E.Dipartimento}(σ_{E.Stipendio<B.Stipendio}(ρ_{E}(Impiegato) × ρ_{B}(Impiegato))))",
+      "(π_{Cognome}(Impiegato − π_{E.Matricola,E.Cognome,E.Stipendio,E.Dipartimento}(σ_{E.Stipendio<B.Stipendio}(ρ_{E}(Impiegato) × ρ_{B}(Impiegato))))) ∪ (π_{Cognome}(Impiegato − π_{E.Matricola,E.Cognome,E.Stipendio,E.Dipartimento}(σ_{E.Stipendio<B.Stipendio}(ρ_{E}(Impiegato) × ρ_{B}(Impiegato)))))"
+    ],
+    "incorrect": [
+      "π_{Cognome}(Impiegato − π_{E.Matricola,E.Cognome,E.Stipendio,E.Dipartimento}(σ_{E.Stipendio>B.Stipendio}(ρ_{E}(Impiegato) × ρ_{B}(Impiegato))))",
+      "(π_{Cognome}(Impiegato − π_{E.Matricola,E.Cognome,E.Stipendio,E.Dipartimento}(σ_{E.Stipendio<B.Stipendio}(ρ_{E}(Impiegato) × ρ_{B}(Impiegato))))) − (π_{Cognome}(Impiegato − π_{E.Matricola,E.Cognome,E.Stipendio,E.Dipartimento}(σ_{E.Stipendio<B.Stipendio}(ρ_{E}(Impiegato) × ρ_{B}(Impiegato)))))"
+    ]
+  },
+  {
+    "id": "ar-impiegati-12",
+    "correct": [
+      "π_{Matricola,Cognome}(Impiegato) − π_{E.Matricola,E.Cognome}(ρ_{E}(Impiegato) ⋈_{E.Matricola=A.Impiegato} ρ_{A}(Partecipazione))",
+      "(π_{Matricola,Cognome}(Impiegato) − π_{E.Matricola,E.Cognome}(ρ_{E}(Impiegato) ⋈_{E.Matricola=A.Impiegato} ρ_{A}(Partecipazione))) ∪ (π_{Matricola,Cognome}(Impiegato) − π_{E.Matricola,E.Cognome}(ρ_{E}(Impiegato) ⋈_{E.Matricola=A.Impiegato} ρ_{A}(Partecipazione)))"
+    ],
+    "incorrect": [
+      "π_{Matricola,Cognome}(Impiegato) ∩ π_{E.Matricola,E.Cognome}(ρ_{E}(Impiegato) ⋈_{E.Matricola=A.Impiegato} ρ_{A}(Partecipazione))",
+      "(π_{Matricola,Cognome}(Impiegato) − π_{E.Matricola,E.Cognome}(ρ_{E}(Impiegato) ⋈_{E.Matricola=A.Impiegato} ρ_{A}(Partecipazione))) − (π_{Matricola,Cognome}(Impiegato) − π_{E.Matricola,E.Cognome}(ρ_{E}(Impiegato) ⋈_{E.Matricola=A.Impiegato} ρ_{A}(Partecipazione)))"
+    ]
+  },
+  {
+    "id": "ar-impiegati-13",
+    "correct": [
+      "π_{E.Matricola,E.Cognome}(σ_{E.Matricola=B.Matricola AND A.Progetto!=C.Progetto}((ρ_{E}(Impiegato) ⋈_{E.Matricola=A.Impiegato} ρ_{A}(Partecipazione)) × (ρ_{B}(Impiegato) ⋈_{B.Matricola=C.Impiegato} ρ_{C}(Partecipazione))))",
+      "(π_{E.Matricola,E.Cognome}(σ_{E.Matricola=B.Matricola AND A.Progetto!=C.Progetto}((ρ_{E}(Impiegato) ⋈_{E.Matricola=A.Impiegato} ρ_{A}(Partecipazione)) × (ρ_{B}(Impiegato) ⋈_{B.Matricola=C.Impiegato} ρ_{C}(Partecipazione))))) ∪ (π_{E.Matricola,E.Cognome}(σ_{E.Matricola=B.Matricola AND A.Progetto!=C.Progetto}((ρ_{E}(Impiegato) ⋈_{E.Matricola=A.Impiegato} ρ_{A}(Partecipazione)) × (ρ_{B}(Impiegato) ⋈_{B.Matricola=C.Impiegato} ρ_{C}(Partecipazione)))))"
+    ],
+    "incorrect": [
+      "π_{E.Matricola,E.Cognome}(σ_{E.Matricola=B.Matricola AND A.Progetto=C.Progetto}((ρ_{E}(Impiegato) ⋈_{E.Matricola=A.Impiegato} ρ_{A}(Partecipazione)) × (ρ_{B}(Impiegato) ⋈_{B.Matricola=C.Impiegato} ρ_{C}(Partecipazione))))",
+      "(π_{E.Matricola,E.Cognome}(σ_{E.Matricola=B.Matricola AND A.Progetto!=C.Progetto}((ρ_{E}(Impiegato) ⋈_{E.Matricola=A.Impiegato} ρ_{A}(Partecipazione)) × (ρ_{B}(Impiegato) ⋈_{B.Matricola=C.Impiegato} ρ_{C}(Partecipazione))))) − (π_{E.Matricola,E.Cognome}(σ_{E.Matricola=B.Matricola AND A.Progetto!=C.Progetto}((ρ_{E}(Impiegato) ⋈_{E.Matricola=A.Impiegato} ρ_{A}(Partecipazione)) × (ρ_{B}(Impiegato) ⋈_{B.Matricola=C.Impiegato} ρ_{C}(Partecipazione)))))"
+    ]
+  },
+  {
+    "id": "ar-impiegati-14",
+    "correct": [
+      "π_{E.Matricola,E.Cognome}((ρ_{E}(Impiegato) ⋈_{E.Matricola=A.Impiegato} ρ_{A}(Partecipazione))) − (π_{E.Matricola,E.Cognome}(σ_{E.Matricola=B.Matricola AND A.Progetto!=C.Progetto}((ρ_{E}(Impiegato) ⋈_{E.Matricola=A.Impiegato} ρ_{A}(Partecipazione)) × (ρ_{B}(Impiegato) ⋈_{B.Matricola=C.Impiegato} ρ_{C}(Partecipazione)))))",
+      "(π_{E.Matricola,E.Cognome}((ρ_{E}(Impiegato) ⋈_{E.Matricola=A.Impiegato} ρ_{A}(Partecipazione))) − (π_{E.Matricola,E.Cognome}(σ_{E.Matricola=B.Matricola AND A.Progetto!=C.Progetto}((ρ_{E}(Impiegato) ⋈_{E.Matricola=A.Impiegato} ρ_{A}(Partecipazione)) × (ρ_{B}(Impiegato) ⋈_{B.Matricola=C.Impiegato} ρ_{C}(Partecipazione)))))) ∪ (π_{E.Matricola,E.Cognome}((ρ_{E}(Impiegato) ⋈_{E.Matricola=A.Impiegato} ρ_{A}(Partecipazione))) − (π_{E.Matricola,E.Cognome}(σ_{E.Matricola=B.Matricola AND A.Progetto!=C.Progetto}((ρ_{E}(Impiegato) ⋈_{E.Matricola=A.Impiegato} ρ_{A}(Partecipazione)) × (ρ_{B}(Impiegato) ⋈_{B.Matricola=C.Impiegato} ρ_{C}(Partecipazione))))))"
+    ],
+    "incorrect": [
+      "π_{E.Matricola,E.Cognome}((ρ_{E}(Impiegato) ⋈_{E.Matricola=A.Impiegato} ρ_{A}(Partecipazione))) ∩ (π_{E.Matricola,E.Cognome}(σ_{E.Matricola=B.Matricola AND A.Progetto!=C.Progetto}((ρ_{E}(Impiegato) ⋈_{E.Matricola=A.Impiegato} ρ_{A}(Partecipazione)) × (ρ_{B}(Impiegato) ⋈_{B.Matricola=C.Impiegato} ρ_{C}(Partecipazione)))))",
+      "(π_{E.Matricola,E.Cognome}((ρ_{E}(Impiegato) ⋈_{E.Matricola=A.Impiegato} ρ_{A}(Partecipazione))) − (π_{E.Matricola,E.Cognome}(σ_{E.Matricola=B.Matricola AND A.Progetto!=C.Progetto}((ρ_{E}(Impiegato) ⋈_{E.Matricola=A.Impiegato} ρ_{A}(Partecipazione)) × (ρ_{B}(Impiegato) ⋈_{B.Matricola=C.Impiegato} ρ_{C}(Partecipazione)))))) − (π_{E.Matricola,E.Cognome}((ρ_{E}(Impiegato) ⋈_{E.Matricola=A.Impiegato} ρ_{A}(Partecipazione))) − (π_{E.Matricola,E.Cognome}(σ_{E.Matricola=B.Matricola AND A.Progetto!=C.Progetto}((ρ_{E}(Impiegato) ⋈_{E.Matricola=A.Impiegato} ρ_{A}(Partecipazione)) × (ρ_{B}(Impiegato) ⋈_{B.Matricola=C.Impiegato} ρ_{C}(Partecipazione))))))"
+    ]
+  }
+]

@@ -1,0 +1,385 @@
+[
+  {
+    "id": "academy-sailors-01",
+    "reference": "SELECT sid,sname FROM Sailors WHERE rating>=8",
+    "alternative": "SELECT s.sid,s.sname FROM Sailors s WHERE NOT(s.rating<8)",
+    "wrong": "SELECT sid,sname FROM Sailors WHERE rating>8",
+    "expected": [
+      [
+        1,
+        "Ada"
+      ],
+      [
+        2,
+        "Ada"
+      ],
+      [
+        3,
+        "Nora"
+      ],
+      [
+        5,
+        "Mai"
+      ]
+    ],
+    "empty": [],
+    "ordered": false
+  },
+  {
+    "id": "academy-sailors-02",
+    "reference": "SELECT sid,age FROM Sailors WHERE age IS NOT NULL ORDER BY age,sid",
+    "alternative": "SELECT s.sid,s.age FROM Sailors s WHERE s.age IS NOT NULL ORDER BY 2 ASC,1 ASC",
+    "wrong": "SELECT sid,age FROM Sailors WHERE age IS NOT NULL ORDER BY age DESC,sid",
+    "expected": [
+      [
+        5,
+        17
+      ],
+      [
+        1,
+        18
+      ],
+      [
+        2,
+        30
+      ],
+      [
+        4,
+        40
+      ],
+      [
+        6,
+        50
+      ]
+    ],
+    "empty": [],
+    "ordered": true
+  },
+  {
+    "id": "academy-sailors-03",
+    "reference": "SELECT DISTINCT r.sid FROM Reserves r JOIN Boats b ON b.bid=r.bid WHERE b.color='red'",
+    "alternative": "SELECT s.sid FROM Sailors s WHERE EXISTS (SELECT 1 FROM Reserves r JOIN Boats b ON b.bid=r.bid WHERE r.sid=s.sid AND b.color='red')",
+    "wrong": "SELECT r.sid FROM Reserves r JOIN Boats b ON b.bid=r.bid WHERE b.color='red'",
+    "expected": [
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ]
+    ],
+    "empty": [],
+    "ordered": false
+  },
+  {
+    "id": "academy-sailors-04",
+    "reference": "SELECT s.sid,COUNT(r.sid) FROM Sailors s LEFT JOIN Reserves r ON r.sid=s.sid GROUP BY s.sid",
+    "alternative": "SELECT s.sid,(SELECT COUNT(*) FROM Reserves r WHERE r.sid=s.sid) FROM Sailors s",
+    "wrong": "SELECT s.sid,COUNT(*) FROM Sailors s LEFT JOIN Reserves r ON r.sid=s.sid GROUP BY s.sid",
+    "expected": [
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        0
+      ]
+    ],
+    "empty": [],
+    "ordered": false
+  },
+  {
+    "id": "academy-sailors-05",
+    "reference": "SELECT rating,COUNT(*),AVG(age) FROM Sailors WHERE age>=18 GROUP BY rating HAVING COUNT(*)>=2",
+    "alternative": "SELECT rating,n,a FROM (SELECT rating,COUNT(*) n,AVG(age) a FROM Sailors WHERE age>=18 GROUP BY rating) g WHERE n>=2",
+    "wrong": "SELECT rating,COUNT(*),AVG(age) FROM Sailors WHERE age>18 GROUP BY rating HAVING COUNT(*)>=2",
+    "expected": [
+      [
+        8,
+        2,
+        24
+      ]
+    ],
+    "empty": [],
+    "ordered": false
+  },
+  {
+    "id": "academy-sailors-06",
+    "reference": "SELECT sid,rating FROM Sailors WHERE rating=(SELECT MAX(rating) FROM Sailors)",
+    "alternative": "SELECT s.sid,s.rating FROM Sailors s WHERE s.rating IS NOT NULL AND NOT EXISTS(SELECT 1 FROM Sailors t WHERE t.rating>s.rating)",
+    "wrong": "SELECT sid,rating FROM Sailors WHERE sid=(SELECT MIN(sid) FROM Sailors WHERE rating=(SELECT MAX(rating) FROM Sailors))",
+    "expected": [
+      [
+        3,
+        10
+      ],
+      [
+        5,
+        10
+      ]
+    ],
+    "empty": [],
+    "ordered": false
+  },
+  {
+    "id": "academy-sailors-07",
+    "reference": "SELECT s.sid,s.sname FROM Sailors s WHERE NOT EXISTS(SELECT 1 FROM Reserves r WHERE r.sid=s.sid)",
+    "alternative": "SELECT s.sid,s.sname FROM Sailors s LEFT JOIN Reserves r ON r.sid=s.sid WHERE r.sid IS NULL",
+    "wrong": "SELECT s.sid,s.sname FROM Sailors s WHERE NOT EXISTS(SELECT 1 FROM Reserves)",
+    "expected": [
+      [
+        5,
+        "Mai"
+      ],
+      [
+        6,
+        "Pia"
+      ]
+    ],
+    "empty": [],
+    "ordered": false
+  },
+  {
+    "id": "academy-sailors-08",
+    "reference": "WITH c AS (SELECT sid,COUNT(*) n FROM Reserves GROUP BY sid) SELECT sid,n FROM c WHERE n>=2",
+    "alternative": "SELECT sid,COUNT(*) FROM Reserves GROUP BY sid HAVING COUNT(*)>=2",
+    "wrong": "SELECT sid,COUNT(DISTINCT bid) FROM Reserves GROUP BY sid HAVING COUNT(DISTINCT bid)>=2",
+    "expected": [
+      [
+        1,
+        3
+      ]
+    ],
+    "empty": [],
+    "ordered": false
+  },
+  {
+    "id": "academy-sailors-09",
+    "reference": "SELECT r.sid FROM Reserves r JOIN Boats b ON b.bid=r.bid WHERE b.color='red' EXCEPT SELECT r.sid FROM Reserves r JOIN Boats b ON b.bid=r.bid WHERE b.color='green'",
+    "alternative": "SELECT DISTINCT r.sid FROM Reserves r JOIN Boats b ON b.bid=r.bid WHERE b.color='red' AND NOT EXISTS(SELECT 1 FROM Reserves t JOIN Boats c ON c.bid=t.bid WHERE t.sid=r.sid AND c.color='green')",
+    "wrong": "SELECT DISTINCT r.sid FROM Reserves r JOIN Boats b ON b.bid=r.bid WHERE b.color='red'",
+    "expected": [
+      [
+        2
+      ],
+      [
+        4
+      ]
+    ],
+    "empty": [],
+    "ordered": false
+  },
+  {
+    "id": "academy-northwind-01",
+    "reference": "SELECT ProductID,ProductName FROM products WHERE Discontinued=0 AND UnitPrice>20",
+    "alternative": "SELECT p.ProductID,p.ProductName FROM products p WHERE NOT(p.Discontinued<>0) AND 20<p.UnitPrice",
+    "wrong": "SELECT ProductID,ProductName FROM products WHERE Discontinued=0 AND UnitPrice>=20",
+    "expected": [
+      [
+        2,
+        "Tea"
+      ]
+    ],
+    "empty": [],
+    "ordered": false
+  },
+  {
+    "id": "academy-northwind-02",
+    "reference": "SELECT ProductID,UnitPrice FROM products WHERE UnitPrice IS NOT NULL ORDER BY UnitPrice DESC,ProductID ASC",
+    "alternative": "SELECT p.ProductID,p.UnitPrice FROM products p WHERE p.UnitPrice IS NOT NULL ORDER BY 2 DESC,1",
+    "wrong": "SELECT ProductID,UnitPrice FROM products WHERE UnitPrice IS NOT NULL ORDER BY UnitPrice ASC,ProductID",
+    "expected": [
+      [
+        2,
+        30
+      ],
+      [
+        3,
+        30
+      ],
+      [
+        1,
+        20
+      ],
+      [
+        5,
+        10
+      ],
+      [
+        6,
+        10
+      ]
+    ],
+    "empty": [],
+    "ordered": true
+  },
+  {
+    "id": "academy-northwind-03",
+    "reference": "SELECT p.ProductID,p.ProductName,c.CategoryName FROM products p JOIN categories c ON c.CategoryID=p.CategoryID",
+    "alternative": "SELECT p.ProductID,p.ProductName,c.CategoryName FROM products p,categories c WHERE p.CategoryID=c.CategoryID",
+    "wrong": "SELECT p.ProductID,p.ProductName,c.CategoryName FROM products p JOIN categories c ON p.ProductID=c.CategoryID",
+    "expected": [
+      [
+        1,
+        "Tea",
+        "Bev"
+      ],
+      [
+        2,
+        "Tea",
+        "Bev"
+      ],
+      [
+        3,
+        "Jam",
+        "Food"
+      ],
+      [
+        4,
+        "Bread",
+        "Food"
+      ],
+      [
+        6,
+        "Water",
+        "Bev"
+      ]
+    ],
+    "empty": [],
+    "ordered": false
+  },
+  {
+    "id": "academy-northwind-04",
+    "reference": "SELECT CategoryID,COUNT(*) FROM products WHERE CategoryID IS NOT NULL GROUP BY CategoryID HAVING COUNT(*)>=2",
+    "alternative": "SELECT CategoryID,n FROM (SELECT CategoryID,COUNT(*) n FROM products WHERE CategoryID IS NOT NULL GROUP BY CategoryID) g WHERE n>=2",
+    "wrong": "SELECT CategoryID,COUNT(*) FROM products WHERE CategoryID IS NOT NULL GROUP BY CategoryID HAVING COUNT(*)>2",
+    "expected": [
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "empty": [],
+    "ordered": false
+  },
+  {
+    "id": "academy-northwind-05",
+    "reference": "SELECT ProductID,SUM(Quantity) FROM order_details GROUP BY ProductID HAVING SUM(Quantity)>=10",
+    "alternative": "SELECT ProductID,n FROM (SELECT ProductID,SUM(Quantity) n FROM order_details GROUP BY ProductID) q WHERE n>=10",
+    "wrong": "SELECT ProductID,SUM(Quantity) FROM order_details GROUP BY ProductID HAVING SUM(Quantity)>10",
+    "expected": [
+      [
+        3,
+        10
+      ]
+    ],
+    "empty": [],
+    "ordered": false
+  },
+  {
+    "id": "academy-northwind-06",
+    "reference": "SELECT ProductID,UnitPrice FROM products WHERE UnitPrice>(SELECT AVG(UnitPrice) FROM products)",
+    "alternative": "WITH a AS (SELECT AVG(UnitPrice) v FROM products) SELECT p.ProductID,p.UnitPrice FROM products p CROSS JOIN a WHERE p.UnitPrice>a.v",
+    "wrong": "SELECT ProductID,UnitPrice FROM products WHERE UnitPrice>=(SELECT AVG(UnitPrice) FROM products)",
+    "expected": [
+      [
+        2,
+        30
+      ],
+      [
+        3,
+        30
+      ]
+    ],
+    "empty": [],
+    "ordered": false
+  },
+  {
+    "id": "academy-northwind-07",
+    "reference": "SELECT c.CustomerID,COUNT(o.OrderID) FROM customers c LEFT JOIN orders o ON o.CustomerID=c.CustomerID GROUP BY c.CustomerID",
+    "alternative": "SELECT c.CustomerID,(SELECT COUNT(*) FROM orders o WHERE o.CustomerID=c.CustomerID) FROM customers c",
+    "wrong": "SELECT c.CustomerID,COUNT(*) FROM customers c LEFT JOIN orders o ON o.CustomerID=c.CustomerID GROUP BY c.CustomerID",
+    "expected": [
+      [
+        "A",
+        2
+      ],
+      [
+        "B",
+        1
+      ],
+      [
+        "C",
+        0
+      ]
+    ],
+    "empty": [],
+    "ordered": false
+  },
+  {
+    "id": "academy-northwind-08",
+    "reference": "SELECT ProductID,SUM(UnitPrice*Quantity*(1-Discount)) FROM order_details GROUP BY ProductID",
+    "alternative": "WITH v AS (SELECT ProductID,UnitPrice*Quantity*(1-Discount) valore FROM order_details) SELECT ProductID,SUM(valore) FROM v GROUP BY ProductID",
+    "wrong": "SELECT ProductID,SUM(UnitPrice*Quantity) FROM order_details GROUP BY ProductID",
+    "expected": [
+      [
+        1,
+        54
+      ],
+      [
+        2,
+        100
+      ],
+      [
+        3,
+        40
+      ],
+      [
+        5,
+        10
+      ]
+    ],
+    "empty": [],
+    "ordered": false
+  },
+  {
+    "id": "academy-northwind-09",
+    "reference": "SELECT p.ProductID FROM products p WHERE NOT EXISTS(SELECT 1 FROM order_details d WHERE d.ProductID=p.ProductID)",
+    "alternative": "SELECT ProductID FROM products EXCEPT SELECT ProductID FROM order_details",
+    "wrong": "SELECT ProductID FROM products WHERE 1=0",
+    "expected": [
+      [
+        4
+      ],
+      [
+        6
+      ]
+    ],
+    "empty": [],
+    "ordered": false
+  }
+]

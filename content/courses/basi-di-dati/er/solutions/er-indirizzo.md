@@ -1,0 +1,1 @@
+Un valore semplice e singolo può restare attributo. Nel subset adottato dal corso, più indirizzi o componenti interrogabili richiedono un’entità INDIRIZZO con attributi semplici. Questo non è un divieto universale degli attributi composti in ogni variante ER. CodiceIndirizzo e minimi del diagramma aggiuntivo non sono forniti dal docente.

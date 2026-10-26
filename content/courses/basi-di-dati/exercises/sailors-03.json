@@ -1,0 +1,44 @@
+{
+  "id": "sailors-03",
+  "title": "Omonimi e divario di età",
+  "version": 1,
+  "status": "needs-review",
+  "originalPrompt": "Trova i nomi dei marinai condivisi da più persone (omonimi) \nil cui divario tra età massima ed età minima sia inferiore a 10 anni.",
+  "datasetId": "sailors",
+  "topics": [
+    "GROUP BY",
+    "HAVING",
+    "Aggregazioni"
+  ],
+  "difficulty": "intermedio",
+  "gradingMode": "automatic",
+  "fixtureIds": [
+    "sailors",
+    "sailors-edges",
+    "sailors-reversed",
+    "sailors-empty",
+    "sailors-variation"
+  ],
+  "solutionPath": "solutions/sailors-03.sql",
+  "hints": [
+    "Raggruppa per nome e conta le persone.",
+    "MAX(age)-MIN(age) è il divario; la soglia è stretta."
+  ],
+  "outputContract": [
+    "sname"
+  ],
+  "interpretation": "Interpretazione della piattaforma, da revisionare: i gruppi contano persone con COUNT(*); MIN/MAX/AVG ignorano NULL. Non è una soluzione fornita dal docente.",
+  "limitations": [
+    "Confronto su cinque fixture finite, non prova di equivalenza generale.",
+    "Ordine delle righe ignorato perché non richiesto; numero e posizione delle colonne obbligatori. Alias liberi.",
+    "Tipi preservati: testo non equivale a numero, NULL distinto da zero; tolleranza relativa 1e-9 solo per valori non interi.",
+    "SQLite non controlla tutte le regole GROUP BY di MySQL; un esito sulle fixture non certifica la compatibilità MySQL."
+  ],
+  "sourceRefs": [
+    {
+      "sourceId": "sailors-exercises-source",
+      "file": "Esercizi 1 Sailor.txt",
+      "section": "Quesito #3"
+    }
+  ]
+}

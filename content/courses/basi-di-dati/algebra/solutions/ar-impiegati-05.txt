@@ -1,0 +1,1 @@
+π_{P.Nome,E.Cognome}(ρ_{P}(Progetto) ⋈_{P.Responsabile=E.Matricola} ρ_{E}(Impiegato))

@@ -1,0 +1,137 @@
+{
+  "lessonId": "sql-domande",
+  "version": 1,
+  "status": "needs-review",
+  "questions": [
+    {
+      "id": "sql-domande-q1",
+      "version": 1,
+      "type": "single",
+      "prompt": "Per contare persone con più eventi di login serve prima chiarire…",
+      "concepts": [
+        "SQL",
+        "DDL",
+        "DML",
+        "contratto di output"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 1,
+          "pageEnd": 12,
+          "section": "Dalla domanda al contratto di una query"
+        },
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 77,
+          "pageEnd": 84,
+          "section": "Dalla domanda al contratto di una query"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "Quale identificativo rappresenta una persona e se contarlo distintamente."
+        },
+        {
+          "id": "opzione-2",
+          "text": "Soltanto il colore del risultato."
+        },
+        {
+          "id": "opzione-3",
+          "text": "Che COUNT(*) elimini sempre i duplicati."
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-1"
+      ],
+      "explanation": "COUNT conta righe; DISTINCT riguarda i valori scelti. La domanda deve stabilire se interessino persone o eventi."
+    },
+    {
+      "id": "sql-domande-q2",
+      "version": 1,
+      "type": "single",
+      "prompt": "Una query accettata dal parser soddisfa necessariamente il requisito?",
+      "concepts": [
+        "SQL",
+        "DDL",
+        "DML",
+        "contratto di output"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 1,
+          "pageEnd": 12,
+          "section": "Dalla domanda al contratto di una query"
+        },
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 77,
+          "pageEnd": 84,
+          "section": "Dalla domanda al contratto di una query"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "Sì, la sintassi dimostra il significato."
+        },
+        {
+          "id": "opzione-2",
+          "text": "No, popolazione, filtri e molteplicità possono essere errati."
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-2"
+      ],
+      "explanation": "Il parser controlla la forma. Un join mancante può produrre risultati sintatticamente validi ma semanticamente diversi."
+    },
+    {
+      "id": "sql-domande-q3",
+      "version": 1,
+      "type": "single",
+      "prompt": "Dove eseguire CREATE TABLE del corso?",
+      "concepts": [
+        "SQL",
+        "DDL",
+        "DML",
+        "contratto di output"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 1,
+          "pageEnd": 12,
+          "section": "Dalla domanda al contratto di una query"
+        },
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 77,
+          "pageEnd": 84,
+          "section": "Dalla domanda al contratto di una query"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "Nell’editor SQL Lab in sola lettura."
+        },
+        {
+          "id": "opzione-2",
+          "text": "In un DBMS locale appropriato, fuori dal laboratorio protetto."
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-2"
+      ],
+      "explanation": "DDL è materiale teorico e richiede un ambiente separato. SQL Lab ammette interrogazioni di lettura su dataset isolati."
+    }
+  ]
+}

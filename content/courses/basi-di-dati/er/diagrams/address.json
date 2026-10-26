@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "metadata": {
+    "id": "example-address",
+    "title": "Indirizzi come concetto autonomo",
+    "revision": 0,
+    "createdAt": "2026-10-25T00:00:00Z",
+    "modifiedAt": "2026-10-25T00:00:00Z",
+    "notation": "unitn-er-v1",
+    "status": "needs-review"
+  },
+  "semantic": {
+    "entities": [
+      {
+        "id": "emp",
+        "name": "DIPENDENTE",
+        "weak": false
+      },
+      {
+        "id": "address",
+        "name": "INDIRIZZO",
+        "weak": false
+      }
+    ],
+    "attributes": [
+      {
+        "id": "a-emp",
+        "name": "SSN",
+        "ownerId": "emp",
+        "domain": "testo"
+      },
+      {
+        "id": "a-address",
+        "name": "CodiceIndirizzo",
+        "ownerId": "address",
+        "domain": "testo"
+      },
+      {
+        "id": "city",
+        "name": "Comune",
+        "ownerId": "address",
+        "domain": "testo"
+      },
+      {
+        "id": "street",
+        "name": "Via",
+        "ownerId": "address",
+        "domain": "testo"
+      }
+    ],
+    "identifiers": [
+      {
+        "id": "k-emp",
+        "entityId": "emp",
+        "attributeIds": [
+          "a-emp"
+        ],
+        "kind": "primary"
+      },
+      {
+        "id": "k-address",
+        "entityId": "address",
+        "attributeIds": [
+          "a-address"
+        ],
+        "kind": "primary"
+      }
+    ],
+    "relationships": [
+      {
+        "id": "lives",
+        "name": "ABITA",
+        "identifying": false
+      }
+    ],
+    "participations": [
+      {
+        "id": "p-lives-0",
+        "entityId": "emp",
+        "relationshipId": "lives",
+        "role": "",
+        "min": 0,
+        "max": "N"
+      },
+      {
+        "id": "p-lives-1",
+        "entityId": "address",
+        "relationshipId": "lives",
+        "role": "",
+        "min": 0,
+        "max": "N"
+      }
+    ],
+    "generalizations": [],
+    "notes": "Attività della piattaforma basata su pp. 47–48. CodiceIndirizzo e cardinalità non specificate dal testo sono ipotesi esplicite, non vincoli del docente."
+  },
+  "layout": {
+    "positions": {
+      "emp": {
+        "x": 170,
+        "y": 220
+      },
+      "a-emp": {
+        "x": 170,
+        "y": 120
+      },
+      "address": {
+        "x": 800,
+        "y": 220
+      },
+      "a-address": {
+        "x": 800,
+        "y": 120
+      },
+      "lives": {
+        "x": 480,
+        "y": 220
+      },
+      "city": {
+        "x": 780,
+        "y": 390
+      },
+      "street": {
+        "x": 980,
+        "y": 100
+      }
+    },
+    "viewport": {
+      "x": 0,
+      "y": 0,
+      "zoom": 1
+    }
+  }
+}

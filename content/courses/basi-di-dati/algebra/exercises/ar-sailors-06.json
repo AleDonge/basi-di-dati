@@ -1,0 +1,40 @@
+{
+  "id": "ar-sailors-06",
+  "title": "Q6 · Almeno due barche",
+  "version": 1,
+  "status": "needs-review",
+  "originalPrompt": "Nomi dei marinai che hanno prenotato almeno 2 barche",
+  "sourceRefs": [
+    {
+      "sourceId": "algebra-self-source",
+      "file": "Argomento03.1 Algebra Relazionale Autoverifica.pdf",
+      "pageStart": 10,
+      "pageEnd": 10
+    }
+  ],
+  "datasetId": "sailors",
+  "difficulty": "avanzato",
+  "gradingMode": "automatic",
+  "fixtureIds": [
+    "sailors",
+    "sailors-algebra-edges",
+    "sailors-algebra-empty",
+    "sailors-algebra-no-reserves",
+    "sailors-algebra-reversed"
+  ],
+  "solutionPath": "algebra/solutions/ar-sailors-06.txt",
+  "hints": [
+    "Rinomina una seconda copia di Reserves.",
+    "Richiedi sid uguali e bid diversi: date diverse sulla stessa barca non bastano."
+  ],
+  "interpretation": "Schema dello script Sailors ufficiale, non l’istanza S3 della figura. Output: sname. Q5 usa il dominio candidato π_sid(Reserves), anche con divisore vuoto; Q6 richiede bid distinti, non due date per la stessa barca.",
+  "limitations": [
+    "Verifica su istanze finite: nessuna prova di equivalenza generale.",
+    "Nomi, ordine delle colonne e domini devono coincidere; ordine delle tuple ignorato.",
+    "Algebra classica senza NULL, aggregazioni o outer join nel parser."
+  ],
+  "solutionOrigin": "Database Academy: traduzione e spiegazione needs-review; non soluzione ufficiale del docente.",
+  "expectedColumns": [
+    "sname"
+  ]
+}

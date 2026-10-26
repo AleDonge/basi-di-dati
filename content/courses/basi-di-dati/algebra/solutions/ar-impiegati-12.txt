@@ -1,0 +1,1 @@
+π_{Matricola,Cognome}(Impiegato) − π_{E.Matricola,E.Cognome}(ρ_{E}(Impiegato) ⋈_{E.Matricola=A.Impiegato} ρ_{A}(Partecipazione))

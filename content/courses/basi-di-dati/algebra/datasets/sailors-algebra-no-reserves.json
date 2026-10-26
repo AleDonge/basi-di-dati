@@ -1,0 +1,126 @@
+{
+  "id": "sailors-algebra-no-reserves",
+  "title": "Marinai e barche senza prenotazioni",
+  "provenance": "Database Academy, dati sintetici separati dall’originale: omonimi, colori, confini, prenotazioni ripetute, barche mai prenotate.",
+  "relations": {
+    "Sailors": {
+      "columns": [
+        {
+          "name": "sid",
+          "type": "number"
+        },
+        {
+          "name": "sname",
+          "type": "string"
+        },
+        {
+          "name": "rating",
+          "type": "number"
+        },
+        {
+          "name": "age",
+          "type": "number"
+        }
+      ],
+      "rows": [
+        [
+          1,
+          "Ada",
+          8,
+          30
+        ],
+        [
+          2,
+          "Ada",
+          7,
+          31
+        ],
+        [
+          3,
+          "Luca",
+          9,
+          40
+        ],
+        [
+          4,
+          "Nora",
+          5,
+          29
+        ],
+        [
+          5,
+          "Tutti",
+          10,
+          50
+        ],
+        [
+          6,
+          "Mai",
+          3,
+          20
+        ],
+        [
+          7,
+          "Verde",
+          7,
+          35
+        ]
+      ]
+    },
+    "Boats": {
+      "columns": [
+        {
+          "name": "bid",
+          "type": "number"
+        },
+        {
+          "name": "bname",
+          "type": "string"
+        },
+        {
+          "name": "color",
+          "type": "string"
+        }
+      ],
+      "rows": [
+        [
+          101,
+          "A",
+          "red"
+        ],
+        [
+          102,
+          "B",
+          "green"
+        ],
+        [
+          103,
+          "C",
+          "blue"
+        ],
+        [
+          104,
+          "D",
+          "red"
+        ]
+      ]
+    },
+    "Reserves": {
+      "columns": [
+        {
+          "name": "sid",
+          "type": "number"
+        },
+        {
+          "name": "bid",
+          "type": "number"
+        },
+        {
+          "name": "day",
+          "type": "date"
+        }
+      ],
+      "rows": []
+    }
+  }
+}

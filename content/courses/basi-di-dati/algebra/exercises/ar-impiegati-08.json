@@ -1,0 +1,39 @@
+{
+  "id": "ar-impiegati-08",
+  "title": "Scheda · Q8",
+  "version": 1,
+  "status": "needs-review",
+  "originalPrompt": "Trovare cognome dei direttori di dipartimento e dei responsabili di progetto.",
+  "sourceRefs": [
+    {
+      "sourceId": "algebra-scan-source",
+      "file": "esercitazione_AR.pdf",
+      "pageStart": 1,
+      "pageEnd": 1
+    }
+  ],
+  "datasetId": "impiegati-demo",
+  "difficulty": "intermedio",
+  "gradingMode": "automatic",
+  "fixtureIds": [
+    "impiegati-demo",
+    "impiegati-edges",
+    "impiegati-empty",
+    "impiegati-reversed"
+  ],
+  "solutionPath": "algebra/solutions/ar-impiegati-08.txt",
+  "hints": [
+    "Il contratto della piattaforma interpreta i due ruoli come alternative.",
+    "Calcola i cognomi nei due percorsi e uniscili, eliminando duplicati."
+  ],
+  "interpretation": "Schema della scansione, righe esclusivamente sintetiche Database Academy. Convenzioni didattiche: Stipendio in milioni e Bilancio in migliaia (100K -> 100); queste unità non sono dichiarate nella scansione. Q8 interpreta «e» come unione dei due ruoli; Q14 conta progetti distinti. Prima della verifica accetta questo contratto, che resta needs-review.",
+  "limitations": [
+    "Verifica su istanze finite: nessuna prova di equivalenza generale.",
+    "Nomi, ordine delle colonne e domini devono coincidere; ordine delle tuple ignorato.",
+    "Algebra classica senza NULL, aggregazioni o outer join nel parser."
+  ],
+  "solutionOrigin": "Database Academy: traduzione e spiegazione needs-review; non soluzione ufficiale del docente.",
+  "expectedColumns": [
+    "Cognome"
+  ]
+}

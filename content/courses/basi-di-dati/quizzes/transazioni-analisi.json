@@ -1,0 +1,126 @@
+{
+  "lessonId": "transazioni-analisi",
+  "version": 1,
+  "status": "needs-review",
+  "questions": [
+    {
+      "id": "transazioni-analisi-q1",
+      "version": 1,
+      "type": "single",
+      "prompt": "Quale esigenza è tipicamente OLAP?",
+      "concepts": [
+        "transazioni",
+        "recovery",
+        "oltp",
+        "olap"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "intro-source",
+          "file": "Argomento01 Basi di Dati e loro utenti.pdf",
+          "pageStart": 17,
+          "pageEnd": 17,
+          "section": "Concorrenza, recupero, OLTP e OLAP"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "Registrare un singolo pagamento"
+        },
+        {
+          "id": "opzione-2",
+          "text": "Confrontare vendite storiche per area"
+        },
+        {
+          "id": "opzione-3",
+          "text": "Aggiornare il recapito di un cliente"
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-2"
+      ],
+      "explanation": "Il confronto storico aggregato è analitico; gli altri esempi sono operativi."
+    },
+    {
+      "id": "transazioni-analisi-q2",
+      "version": 1,
+      "type": "true-false",
+      "prompt": "Il recupero riguarda anche la conservazione degli effetti delle transazioni correttamente completate.",
+      "concepts": [
+        "transazioni",
+        "recovery",
+        "oltp",
+        "olap"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "intro-source",
+          "file": "Argomento01 Basi di Dati e loro utenti.pdf",
+          "pageStart": 15,
+          "pageEnd": 15,
+          "section": "Concorrenza, recupero, OLTP e OLAP"
+        }
+      ],
+      "options": [
+        {
+          "id": "vero",
+          "text": "Vero"
+        },
+        {
+          "id": "falso",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionIds": [
+        "vero"
+      ],
+      "explanation": "La pagina 15 collega recovery e memorizzazione permanente delle transazioni completate."
+    },
+    {
+      "id": "transazioni-analisi-q3",
+      "version": 1,
+      "type": "multiple",
+      "prompt": "Quali caratteristiche sono associate nelle slide a OLTP?",
+      "concepts": [
+        "transazioni",
+        "recovery",
+        "oltp",
+        "olap"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "intro-source",
+          "file": "Argomento01 Basi di Dati e loro utenti.pdf",
+          "pageStart": 16,
+          "pageEnd": 16,
+          "section": "Concorrenza, recupero, OLTP e OLAP"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "Molte operazioni brevi"
+        },
+        {
+          "id": "opzione-2",
+          "text": "Integrità e coerenza centrali"
+        },
+        {
+          "id": "opzione-3",
+          "text": "Solo analisi multidimensionali di lunga durata"
+        },
+        {
+          "id": "opzione-4",
+          "text": "Risposte rapide per l’operatività"
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-1",
+        "opzione-2",
+        "opzione-4"
+      ],
+      "explanation": "OLTP serve l’operatività quotidiana con operazioni frequenti e brevi; le analisi multidimensionali sono associate a OLAP."
+    }
+  ]
+}

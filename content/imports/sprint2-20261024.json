@@ -1,0 +1,151 @@
+{
+  "importId": "sprint2-20261024",
+  "createdAt": "2026-10-24",
+  "reviewStatus": "needs-review",
+  "manifestVersionBefore": 2,
+  "manifestVersionAfter": 3,
+  "sources": [
+    {
+      "sourceId": "sql-source",
+      "sourceName": "Argomento04 SQL.pdf",
+      "checksum": "d497fc9d464415ffb3911a51cdcbed82e90c12419c21ace817d3270aca38648f",
+      "change": "unchanged"
+    },
+    {
+      "sourceId": "sailors-exercises-source",
+      "sourceName": "Esercizi 1 Sailor.txt",
+      "checksum": "f38bef66037e948a719b92e50bbf6a77957dc64a75c21046fee467a9cea1287c",
+      "change": "unchanged"
+    },
+    {
+      "sourceId": "tools-source",
+      "sourceName": "Introduzione MySQL e Dbeaver.pdf",
+      "checksum": "49cdbfdf3b7c1cb4ce83701cd8884b18cf31399ae651d5c588ee162899c6f570",
+      "change": "unchanged"
+    },
+    {
+      "sourceId": "northwind-source",
+      "sourceName": "Schema per generare DB NorthWind.txt",
+      "checksum": "ccc889df337696fbc890802a3efe6e2aa216f00a367545f36346a03ba4800e39",
+      "change": "unchanged"
+    },
+    {
+      "sourceId": "sailors-source",
+      "sourceName": "Schema per generare DB Sailors.txt",
+      "checksum": "cdb06a409a72340a1227fc4a24214be783ea06a2e434a5c65d84aeb47f47d19d",
+      "change": "unchanged"
+    }
+  ],
+  "addedIds": [
+    "sailors",
+    "northwind",
+    "sailors-01",
+    "sailors-02",
+    "sailors-03",
+    "sailors-04",
+    "sailors-05",
+    "sailors-edges",
+    "sailors-reversed",
+    "sailors-empty",
+    "sailors-variation"
+  ],
+  "removedIds": [],
+  "promotedToVerified": [],
+  "sourceChanges": [],
+  "progressMigration": "IndexedDB v2 -> v3: aggiunta sqlHistory; lezioni, quiz e tentativi preservati. Backup v1/v2 accettati.",
+  "notes": [
+    "NorthWind anticipato per richiesta esplicita Sprint 2: conversione completa dei dati, compatibilita MySQL parziale.",
+    "Soluzioni e fixture sintetiche prodotte da Database Academy, non dal docente.",
+    "Metadati delle cinque fonti analizzate e del modulo SQL aggiornati; nove lezioni e 27 quiz invariati."
+  ],
+  "generatedFiles": [
+    {
+      "path": "content/courses/basi-di-dati/datasets/northwind/catalog.json",
+      "sha256": "3615479c1f51968781d8384299eaeff232239926a3152977869353bd059a35e4"
+    },
+    {
+      "path": "content/courses/basi-di-dati/datasets/northwind/conversion-report.json",
+      "sha256": "d1a0aad18f60e69f17226190b6a88fbf01753cf709cac7185d9f6d29c694eb25"
+    },
+    {
+      "path": "content/courses/basi-di-dati/datasets/northwind/schema.sql",
+      "sha256": "827a43b7babef89d6160f77a61703261d4b8fbcf1f3aa1f73a19fc0080061b4f"
+    },
+    {
+      "path": "content/courses/basi-di-dati/datasets/northwind/seed.sql",
+      "sha256": "622e7728e8de55cd22a6db41c9bd30e1425f63df9d0c4f8f3e0e4734f3e02614"
+    },
+    {
+      "path": "content/courses/basi-di-dati/datasets/sailors/catalog.json",
+      "sha256": "ca4c286369b2aa5f9b2031cffeaa0caad672dc026ce57aa3c169d397772eaae7"
+    },
+    {
+      "path": "content/courses/basi-di-dati/datasets/sailors/conversion-report.json",
+      "sha256": "d5ead571a891a7a475488611a7b0520f53b7b1b187f8d0c8ffe15c7d1cf0a138"
+    },
+    {
+      "path": "content/courses/basi-di-dati/datasets/sailors/schema.sql",
+      "sha256": "2ba1f3aab3158d0cd62f9a70bd96a13069b552a0860a6ca2ecb076bb2765d082"
+    },
+    {
+      "path": "content/courses/basi-di-dati/datasets/sailors/seed.sql",
+      "sha256": "e661ce825a8ff17c9232f99384788e73652a807846d150e7ca4b30c7748baa60"
+    },
+    {
+      "path": "content/courses/basi-di-dati/exercises/sailors-01.json",
+      "sha256": "3bd56a12fdf5828ff4b24709873139230032012b3bcd7167f4590d38dc000d9d"
+    },
+    {
+      "path": "content/courses/basi-di-dati/exercises/sailors-02.json",
+      "sha256": "475e4d4bb8c58c57517b89ad974d18c8a9d941c69b451e9052e5ed7504c1eaf1"
+    },
+    {
+      "path": "content/courses/basi-di-dati/exercises/sailors-03.json",
+      "sha256": "80388697724386ded4ac5019974b3568ad3b8b634a6a5428c0108c309e5f09e2"
+    },
+    {
+      "path": "content/courses/basi-di-dati/exercises/sailors-04.json",
+      "sha256": "f076fa37587f9bf53ad62351e6ff3a63082ace42b1e746e48c0e81b289f8afa1"
+    },
+    {
+      "path": "content/courses/basi-di-dati/exercises/sailors-05.json",
+      "sha256": "e0ff12c9a41f562c22eab89a63c803d5e377a0db057c54ac0439da10a37b58db"
+    },
+    {
+      "path": "content/courses/basi-di-dati/solutions/sailors-01.sql",
+      "sha256": "3b4d7283d3a5e1ced76732cd65ecb909bc66d8b632a2d6e22688f878e2dae62b"
+    },
+    {
+      "path": "content/courses/basi-di-dati/solutions/sailors-02.sql",
+      "sha256": "1f56a440582b55587e999780852078231d646bac4275bdbc328bd3b30ec89f8f"
+    },
+    {
+      "path": "content/courses/basi-di-dati/solutions/sailors-03.sql",
+      "sha256": "123f2df596d8ed6799850873e753ae1088a02758ce8ea1e7d83833c3442cee98"
+    },
+    {
+      "path": "content/courses/basi-di-dati/solutions/sailors-04.sql",
+      "sha256": "843bc37d9252bd155691f2bfb41e2f8ac7b875752c3f3e1dd7fe71631bacf9d3"
+    },
+    {
+      "path": "content/courses/basi-di-dati/solutions/sailors-05.sql",
+      "sha256": "2d800e27a65e457b0c56b9c22108e2f1db1a50adac0f2af0082415fdd971c5ba"
+    },
+    {
+      "path": "content/courses/basi-di-dati/fixtures/sailors-edges.sql",
+      "sha256": "6e31d8979fe09aabe41116068c4894c3f67bc073d52abaab2ccdd92e914ea8b6"
+    },
+    {
+      "path": "content/courses/basi-di-dati/fixtures/sailors-empty.sql",
+      "sha256": "3cbade9a29db312061e8985e5fe304d2211891c68c5ab45ee166af69bca31ccd"
+    },
+    {
+      "path": "content/courses/basi-di-dati/fixtures/sailors-reversed.sql",
+      "sha256": "8264419f47f0fed52f19111d88d9ff1cc679854767450f09f2f996c8f87db6e6"
+    },
+    {
+      "path": "content/courses/basi-di-dati/fixtures/sailors-variation.sql",
+      "sha256": "38ff550adff887ba1bfd9b19954c187e56f18cac6a9150a94c829955969d0267"
+    }
+  ]
+}

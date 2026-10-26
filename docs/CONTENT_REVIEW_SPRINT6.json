@@ -1,0 +1,453 @@
+{
+  "status": "needs-review",
+  "method": "Revisione tecnica della piattaforma, non approvazione umana. Riferimenti alle fonti e rapporti dei precedenti sprint confrontati con testi ed esempi. Ambiguità note restano dichiarate.",
+  "lessons": [
+    {
+      "lessonId": "dbms-dati",
+      "lessonVersion": 1,
+      "quizVersion": 1,
+      "questionsReviewed": 3,
+      "checks": [
+        "concetti",
+        "fonte e pagine dichiarate",
+        "esempi",
+        "provenienza",
+        "risposte e distrattori"
+      ],
+      "findings": [
+        "Nessuna correzione concettuale individuata nella revisione tecnica; mantenuta versione e revisione umana richiesta."
+      ],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "astrazione-indipendenza",
+      "lessonVersion": 1,
+      "quizVersion": 1,
+      "questionsReviewed": 3,
+      "checks": [
+        "concetti",
+        "fonte e pagine dichiarate",
+        "esempi",
+        "provenienza",
+        "risposte e distrattori"
+      ],
+      "findings": [
+        "Nessuna correzione concettuale individuata nella revisione tecnica; mantenuta versione e revisione umana richiesta."
+      ],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "transazioni-analisi",
+      "lessonVersion": 1,
+      "quizVersion": 1,
+      "questionsReviewed": 3,
+      "checks": [
+        "concetti",
+        "fonte e pagine dichiarate",
+        "esempi",
+        "provenienza",
+        "risposte e distrattori"
+      ],
+      "findings": [
+        "Nessuna correzione concettuale individuata nella revisione tecnica; mantenuta versione e revisione umana richiesta."
+      ],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "utenti-scelte",
+      "lessonVersion": 1,
+      "quizVersion": 1,
+      "questionsReviewed": 3,
+      "checks": [
+        "concetti",
+        "fonte e pagine dichiarate",
+        "esempi",
+        "provenienza",
+        "risposte e distrattori"
+      ],
+      "findings": [
+        "Nessuna correzione concettuale individuata nella revisione tecnica; mantenuta versione e revisione umana richiesta."
+      ],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "relazioni-domini",
+      "lessonVersion": 2,
+      "quizVersion": 1,
+      "questionsReviewed": 3,
+      "checks": [
+        "concetti",
+        "fonte e pagine dichiarate",
+        "esempi",
+        "provenienza",
+        "risposte e distrattori"
+      ],
+      "findings": [
+        "Rimosso confine storico dello sprint che descriveva funzionalità ormai presenti; DDL resta solo illustrativo."
+      ],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "schema-istanza",
+      "lessonVersion": 1,
+      "quizVersion": 1,
+      "questionsReviewed": 3,
+      "checks": [
+        "concetti",
+        "fonte e pagine dichiarate",
+        "esempi",
+        "provenienza",
+        "risposte e distrattori"
+      ],
+      "findings": [
+        "Nessuna correzione concettuale individuata nella revisione tecnica; mantenuta versione e revisione umana richiesta."
+      ],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "chiavi-vincoli",
+      "lessonVersion": 1,
+      "quizVersion": 1,
+      "questionsReviewed": 3,
+      "checks": [
+        "concetti",
+        "fonte e pagine dichiarate",
+        "esempi",
+        "provenienza",
+        "risposte e distrattori"
+      ],
+      "findings": [
+        "Nessuna correzione concettuale individuata nella revisione tecnica; mantenuta versione e revisione umana richiesta."
+      ],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "integrita-riferimenti",
+      "lessonVersion": 2,
+      "quizVersion": 1,
+      "questionsReviewed": 3,
+      "checks": [
+        "concetti",
+        "fonte e pagine dichiarate",
+        "esempi",
+        "provenienza",
+        "risposte e distrattori"
+      ],
+      "findings": [
+        "Rimosso confine storico dello sprint che descriveva funzionalità ormai presenti; DDL resta solo illustrativo."
+      ],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "aggiornamenti-integrita",
+      "lessonVersion": 2,
+      "quizVersion": 1,
+      "questionsReviewed": 3,
+      "checks": [
+        "concetti",
+        "fonte e pagine dichiarate",
+        "esempi",
+        "provenienza",
+        "risposte e distrattori"
+      ],
+      "findings": [
+        "Rimosso confine storico dello sprint che descriveva funzionalità ormai presenti; DDL resta solo illustrativo."
+      ],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "ar-selezione",
+      "lessonVersion": 2,
+      "quizVersion": 2,
+      "questionsReviewed": 3,
+      "checks": [
+        "concetti",
+        "fonte e pagine dichiarate",
+        "esempi",
+        "provenienza",
+        "risposte e distrattori"
+      ],
+      "findings": [
+        "Riepilogo specifico al tema; tre spiegazioni quiz argomentate, con controesempi e distinzione dei distrattori; ordine opzioni variato."
+      ],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "ar-proiezione",
+      "lessonVersion": 2,
+      "quizVersion": 2,
+      "questionsReviewed": 3,
+      "checks": [
+        "concetti",
+        "fonte e pagine dichiarate",
+        "esempi",
+        "provenienza",
+        "risposte e distrattori"
+      ],
+      "findings": [
+        "Riepilogo specifico al tema; tre spiegazioni quiz argomentate, con controesempi e distinzione dei distrattori; ordine opzioni variato.",
+        "Aggiunti ai metadati i richiami puntuali già utilizzati nel testo, separati dalle pagine principali."
+      ],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "ar-insiemi",
+      "lessonVersion": 2,
+      "quizVersion": 2,
+      "questionsReviewed": 3,
+      "checks": [
+        "concetti",
+        "fonte e pagine dichiarate",
+        "esempi",
+        "provenienza",
+        "risposte e distrattori"
+      ],
+      "findings": [
+        "Riepilogo specifico al tema; tre spiegazioni quiz argomentate, con controesempi e distinzione dei distrattori; ordine opzioni variato."
+      ],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "ar-prodotto",
+      "lessonVersion": 2,
+      "quizVersion": 2,
+      "questionsReviewed": 3,
+      "checks": [
+        "concetti",
+        "fonte e pagine dichiarate",
+        "esempi",
+        "provenienza",
+        "risposte e distrattori"
+      ],
+      "findings": [
+        "Riepilogo specifico al tema; tre spiegazioni quiz argomentate, con controesempi e distinzione dei distrattori; ordine opzioni variato."
+      ],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "ar-ridenominazione",
+      "lessonVersion": 2,
+      "quizVersion": 2,
+      "questionsReviewed": 3,
+      "checks": [
+        "concetti",
+        "fonte e pagine dichiarate",
+        "esempi",
+        "provenienza",
+        "risposte e distrattori"
+      ],
+      "findings": [
+        "Riepilogo specifico al tema; tre spiegazioni quiz argomentate, con controesempi e distinzione dei distrattori; ordine opzioni variato."
+      ],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "ar-join",
+      "lessonVersion": 2,
+      "quizVersion": 2,
+      "questionsReviewed": 3,
+      "checks": [
+        "concetti",
+        "fonte e pagine dichiarate",
+        "esempi",
+        "provenienza",
+        "risposte e distrattori"
+      ],
+      "findings": [
+        "Riepilogo specifico al tema; tre spiegazioni quiz argomentate, con controesempi e distinzione dei distrattori; ordine opzioni variato."
+      ],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "ar-divisione",
+      "lessonVersion": 2,
+      "quizVersion": 2,
+      "questionsReviewed": 3,
+      "checks": [
+        "concetti",
+        "fonte e pagine dichiarate",
+        "esempi",
+        "provenienza",
+        "risposte e distrattori"
+      ],
+      "findings": [
+        "Riepilogo specifico al tema; tre spiegazioni quiz argomentate, con controesempi e distinzione dei distrattori; ordine opzioni variato."
+      ],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "ar-estensioni",
+      "lessonVersion": 2,
+      "quizVersion": 2,
+      "questionsReviewed": 3,
+      "checks": [
+        "concetti",
+        "fonte e pagine dichiarate",
+        "esempi",
+        "provenienza",
+        "risposte e distrattori"
+      ],
+      "findings": [
+        "Riepilogo specifico al tema; tre spiegazioni quiz argomentate, con controesempi e distinzione dei distrattori; ordine opzioni variato."
+      ],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "ar-alberi",
+      "lessonVersion": 2,
+      "quizVersion": 2,
+      "questionsReviewed": 3,
+      "checks": [
+        "concetti",
+        "fonte e pagine dichiarate",
+        "esempi",
+        "provenienza",
+        "risposte e distrattori"
+      ],
+      "findings": [
+        "Riepilogo specifico al tema; tre spiegazioni quiz argomentate, con controesempi e distinzione dei distrattori; ordine opzioni variato."
+      ],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "er-requisiti",
+      "lessonVersion": 2,
+      "quizVersion": 2,
+      "questionsReviewed": 3,
+      "checks": [
+        "concetti",
+        "fonte e pagine dichiarate",
+        "esempi",
+        "provenienza",
+        "risposte e distrattori"
+      ],
+      "findings": [
+        "Riepilogo specifico al tema; tre spiegazioni quiz argomentate, con controesempi e distinzione dei distrattori; ordine opzioni variato.",
+        "Aggiunti ai metadati i richiami puntuali già utilizzati nel testo, separati dalle pagine principali."
+      ],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "er-entita",
+      "lessonVersion": 2,
+      "quizVersion": 2,
+      "questionsReviewed": 3,
+      "checks": [
+        "concetti",
+        "fonte e pagine dichiarate",
+        "esempi",
+        "provenienza",
+        "risposte e distrattori"
+      ],
+      "findings": [
+        "Riepilogo specifico al tema; tre spiegazioni quiz argomentate, con controesempi e distinzione dei distrattori; ordine opzioni variato."
+      ],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "er-associazioni",
+      "lessonVersion": 2,
+      "quizVersion": 2,
+      "questionsReviewed": 3,
+      "checks": [
+        "concetti",
+        "fonte e pagine dichiarate",
+        "esempi",
+        "provenienza",
+        "risposte e distrattori"
+      ],
+      "findings": [
+        "Riepilogo specifico al tema; tre spiegazioni quiz argomentate, con controesempi e distinzione dei distrattori; ordine opzioni variato.",
+        "Aggiunti ai metadati i richiami puntuali già utilizzati nel testo, separati dalle pagine principali."
+      ],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "er-vincoli",
+      "lessonVersion": 2,
+      "quizVersion": 2,
+      "questionsReviewed": 3,
+      "checks": [
+        "concetti",
+        "fonte e pagine dichiarate",
+        "esempi",
+        "provenienza",
+        "risposte e distrattori"
+      ],
+      "findings": [
+        "Riepilogo specifico al tema; tre spiegazioni quiz argomentate, con controesempi e distinzione dei distrattori; ordine opzioni variato."
+      ],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "er-deboli",
+      "lessonVersion": 2,
+      "quizVersion": 2,
+      "questionsReviewed": 3,
+      "checks": [
+        "concetti",
+        "fonte e pagine dichiarate",
+        "esempi",
+        "provenienza",
+        "risposte e distrattori"
+      ],
+      "findings": [
+        "Riepilogo specifico al tema; tre spiegazioni quiz argomentate, con controesempi e distinzione dei distrattori; ordine opzioni variato.",
+        "Aggiunti ai metadati i richiami puntuali già utilizzati nel testo, separati dalle pagine principali."
+      ],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "er-gerarchie",
+      "lessonVersion": 2,
+      "quizVersion": 2,
+      "questionsReviewed": 3,
+      "checks": [
+        "concetti",
+        "fonte e pagine dichiarate",
+        "esempi",
+        "provenienza",
+        "risposte e distrattori"
+      ],
+      "findings": [
+        "Riepilogo specifico al tema; tre spiegazioni quiz argomentate, con controesempi e distinzione dei distrattori; ordine opzioni variato."
+      ],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "er-aggregazione",
+      "lessonVersion": 2,
+      "quizVersion": 2,
+      "questionsReviewed": 3,
+      "checks": [
+        "concetti",
+        "fonte e pagine dichiarate",
+        "esempi",
+        "provenienza",
+        "risposte e distrattori"
+      ],
+      "findings": [
+        "Riepilogo specifico al tema; tre spiegazioni quiz argomentate, con controesempi e distinzione dei distrattori; ordine opzioni variato."
+      ],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "er-scelte",
+      "lessonVersion": 2,
+      "quizVersion": 2,
+      "questionsReviewed": 3,
+      "checks": [
+        "concetti",
+        "fonte e pagine dichiarate",
+        "esempi",
+        "provenienza",
+        "risposte e distrattori"
+      ],
+      "findings": [
+        "Riepilogo specifico al tema; tre spiegazioni quiz argomentate, con controesempi e distinzione dei distrattori; ordine opzioni variato.",
+        "Aggiunti ai metadati i richiami puntuali già utilizzati nel testo, separati dalle pagine principali."
+      ],
+      "status": "needs-review"
+    }
+  ]
+}

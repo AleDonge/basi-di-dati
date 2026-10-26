@@ -1,0 +1,218 @@
+{
+  "id": "er-company",
+  "title": "COMPANY: dai requisiti al sottoschema",
+  "version": 1,
+  "status": "needs-review",
+  "origin": "platform-activity",
+  "prompt": "Attività Database Academy: a partire dai requisiti COMPANY delle pp. 7–8, individua dipendenti, dipartimenti e progetti; modella il lavoro presso un dipartimento e il controllo dei progetti. Registra nelle note ciò che manca per completare COMPANY.",
+  "difficulty": "intermedio",
+  "sourceRefs": [
+    {
+      "sourceId": "er-source",
+      "file": "Argomento05 Entity Relationship.pdf",
+      "pageStart": 7,
+      "pageEnd": 8
+    }
+  ],
+  "hints": [
+    "Parti dai nomi del testo, ma chiediti quali abbiano identità propria.",
+    "I minimi non dichiarati, sedi, supervisori e ore non si possono inventare."
+  ],
+  "initial": {
+    "schemaVersion": 1,
+    "metadata": {
+      "id": "example-company",
+      "title": "COMPANY: sottoschema ragionato",
+      "revision": 0,
+      "createdAt": "2026-10-25T00:00:00Z",
+      "modifiedAt": "2026-10-25T00:00:00Z",
+      "notation": "unitn-er-v1",
+      "status": "needs-review"
+    },
+    "semantic": {
+      "entities": [
+        {
+          "id": "emp",
+          "name": "EMPLOYEES",
+          "weak": false
+        },
+        {
+          "id": "dept",
+          "name": "DEPARTMENTS",
+          "weak": false
+        },
+        {
+          "id": "project",
+          "name": "PROJECT",
+          "weak": false
+        }
+      ],
+      "attributes": [
+        {
+          "id": "a-emp",
+          "name": "ssn",
+          "ownerId": "emp",
+          "domain": "testo"
+        },
+        {
+          "id": "a-dept",
+          "name": "did",
+          "ownerId": "dept",
+          "domain": "testo"
+        },
+        {
+          "id": "since",
+          "name": "since",
+          "ownerId": "works",
+          "domain": "data"
+        },
+        {
+          "id": "a-project",
+          "name": "Codice",
+          "ownerId": "project",
+          "domain": "testo"
+        }
+      ],
+      "identifiers": [
+        {
+          "id": "k-emp",
+          "entityId": "emp",
+          "attributeIds": [
+            "a-emp"
+          ],
+          "kind": "primary"
+        },
+        {
+          "id": "k-dept",
+          "entityId": "dept",
+          "attributeIds": [
+            "a-dept"
+          ],
+          "kind": "primary"
+        },
+        {
+          "id": "k-project",
+          "entityId": "project",
+          "attributeIds": [
+            "a-project"
+          ],
+          "kind": "primary"
+        }
+      ],
+      "relationships": [
+        {
+          "id": "works",
+          "name": "WORKS_IN",
+          "identifying": false
+        },
+        {
+          "id": "controls",
+          "name": "CONTROLLA",
+          "identifying": false
+        }
+      ],
+      "participations": [
+        {
+          "id": "p-works-0",
+          "entityId": "emp",
+          "relationshipId": "works",
+          "role": "",
+          "min": 1,
+          "max": 1
+        },
+        {
+          "id": "p-works-1",
+          "entityId": "dept",
+          "relationshipId": "works",
+          "role": "",
+          "min": 1,
+          "max": "N"
+        },
+        {
+          "id": "p-controls-0",
+          "entityId": "dept",
+          "relationshipId": "controls",
+          "role": "",
+          "min": 0,
+          "max": "N"
+        },
+        {
+          "id": "p-controls-1",
+          "entityId": "project",
+          "relationshipId": "controls",
+          "role": "",
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "generalizations": [],
+      "notes": "Sottoschema didattico, non soluzione completa COMPANY. Il collegamento dipartimento/progetto interpreta il requisito a p. 7, mentre minimi ulteriori, sedi, supervisione e ore richiedono raffinamento. Minimo 1 di DEPARTMENTS in WORKS_IN proviene dalla figura p. 27, non si deduce dal solo requisito p. 8."
+    },
+    "layout": {
+      "positions": {
+        "emp": {
+          "x": 170,
+          "y": 200
+        },
+        "a-emp": {
+          "x": 170,
+          "y": 100
+        },
+        "dept": {
+          "x": 800,
+          "y": 200
+        },
+        "a-dept": {
+          "x": 800,
+          "y": 100
+        },
+        "works": {
+          "x": 480,
+          "y": 200
+        },
+        "since": {
+          "x": 480,
+          "y": 80
+        },
+        "project": {
+          "x": 800,
+          "y": 490
+        },
+        "a-project": {
+          "x": 800,
+          "y": 390
+        },
+        "controls": {
+          "x": 480,
+          "y": 490
+        }
+      },
+      "viewport": {
+        "x": 0,
+        "y": 0,
+        "zoom": 1
+      }
+    }
+  },
+  "solutionPath": "er/solutions/er-company.md",
+  "referenceDiagramPath": "er/diagrams/company.json",
+  "checks": [
+    {
+      "kind": "entity",
+      "entity": "EMPLOYEES",
+      "name": ""
+    },
+    {
+      "kind": "participation",
+      "entity": "EMPLOYEES",
+      "name": "WORKS_IN",
+      "min": 1,
+      "max": 1
+    }
+  ],
+  "limitations": [
+    "Validazione strutturale e osservazioni parziali sui nomi: nessuna equivalenza semantica generale.",
+    "Diagrammi e commenti eseguibili sono adattamenti Database Academy needs-review; il PDF contiene le figure del docente.",
+    "Tutti i vincoli non esplicitati vanno discussi e annotati, non inventati."
+  ]
+}

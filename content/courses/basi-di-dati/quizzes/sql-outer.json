@@ -1,0 +1,115 @@
+{
+  "lessonId": "sql-outer",
+  "version": 1,
+  "status": "needs-review",
+  "questions": [
+    {
+      "id": "sql-outer-q1",
+      "version": 1,
+      "type": "single",
+      "prompt": "Con LEFT JOIN, per contare zero prenotazioni di un marinaio senza match usa…",
+      "concepts": [
+        "LEFT JOIN",
+        "RIGHT JOIN",
+        "FULL JOIN",
+        "anti join",
+        "NULL"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 63,
+          "pageEnd": 71,
+          "section": "Outer join, anti join e conteggi a zero"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "COUNT(*)"
+        },
+        {
+          "id": "opzione-2",
+          "text": "COUNT(r.sid), con r.sid non NULL nei match reali."
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-2"
+      ],
+      "explanation": "COUNT(*) include la riga completata con NULL. COUNT della chiave destra la ignora e restituisce zero."
+    },
+    {
+      "id": "sql-outer-q2",
+      "version": 1,
+      "type": "single",
+      "prompt": "WHERE r.bid=101 dopo LEFT JOIN conserva sempre tutti i marinai?",
+      "concepts": [
+        "LEFT JOIN",
+        "RIGHT JOIN",
+        "FULL JOIN",
+        "anti join",
+        "NULL"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 63,
+          "pageEnd": 71,
+          "section": "Outer join, anti join e conteggi a zero"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "Sì, LEFT impedisce qualunque eliminazione."
+        },
+        {
+          "id": "opzione-2",
+          "text": "No, può escludere le righe senza match; il filtro delle corrispondenze va in ON."
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-2"
+      ],
+      "explanation": "WHERE viene dopo il completamento. NULL=101 non è vero, quindi le righe senza corrispondenza vengono eliminate."
+    },
+    {
+      "id": "sql-outer-q3",
+      "version": 1,
+      "type": "single",
+      "prompt": "FULL JOIN significa…",
+      "concepts": [
+        "LEFT JOIN",
+        "RIGHT JOIN",
+        "FULL JOIN",
+        "anti join",
+        "NULL"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 63,
+          "pageEnd": 71,
+          "section": "Outer join, anti join e conteggi a zero"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "Tutte le combinazioni cartesiane."
+        },
+        {
+          "id": "opzione-2",
+          "text": "Match più righe non abbinate di entrambi i lati."
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-2"
+      ],
+      "explanation": "Il prodotto costruisce ogni coppia; FULL mantiene il predicato di join e completa soltanto le righe non abbinate."
+    }
+  ]
+}

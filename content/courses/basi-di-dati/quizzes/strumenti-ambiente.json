@@ -1,0 +1,115 @@
+{
+  "lessonId": "strumenti-ambiente",
+  "version": 1,
+  "status": "needs-review",
+  "questions": [
+    {
+      "id": "strumenti-ambiente-q1",
+      "version": 1,
+      "type": "single",
+      "prompt": "DBeaver senza un server MySQL installato o raggiungibile…",
+      "concepts": [
+        "client",
+        "server",
+        "MySQL",
+        "MariaDB",
+        "DBeaver"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "tools-source",
+          "file": "Introduzione MySQL e Dbeaver.pdf",
+          "pageStart": 1,
+          "pageEnd": 50,
+          "section": "Server, client e installazioni locali"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "Crea automaticamente il server MySQL."
+        },
+        {
+          "id": "opzione-2",
+          "text": "È un client: non sostituisce il server."
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-2"
+      ],
+      "explanation": "L’interfaccia comunica con un motore attraverso un driver. Aprire il client non avvia necessariamente il servizio del database."
+    },
+    {
+      "id": "strumenti-ambiente-q2",
+      "version": 1,
+      "type": "single",
+      "prompt": "Per usare Database Academy serve installare MySQL e DBeaver?",
+      "concepts": [
+        "client",
+        "server",
+        "MySQL",
+        "MariaDB",
+        "DBeaver"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "tools-source",
+          "file": "Introduzione MySQL e Dbeaver.pdf",
+          "pageStart": 1,
+          "pageEnd": 50,
+          "section": "Server, client e installazioni locali"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "No: il lab usa SQLite locale nel browser."
+        },
+        {
+          "id": "opzione-2",
+          "text": "Sì, sempre entrambi."
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-1"
+      ],
+      "explanation": "La piattaforma prepara i dataset e il motore WASM localmente. Le procedure esterne sono contenuto didattico separato."
+    },
+    {
+      "id": "strumenti-ambiente-q3",
+      "version": 1,
+      "type": "single",
+      "prompt": "La versione in uno screenshot della dispensa è…",
+      "concepts": [
+        "client",
+        "server",
+        "MySQL",
+        "MariaDB",
+        "DBeaver"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "tools-source",
+          "file": "Introduzione MySQL e Dbeaver.pdf",
+          "pageStart": 1,
+          "pageEnd": 50,
+          "section": "Server, client e installazioni locali"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "La versione illustrata, non prova dell’ultima disponibile."
+        },
+        {
+          "id": "opzione-2",
+          "text": "Una garanzia di aggiornamento automatico."
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-1"
+      ],
+      "explanation": "Le schermate appartengono alla fonte. La lezione non ha rieseguito l’installazione né certifica versioni correnti."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "ar-impiegati-09",
+  "title": "Scheda · Q9",
+  "version": 1,
+  "status": "needs-review",
+  "originalPrompt": "Trovare nomi dei dipartimenti in cui lavorano impiegati che guadagnano più di 60K.",
+  "sourceRefs": [
+    {
+      "sourceId": "algebra-scan-source",
+      "file": "esercitazione_AR.pdf",
+      "pageStart": 1,
+      "pageEnd": 1
+    }
+  ],
+  "datasetId": "impiegati-demo",
+  "difficulty": "intermedio",
+  "gradingMode": "guided",
+  "fixtureIds": [],
+  "solutionPath": "algebra/solutions/ar-impiegati-09.txt",
+  "hints": [
+    "Chiarisci la scala di Stipendio: 50 milioni e 60K non sono immediatamente coerenti.",
+    "Dopo la selezione degli impiegati, collega il dipartimento e proietta il nome."
+  ],
+  "interpretation": "Schema della scansione, righe esclusivamente sintetiche Database Academy. Convenzioni didattiche: Stipendio in milioni e Bilancio in migliaia (100K -> 100); queste unità non sono dichiarate nella scansione. Q8 interpreta «e» come unione dei due ruoli; Q14 conta progetti distinti. Prima della verifica accetta questo contratto, che resta needs-review.",
+  "limitations": [
+    "Verifica su istanze finite: nessuna prova di equivalenza generale.",
+    "Nomi, ordine delle colonne e domini devono coincidere; ordine delle tuple ignorato.",
+    "Algebra classica senza NULL, aggregazioni o outer join nel parser.",
+    "Modalità guidata: nessun verdetto automatico e nessun completamento per correttezza."
+  ],
+  "solutionOrigin": "Database Academy: traduzione e spiegazione needs-review; non soluzione ufficiale del docente.",
+  "expectedColumns": []
+}

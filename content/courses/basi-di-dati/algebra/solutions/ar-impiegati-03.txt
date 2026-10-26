@@ -1,0 +1,1 @@
+π_{E.Cognome,D.Nome}((ρ_{E}(Impiegato) ⋈_{E.Dipartimento=D.Codice} ρ_{D}(Dipartimento)))

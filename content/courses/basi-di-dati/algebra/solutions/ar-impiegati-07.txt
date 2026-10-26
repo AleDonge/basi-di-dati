@@ -1,0 +1,1 @@
+π_{E.Cognome}(σ_{E.Stipendio>B.Stipendio}((ρ_{E}(Impiegato) ⋈_{E.Dipartimento=D.Codice} ρ_{D}(Dipartimento)) ⋈_{D.Direttore=B.Matricola} ρ_{B}(Impiegato)))

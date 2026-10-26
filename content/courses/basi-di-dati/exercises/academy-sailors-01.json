@@ -1,0 +1,55 @@
+{
+  "id": "academy-sailors-01",
+  "title": "Marinai con rating elevato",
+  "version": 1,
+  "status": "needs-review",
+  "origin": "platform-activity",
+  "originalPrompt": "Restituisci sid e sname dei marinai con rating almeno 8, una riga per persona.",
+  "datasetId": "sailors",
+  "topics": [
+    "SELECT",
+    "WHERE"
+  ],
+  "difficulty": "base",
+  "lessonIds": [
+    "sql-select"
+  ],
+  "orderMatters": false,
+  "gradingMode": "automatic",
+  "fixtureIds": [
+    "sailors",
+    "academy-sailors-edges",
+    "academy-sailors-reversed",
+    "academy-sailors-empty"
+  ],
+  "solutionPath": "solutions/academy-sailors-01.sql",
+  "hints": [
+    "Individua la popolazione richiesta e le colonne: sid, sname.",
+    "Almeno 8 include 8; il nome non identifica una persona."
+  ],
+  "outputContract": [
+    "sid",
+    "sname"
+  ],
+  "interpretation": "Esercizio e soluzione originali Database Academy, needs-review. Nessun ordine richiesto. ",
+  "limitations": [
+    "Confronto su quattro fixture finite: coerenza osservata, non equivalenza generale.",
+    "Numero e posizione delle colonne obbligatori; alias liberi. NULL distinto da zero e testo; tolleranza relativa 1e-9 per numeri non interi.",
+    "LIMIT/OFFSET esclusi dalla verifica. SQLite non certifica le regole MySQL GROUP BY o le collazioni.",
+    "Ordine delle righe ignorato; duplicati confrontati con la loro molteplicità."
+  ],
+  "sourceRefs": [
+    {
+      "sourceId": "sql-source",
+      "file": "Argomento04 SQL.pdf",
+      "pageStart": 14,
+      "pageEnd": 19,
+      "section": "Costrutti del corso; enunciato originale Database Academy"
+    },
+    {
+      "sourceId": "sailors-source",
+      "file": "Schema per generare DB Sailors.txt",
+      "section": "Schema e dati ufficiali, invariati"
+    }
+  ]
+}

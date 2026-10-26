@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "metadata": {
+    "id": "example-weak",
+    "title": "Familiari e identificazione",
+    "revision": 0,
+    "createdAt": "2026-10-25T00:00:00Z",
+    "modifiedAt": "2026-10-25T00:00:00Z",
+    "notation": "unitn-er-v1",
+    "status": "needs-review"
+  },
+  "semantic": {
+    "entities": [
+      {
+        "id": "emp",
+        "name": "EMPLOYEES",
+        "weak": false
+      },
+      {
+        "id": "dependent",
+        "name": "DEPENDENTS",
+        "weak": true
+      }
+    ],
+    "attributes": [
+      {
+        "id": "a-emp",
+        "name": "ssn",
+        "ownerId": "emp",
+        "domain": "testo"
+      },
+      {
+        "id": "a-dependent",
+        "name": "pname",
+        "ownerId": "dependent",
+        "domain": "testo"
+      },
+      {
+        "id": "cost",
+        "name": "cost",
+        "ownerId": "policy",
+        "domain": "numero"
+      }
+    ],
+    "identifiers": [
+      {
+        "id": "k-emp",
+        "entityId": "emp",
+        "attributeIds": [
+          "a-emp"
+        ],
+        "kind": "primary"
+      },
+      {
+        "id": "k-dependent",
+        "entityId": "dependent",
+        "attributeIds": [
+          "a-dependent"
+        ],
+        "kind": "partial"
+      }
+    ],
+    "relationships": [
+      {
+        "id": "policy",
+        "name": "POLICY",
+        "identifying": true
+      }
+    ],
+    "participations": [
+      {
+        "id": "p-policy-0",
+        "entityId": "emp",
+        "relationshipId": "policy",
+        "role": "",
+        "min": 0,
+        "max": "N"
+      },
+      {
+        "id": "p-policy-1",
+        "entityId": "dependent",
+        "relationshipId": "policy",
+        "role": "",
+        "min": 1,
+        "max": 1
+      }
+    ],
+    "generalizations": [],
+    "notes": "Rielaborazione della figura p. 32: debole/identificante in grassetto e chiave parziale tratteggiata. Il minimo sul proprietario non viene assunto totale."
+  },
+  "layout": {
+    "positions": {
+      "emp": {
+        "x": 170,
+        "y": 230
+      },
+      "a-emp": {
+        "x": 170,
+        "y": 130
+      },
+      "dependent": {
+        "x": 800,
+        "y": 230
+      },
+      "a-dependent": {
+        "x": 800,
+        "y": 130
+      },
+      "policy": {
+        "x": 480,
+        "y": 230
+      },
+      "cost": {
+        "x": 480,
+        "y": 80
+      }
+    },
+    "viewport": {
+      "x": 0,
+      "y": 0,
+      "zoom": 1
+    }
+  }
+}

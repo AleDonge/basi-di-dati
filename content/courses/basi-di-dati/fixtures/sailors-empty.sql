@@ -1,0 +1,1 @@
+-- Tutte le relazioni vuote: fixture sintetica, schema invariato.

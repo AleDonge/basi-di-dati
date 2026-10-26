@@ -1,0 +1,123 @@
+{
+  "lessonId": "relazioni-domini",
+  "version": 1,
+  "status": "needs-review",
+  "questions": [
+    {
+      "id": "relazioni-domini-q1",
+      "version": 1,
+      "type": "single",
+      "prompt": "Con D1={0,1} e D2={a,b,c}, quante coppie contiene D1 × D2?",
+      "concepts": [
+        "domini",
+        "prodotto-cartesiano",
+        "relazione"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "relational-source",
+          "file": "Argomento02 Modello Relazionale.pdf",
+          "pageStart": 7,
+          "pageEnd": 7,
+          "section": "Domini, tuple e relazioni"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "3"
+        },
+        {
+          "id": "opzione-2",
+          "text": "6"
+        },
+        {
+          "id": "opzione-3",
+          "text": "9"
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-2"
+      ],
+      "explanation": "Per ciascuno dei due valori del primo dominio ci sono tre scelte nel secondo: 2 per 3 = 6."
+    },
+    {
+      "id": "relazioni-domini-q2",
+      "version": 1,
+      "type": "true-false",
+      "prompt": "Una relazione sui domini dati deve sempre contenere tutto il loro prodotto cartesiano.",
+      "concepts": [
+        "domini",
+        "prodotto-cartesiano",
+        "relazione"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "relational-source",
+          "file": "Argomento02 Modello Relazionale.pdf",
+          "pageStart": 5,
+          "pageEnd": 5,
+          "section": "Domini, tuple e relazioni"
+        }
+      ],
+      "options": [
+        {
+          "id": "vero",
+          "text": "Vero"
+        },
+        {
+          "id": "falso",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionIds": [
+        "falso"
+      ],
+      "explanation": "La relazione è un sottoinsieme; lo stato di esempio contiene soltanto tre delle sei coppie."
+    },
+    {
+      "id": "relazioni-domini-q3",
+      "version": 1,
+      "type": "multiple",
+      "prompt": "Con D1={0,1} e D2={a,b,c}, quali coppie appartengono al prodotto?",
+      "concepts": [
+        "domini",
+        "prodotto-cartesiano",
+        "relazione"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "relational-source",
+          "file": "Argomento02 Modello Relazionale.pdf",
+          "pageStart": 7,
+          "pageEnd": 7,
+          "section": "Domini, tuple e relazioni"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "(0,a)"
+        },
+        {
+          "id": "opzione-2",
+          "text": "(1,c)"
+        },
+        {
+          "id": "opzione-3",
+          "text": "(2,a)"
+        },
+        {
+          "id": "opzione-4",
+          "text": "(0,c)"
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-1",
+        "opzione-2",
+        "opzione-4"
+      ],
+      "explanation": "Il primo valore deve essere 0 o 1 e il secondo a, b o c; (2,a) viola il primo dominio."
+    }
+  ]
+}

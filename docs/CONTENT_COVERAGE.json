@@ -1,0 +1,1502 @@
+{
+  "manifestVersion": 6,
+  "status": "needs-review",
+  "lessons": [
+    {
+      "lessonId": "dbms-dati",
+      "title": "Dati, DBMS e sistemi di basi di dati",
+      "topics": [
+        "database",
+        "dbms",
+        "linguaggi"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "intro-source",
+          "file": "Argomento01 Basi di Dati e loro utenti.pdf",
+          "pageStart": 1,
+          "pageEnd": 7,
+          "section": "Dati, DBMS e sistemi di basi di dati"
+        }
+      ],
+      "version": 1,
+      "quizPath": "quizzes/dbms-dati.json",
+      "questionIds": [
+        "dbms-dati-q1",
+        "dbms-dati-q2",
+        "dbms-dati-q3"
+      ],
+      "exercises": [],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "astrazione-indipendenza",
+      "title": "Astrazione e indipendenza dei dati",
+      "topics": [
+        "astrazione",
+        "schema",
+        "indipendenza"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "intro-source",
+          "file": "Argomento01 Basi di Dati e loro utenti.pdf",
+          "pageStart": 8,
+          "pageEnd": 13,
+          "section": "Astrazione e indipendenza dei dati"
+        }
+      ],
+      "version": 1,
+      "quizPath": "quizzes/astrazione-indipendenza.json",
+      "questionIds": [
+        "astrazione-indipendenza-q1",
+        "astrazione-indipendenza-q2",
+        "astrazione-indipendenza-q3"
+      ],
+      "exercises": [],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "transazioni-analisi",
+      "title": "Concorrenza, recupero, OLTP e OLAP",
+      "topics": [
+        "transazioni",
+        "recovery",
+        "oltp",
+        "olap"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "intro-source",
+          "file": "Argomento01 Basi di Dati e loro utenti.pdf",
+          "pageStart": 14,
+          "pageEnd": 18,
+          "section": "Concorrenza, recupero, OLTP e OLAP"
+        },
+        {
+          "sourceId": "intro-source",
+          "file": "Argomento01 Basi di Dati e loro utenti.pdf",
+          "pageStart": 6,
+          "pageEnd": 7,
+          "section": "Query e transazioni"
+        }
+      ],
+      "version": 1,
+      "quizPath": "quizzes/transazioni-analisi.json",
+      "questionIds": [
+        "transazioni-analisi-q1",
+        "transazioni-analisi-q2",
+        "transazioni-analisi-q3"
+      ],
+      "exercises": [],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "utenti-scelte",
+      "title": "Utenti, responsabilità e scelta di un DBMS",
+      "topics": [
+        "utenti",
+        "dba",
+        "requisiti"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "intro-source",
+          "file": "Argomento01 Basi di Dati e loro utenti.pdf",
+          "pageStart": 19,
+          "pageEnd": 23,
+          "section": "Utenti, responsabilità e scelta di un DBMS"
+        }
+      ],
+      "version": 1,
+      "quizPath": "quizzes/utenti-scelte.json",
+      "questionIds": [
+        "utenti-scelte-q1",
+        "utenti-scelte-q2",
+        "utenti-scelte-q3"
+      ],
+      "exercises": [],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "relazioni-domini",
+      "title": "Domini, tuple e relazioni",
+      "topics": [
+        "domini",
+        "prodotto-cartesiano",
+        "relazione"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "relational-source",
+          "file": "Argomento02 Modello Relazionale.pdf",
+          "pageStart": 1,
+          "pageEnd": 7,
+          "section": "Domini, tuple e relazioni"
+        }
+      ],
+      "version": 2,
+      "quizPath": "quizzes/relazioni-domini.json",
+      "questionIds": [
+        "relazioni-domini-q1",
+        "relazioni-domini-q2",
+        "relazioni-domini-q3"
+      ],
+      "exercises": [],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "schema-istanza",
+      "title": "Schema, istanza, grado e cardinalità",
+      "topics": [
+        "schema",
+        "istanza",
+        "grado",
+        "cardinalita"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "relational-source",
+          "file": "Argomento02 Modello Relazionale.pdf",
+          "pageStart": 8,
+          "pageEnd": 13,
+          "section": "Schema, istanza, grado e cardinalità"
+        }
+      ],
+      "version": 1,
+      "quizPath": "quizzes/schema-istanza.json",
+      "questionIds": [
+        "schema-istanza-q1",
+        "schema-istanza-q2",
+        "schema-istanza-q3"
+      ],
+      "exercises": [],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "chiavi-vincoli",
+      "title": "Chiavi e integrità delle entità",
+      "topics": [
+        "chiavi",
+        "superchiave",
+        "minimalita",
+        "null"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "relational-source",
+          "file": "Argomento02 Modello Relazionale.pdf",
+          "pageStart": 14,
+          "pageEnd": 19,
+          "section": "Chiavi e integrità delle entità"
+        },
+        {
+          "sourceId": "relational-source",
+          "file": "Argomento02 Modello Relazionale.pdf",
+          "pageStart": 12,
+          "pageEnd": 12,
+          "section": "Introduzione alle chiavi"
+        }
+      ],
+      "version": 1,
+      "quizPath": "quizzes/chiavi-vincoli.json",
+      "questionIds": [
+        "chiavi-vincoli-q1",
+        "chiavi-vincoli-q2",
+        "chiavi-vincoli-q3"
+      ],
+      "exercises": [],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "integrita-riferimenti",
+      "title": "Integrità referenziale e schema della base di dati",
+      "topics": [
+        "foreign-key",
+        "integrita",
+        "schema-database"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "relational-source",
+          "file": "Argomento02 Modello Relazionale.pdf",
+          "pageStart": 20,
+          "pageEnd": 27,
+          "section": "Integrità referenziale e schema della base di dati"
+        }
+      ],
+      "version": 2,
+      "quizPath": "quizzes/integrita-riferimenti.json",
+      "questionIds": [
+        "integrita-riferimenti-q1",
+        "integrita-riferimenti-q2",
+        "integrita-riferimenti-q3"
+      ],
+      "exercises": [],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "aggiornamenti-integrita",
+      "title": "Aggiornamenti e conservazione dell’integrità",
+      "topics": [
+        "insert",
+        "delete",
+        "update",
+        "azioni-referenziali"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "relational-source",
+          "file": "Argomento02 Modello Relazionale.pdf",
+          "pageStart": 28,
+          "pageEnd": 37,
+          "section": "Aggiornamenti e conservazione dell’integrità"
+        }
+      ],
+      "version": 2,
+      "quizPath": "quizzes/aggiornamenti-integrita.json",
+      "questionIds": [
+        "aggiornamenti-integrita-q1",
+        "aggiornamenti-integrita-q2",
+        "aggiornamenti-integrita-q3"
+      ],
+      "exercises": [],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "ar-selezione",
+      "title": "Algebra, chiusura e selezione",
+      "topics": [
+        "algebra",
+        "selezione",
+        "predicati"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 2,
+          "pageEnd": 12,
+          "section": "Algebra, chiusura e selezione"
+        }
+      ],
+      "version": 2,
+      "quizPath": "quizzes/ar-selezione.json",
+      "questionIds": [
+        "ar-selezione-q1",
+        "ar-selezione-q2",
+        "ar-selezione-q3"
+      ],
+      "exercises": [],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "ar-proiezione",
+      "title": "Proiezione, duplicati e identità",
+      "topics": [
+        "proiezione",
+        "duplicati",
+        "chiusura"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 13,
+          "pageEnd": 20,
+          "section": "Proiezione, duplicati e identità"
+        },
+        {
+          "sourceId": "algebra-self-source",
+          "file": "Argomento03.1 Algebra Relazionale Autoverifica.pdf",
+          "pageStart": 8,
+          "pageEnd": 8,
+          "section": "Richiamo già discusso nel testo, reso esplicito nei metadati"
+        }
+      ],
+      "version": 2,
+      "quizPath": "quizzes/ar-proiezione.json",
+      "questionIds": [
+        "ar-proiezione-q1",
+        "ar-proiezione-q2",
+        "ar-proiezione-q3"
+      ],
+      "exercises": [
+        {
+          "id": "ar-sailors-04bis",
+          "gradingMode": "guided"
+        }
+      ],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "ar-insiemi",
+      "title": "Unione, intersezione e differenza",
+      "topics": [
+        "unione",
+        "intersezione",
+        "differenza"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 21,
+          "pageEnd": 25,
+          "section": "Unione, intersezione e differenza"
+        }
+      ],
+      "version": 2,
+      "quizPath": "quizzes/ar-insiemi.json",
+      "questionIds": [
+        "ar-insiemi-q1",
+        "ar-insiemi-q2",
+        "ar-insiemi-q3"
+      ],
+      "exercises": [],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "ar-prodotto",
+      "title": "Prodotto cartesiano e combinazioni",
+      "topics": [
+        "prodotto",
+        "cardinalita",
+        "attributi"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 26,
+          "pageEnd": 28,
+          "section": "Prodotto cartesiano e combinazioni"
+        }
+      ],
+      "version": 2,
+      "quizPath": "quizzes/ar-prodotto.json",
+      "questionIds": [
+        "ar-prodotto-q1",
+        "ar-prodotto-q2",
+        "ar-prodotto-q3"
+      ],
+      "exercises": [],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "ar-ridenominazione",
+      "title": "Ridenominazione e self-join",
+      "topics": [
+        "rinomina",
+        "self-join",
+        "schema"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 28,
+          "pageEnd": 30,
+          "section": "Ridenominazione e self-join"
+        }
+      ],
+      "version": 2,
+      "quizPath": "quizzes/ar-ridenominazione.json",
+      "questionIds": [
+        "ar-ridenominazione-q1",
+        "ar-ridenominazione-q2",
+        "ar-ridenominazione-q3"
+      ],
+      "exercises": [],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "ar-join",
+      "title": "Theta join, equijoin e join naturale",
+      "topics": [
+        "join",
+        "equijoin",
+        "join-naturale"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 31,
+          "pageEnd": 37,
+          "section": "Theta join, equijoin e join naturale"
+        }
+      ],
+      "version": 2,
+      "quizPath": "quizzes/ar-join.json",
+      "questionIds": [
+        "ar-join-q1",
+        "ar-join-q2",
+        "ar-join-q3"
+      ],
+      "exercises": [],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "ar-divisione",
+      "title": "Divisione e domande con “tutti”",
+      "topics": [
+        "divisione",
+        "quantificazione",
+        "insiemi"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 38,
+          "pageEnd": 39,
+          "section": "Divisione e domande con “tutti”"
+        }
+      ],
+      "version": 2,
+      "quizPath": "quizzes/ar-divisione.json",
+      "questionIds": [
+        "ar-divisione-q1",
+        "ar-divisione-q2",
+        "ar-divisione-q3"
+      ],
+      "exercises": [],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "ar-estensioni",
+      "title": "Outer join e confini dell’algebra eseguibile",
+      "topics": [
+        "outer-join",
+        "null",
+        "estensioni"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 40,
+          "pageEnd": 43,
+          "section": "Outer join e confini dell’algebra eseguibile"
+        }
+      ],
+      "version": 2,
+      "quizPath": "quizzes/ar-estensioni.json",
+      "questionIds": [
+        "ar-estensioni-q1",
+        "ar-estensioni-q2",
+        "ar-estensioni-q3"
+      ],
+      "exercises": [],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "ar-alberi",
+      "title": "Composizione, query tree e ottimizzazione",
+      "topics": [
+        "composizione",
+        "alberi",
+        "ottimizzazione"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 44,
+          "pageEnd": 48,
+          "section": "Composizione, query tree e ottimizzazione"
+        }
+      ],
+      "version": 2,
+      "quizPath": "quizzes/ar-alberi.json",
+      "questionIds": [
+        "ar-alberi-q1",
+        "ar-alberi-q2",
+        "ar-alberi-q3"
+      ],
+      "exercises": [
+        {
+          "id": "ar-albero-01",
+          "gradingMode": "guided"
+        },
+        {
+          "id": "ar-albero-02",
+          "gradingMode": "guided"
+        }
+      ],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "er-requisiti",
+      "title": "Dai requisiti al modello concettuale",
+      "topics": [
+        "requisiti",
+        "concettuale",
+        "progettazione"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 2,
+          "pageEnd": 9,
+          "section": "Dai requisiti al modello concettuale"
+        },
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 64,
+          "pageEnd": 71,
+          "section": "Dai requisiti al modello concettuale"
+        },
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 27,
+          "pageEnd": 27,
+          "section": "Richiamo già discusso nel testo, reso esplicito nei metadati"
+        }
+      ],
+      "version": 2,
+      "quizPath": "quizzes/er-requisiti.json",
+      "questionIds": [
+        "er-requisiti-q1",
+        "er-requisiti-q2",
+        "er-requisiti-q3"
+      ],
+      "exercises": [
+        {
+          "id": "er-company",
+          "gradingMode": "guided"
+        },
+        {
+          "id": "er-lavora",
+          "gradingMode": "guided"
+        }
+      ],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "er-entita",
+      "title": "Entità, attributi e identificatori",
+      "topics": [
+        "entita",
+        "attributi",
+        "identificatori"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 10,
+          "pageEnd": 16,
+          "section": "Entità, attributi e identificatori"
+        }
+      ],
+      "version": 2,
+      "quizPath": "quizzes/er-entita.json",
+      "questionIds": [
+        "er-entita-q1",
+        "er-entita-q2",
+        "er-entita-q3"
+      ],
+      "exercises": [],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "er-associazioni",
+      "title": "Associazioni, ruoli e proprietà del legame",
+      "topics": [
+        "associazioni",
+        "ruoli",
+        "grado"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 17,
+          "pageEnd": 22,
+          "section": "Associazioni, ruoli e proprietà del legame"
+        },
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 30,
+          "pageEnd": 30,
+          "section": "Associazioni, ruoli e proprietà del legame"
+        },
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 59,
+          "pageEnd": 59,
+          "section": "Richiamo già discusso nel testo, reso esplicito nei metadati"
+        }
+      ],
+      "version": 2,
+      "quizPath": "quizzes/er-associazioni.json",
+      "questionIds": [
+        "er-associazioni-q1",
+        "er-associazioni-q2",
+        "er-associazioni-q3"
+      ],
+      "exercises": [
+        {
+          "id": "er-periodi",
+          "gradingMode": "guided"
+        }
+      ],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "er-vincoli",
+      "title": "Cardinalità, chiave e partecipazione",
+      "topics": [
+        "cardinalita",
+        "partecipazione",
+        "vincoli"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 23,
+          "pageEnd": 29,
+          "section": "Cardinalità, chiave e partecipazione"
+        },
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 34,
+          "pageEnd": 34,
+          "section": "Cardinalità, chiave e partecipazione"
+        }
+      ],
+      "version": 2,
+      "quizPath": "quizzes/er-vincoli.json",
+      "questionIds": [
+        "er-vincoli-q1",
+        "er-vincoli-q2",
+        "er-vincoli-q3"
+      ],
+      "exercises": [
+        {
+          "id": "er-lavora",
+          "gradingMode": "guided"
+        }
+      ],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "er-deboli",
+      "title": "Entità deboli e identificazione esterna",
+      "topics": [
+        "deboli",
+        "identificazione",
+        "chiave-parziale"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 31,
+          "pageEnd": 33,
+          "section": "Entità deboli e identificazione esterna"
+        },
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 55,
+          "pageEnd": 58,
+          "section": "Richiamo già discusso nel testo, reso esplicito nei metadati"
+        }
+      ],
+      "version": 2,
+      "quizPath": "quizzes/er-deboli.json",
+      "questionIds": [
+        "er-deboli-q1",
+        "er-deboli-q2",
+        "er-deboli-q3"
+      ],
+      "exercises": [
+        {
+          "id": "er-polizze",
+          "gradingMode": "guided"
+        }
+      ],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "er-gerarchie",
+      "title": "Generalizzazione, specializzazione e ISA",
+      "topics": [
+        "isa",
+        "disgiunzione",
+        "copertura"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 35,
+          "pageEnd": 40,
+          "section": "Generalizzazione, specializzazione e ISA"
+        },
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 53,
+          "pageEnd": 53,
+          "section": "Generalizzazione, specializzazione e ISA"
+        }
+      ],
+      "version": 2,
+      "quizPath": "quizzes/er-gerarchie.json",
+      "questionIds": [
+        "er-gerarchie-q1",
+        "er-gerarchie-q2",
+        "er-gerarchie-q3"
+      ],
+      "exercises": [
+        {
+          "id": "er-isa",
+          "gradingMode": "guided"
+        }
+      ],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "er-aggregazione",
+      "title": "Aggregazione e identità dei fatti",
+      "topics": [
+        "aggregazione",
+        "sponsorizzazione",
+        "limiti"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 41,
+          "pageEnd": 43,
+          "section": "Aggregazione e identità dei fatti"
+        },
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 60,
+          "pageEnd": 63,
+          "section": "Aggregazione e identità dei fatti"
+        }
+      ],
+      "version": 2,
+      "quizPath": "quizzes/er-aggregazione.json",
+      "questionIds": [
+        "er-aggregazione-q1",
+        "er-aggregazione-q2",
+        "er-aggregazione-q3"
+      ],
+      "exercises": [
+        {
+          "id": "er-aggregazione",
+          "gradingMode": "guided"
+        }
+      ],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "er-scelte",
+      "title": "Scelte progettuali, periodi e polizze",
+      "topics": [
+        "modellazione",
+        "periodi",
+        "polizze"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 44,
+          "pageEnd": 59,
+          "section": "Scelte progettuali, periodi e polizze"
+        },
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 12,
+          "pageEnd": 12,
+          "section": "Richiamo già discusso nel testo, reso esplicito nei metadati"
+        }
+      ],
+      "version": 2,
+      "quizPath": "quizzes/er-scelte.json",
+      "questionIds": [
+        "er-scelte-q1",
+        "er-scelte-q2",
+        "er-scelte-q3"
+      ],
+      "exercises": [
+        {
+          "id": "er-periodi",
+          "gradingMode": "guided"
+        },
+        {
+          "id": "er-indirizzo",
+          "gradingMode": "guided"
+        },
+        {
+          "id": "er-polizze",
+          "gradingMode": "guided"
+        }
+      ],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "sql-domande",
+      "title": "Dalla domanda al contratto di una query",
+      "topics": [
+        "SQL",
+        "DDL",
+        "DML",
+        "contratto di output"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 1,
+          "pageEnd": 12,
+          "section": "Dalla domanda al contratto di una query"
+        },
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 77,
+          "pageEnd": 84,
+          "section": "Dalla domanda al contratto di una query"
+        }
+      ],
+      "version": 1,
+      "quizPath": "quizzes/sql-domande.json",
+      "questionIds": [
+        "sql-domande-q1",
+        "sql-domande-q2",
+        "sql-domande-q3"
+      ],
+      "exercises": [],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "sql-select",
+      "title": "SELECT, alias, duplicati e ordinamento",
+      "topics": [
+        "SELECT",
+        "DISTINCT",
+        "ORDER BY"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 13,
+          "pageEnd": 17,
+          "section": "SELECT, alias, duplicati e ordinamento"
+        },
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 86,
+          "pageEnd": 86,
+          "section": "SELECT, alias, duplicati e ordinamento"
+        }
+      ],
+      "version": 1,
+      "quizPath": "quizzes/sql-select.json",
+      "questionIds": [
+        "sql-select-q1",
+        "sql-select-q2",
+        "sql-select-q3"
+      ],
+      "exercises": [
+        {
+          "id": "academy-sailors-01",
+          "gradingMode": "automatic"
+        },
+        {
+          "id": "academy-sailors-02",
+          "gradingMode": "automatic"
+        },
+        {
+          "id": "academy-northwind-02",
+          "gradingMode": "automatic"
+        }
+      ],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "sql-filtri",
+      "title": "Predicati, NULL, intervalli e pattern",
+      "topics": [
+        "WHERE",
+        "NULL",
+        "LIKE",
+        "BETWEEN",
+        "IN"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 18,
+          "pageEnd": 19,
+          "section": "Predicati, NULL, intervalli e pattern"
+        },
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 89,
+          "pageEnd": 89,
+          "section": "Predicati, NULL, intervalli e pattern"
+        }
+      ],
+      "version": 1,
+      "quizPath": "quizzes/sql-filtri.json",
+      "questionIds": [
+        "sql-filtri-q1",
+        "sql-filtri-q2",
+        "sql-filtri-q3"
+      ],
+      "exercises": [
+        {
+          "id": "academy-northwind-01",
+          "gradingMode": "automatic"
+        }
+      ],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "sql-aggregati",
+      "title": "Aggregazioni e unità da contare",
+      "topics": [
+        "COUNT",
+        "SUM",
+        "AVG",
+        "MIN",
+        "MAX"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 20,
+          "pageEnd": 24,
+          "section": "Aggregazioni e unità da contare"
+        }
+      ],
+      "version": 1,
+      "quizPath": "quizzes/sql-aggregati.json",
+      "questionIds": [
+        "sql-aggregati-q1",
+        "sql-aggregati-q2",
+        "sql-aggregati-q3"
+      ],
+      "exercises": [
+        {
+          "id": "sailors-01",
+          "gradingMode": "automatic"
+        },
+        {
+          "id": "sailors-02",
+          "gradingMode": "automatic"
+        },
+        {
+          "id": "sailors-03",
+          "gradingMode": "automatic"
+        },
+        {
+          "id": "sailors-04",
+          "gradingMode": "automatic"
+        },
+        {
+          "id": "sailors-05",
+          "gradingMode": "automatic"
+        },
+        {
+          "id": "academy-northwind-08",
+          "gradingMode": "automatic"
+        }
+      ],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "sql-gruppi",
+      "title": "GROUP BY e HAVING: ragionare per gruppi",
+      "topics": [
+        "GROUP BY",
+        "HAVING",
+        "aggregazioni"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 25,
+          "pageEnd": 30,
+          "section": "GROUP BY e HAVING: ragionare per gruppi"
+        }
+      ],
+      "version": 1,
+      "quizPath": "quizzes/sql-gruppi.json",
+      "questionIds": [
+        "sql-gruppi-q1",
+        "sql-gruppi-q2",
+        "sql-gruppi-q3"
+      ],
+      "exercises": [
+        {
+          "id": "sailors-01",
+          "gradingMode": "automatic"
+        },
+        {
+          "id": "sailors-02",
+          "gradingMode": "automatic"
+        },
+        {
+          "id": "sailors-03",
+          "gradingMode": "automatic"
+        },
+        {
+          "id": "sailors-04",
+          "gradingMode": "automatic"
+        },
+        {
+          "id": "sailors-05",
+          "gradingMode": "automatic"
+        },
+        {
+          "id": "academy-sailors-05",
+          "gradingMode": "automatic"
+        },
+        {
+          "id": "academy-northwind-04",
+          "gradingMode": "automatic"
+        },
+        {
+          "id": "academy-northwind-05",
+          "gradingMode": "automatic"
+        }
+      ],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "sql-sottoquery",
+      "title": "Sottoquery scalari, IN ed EXISTS",
+      "topics": [
+        "sottoquery",
+        "EXISTS",
+        "IN",
+        "correlazione"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 31,
+          "pageEnd": 40,
+          "section": "Sottoquery scalari, IN ed EXISTS"
+        },
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 45,
+          "pageEnd": 45,
+          "section": "Sottoquery scalari, IN ed EXISTS"
+        }
+      ],
+      "version": 1,
+      "quizPath": "quizzes/sql-sottoquery.json",
+      "questionIds": [
+        "sql-sottoquery-q1",
+        "sql-sottoquery-q2",
+        "sql-sottoquery-q3"
+      ],
+      "exercises": [
+        {
+          "id": "academy-sailors-06",
+          "gradingMode": "automatic"
+        },
+        {
+          "id": "academy-sailors-07",
+          "gradingMode": "automatic"
+        },
+        {
+          "id": "academy-northwind-06",
+          "gradingMode": "automatic"
+        },
+        {
+          "id": "academy-northwind-09",
+          "gradingMode": "automatic"
+        }
+      ],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "sql-quantificatori",
+      "title": "ANY e ALL: esistenza, universalità e NULL",
+      "topics": [
+        "ANY",
+        "ALL",
+        "quantificazione",
+        "NULL"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 41,
+          "pageEnd": 42,
+          "section": "ANY e ALL: esistenza, universalità e NULL"
+        }
+      ],
+      "version": 1,
+      "quizPath": "quizzes/sql-quantificatori.json",
+      "questionIds": [
+        "sql-quantificatori-q1",
+        "sql-quantificatori-q2",
+        "sql-quantificatori-q3"
+      ],
+      "exercises": [],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "sql-insiemi",
+      "title": "UNION, INTERSECT ed EXCEPT",
+      "topics": [
+        "UNION",
+        "INTERSECT",
+        "EXCEPT",
+        "duplicati"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 43,
+          "pageEnd": 44,
+          "section": "UNION, INTERSECT ed EXCEPT"
+        },
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 90,
+          "pageEnd": 91,
+          "section": "UNION, INTERSECT ed EXCEPT"
+        }
+      ],
+      "version": 1,
+      "quizPath": "quizzes/sql-insiemi.json",
+      "questionIds": [
+        "sql-insiemi-q1",
+        "sql-insiemi-q2",
+        "sql-insiemi-q3"
+      ],
+      "exercises": [
+        {
+          "id": "academy-sailors-09",
+          "gradingMode": "automatic"
+        }
+      ],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "sql-cte",
+      "title": "Sottoquery, CTE, tabelle temporanee e viste",
+      "topics": [
+        "CTE",
+        "WITH",
+        "vista",
+        "tabella temporanea"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 46,
+          "pageEnd": 57,
+          "section": "Sottoquery, CTE, tabelle temporanee e viste"
+        }
+      ],
+      "version": 1,
+      "quizPath": "quizzes/sql-cte.json",
+      "questionIds": [
+        "sql-cte-q1",
+        "sql-cte-q2",
+        "sql-cte-q3"
+      ],
+      "exercises": [
+        {
+          "id": "academy-sailors-08",
+          "gradingMode": "automatic"
+        }
+      ],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "sql-join",
+      "title": "JOIN: ricostruire fatti e controllare molteplicità",
+      "topics": [
+        "JOIN",
+        "ON",
+        "chiavi",
+        "molteplicità"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 58,
+          "pageEnd": 62,
+          "section": "JOIN: ricostruire fatti e controllare molteplicità"
+        },
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 87,
+          "pageEnd": 88,
+          "section": "JOIN: ricostruire fatti e controllare molteplicità"
+        }
+      ],
+      "version": 1,
+      "quizPath": "quizzes/sql-join.json",
+      "questionIds": [
+        "sql-join-q1",
+        "sql-join-q2",
+        "sql-join-q3"
+      ],
+      "exercises": [
+        {
+          "id": "sailors-01",
+          "gradingMode": "automatic"
+        },
+        {
+          "id": "sailors-02",
+          "gradingMode": "automatic"
+        },
+        {
+          "id": "sailors-03",
+          "gradingMode": "automatic"
+        },
+        {
+          "id": "sailors-04",
+          "gradingMode": "automatic"
+        },
+        {
+          "id": "sailors-05",
+          "gradingMode": "automatic"
+        },
+        {
+          "id": "academy-sailors-03",
+          "gradingMode": "automatic"
+        },
+        {
+          "id": "academy-northwind-03",
+          "gradingMode": "automatic"
+        }
+      ],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "sql-outer",
+      "title": "Outer join, anti join e conteggi a zero",
+      "topics": [
+        "LEFT JOIN",
+        "RIGHT JOIN",
+        "FULL JOIN",
+        "anti join",
+        "NULL"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 63,
+          "pageEnd": 71,
+          "section": "Outer join, anti join e conteggi a zero"
+        }
+      ],
+      "version": 1,
+      "quizPath": "quizzes/sql-outer.json",
+      "questionIds": [
+        "sql-outer-q1",
+        "sql-outer-q2",
+        "sql-outer-q3"
+      ],
+      "exercises": [
+        {
+          "id": "academy-sailors-04",
+          "gradingMode": "automatic"
+        },
+        {
+          "id": "academy-northwind-07",
+          "gradingMode": "automatic"
+        }
+      ],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "sql-ddl",
+      "title": "Schemi SQL, vincoli e popolamento",
+      "topics": [
+        "CREATE TABLE",
+        "vincoli",
+        "INSERT",
+        "tipi"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 72,
+          "pageEnd": 76,
+          "section": "Schemi SQL, vincoli e popolamento"
+        }
+      ],
+      "version": 1,
+      "quizPath": "quizzes/sql-ddl.json",
+      "questionIds": [
+        "sql-ddl-q1",
+        "sql-ddl-q2",
+        "sql-ddl-q3"
+      ],
+      "exercises": [],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "strumenti-ambiente",
+      "title": "Server, client e installazioni locali",
+      "topics": [
+        "client",
+        "server",
+        "MySQL",
+        "MariaDB",
+        "DBeaver"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "tools-source",
+          "file": "Introduzione MySQL e Dbeaver.pdf",
+          "pageStart": 1,
+          "pageEnd": 50,
+          "section": "Server, client e installazioni locali"
+        }
+      ],
+      "version": 1,
+      "quizPath": "quizzes/strumenti-ambiente.json",
+      "questionIds": [
+        "strumenti-ambiente-q1",
+        "strumenti-ambiente-q2",
+        "strumenti-ambiente-q3"
+      ],
+      "exercises": [],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "strumenti-script",
+      "title": "Connessione, schema e importazione con DBeaver",
+      "topics": [
+        "connessione",
+        "driver",
+        "script",
+        "NorthWind"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "tools-source",
+          "file": "Introduzione MySQL e Dbeaver.pdf",
+          "pageStart": 51,
+          "pageEnd": 63,
+          "section": "Connessione, schema e importazione con DBeaver"
+        }
+      ],
+      "version": 1,
+      "quizPath": "quizzes/strumenti-script.json",
+      "questionIds": [
+        "strumenti-script-q1",
+        "strumenti-script-q2",
+        "strumenti-script-q3"
+      ],
+      "exercises": [],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "strumenti-jdbc",
+      "title": "JDBC: connessioni, parametri e risultati",
+      "topics": [
+        "JDBC",
+        "PreparedStatement",
+        "ResultSet",
+        "parametri"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "tools-source",
+          "file": "Introduzione MySQL e Dbeaver.pdf",
+          "pageStart": 64,
+          "pageEnd": 78,
+          "section": "JDBC: connessioni, parametri e risultati"
+        }
+      ],
+      "version": 1,
+      "quizPath": "quizzes/strumenti-jdbc.json",
+      "questionIds": [
+        "strumenti-jdbc-q1",
+        "strumenti-jdbc-q2",
+        "strumenti-jdbc-q3"
+      ],
+      "exercises": [],
+      "status": "needs-review"
+    },
+    {
+      "lessonId": "strumenti-python",
+      "title": "Python DB-API: cursor, parametri e commit",
+      "topics": [
+        "Python",
+        "DB-API",
+        "cursor",
+        "commit",
+        "parametri"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "tools-source",
+          "file": "Introduzione MySQL e Dbeaver.pdf",
+          "pageStart": 79,
+          "pageEnd": 92,
+          "section": "Python DB-API: cursor, parametri e commit"
+        }
+      ],
+      "version": 1,
+      "quizPath": "quizzes/strumenti-python.json",
+      "questionIds": [
+        "strumenti-python-q1",
+        "strumenti-python-q2",
+        "strumenti-python-q3"
+      ],
+      "exercises": [],
+      "status": "needs-review"
+    }
+  ],
+  "gaps": [
+    "ANY/ALL: teoria e quiz; sintassi non supportata nel laboratorio SQLite.",
+    "DDL, modifiche e amministrazione: attività ragionate, nessuna esecuzione nel lab di sola lettura.",
+    "JDBC/Python/installazioni: spiegazioni e quiz, nessuna esecuzione o installazione esterna verificata.",
+    "Outer join algebra, aggregazioni/outer union algebra: teoria o cenni; evaluator non esteso.",
+    "Aggregazione ER: spiegazione e attività guidata, costrutto non editabile.",
+    "Presentazione del corso: metadati, non percorso autonomo; nessuna prova ufficiale di esame disponibile.",
+    "Book.pdf: escluso da estrazione e indice, non dichiarato coperto.",
+    "Normalizzazione, indici fisici e algoritmi transazionali: richiami, non un corso completo nelle fonti analizzate.",
+    "48 nuovi quiz di richiamo/applicazione; difficoltà non calibrate e nessuna misura certificata di padronanza."
+  ]
+}

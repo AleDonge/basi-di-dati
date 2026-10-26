@@ -1,0 +1,46 @@
+{
+  "id": "sailors-04",
+  "title": "Statistiche per rating",
+  "version": 1,
+  "status": "needs-review",
+  "originalPrompt": "Trova l'età media e il numero di marinai per ogni livello di rating, \nconsiderando solo i marinai con rating superiore a 5, \nma mostra solo i livelli di rating che contengono almeno 2 marinai.",
+  "datasetId": "sailors",
+  "topics": [
+    "GROUP BY",
+    "HAVING",
+    "Aggregazioni"
+  ],
+  "difficulty": "intermedio",
+  "gradingMode": "automatic",
+  "fixtureIds": [
+    "sailors",
+    "sailors-edges",
+    "sailors-reversed",
+    "sailors-empty",
+    "sailors-variation"
+  ],
+  "solutionPath": "solutions/sailors-04.sql",
+  "hints": [
+    "WHERE seleziona rating > 5; HAVING seleziona gruppi con almeno due righe.",
+    "COUNT(*) include anche persone con età NULL; AVG ignora le età mancanti."
+  ],
+  "outputContract": [
+    "rating",
+    "eta_media",
+    "numero_marinai"
+  ],
+  "interpretation": "Interpretazione della piattaforma, da revisionare: i gruppi contano persone con COUNT(*); MIN/MAX/AVG ignorano NULL. Non è una soluzione fornita dal docente.",
+  "limitations": [
+    "Confronto su cinque fixture finite, non prova di equivalenza generale.",
+    "Ordine delle righe ignorato perché non richiesto; numero e posizione delle colonne obbligatori. Alias liberi.",
+    "Tipi preservati: testo non equivale a numero, NULL distinto da zero; tolleranza relativa 1e-9 solo per valori non interi.",
+    "SQLite non controlla tutte le regole GROUP BY di MySQL; un esito sulle fixture non certifica la compatibilità MySQL."
+  ],
+  "sourceRefs": [
+    {
+      "sourceId": "sailors-exercises-source",
+      "file": "Esercizi 1 Sailor.txt",
+      "section": "Quesito #4"
+    }
+  ]
+}

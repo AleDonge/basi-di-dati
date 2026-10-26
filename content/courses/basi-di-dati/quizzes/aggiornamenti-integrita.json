@@ -1,0 +1,126 @@
+{
+  "lessonId": "aggiornamenti-integrita",
+  "version": 1,
+  "status": "needs-review",
+  "questions": [
+    {
+      "id": "aggiornamenti-integrita-q1",
+      "version": 1,
+      "type": "single",
+      "prompt": "Nello schema Students/Enrolled, cancellare uno studente ancora referenziato senza altre azioni può violare…",
+      "concepts": [
+        "insert",
+        "delete",
+        "update",
+        "azioni-referenziali"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "relational-source",
+          "file": "Argomento02 Modello Relazionale.pdf",
+          "pageStart": 32,
+          "pageEnd": 32,
+          "section": "Aggiornamenti e conservazione dell’integrità"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "L’integrità referenziale"
+        },
+        {
+          "id": "opzione-2",
+          "text": "Soltanto il grado della relazione"
+        },
+        {
+          "id": "opzione-3",
+          "text": "Nessun vincolo possibile"
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-1"
+      ],
+      "explanation": "Le iscrizioni residue rimarrebbero senza uno studente referenziato."
+    },
+    {
+      "id": "aggiornamenti-integrita-q2",
+      "version": 1,
+      "type": "true-false",
+      "prompt": "SET NULL può assegnare NULL a un attributo che è anche parte della primaria senza violare l’integrità dell’entità.",
+      "concepts": [
+        "insert",
+        "delete",
+        "update",
+        "azioni-referenziali"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "relational-source",
+          "file": "Argomento02 Modello Relazionale.pdf",
+          "pageStart": 36,
+          "pageEnd": 36,
+          "section": "Aggiornamenti e conservazione dell’integrità"
+        }
+      ],
+      "options": [
+        {
+          "id": "vero",
+          "text": "Vero"
+        },
+        {
+          "id": "falso",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionIds": [
+        "falso"
+      ],
+      "explanation": "La primaria non ammette NULL in alcun suo componente."
+    },
+    {
+      "id": "aggiornamenti-integrita-q3",
+      "version": 1,
+      "type": "multiple",
+      "prompt": "Quali operazioni possono creare violazioni nelle ipotesi della lezione?",
+      "concepts": [
+        "insert",
+        "delete",
+        "update",
+        "azioni-referenziali"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "relational-source",
+          "file": "Argomento02 Modello Relazionale.pdf",
+          "pageStart": 30,
+          "pageEnd": 33,
+          "section": "Aggiornamenti e conservazione dell’integrità"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "Inserire una primaria già esistente"
+        },
+        {
+          "id": "opzione-2",
+          "text": "Impostare una FK a un identificatore inesistente"
+        },
+        {
+          "id": "opzione-3",
+          "text": "Impostare una componente della primaria a NULL"
+        },
+        {
+          "id": "opzione-4",
+          "text": "Cambiare solo l’ordine visivo delle righe"
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-1",
+        "opzione-2",
+        "opzione-3"
+      ],
+      "explanation": "Duplicazione di chiave, riferimento mancante e primaria NULL sono violazioni. L’ordine visivo non cambia lo stato relazionale."
+    }
+  ]
+}

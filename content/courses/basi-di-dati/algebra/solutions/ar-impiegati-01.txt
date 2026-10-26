@@ -1,0 +1,1 @@
+π_{Matricola,Cognome}(σ_{Stipendio>50}(Impiegato))

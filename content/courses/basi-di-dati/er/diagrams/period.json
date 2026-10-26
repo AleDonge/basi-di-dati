@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "metadata": {
+    "id": "example-period",
+    "title": "Periodi di collaborazione",
+    "revision": 0,
+    "createdAt": "2026-10-25T00:00:00Z",
+    "modifiedAt": "2026-10-25T00:00:00Z",
+    "notation": "unitn-er-v1",
+    "status": "needs-review"
+  },
+  "semantic": {
+    "entities": [
+      {
+        "id": "emp",
+        "name": "EMPLOYEES",
+        "weak": false
+      },
+      {
+        "id": "dept",
+        "name": "DEPARTMENTS",
+        "weak": false
+      },
+      {
+        "id": "duration",
+        "name": "PERIODO",
+        "weak": false
+      }
+    ],
+    "attributes": [
+      {
+        "id": "a-emp",
+        "name": "ssn",
+        "ownerId": "emp",
+        "domain": "testo"
+      },
+      {
+        "id": "a-dept",
+        "name": "did",
+        "ownerId": "dept",
+        "domain": "testo"
+      },
+      {
+        "id": "a-duration",
+        "name": "IdPeriodo",
+        "ownerId": "duration",
+        "domain": "testo"
+      },
+      {
+        "id": "from",
+        "name": "from",
+        "ownerId": "duration",
+        "domain": "data"
+      },
+      {
+        "id": "to",
+        "name": "to",
+        "ownerId": "duration",
+        "domain": "data"
+      }
+    ],
+    "identifiers": [
+      {
+        "id": "k-emp",
+        "entityId": "emp",
+        "attributeIds": [
+          "a-emp"
+        ],
+        "kind": "primary"
+      },
+      {
+        "id": "k-dept",
+        "entityId": "dept",
+        "attributeIds": [
+          "a-dept"
+        ],
+        "kind": "primary"
+      },
+      {
+        "id": "k-duration",
+        "entityId": "duration",
+        "attributeIds": [
+          "a-duration"
+        ],
+        "kind": "primary"
+      }
+    ],
+    "relationships": [
+      {
+        "id": "works",
+        "name": "WORKS_IN",
+        "identifying": false
+      }
+    ],
+    "participations": [
+      {
+        "id": "p-works-0",
+        "entityId": "emp",
+        "relationshipId": "works",
+        "role": "",
+        "min": 1,
+        "max": "N"
+      },
+      {
+        "id": "p-works-1",
+        "entityId": "dept",
+        "relationshipId": "works",
+        "role": "",
+        "min": 1,
+        "max": "N"
+      },
+      {
+        "id": "p-duration",
+        "entityId": "duration",
+        "relationshipId": "works",
+        "role": "periodo",
+        "min": 1,
+        "max": 1
+      }
+    ],
+    "generalizations": [],
+    "notes": "Adattamento del caso p. 50, con IdPeriodo aggiunto dalla piattaforma come scelta tecnica da discutere. La ternaria consente più tuple per la stessa coppia dipendente/dipartimento con periodi distinti; unicità dei periodi e cronologia non verificate."
+  },
+  "layout": {
+    "positions": {
+      "emp": {
+        "x": 170,
+        "y": 200
+      },
+      "a-emp": {
+        "x": 170,
+        "y": 100
+      },
+      "dept": {
+        "x": 800,
+        "y": 200
+      },
+      "a-dept": {
+        "x": 800,
+        "y": 100
+      },
+      "works": {
+        "x": 480,
+        "y": 200
+      },
+      "duration": {
+        "x": 480,
+        "y": 430
+      },
+      "a-duration": {
+        "x": 480,
+        "y": 330
+      },
+      "from": {
+        "x": 250,
+        "y": 450
+      },
+      "to": {
+        "x": 750,
+        "y": 450
+      }
+    },
+    "viewport": {
+      "x": 0,
+      "y": 0,
+      "zoom": 1
+    }
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "lessonId": "er-gerarchie",
+  "version": 2,
+  "status": "needs-review",
+  "questions": [
+    {
+      "id": "er-gerarchie-q1",
+      "version": 2,
+      "type": "single",
+      "prompt": "D e O descrivono…",
+      "concepts": [
+        "isa",
+        "disgiunzione",
+        "copertura"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 35,
+          "pageEnd": 40,
+          "section": "Generalizzazione, specializzazione e ISA"
+        },
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 53,
+          "pageEnd": 53,
+          "section": "Generalizzazione, specializzazione e ISA"
+        }
+      ],
+      "options": [
+        {
+          "id": "errata",
+          "text": "Il numero di attributi della superclasse."
+        },
+        {
+          "id": "corretta",
+          "text": "Disgiunzione o sovrapposizione fra sottoclassi."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "D vieta appartenenza contemporanea alle sottoclassi; O la permette senza imporla. Nessuna delle due stabilisce il numero di attributi."
+    },
+    {
+      "id": "er-gerarchie-q2",
+      "version": 2,
+      "type": "single",
+      "prompt": "La copertura totale richiede…",
+      "concepts": [
+        "isa",
+        "disgiunzione",
+        "copertura"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 35,
+          "pageEnd": 40,
+          "section": "Generalizzazione, specializzazione e ISA"
+        },
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 53,
+          "pageEnd": 53,
+          "section": "Generalizzazione, specializzazione e ISA"
+        }
+      ],
+      "options": [
+        {
+          "id": "corretta",
+          "text": "Che ogni entità della superclasse appartenga ad almeno una sottoclasse."
+        },
+        {
+          "id": "errata",
+          "text": "Che ogni sottoclasse abbia una chiave primaria diversa."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "La copertura totale esclude entità della superclasse fuori da tutte le sottoclassi. L’identità è ereditata e non richiede una primaria diversa."
+    },
+    {
+      "id": "er-gerarchie-q3",
+      "version": 2,
+      "type": "single",
+      "prompt": "I default dichiarati dal corso sono…",
+      "concepts": [
+        "isa",
+        "disgiunzione",
+        "copertura"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 35,
+          "pageEnd": 40,
+          "section": "Generalizzazione, specializzazione e ISA"
+        },
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 53,
+          "pageEnd": 53,
+          "section": "Generalizzazione, specializzazione e ISA"
+        }
+      ],
+      "options": [
+        {
+          "id": "errata",
+          "text": "Sovrapposizione e copertura totale."
+        },
+        {
+          "id": "corretta",
+          "text": "Disgiunzione e copertura parziale."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "Le pp. 38–39 dichiarano default disgiunto e parziale. Totale e overlap richiedono una scelta ulteriore giustificata dai requisiti."
+    }
+  ]
+}

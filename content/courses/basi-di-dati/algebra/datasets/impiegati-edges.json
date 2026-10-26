@@ -1,0 +1,235 @@
+{
+  "id": "impiegati-edges",
+  "title": "Impiegati: confini e omonimi",
+  "provenance": "Schema trascritto da esercitazione_AR.pdf p. 1. Tutte le righe sono inventate dalla piattaforma per lo studio, non fornite dal docente. Stipendio in milioni; Bilancio in migliaia: convenzioni didattiche, non riconciliano 60K nel testo.",
+  "relations": {
+    "Impiegato": {
+      "columns": [
+        {
+          "name": "Matricola",
+          "type": "number"
+        },
+        {
+          "name": "Cognome",
+          "type": "string"
+        },
+        {
+          "name": "Stipendio",
+          "type": "number"
+        },
+        {
+          "name": "Dipartimento",
+          "type": "number"
+        }
+      ],
+      "rows": [
+        [
+          1,
+          "Rossi",
+          70,
+          10
+        ],
+        [
+          2,
+          "Bianchi",
+          50,
+          10
+        ],
+        [
+          3,
+          "Verdi",
+          90,
+          20
+        ],
+        [
+          4,
+          "Neri",
+          60,
+          20
+        ],
+        [
+          5,
+          "Rossi",
+          80,
+          30
+        ],
+        [
+          6,
+          "Solo",
+          100,
+          30
+        ],
+        [
+          7,
+          "Confine",
+          50,
+          10
+        ],
+        [
+          8,
+          "Pari",
+          100,
+          20
+        ],
+        [
+          9,
+          "Nessuno",
+          60,
+          30
+        ]
+      ]
+    },
+    "Dipartimento": {
+      "columns": [
+        {
+          "name": "Codice",
+          "type": "number"
+        },
+        {
+          "name": "Nome",
+          "type": "string"
+        },
+        {
+          "name": "Sede",
+          "type": "string"
+        },
+        {
+          "name": "Direttore",
+          "type": "number"
+        }
+      ],
+      "rows": [
+        [
+          10,
+          "Ricerca",
+          "Roma",
+          2
+        ],
+        [
+          20,
+          "Vendite",
+          "Trento",
+          3
+        ],
+        [
+          30,
+          "Ricerca",
+          "Roma",
+          5
+        ],
+        [
+          40,
+          "Vuoto",
+          "Roma",
+          1
+        ]
+      ]
+    },
+    "Progetto": {
+      "columns": [
+        {
+          "name": "Sigla",
+          "type": "string"
+        },
+        {
+          "name": "Nome",
+          "type": "string"
+        },
+        {
+          "name": "Bilancio",
+          "type": "number"
+        },
+        {
+          "name": "Responsabile",
+          "type": "number"
+        }
+      ],
+      "rows": [
+        [
+          "P1",
+          "Studio",
+          150,
+          1
+        ],
+        [
+          "P2",
+          "Studio",
+          100,
+          3
+        ],
+        [
+          "P3",
+          "Portale",
+          200,
+          5
+        ],
+        [
+          "P4",
+          "Senza partecipanti",
+          80,
+          2
+        ],
+        [
+          "P5",
+          "Confine",
+          100,
+          8
+        ]
+      ]
+    },
+    "Partecipazione": {
+      "columns": [
+        {
+          "name": "Impiegato",
+          "type": "number"
+        },
+        {
+          "name": "Progetto",
+          "type": "string"
+        }
+      ],
+      "rows": [
+        [
+          1,
+          "P1"
+        ],
+        [
+          1,
+          "P2"
+        ],
+        [
+          2,
+          "P1"
+        ],
+        [
+          3,
+          "P3"
+        ],
+        [
+          4,
+          "P2"
+        ],
+        [
+          5,
+          "P1"
+        ],
+        [
+          5,
+          "P3"
+        ],
+        [
+          8,
+          "P1"
+        ],
+        [
+          8,
+          "P2"
+        ],
+        [
+          8,
+          "P3"
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,4 @@
+import Link from "next/link";
+import {ErWorkspace} from "@/components/er/workspace";
+export const metadata={title:"ER Lab"};
+export default function ErLab(){return <><p className="eyebrow">ER LAB · DAI REQUISITI AL MODELLO</p><h1>Progetta i concetti. Esplicita i vincoli.</h1><p className="lead">Un editor semantico locale con la notazione delle dispense: entità, attributi, identificatori, associazioni, cardinalità e gerarchie ISA.</p><div className="notice"><strong>La struttura non certifica il significato</strong><p>Il validatore distingue errori strutturali, avvertimenti, suggerimenti e verifiche manuali. Un diagramma strutturalmente valido può ancora rappresentare male i requisiti. Salva esplicitamente le versioni prima di uscire.</p><Link className="text-link" href="/practice#er">Apri le attività di progettazione →</Link></div><ErWorkspace/></>;}

@@ -1,0 +1,130 @@
+{
+  "lessonId": "er-associazioni",
+  "version": 2,
+  "status": "needs-review",
+  "questions": [
+    {
+      "id": "er-associazioni-q1",
+      "version": 2,
+      "type": "single",
+      "prompt": "since in WORKS_IN descrive…",
+      "concepts": [
+        "associazioni",
+        "ruoli",
+        "grado"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 17,
+          "pageEnd": 22,
+          "section": "Associazioni, ruoli e proprietà del legame"
+        },
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 30,
+          "pageEnd": 30,
+          "section": "Associazioni, ruoli e proprietà del legame"
+        }
+      ],
+      "options": [
+        {
+          "id": "errata",
+          "text": "Necessariamente il dipendente indipendentemente dal dipartimento."
+        },
+        {
+          "id": "corretta",
+          "text": "Il legame fra dipendente e dipartimento."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "since può variare cambiando la coppia dipendente/dipartimento: per questo descrive il legame, non necessariamente la persona isolata."
+    },
+    {
+      "id": "er-associazioni-q2",
+      "version": 2,
+      "type": "single",
+      "prompt": "Una relazione ricorsiva richiede…",
+      "concepts": [
+        "associazioni",
+        "ruoli",
+        "grado"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 17,
+          "pageEnd": 22,
+          "section": "Associazioni, ruoli e proprietà del legame"
+        },
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 30,
+          "pageEnd": 30,
+          "section": "Associazioni, ruoli e proprietà del legame"
+        }
+      ],
+      "options": [
+        {
+          "id": "corretta",
+          "text": "Ruoli distinti delle partecipazioni allo stesso tipo di entità."
+        },
+        {
+          "id": "errata",
+          "text": "Una seconda entità con nome casuale."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "REPORTS_TO usa lo stesso tipo in due ruoli. Distinguere supervisore e subordinato evita di inventare un secondo tipo di persona."
+    },
+    {
+      "id": "er-associazioni-q3",
+      "version": 2,
+      "type": "single",
+      "prompt": "Un attributo descrittivo distingue due istanze della stessa coppia?",
+      "concepts": [
+        "associazioni",
+        "ruoli",
+        "grado"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 17,
+          "pageEnd": 22,
+          "section": "Associazioni, ruoli e proprietà del legame"
+        },
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 30,
+          "pageEnd": 30,
+          "section": "Associazioni, ruoli e proprietà del legame"
+        }
+      ],
+      "options": [
+        {
+          "id": "errata",
+          "text": "Sì, basta aggiungere una data diversa."
+        },
+        {
+          "id": "corretta",
+          "text": "No, nel modello illustrato la coppia identifica il legame."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "Nel modello il legame è identificato dai partecipanti. Una data diversa non crea automaticamente un secondo legame della stessa coppia: servono periodi/eventi distinti."
+    }
+  ]
+}

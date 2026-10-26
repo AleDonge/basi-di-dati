@@ -1,0 +1,109 @@
+{
+  "lessonId": "ar-prodotto",
+  "version": 2,
+  "status": "needs-review",
+  "questions": [
+    {
+      "id": "ar-prodotto-q1",
+      "version": 2,
+      "type": "single",
+      "prompt": "Quante tuple produce un prodotto di relazioni con 3 e 2 tuple?",
+      "concepts": [
+        "prodotto",
+        "cardinalita",
+        "attributi"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 26,
+          "pageEnd": 28,
+          "section": "Prodotto cartesiano e combinazioni"
+        }
+      ],
+      "options": [
+        {
+          "id": "errata",
+          "text": "Cinque tuple."
+        },
+        {
+          "id": "corretta",
+          "text": "Sei tuple."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "Ogni tupla del primo operando si combina con ciascuna del secondo: 3×2=6, non 3+2."
+    },
+    {
+      "id": "ar-prodotto-q2",
+      "version": 2,
+      "type": "single",
+      "prompt": "Che cosa produce R × S quando S è vuota?",
+      "concepts": [
+        "prodotto",
+        "cardinalita",
+        "attributi"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 26,
+          "pageEnd": 28,
+          "section": "Prodotto cartesiano e combinazioni"
+        }
+      ],
+      "options": [
+        {
+          "id": "corretta",
+          "text": "Una relazione vuota con schema combinato."
+        },
+        {
+          "id": "errata",
+          "text": "R senza alcuna modifica."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "Non esiste alcuna coppia con una tupla del lato vuoto. I nomi e i domini dello schema combinato restano comunque definiti."
+    },
+    {
+      "id": "ar-prodotto-q3",
+      "version": 2,
+      "type": "single",
+      "prompt": "Sailors × Boats afferma che ogni marinaio abbia prenotato ogni barca?",
+      "concepts": [
+        "prodotto",
+        "cardinalita",
+        "attributi"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 26,
+          "pageEnd": 28,
+          "section": "Prodotto cartesiano e combinazioni"
+        }
+      ],
+      "options": [
+        {
+          "id": "errata",
+          "text": "Sì: tutte le coppie sono prenotazioni."
+        },
+        {
+          "id": "corretta",
+          "text": "No: produce combinazioni possibili, non fatti di prenotazione."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "Il prodotto combina possibilità; solo Reserves e i predicati sulle chiavi documentano una prenotazione effettiva."
+    }
+  ]
+}

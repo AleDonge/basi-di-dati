@@ -1,0 +1,55 @@
+{
+  "id": "academy-sailors-02",
+  "title": "Età in ordine crescente",
+  "version": 1,
+  "status": "needs-review",
+  "origin": "platform-activity",
+  "originalPrompt": "Restituisci sid e age dei marinai con età nota, ordinati per age crescente e sid crescente a parità.",
+  "datasetId": "sailors",
+  "topics": [
+    "ORDER BY",
+    "NULL"
+  ],
+  "difficulty": "base",
+  "lessonIds": [
+    "sql-select"
+  ],
+  "orderMatters": true,
+  "gradingMode": "automatic",
+  "fixtureIds": [
+    "sailors",
+    "academy-sailors-edges",
+    "academy-sailors-reversed",
+    "academy-sailors-empty"
+  ],
+  "solutionPath": "solutions/academy-sailors-02.sql",
+  "hints": [
+    "Individua la popolazione richiesta e le colonne: sid, age.",
+    "Escludi NULL e ordina age, poi sid per le parità."
+  ],
+  "outputContract": [
+    "sid",
+    "age"
+  ],
+  "interpretation": "Esercizio e soluzione originali Database Academy, needs-review. Rispetta esattamente l’ordine dichiarato. ",
+  "limitations": [
+    "Confronto su quattro fixture finite: coerenza osservata, non equivalenza generale.",
+    "Numero e posizione delle colonne obbligatori; alias liberi. NULL distinto da zero e testo; tolleranza relativa 1e-9 per numeri non interi.",
+    "LIMIT/OFFSET esclusi dalla verifica. SQLite non certifica le regole MySQL GROUP BY o le collazioni.",
+    "Ordine richiesto e confrontato, comprese le parità risolte dalla chiave."
+  ],
+  "sourceRefs": [
+    {
+      "sourceId": "sql-source",
+      "file": "Argomento04 SQL.pdf",
+      "pageStart": 14,
+      "pageEnd": 19,
+      "section": "Costrutti del corso; enunciato originale Database Academy"
+    },
+    {
+      "sourceId": "sailors-source",
+      "file": "Schema per generare DB Sailors.txt",
+      "section": "Schema e dati ufficiali, invariati"
+    }
+  ]
+}

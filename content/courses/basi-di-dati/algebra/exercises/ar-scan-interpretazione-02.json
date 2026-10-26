@@ -1,0 +1,33 @@
+{
+  "id": "ar-scan-interpretazione-02",
+  "title": "Interpretazione · Dipartimenti e direttori",
+  "version": 1,
+  "status": "needs-review",
+  "originalPrompt": "Descrivere in linguaggio naturale: π_Cognome(ρ_{Matricola←Direttore}(Dipartimento) ⋈ (Impiegato ⋈ ρ_{Dipartimento←Codice}(Dipartimento))).",
+  "sourceRefs": [
+    {
+      "sourceId": "algebra-scan-source",
+      "file": "esercitazione_AR.pdf",
+      "pageStart": 1,
+      "pageEnd": 1
+    }
+  ],
+  "datasetId": "impiegati-demo",
+  "difficulty": "intermedio",
+  "gradingMode": "guided",
+  "fixtureIds": [],
+  "solutionPath": "algebra/solutions/ar-scan-interpretazione-02.txt",
+  "hints": [
+    "Individua prima le chiavi, poi applica i filtri.",
+    "Proietta gli attributi richiesti solo dopo avere conservato quelli necessari ai join."
+  ],
+  "interpretation": "Output richiesto secondo l’enunciato, con nomi e ordine degli attributi della proiezione finale. I nomi uguali di persone distinte non identificano la stessa persona.",
+  "limitations": [
+    "Verifica su istanze finite: nessuna prova di equivalenza generale.",
+    "Nomi, ordine delle colonne e domini devono coincidere; ordine delle tuple ignorato.",
+    "Algebra classica senza NULL, aggregazioni o outer join nel parser.",
+    "Modalità guidata: nessun verdetto automatico e nessun completamento per correttezza."
+  ],
+  "solutionOrigin": "Database Academy: traduzione e spiegazione needs-review; non soluzione ufficiale del docente.",
+  "expectedColumns": []
+}

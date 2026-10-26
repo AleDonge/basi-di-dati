@@ -1,0 +1,4 @@
+import Link from "next/link";
+import {AlgebraWorkspace} from "@/components/algebra/workspace";
+export const metadata = { title: "Algebra Lab" };
+export default function AlgebraLab(){return <><p className="eyebrow">ALGEBRA LAB · INSIEMI E TRASFORMAZIONI</p><h1>Una relazione, passo dopo passo.</h1><p className="lead">Scrivi un’espressione, esplora il suo albero e osserva come cambiano davvero le tuple a ogni operazione.</p><div className="notice"><strong>Subset esplicito, risultati calcolati</strong><p>Selezione, proiezione, rinomina, prodotto, unione, differenza, intersezione, join naturale/theta e divisione. Outer join e aggregazioni non sono eseguibili. La verifica su fixture non dimostra equivalenza generale.</p><Link className="text-link" href="/practice#algebra">Vai agli esercizi ufficiali →</Link></div><AlgebraWorkspace/></>;}

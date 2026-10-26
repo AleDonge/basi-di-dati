@@ -1,0 +1,40 @@
+{
+  "id": "ar-impiegati-14",
+  "title": "Scheda · Q14",
+  "version": 1,
+  "status": "needs-review",
+  "originalPrompt": "Trovare matricola e cognome degli impiegati che lavorano a un solo progetto.",
+  "sourceRefs": [
+    {
+      "sourceId": "algebra-scan-source",
+      "file": "esercitazione_AR.pdf",
+      "pageStart": 1,
+      "pageEnd": 1
+    }
+  ],
+  "datasetId": "impiegati-demo",
+  "difficulty": "intermedio",
+  "gradingMode": "automatic",
+  "fixtureIds": [
+    "impiegati-demo",
+    "impiegati-edges",
+    "impiegati-empty",
+    "impiegati-reversed"
+  ],
+  "solutionPath": "algebra/solutions/ar-impiegati-14.txt",
+  "hints": [
+    "Calcola chi ha almeno una partecipazione e chi ha almeno due progetti distinti.",
+    "Sottrai il secondo insieme dal primo: zero progetti non significa uno solo."
+  ],
+  "interpretation": "Schema della scansione, righe esclusivamente sintetiche Database Academy. Convenzioni didattiche: Stipendio in milioni e Bilancio in migliaia (100K -> 100); queste unità non sono dichiarate nella scansione. Q8 interpreta «e» come unione dei due ruoli; Q14 conta progetti distinti. Prima della verifica accetta questo contratto, che resta needs-review.",
+  "limitations": [
+    "Verifica su istanze finite: nessuna prova di equivalenza generale.",
+    "Nomi, ordine delle colonne e domini devono coincidere; ordine delle tuple ignorato.",
+    "Algebra classica senza NULL, aggregazioni o outer join nel parser."
+  ],
+  "solutionOrigin": "Database Academy: traduzione e spiegazione needs-review; non soluzione ufficiale del docente.",
+  "expectedColumns": [
+    "Matricola",
+    "Cognome"
+  ]
+}

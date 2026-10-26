@@ -1,0 +1,383 @@
+{
+  "importId": "sprint4-20261025",
+  "createdAt": "2026-10-25",
+  "reviewStatus": "needs-review",
+  "manifestVersionBefore": 4,
+  "manifestVersionAfter": 5,
+  "sources": [
+    {
+      "sourceId": "er-source",
+      "sourceName": "Argomento05 Entity Relationship.pdf",
+      "checksum": "d78fc0a090bf4a0ab9c2f3dfd49ef24bd2b9e885d0cdb79ec5ba4f349b12fb99",
+      "change": "unchanged"
+    }
+  ],
+  "addedIds": [
+    "er-requisiti",
+    "er-entita",
+    "er-associazioni",
+    "er-vincoli",
+    "er-deboli",
+    "er-gerarchie",
+    "er-aggregazione",
+    "er-scelte",
+    "er-company",
+    "er-lavora",
+    "er-periodi",
+    "er-indirizzo",
+    "er-polizze",
+    "er-isa",
+    "er-aggregazione-q1",
+    "er-aggregazione-q2",
+    "er-aggregazione-q3",
+    "er-associazioni-q1",
+    "er-associazioni-q2",
+    "er-associazioni-q3",
+    "er-deboli-q1",
+    "er-deboli-q2",
+    "er-deboli-q3",
+    "er-entita-q1",
+    "er-entita-q2",
+    "er-entita-q3",
+    "er-gerarchie-q1",
+    "er-gerarchie-q2",
+    "er-gerarchie-q3",
+    "er-requisiti-q1",
+    "er-requisiti-q2",
+    "er-requisiti-q3",
+    "er-scelte-q1",
+    "er-scelte-q2",
+    "er-scelte-q3",
+    "er-vincoli-q1",
+    "er-vincoli-q2",
+    "er-vincoli-q3"
+  ],
+  "updatedIds": [
+    "progettazione-er",
+    "er-source"
+  ],
+  "removedIds": [],
+  "verifiedIds": [],
+  "notes": [
+    "71 pagine lette e controllate visivamente; notazione del corso mantenuta.",
+    "Otto lezioni, 24 quiz, sette attività guidate; soluzioni della piattaforma needs-review.",
+    "Nessuna modifica agli originali o ai contenuti degli sprint precedenti.",
+    "Gli ID sono stabili nel rispettivo tipo: er-aggregazione identifica una lezione e una distinta attività; addedRecords distingue i namespace."
+  ],
+  "generatedFiles": [
+    {
+      "path": "content/courses/basi-di-dati/er/diagrams/address.json",
+      "sha256": "76954a289e2bcc743a3a7d96e14f085d9dd7ecb771746b30236aff03a9400329"
+    },
+    {
+      "path": "content/courses/basi-di-dati/er/diagrams/aggregation.json",
+      "sha256": "52594745cd16c28985770517e1e89fc59b4576d4b714f67baa86ca7715d611ed"
+    },
+    {
+      "path": "content/courses/basi-di-dati/er/diagrams/company.json",
+      "sha256": "14d055be0851e37fa1c52b431fd3af7b4ea83fb76f6f01dd517a1851c4fd3800"
+    },
+    {
+      "path": "content/courses/basi-di-dati/er/diagrams/isa.json",
+      "sha256": "78109d3525a1d0e0a6aa82bbd3525f615a33acac1dd27071bcf8a071f36326b7"
+    },
+    {
+      "path": "content/courses/basi-di-dati/er/diagrams/period.json",
+      "sha256": "9bd5c68dad7bd34c9808895c47c82d3067cd2511623d6299266300db4f5dd8c0"
+    },
+    {
+      "path": "content/courses/basi-di-dati/er/diagrams/policies.json",
+      "sha256": "9a05ca6534caf58ccf76cf11d6c35acd8bfda8da66b1f1e9e16ab4086ee570f3"
+    },
+    {
+      "path": "content/courses/basi-di-dati/er/diagrams/weak.json",
+      "sha256": "5eba9a19680992a7b4a5f5e1aad9994586712c5e026156bfc27a778cf20aa513"
+    },
+    {
+      "path": "content/courses/basi-di-dati/er/diagrams/works-ref.json",
+      "sha256": "7ddb634a84c4d775420bd28dd5a3e89612895e5cfa37c2c6cb712f8333cde481"
+    },
+    {
+      "path": "content/courses/basi-di-dati/er/diagrams/works.json",
+      "sha256": "041b63fad1b85b7208514940025eda84a56133c8effd4d7ca9d3be70a29a698f"
+    },
+    {
+      "path": "content/courses/basi-di-dati/er/exercises/er-aggregazione.json",
+      "sha256": "5a9d46cccb98e4ddb4f18a7013396aa66d872b67c5936ae44ec47d979c9f3582"
+    },
+    {
+      "path": "content/courses/basi-di-dati/er/exercises/er-company.json",
+      "sha256": "49a04b452cfd241d27e99e6be86fc921dadccba282655001292ad91fb0c8302d"
+    },
+    {
+      "path": "content/courses/basi-di-dati/er/exercises/er-indirizzo.json",
+      "sha256": "efa64ce753371960118f4726b8db14c774b8edbfd9d3318f99ab8d8984c0c5c7"
+    },
+    {
+      "path": "content/courses/basi-di-dati/er/exercises/er-isa.json",
+      "sha256": "ad5fe7a3f882c598d4d32073a5b05774cf1dfb3be7491bdb1968478e22a7eac4"
+    },
+    {
+      "path": "content/courses/basi-di-dati/er/exercises/er-lavora.json",
+      "sha256": "bc31fa31c4f8b73488b5b1c525d8ca0d1dc711ed78976bdadb4b8520cb6606ac"
+    },
+    {
+      "path": "content/courses/basi-di-dati/er/exercises/er-periodi.json",
+      "sha256": "11c1efad7bbbb978b7d6a5a3a84c7349bc7e1ca13fe78a1c69db656e9559d191"
+    },
+    {
+      "path": "content/courses/basi-di-dati/er/exercises/er-polizze.json",
+      "sha256": "6cd6165cfc06743a168c947554d1d41f31cffb753a3d06674ce917492325a088"
+    },
+    {
+      "path": "content/courses/basi-di-dati/er/solutions/er-aggregazione.md",
+      "sha256": "c31cee60934a01181a06312dbd849de7926ba9af907dbe9f14cce183949c6c4c"
+    },
+    {
+      "path": "content/courses/basi-di-dati/er/solutions/er-company.md",
+      "sha256": "80442532b04b5cb683890b72fe63b52e4e0d870e3d29e41d4a53bcc7455a3556"
+    },
+    {
+      "path": "content/courses/basi-di-dati/er/solutions/er-indirizzo.md",
+      "sha256": "e62b1640a866446dcc6b9cfcd56597a1ef74752ac271eb4f1bd9c522514b5632"
+    },
+    {
+      "path": "content/courses/basi-di-dati/er/solutions/er-isa.md",
+      "sha256": "50a35a0dcc6c8e4cd0f976db9be30cab92ea4949d601db1a53c1e6e2dd1fbdd8"
+    },
+    {
+      "path": "content/courses/basi-di-dati/er/solutions/er-lavora.md",
+      "sha256": "0828af737ea59610a31cc2ac4ca26b90f5bfc8e046a8380b31de60a3ee8b8268"
+    },
+    {
+      "path": "content/courses/basi-di-dati/er/solutions/er-periodi.md",
+      "sha256": "da414b743330815ddf7996e374051156391f6251f3dc739f892941692eeaddb6"
+    },
+    {
+      "path": "content/courses/basi-di-dati/er/solutions/er-polizze.md",
+      "sha256": "ae7a8699b1478da1b44b3a01c5b039e7b700655b6244604a7854b51b33fae1f7"
+    },
+    {
+      "path": "content/courses/basi-di-dati/lessons/er-aggregazione.md",
+      "sha256": "f46f8c80f5228cc455fcf1b3bf75fe40d5bdcd4114718fe737c67a32c6c54f00"
+    },
+    {
+      "path": "content/courses/basi-di-dati/lessons/er-associazioni.md",
+      "sha256": "033484edc2adb1bab3de9a0f9cea021ba73662ada8459940bae95b7b4752e880"
+    },
+    {
+      "path": "content/courses/basi-di-dati/lessons/er-deboli.md",
+      "sha256": "ec7e93407ac3fcab18e0e7d64f3ebfa04b4c62fa453643ee7a7b9f34ffad79e1"
+    },
+    {
+      "path": "content/courses/basi-di-dati/lessons/er-entita.md",
+      "sha256": "0943a87059b650faafc05b87ba0b12e819c839a6df4a439b89c6259c3e56339a"
+    },
+    {
+      "path": "content/courses/basi-di-dati/lessons/er-gerarchie.md",
+      "sha256": "b00ccb916f651c36d2b09354afd81bd82a1e248f5f45521a0a96ce9306d6e1a3"
+    },
+    {
+      "path": "content/courses/basi-di-dati/lessons/er-requisiti.md",
+      "sha256": "b570589ed670825ac645fae75c588df5afbb8c58cf4f73e0fdde74529953273f"
+    },
+    {
+      "path": "content/courses/basi-di-dati/lessons/er-scelte.md",
+      "sha256": "3a2628eea5f712de7512886add201d1994763ea3fc125a1df53bfcaf0742063f"
+    },
+    {
+      "path": "content/courses/basi-di-dati/lessons/er-vincoli.md",
+      "sha256": "d0e9dfc2d790b10e8f38634083c7b05edd6e26dd700adf01529667f83f99df07"
+    },
+    {
+      "path": "content/courses/basi-di-dati/quizzes/er-aggregazione.json",
+      "sha256": "e1e78da360940bc2247ed74642fb272e3d788516286167883c078bdf8fc1d1e2"
+    },
+    {
+      "path": "content/courses/basi-di-dati/quizzes/er-associazioni.json",
+      "sha256": "bd5715d360c244a5581ffc238674a13121171110dba6ddfbbf12840a7d6dd1bf"
+    },
+    {
+      "path": "content/courses/basi-di-dati/quizzes/er-deboli.json",
+      "sha256": "f81592f5dd6a138705199d2a44d907ce08dfa9e7b2bc61db0b7ec463a4898a08"
+    },
+    {
+      "path": "content/courses/basi-di-dati/quizzes/er-entita.json",
+      "sha256": "ee052cb6b1baf67962e72775ae09ba8dc2eaccdf12abb0c9f27172b696881f30"
+    },
+    {
+      "path": "content/courses/basi-di-dati/quizzes/er-gerarchie.json",
+      "sha256": "74ebe1344cd31a94e700a3934848fe5a047198906171547e0871e89f8db310d5"
+    },
+    {
+      "path": "content/courses/basi-di-dati/quizzes/er-requisiti.json",
+      "sha256": "f78ea1a31dc4fdda6d2da9d557a79a2d08b6d68702f00e101b99840a4f88223b"
+    },
+    {
+      "path": "content/courses/basi-di-dati/quizzes/er-scelte.json",
+      "sha256": "923d8c54453b93b333e549dfad99ccf1af54d0a10c5ea19fb21fbd4d88da8b8b"
+    },
+    {
+      "path": "content/courses/basi-di-dati/quizzes/er-vincoli.json",
+      "sha256": "ae84a3fc760eea0f5d2f39bb6f97ec91b2952028e3734c199e0954f8c3d62813"
+    }
+  ],
+  "addedRecords": [
+    {
+      "kind": "lessons",
+      "id": "er-requisiti"
+    },
+    {
+      "kind": "lessons",
+      "id": "er-entita"
+    },
+    {
+      "kind": "lessons",
+      "id": "er-associazioni"
+    },
+    {
+      "kind": "lessons",
+      "id": "er-vincoli"
+    },
+    {
+      "kind": "lessons",
+      "id": "er-deboli"
+    },
+    {
+      "kind": "lessons",
+      "id": "er-gerarchie"
+    },
+    {
+      "kind": "lessons",
+      "id": "er-aggregazione"
+    },
+    {
+      "kind": "lessons",
+      "id": "er-scelte"
+    },
+    {
+      "kind": "exercises",
+      "id": "er-company"
+    },
+    {
+      "kind": "exercises",
+      "id": "er-lavora"
+    },
+    {
+      "kind": "exercises",
+      "id": "er-periodi"
+    },
+    {
+      "kind": "exercises",
+      "id": "er-indirizzo"
+    },
+    {
+      "kind": "exercises",
+      "id": "er-polizze"
+    },
+    {
+      "kind": "exercises",
+      "id": "er-isa"
+    },
+    {
+      "kind": "exercises",
+      "id": "er-aggregazione"
+    },
+    {
+      "kind": "questions",
+      "id": "er-aggregazione-q1"
+    },
+    {
+      "kind": "questions",
+      "id": "er-aggregazione-q2"
+    },
+    {
+      "kind": "questions",
+      "id": "er-aggregazione-q3"
+    },
+    {
+      "kind": "questions",
+      "id": "er-associazioni-q1"
+    },
+    {
+      "kind": "questions",
+      "id": "er-associazioni-q2"
+    },
+    {
+      "kind": "questions",
+      "id": "er-associazioni-q3"
+    },
+    {
+      "kind": "questions",
+      "id": "er-deboli-q1"
+    },
+    {
+      "kind": "questions",
+      "id": "er-deboli-q2"
+    },
+    {
+      "kind": "questions",
+      "id": "er-deboli-q3"
+    },
+    {
+      "kind": "questions",
+      "id": "er-entita-q1"
+    },
+    {
+      "kind": "questions",
+      "id": "er-entita-q2"
+    },
+    {
+      "kind": "questions",
+      "id": "er-entita-q3"
+    },
+    {
+      "kind": "questions",
+      "id": "er-gerarchie-q1"
+    },
+    {
+      "kind": "questions",
+      "id": "er-gerarchie-q2"
+    },
+    {
+      "kind": "questions",
+      "id": "er-gerarchie-q3"
+    },
+    {
+      "kind": "questions",
+      "id": "er-requisiti-q1"
+    },
+    {
+      "kind": "questions",
+      "id": "er-requisiti-q2"
+    },
+    {
+      "kind": "questions",
+      "id": "er-requisiti-q3"
+    },
+    {
+      "kind": "questions",
+      "id": "er-scelte-q1"
+    },
+    {
+      "kind": "questions",
+      "id": "er-scelte-q2"
+    },
+    {
+      "kind": "questions",
+      "id": "er-scelte-q3"
+    },
+    {
+      "kind": "questions",
+      "id": "er-vincoli-q1"
+    },
+    {
+      "kind": "questions",
+      "id": "er-vincoli-q2"
+    },
+    {
+      "kind": "questions",
+      "id": "er-vincoli-q3"
+    }
+  ]
+}

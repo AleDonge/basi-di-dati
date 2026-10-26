@@ -1,0 +1,3776 @@
+{
+  "schemaVersion": 1,
+  "version": 6,
+  "course": {
+    "id": "basi-di-dati",
+    "title": "Basi di Dati",
+    "academicYear": "2026/27",
+    "sourceRefs": [
+      {
+        "sourceId": "course-source",
+        "file": "Basi_di_dati_DISI 2026-27.pdf",
+        "pageStart": 1,
+        "pageEnd": 1
+      }
+    ]
+  },
+  "sources": [
+    {
+      "file": "Argomento01 Basi di Dati e loro utenti.pdf",
+      "bytes": 263595,
+      "sha256": "8f9dbee7feb1028b6da06f2fc65eeaeb31257eb84b1b35e72f0b1d536d87318a",
+      "pages": 23,
+      "id": "intro-source",
+      "kind": "pdf",
+      "reviewStatus": "needs-review",
+      "notes": "Letto integralmente nello Sprint 1, incluse figure e tabelle. Lezioni e quiz in anteprima needs-review; attesa revisione umana."
+    },
+    {
+      "file": "Argomento02 Modello Relazionale.pdf",
+      "bytes": 587243,
+      "sha256": "1c2ef3bc742ca0fd8d65583b800d51e3705d88f22f2ff6504e1527df64e16a7d",
+      "pages": 37,
+      "id": "relational-source",
+      "kind": "pdf",
+      "reviewStatus": "needs-review",
+      "notes": "Letto integralmente nello Sprint 1, incluse figure e tabelle. Lezioni e quiz in anteprima needs-review; attesa revisione umana."
+    },
+    {
+      "file": "Argomento03 Algebra Relazionale.pdf",
+      "bytes": 1367686,
+      "sha256": "8b988dacfdbbfb73f60ce9b2cfbfd53d883fb46d87cdb53caba01bf9d6b7d5d4",
+      "pages": 48,
+      "id": "algebra-source",
+      "kind": "pdf",
+      "reviewStatus": "needs-review",
+      "notes": "Letto integralmente e controllato visivamente nello Sprint 3. Lezioni/esercizi needs-review; ambiguità e limiti in docs/ALGEBRA_LAB.md."
+    },
+    {
+      "file": "Argomento03.1 Algebra Relazionale Autoverifica.pdf",
+      "bytes": 286533,
+      "sha256": "b7962a385cb7b06ec4a9686b71430387db37ffd6cf6c6e4971e44c8597925911",
+      "pages": 10,
+      "id": "algebra-self-source",
+      "kind": "pdf",
+      "reviewStatus": "needs-review",
+      "notes": "Letto integralmente e controllato visivamente nello Sprint 3. Lezioni/esercizi needs-review; ambiguità e limiti in docs/ALGEBRA_LAB.md."
+    },
+    {
+      "file": "Argomento04 SQL.pdf",
+      "bytes": 1756735,
+      "sha256": "d497fc9d464415ffb3911a51cdcbed82e90c12419c21ace817d3270aca38648f",
+      "pages": 91,
+      "id": "sql-source",
+      "kind": "pdf",
+      "reviewStatus": "needs-review",
+      "notes": "Sprint 6: tutte le 91 pagine lette e controllate visivamente. Lezioni, ambiguità e limiti in docs/SOURCE_REVIEW_SPRINT6.md; revisione umana ancora richiesta."
+    },
+    {
+      "file": "Argomento05 Entity Relationship.pdf",
+      "bytes": 713315,
+      "sha256": "d78fc0a090bf4a0ab9c2f3dfd49ef24bd2b9e885d0cdb79ec5ba4f349b12fb99",
+      "pages": 71,
+      "id": "er-source",
+      "kind": "pdf",
+      "reviewStatus": "needs-review",
+      "notes": "Letti integralmente testo e figure di tutte le 71 pagine nello Sprint 4. Notazione, ambiguità ed esercizi in docs/SOURCE_REVIEW_SPRINT4.md. Contenuti needs-review."
+    },
+    {
+      "file": "Basi_di_dati_DISI 2026-27.pdf",
+      "bytes": 476381,
+      "sha256": "617ff6f4d673f438970d95e580b954561a5f9e7427f4db7fe6245cb935d34066",
+      "pages": 15,
+      "id": "course-source",
+      "kind": "pdf",
+      "reviewStatus": "needs-review",
+      "notes": "Inventariato; contenuti didattici non ancora revisionati."
+    },
+    {
+      "file": "Book.pdf",
+      "bytes": 69851795,
+      "sha256": "2ef94de7cb26e6fd8342846083d2c110d34d29fef6a8b5bae28846c0538778bc",
+      "pages": 1098,
+      "id": "book-source",
+      "kind": "pdf",
+      "reviewStatus": "needs-review",
+      "notes": "Solo metadati e checksum; nessuna estrazione del testo. Risorsa supplementare."
+    },
+    {
+      "file": "esercitazione_AR.pdf",
+      "bytes": 1148314,
+      "sha256": "ff1eb2b07078df4358c54a38ff8b80ed31fd6b30292cc9d94d0031bc71f58d46",
+      "pages": 1,
+      "id": "algebra-scan-source",
+      "kind": "pdf",
+      "reviewStatus": "needs-review",
+      "notes": "Letto integralmente e controllato visivamente nello Sprint 3. Lezioni/esercizi needs-review; ambiguità e limiti in docs/ALGEBRA_LAB.md."
+    },
+    {
+      "file": "Esercizi 1 Sailor.txt",
+      "bytes": 939,
+      "sha256": "f38bef66037e948a719b92e50bbf6a77957dc64a75c21046fee467a9cea1287c",
+      "lines": 34,
+      "id": "sailors-exercises-source",
+      "kind": "exercises",
+      "reviewStatus": "needs-review",
+      "notes": "Cinque enunciati originali integrati. Interpretazioni, fixture e soluzioni della piattaforma needs-review; non fornite dal docente."
+    },
+    {
+      "file": "Introduzione MySQL e Dbeaver.pdf",
+      "bytes": 6516653,
+      "sha256": "49cdbfdf3b7c1cb4ce83701cd8884b18cf31399ae651d5c588ee162899c6f570",
+      "pages": 92,
+      "id": "tools-source",
+      "kind": "pdf",
+      "reviewStatus": "needs-review",
+      "notes": "Sprint 6: tutte le 92 pagine lette e controllate visivamente. Lezioni, ambiguità e limiti in docs/SOURCE_REVIEW_SPRINT6.md; revisione umana ancora richiesta."
+    },
+    {
+      "file": "Schema per generare DB NorthWind.txt",
+      "bytes": 778149,
+      "sha256": "ccc889df337696fbc890802a3efe6e2aa216f00a367545f36346a03ba4800e39",
+      "lines": 3410,
+      "id": "northwind-source",
+      "kind": "sql",
+      "reviewStatus": "needs-review",
+      "notes": "Dump letto integralmente e convertito: otto tabelle, 3202 record, nove BLOB. Nessun dato scartato; compatibilità MySQL parziale. Nessuna FK dichiarata nel dump."
+    },
+    {
+      "file": "Schema per generare DB Sailors.txt",
+      "bytes": 1214,
+      "sha256": "cdb06a409a72340a1227fc4a24214be783ea06a2e434a5c65d84aeb47f47d19d",
+      "lines": 62,
+      "id": "sailors-source",
+      "kind": "sql",
+      "reviewStatus": "needs-review",
+      "notes": "Script letto integralmente e convertito in SQLite: 10/4/10 record, PK/FK preservate, data 1998-1-11 normalizzata in ISO. Originale invariato."
+    }
+  ],
+  "modules": [
+    {
+      "id": "introduzione",
+      "courseId": "basi-di-dati",
+      "title": "Basi di dati e loro utenti",
+      "order": 1,
+      "status": "draft",
+      "prerequisites": [],
+      "sourceIds": [
+        "intro-source"
+      ],
+      "description": "Quattro lezioni in anteprima da revisionare: dati, astrazione, carichi e utenti."
+    },
+    {
+      "id": "modello-relazionale",
+      "courseId": "basi-di-dati",
+      "title": "Modello relazionale",
+      "order": 2,
+      "status": "draft",
+      "prerequisites": [],
+      "sourceIds": [
+        "relational-source"
+      ],
+      "description": "Cinque lezioni in anteprima da revisionare: relazioni, schemi, chiavi e integrità."
+    },
+    {
+      "id": "algebra-relazionale",
+      "courseId": "basi-di-dati",
+      "title": "Algebra relazionale",
+      "order": 3,
+      "status": "draft",
+      "prerequisites": [],
+      "sourceIds": [
+        "algebra-source",
+        "algebra-self-source",
+        "algebra-scan-source"
+      ],
+      "description": "Lezioni e laboratorio insiemistico: parser, albero e passaggi calcolati; esercizi automatici e guidati needs-review."
+    },
+    {
+      "id": "sql",
+      "courseId": "basi-di-dati",
+      "title": "Il linguaggio SQL",
+      "order": 4,
+      "status": "draft",
+      "prerequisites": [],
+      "sourceIds": [
+        "sql-source",
+        "sailors-source",
+        "sailors-exercises-source",
+        "northwind-source"
+      ],
+      "description": "Dodici lezioni SQL, cinque esercizi ufficiali e diciotto originali Sailors/NorthWind needs-review. Dialetti e costrutti solo teorici espliciti."
+    },
+    {
+      "id": "progettazione-er",
+      "courseId": "basi-di-dati",
+      "title": "Progettazione e modello ER",
+      "order": 5,
+      "status": "draft",
+      "prerequisites": [],
+      "sourceIds": [
+        "er-source"
+      ],
+      "description": "Lezioni ER ed editor locale nella notazione del corso; sette attività guidate needs-review e validazione strutturale, senza certificazione semantica."
+    },
+    {
+      "id": "strumenti",
+      "courseId": "basi-di-dati",
+      "title": "MySQL, MariaDB e DBeaver",
+      "order": 6,
+      "status": "draft",
+      "prerequisites": [],
+      "sourceIds": [
+        "tools-source"
+      ],
+      "description": "Quattro lezioni needs-review: ambiente locale, script/DBeaver, JDBC e Python. Nessun runtime esterno richiesto dalla piattaforma."
+    }
+  ],
+  "lessons": [
+    {
+      "id": "dbms-dati",
+      "moduleId": "introduzione",
+      "slug": "dbms-dati",
+      "title": "Dati, DBMS e sistemi di basi di dati",
+      "mdxPath": "lessons/dbms-dati.md",
+      "version": 1,
+      "status": "needs-review",
+      "sourceRefs": [
+        {
+          "sourceId": "intro-source",
+          "file": "Argomento01 Basi di Dati e loro utenti.pdf",
+          "pageStart": 1,
+          "pageEnd": 7,
+          "section": "Dati, DBMS e sistemi di basi di dati"
+        }
+      ],
+      "concepts": [
+        "database",
+        "dbms",
+        "linguaggi"
+      ],
+      "description": "Distingui informazioni, gestore e applicazioni, e segui il percorso di una richiesta.",
+      "objectives": [
+        "Distinguere database, DBMS e database system.",
+        "Riconoscere le responsabilità del gestore.",
+        "Classificare le famiglie di linguaggi citate nelle slide."
+      ],
+      "order": 1,
+      "prerequisites": [],
+      "relatedLessonIds": [
+        "astrazione-indipendenza"
+      ],
+      "quizPath": "quizzes/dbms-dati.json"
+    },
+    {
+      "id": "astrazione-indipendenza",
+      "moduleId": "introduzione",
+      "slug": "astrazione-indipendenza",
+      "title": "Astrazione e indipendenza dei dati",
+      "mdxPath": "lessons/astrazione-indipendenza.md",
+      "version": 1,
+      "status": "needs-review",
+      "sourceRefs": [
+        {
+          "sourceId": "intro-source",
+          "file": "Argomento01 Basi di Dati e loro utenti.pdf",
+          "pageStart": 8,
+          "pageEnd": 13,
+          "section": "Astrazione e indipendenza dei dati"
+        }
+      ],
+      "concepts": [
+        "astrazione",
+        "schema",
+        "indipendenza"
+      ],
+      "description": "Separa viste, struttura logica e memorizzazione, per capire quali cambiamenti si propagano.",
+      "objectives": [
+        "Descrivere i tre livelli di astrazione.",
+        "Distinguere indipendenza logica e fisica.",
+        "Riconoscere i limiti della compatibilità fra schema e applicazioni."
+      ],
+      "order": 2,
+      "prerequisites": [
+        "dbms-dati"
+      ],
+      "relatedLessonIds": [
+        "transazioni-analisi"
+      ],
+      "quizPath": "quizzes/astrazione-indipendenza.json"
+    },
+    {
+      "id": "transazioni-analisi",
+      "moduleId": "introduzione",
+      "slug": "transazioni-analisi",
+      "title": "Concorrenza, recupero, OLTP e OLAP",
+      "mdxPath": "lessons/transazioni-analisi.md",
+      "version": 1,
+      "status": "needs-review",
+      "sourceRefs": [
+        {
+          "sourceId": "intro-source",
+          "file": "Argomento01 Basi di Dati e loro utenti.pdf",
+          "pageStart": 14,
+          "pageEnd": 18,
+          "section": "Concorrenza, recupero, OLTP e OLAP"
+        },
+        {
+          "sourceId": "intro-source",
+          "file": "Argomento01 Basi di Dati e loro utenti.pdf",
+          "pageStart": 6,
+          "pageEnd": 7,
+          "section": "Query e transazioni"
+        }
+      ],
+      "concepts": [
+        "transazioni",
+        "recovery",
+        "oltp",
+        "olap"
+      ],
+      "description": "Capisci perché coordinare gli accessi e distinguere operatività da analisi.",
+      "objectives": [
+        "Spiegare atomicità, concorrenza e recupero a livello introduttivo.",
+        "Confrontare le finalità di OLTP e OLAP.",
+        "Classificare scenari operativi e analitici."
+      ],
+      "order": 3,
+      "prerequisites": [
+        "astrazione-indipendenza"
+      ],
+      "relatedLessonIds": [
+        "utenti-scelte"
+      ],
+      "quizPath": "quizzes/transazioni-analisi.json"
+    },
+    {
+      "id": "utenti-scelte",
+      "moduleId": "introduzione",
+      "slug": "utenti-scelte",
+      "title": "Utenti, responsabilità e scelta di un DBMS",
+      "mdxPath": "lessons/utenti-scelte.md",
+      "version": 1,
+      "status": "needs-review",
+      "sourceRefs": [
+        {
+          "sourceId": "intro-source",
+          "file": "Argomento01 Basi di Dati e loro utenti.pdf",
+          "pageStart": 19,
+          "pageEnd": 23,
+          "section": "Utenti, responsabilità e scelta di un DBMS"
+        }
+      ],
+      "concepts": [
+        "utenti",
+        "dba",
+        "requisiti"
+      ],
+      "description": "Collega i ruoli alle responsabilità e valuta quando un gestore è appropriato.",
+      "objectives": [
+        "Distinguere progettista, amministratore e utilizzatori finali.",
+        "Separare sviluppatori di applicazioni e del DBMS.",
+        "Valutare vantaggi e costi rispetto ai requisiti."
+      ],
+      "order": 4,
+      "prerequisites": [
+        "transazioni-analisi"
+      ],
+      "relatedLessonIds": [
+        "relazioni-domini"
+      ],
+      "quizPath": "quizzes/utenti-scelte.json"
+    },
+    {
+      "id": "relazioni-domini",
+      "moduleId": "modello-relazionale",
+      "slug": "relazioni-domini",
+      "title": "Domini, tuple e relazioni",
+      "mdxPath": "lessons/relazioni-domini.md",
+      "version": 2,
+      "status": "needs-review",
+      "sourceRefs": [
+        {
+          "sourceId": "relational-source",
+          "file": "Argomento02 Modello Relazionale.pdf",
+          "pageStart": 1,
+          "pageEnd": 7,
+          "section": "Domini, tuple e relazioni"
+        }
+      ],
+      "concepts": [
+        "domini",
+        "prodotto-cartesiano",
+        "relazione"
+      ],
+      "description": "Costruisci una relazione a partire dai valori ammissibili e dal prodotto cartesiano.",
+      "objectives": [
+        "Identificare strutture, operatori e vincoli di un modello.",
+        "Costruire un prodotto cartesiano finito.",
+        "Distinguere tutte le combinazioni da uno stato della relazione."
+      ],
+      "order": 5,
+      "prerequisites": [
+        "utenti-scelte"
+      ],
+      "relatedLessonIds": [
+        "schema-istanza"
+      ],
+      "quizPath": "quizzes/relazioni-domini.json"
+    },
+    {
+      "id": "schema-istanza",
+      "moduleId": "modello-relazionale",
+      "slug": "schema-istanza",
+      "title": "Schema, istanza, grado e cardinalità",
+      "mdxPath": "lessons/schema-istanza.md",
+      "version": 1,
+      "status": "needs-review",
+      "sourceRefs": [
+        {
+          "sourceId": "relational-source",
+          "file": "Argomento02 Modello Relazionale.pdf",
+          "pageStart": 8,
+          "pageEnd": 13,
+          "section": "Schema, istanza, grado e cardinalità"
+        }
+      ],
+      "concepts": [
+        "schema",
+        "istanza",
+        "grado",
+        "cardinalita"
+      ],
+      "description": "Leggi una tabella distinguendo la descrizione dai dati attualmente presenti.",
+      "objectives": [
+        "Distinguere schema e stato.",
+        "Calcolare grado e cardinalità.",
+        "Spiegare ordine delle tuple e assenza di duplicati nel modello."
+      ],
+      "order": 6,
+      "prerequisites": [
+        "relazioni-domini"
+      ],
+      "relatedLessonIds": [
+        "chiavi-vincoli"
+      ],
+      "quizPath": "quizzes/schema-istanza.json"
+    },
+    {
+      "id": "chiavi-vincoli",
+      "moduleId": "modello-relazionale",
+      "slug": "chiavi-vincoli",
+      "title": "Chiavi e integrità delle entità",
+      "mdxPath": "lessons/chiavi-vincoli.md",
+      "version": 1,
+      "status": "needs-review",
+      "sourceRefs": [
+        {
+          "sourceId": "relational-source",
+          "file": "Argomento02 Modello Relazionale.pdf",
+          "pageStart": 14,
+          "pageEnd": 19,
+          "section": "Chiavi e integrità delle entità"
+        },
+        {
+          "sourceId": "relational-source",
+          "file": "Argomento02 Modello Relazionale.pdf",
+          "pageStart": 12,
+          "pageEnd": 12,
+          "section": "Introduzione alle chiavi"
+        }
+      ],
+      "concepts": [
+        "chiavi",
+        "superchiave",
+        "minimalita",
+        "null"
+      ],
+      "description": "Ragiona su identificazione, minimalità e non nullità, anche con chiavi composte.",
+      "objectives": [
+        "Distinguere superchiave, candidata e primaria.",
+        "Verificare la minimalità di una superchiave.",
+        "Applicare l’integrità dell’entità a una primaria composta."
+      ],
+      "order": 7,
+      "prerequisites": [
+        "schema-istanza"
+      ],
+      "relatedLessonIds": [
+        "integrita-riferimenti"
+      ],
+      "quizPath": "quizzes/chiavi-vincoli.json"
+    },
+    {
+      "id": "integrita-riferimenti",
+      "moduleId": "modello-relazionale",
+      "slug": "integrita-riferimenti",
+      "title": "Integrità referenziale e schema della base di dati",
+      "mdxPath": "lessons/integrita-riferimenti.md",
+      "version": 2,
+      "status": "needs-review",
+      "sourceRefs": [
+        {
+          "sourceId": "relational-source",
+          "file": "Argomento02 Modello Relazionale.pdf",
+          "pageStart": 20,
+          "pageEnd": 27,
+          "section": "Integrità referenziale e schema della base di dati"
+        }
+      ],
+      "concepts": [
+        "foreign-key",
+        "integrita",
+        "schema-database"
+      ],
+      "description": "Segui i collegamenti tra relazioni e valuta la validità dello stato complessivo.",
+      "objectives": [
+        "Identificare relazioni referenzianti e referenziate.",
+        "Valutare una FK semplice, anche autoriferita.",
+        "Distinguere vincoli di riga e regole semantiche."
+      ],
+      "order": 8,
+      "prerequisites": [
+        "chiavi-vincoli"
+      ],
+      "relatedLessonIds": [
+        "aggiornamenti-integrita"
+      ],
+      "quizPath": "quizzes/integrita-riferimenti.json"
+    },
+    {
+      "id": "aggiornamenti-integrita",
+      "moduleId": "modello-relazionale",
+      "slug": "aggiornamenti-integrita",
+      "title": "Aggiornamenti e conservazione dell’integrità",
+      "mdxPath": "lessons/aggiornamenti-integrita.md",
+      "version": 2,
+      "status": "needs-review",
+      "sourceRefs": [
+        {
+          "sourceId": "relational-source",
+          "file": "Argomento02 Modello Relazionale.pdf",
+          "pageStart": 28,
+          "pageEnd": 37,
+          "section": "Aggiornamenti e conservazione dell’integrità"
+        }
+      ],
+      "concepts": [
+        "insert",
+        "delete",
+        "update",
+        "azioni-referenziali"
+      ],
+      "description": "Prevedi violazioni e conseguenze di rifiuto, cascata e assegnazioni sulle FK.",
+      "objectives": [
+        "Individuare possibili violazioni per INSERT, DELETE e UPDATE.",
+        "Distinguere cascata di cancellazione e aggiornamento.",
+        "Riconoscere condizioni e limiti di SET NULL e SET DEFAULT."
+      ],
+      "order": 9,
+      "prerequisites": [
+        "integrita-riferimenti"
+      ],
+      "relatedLessonIds": [],
+      "quizPath": "quizzes/aggiornamenti-integrita.json"
+    },
+    {
+      "id": "ar-selezione",
+      "moduleId": "algebra-relazionale",
+      "slug": "ar-selezione",
+      "title": "Algebra, chiusura e selezione",
+      "mdxPath": "lessons/ar-selezione.md",
+      "version": 2,
+      "status": "needs-review",
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 2,
+          "pageEnd": 12,
+          "section": "Algebra, chiusura e selezione"
+        }
+      ],
+      "concepts": [
+        "algebra",
+        "selezione",
+        "predicati"
+      ],
+      "description": "Definizioni, esempi ragionati, tabelle e limiti: algebra, chiusura e selezione.",
+      "objectives": [
+        "Spiegare le definizioni e distinguere schema e istanza.",
+        "Applicare la sintassi documentata e controllare le relazioni intermedie.",
+        "Riconoscere errori tipici e limiti del subset eseguibile."
+      ],
+      "order": 10,
+      "prerequisites": [
+        "relazioni-domini"
+      ],
+      "relatedLessonIds": [
+        "ar-proiezione"
+      ],
+      "quizPath": "quizzes/ar-selezione.json"
+    },
+    {
+      "id": "ar-proiezione",
+      "moduleId": "algebra-relazionale",
+      "slug": "ar-proiezione",
+      "title": "Proiezione, duplicati e identità",
+      "mdxPath": "lessons/ar-proiezione.md",
+      "version": 2,
+      "status": "needs-review",
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 13,
+          "pageEnd": 20,
+          "section": "Proiezione, duplicati e identità"
+        },
+        {
+          "sourceId": "algebra-self-source",
+          "file": "Argomento03.1 Algebra Relazionale Autoverifica.pdf",
+          "pageStart": 8,
+          "pageEnd": 8,
+          "section": "Richiamo già discusso nel testo, reso esplicito nei metadati"
+        }
+      ],
+      "concepts": [
+        "proiezione",
+        "duplicati",
+        "chiusura"
+      ],
+      "description": "Definizioni, esempi ragionati, tabelle e limiti: proiezione, duplicati e identità.",
+      "objectives": [
+        "Spiegare le definizioni e distinguere schema e istanza.",
+        "Applicare la sintassi documentata e controllare le relazioni intermedie.",
+        "Riconoscere errori tipici e limiti del subset eseguibile."
+      ],
+      "order": 11,
+      "prerequisites": [
+        "ar-selezione"
+      ],
+      "relatedLessonIds": [
+        "ar-insiemi"
+      ],
+      "quizPath": "quizzes/ar-proiezione.json"
+    },
+    {
+      "id": "ar-insiemi",
+      "moduleId": "algebra-relazionale",
+      "slug": "ar-insiemi",
+      "title": "Unione, intersezione e differenza",
+      "mdxPath": "lessons/ar-insiemi.md",
+      "version": 2,
+      "status": "needs-review",
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 21,
+          "pageEnd": 25,
+          "section": "Unione, intersezione e differenza"
+        }
+      ],
+      "concepts": [
+        "unione",
+        "intersezione",
+        "differenza"
+      ],
+      "description": "Definizioni, esempi ragionati, tabelle e limiti: unione, intersezione e differenza.",
+      "objectives": [
+        "Spiegare le definizioni e distinguere schema e istanza.",
+        "Applicare la sintassi documentata e controllare le relazioni intermedie.",
+        "Riconoscere errori tipici e limiti del subset eseguibile."
+      ],
+      "order": 12,
+      "prerequisites": [
+        "ar-proiezione"
+      ],
+      "relatedLessonIds": [
+        "ar-prodotto"
+      ],
+      "quizPath": "quizzes/ar-insiemi.json"
+    },
+    {
+      "id": "ar-prodotto",
+      "moduleId": "algebra-relazionale",
+      "slug": "ar-prodotto",
+      "title": "Prodotto cartesiano e combinazioni",
+      "mdxPath": "lessons/ar-prodotto.md",
+      "version": 2,
+      "status": "needs-review",
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 26,
+          "pageEnd": 28,
+          "section": "Prodotto cartesiano e combinazioni"
+        }
+      ],
+      "concepts": [
+        "prodotto",
+        "cardinalita",
+        "attributi"
+      ],
+      "description": "Definizioni, esempi ragionati, tabelle e limiti: prodotto cartesiano e combinazioni.",
+      "objectives": [
+        "Spiegare le definizioni e distinguere schema e istanza.",
+        "Applicare la sintassi documentata e controllare le relazioni intermedie.",
+        "Riconoscere errori tipici e limiti del subset eseguibile."
+      ],
+      "order": 13,
+      "prerequisites": [
+        "ar-insiemi"
+      ],
+      "relatedLessonIds": [
+        "ar-ridenominazione"
+      ],
+      "quizPath": "quizzes/ar-prodotto.json"
+    },
+    {
+      "id": "ar-ridenominazione",
+      "moduleId": "algebra-relazionale",
+      "slug": "ar-ridenominazione",
+      "title": "Ridenominazione e self-join",
+      "mdxPath": "lessons/ar-ridenominazione.md",
+      "version": 2,
+      "status": "needs-review",
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 28,
+          "pageEnd": 30,
+          "section": "Ridenominazione e self-join"
+        }
+      ],
+      "concepts": [
+        "rinomina",
+        "self-join",
+        "schema"
+      ],
+      "description": "Definizioni, esempi ragionati, tabelle e limiti: ridenominazione e self-join.",
+      "objectives": [
+        "Spiegare le definizioni e distinguere schema e istanza.",
+        "Applicare la sintassi documentata e controllare le relazioni intermedie.",
+        "Riconoscere errori tipici e limiti del subset eseguibile."
+      ],
+      "order": 14,
+      "prerequisites": [
+        "ar-prodotto"
+      ],
+      "relatedLessonIds": [
+        "ar-join"
+      ],
+      "quizPath": "quizzes/ar-ridenominazione.json"
+    },
+    {
+      "id": "ar-join",
+      "moduleId": "algebra-relazionale",
+      "slug": "ar-join",
+      "title": "Theta join, equijoin e join naturale",
+      "mdxPath": "lessons/ar-join.md",
+      "version": 2,
+      "status": "needs-review",
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 31,
+          "pageEnd": 37,
+          "section": "Theta join, equijoin e join naturale"
+        }
+      ],
+      "concepts": [
+        "join",
+        "equijoin",
+        "join-naturale"
+      ],
+      "description": "Definizioni, esempi ragionati, tabelle e limiti: theta join, equijoin e join naturale.",
+      "objectives": [
+        "Spiegare le definizioni e distinguere schema e istanza.",
+        "Applicare la sintassi documentata e controllare le relazioni intermedie.",
+        "Riconoscere errori tipici e limiti del subset eseguibile."
+      ],
+      "order": 15,
+      "prerequisites": [
+        "ar-ridenominazione"
+      ],
+      "relatedLessonIds": [
+        "ar-divisione"
+      ],
+      "quizPath": "quizzes/ar-join.json"
+    },
+    {
+      "id": "ar-divisione",
+      "moduleId": "algebra-relazionale",
+      "slug": "ar-divisione",
+      "title": "Divisione e domande con “tutti”",
+      "mdxPath": "lessons/ar-divisione.md",
+      "version": 2,
+      "status": "needs-review",
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 38,
+          "pageEnd": 39,
+          "section": "Divisione e domande con “tutti”"
+        }
+      ],
+      "concepts": [
+        "divisione",
+        "quantificazione",
+        "insiemi"
+      ],
+      "description": "Definizioni, esempi ragionati, tabelle e limiti: divisione e domande con “tutti”.",
+      "objectives": [
+        "Spiegare le definizioni e distinguere schema e istanza.",
+        "Applicare la sintassi documentata e controllare le relazioni intermedie.",
+        "Riconoscere errori tipici e limiti del subset eseguibile."
+      ],
+      "order": 16,
+      "prerequisites": [
+        "ar-join"
+      ],
+      "relatedLessonIds": [
+        "ar-estensioni"
+      ],
+      "quizPath": "quizzes/ar-divisione.json"
+    },
+    {
+      "id": "ar-estensioni",
+      "moduleId": "algebra-relazionale",
+      "slug": "ar-estensioni",
+      "title": "Outer join e confini dell’algebra eseguibile",
+      "mdxPath": "lessons/ar-estensioni.md",
+      "version": 2,
+      "status": "needs-review",
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 40,
+          "pageEnd": 43,
+          "section": "Outer join e confini dell’algebra eseguibile"
+        }
+      ],
+      "concepts": [
+        "outer-join",
+        "null",
+        "estensioni"
+      ],
+      "description": "Definizioni, esempi ragionati, tabelle e limiti: outer join e confini dell’algebra eseguibile.",
+      "objectives": [
+        "Spiegare le definizioni e distinguere schema e istanza.",
+        "Applicare la sintassi documentata e controllare le relazioni intermedie.",
+        "Riconoscere errori tipici e limiti del subset eseguibile."
+      ],
+      "order": 17,
+      "prerequisites": [
+        "ar-divisione"
+      ],
+      "relatedLessonIds": [
+        "ar-alberi"
+      ],
+      "quizPath": "quizzes/ar-estensioni.json"
+    },
+    {
+      "id": "ar-alberi",
+      "moduleId": "algebra-relazionale",
+      "slug": "ar-alberi",
+      "title": "Composizione, query tree e ottimizzazione",
+      "mdxPath": "lessons/ar-alberi.md",
+      "version": 2,
+      "status": "needs-review",
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 44,
+          "pageEnd": 48,
+          "section": "Composizione, query tree e ottimizzazione"
+        }
+      ],
+      "concepts": [
+        "composizione",
+        "alberi",
+        "ottimizzazione"
+      ],
+      "description": "Definizioni, esempi ragionati, tabelle e limiti: composizione, query tree e ottimizzazione.",
+      "objectives": [
+        "Spiegare le definizioni e distinguere schema e istanza.",
+        "Applicare la sintassi documentata e controllare le relazioni intermedie.",
+        "Riconoscere errori tipici e limiti del subset eseguibile."
+      ],
+      "order": 18,
+      "prerequisites": [
+        "ar-estensioni"
+      ],
+      "relatedLessonIds": [
+        "ar-selezione"
+      ],
+      "quizPath": "quizzes/ar-alberi.json"
+    },
+    {
+      "id": "er-requisiti",
+      "moduleId": "progettazione-er",
+      "slug": "er-requisiti",
+      "title": "Dai requisiti al modello concettuale",
+      "mdxPath": "lessons/er-requisiti.md",
+      "version": 2,
+      "status": "needs-review",
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 2,
+          "pageEnd": 9,
+          "section": "Dai requisiti al modello concettuale"
+        },
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 64,
+          "pageEnd": 71,
+          "section": "Dai requisiti al modello concettuale"
+        },
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 27,
+          "pageEnd": 27,
+          "section": "Richiamo già discusso nel testo, reso esplicito nei metadati"
+        }
+      ],
+      "concepts": [
+        "requisiti",
+        "concettuale",
+        "progettazione"
+      ],
+      "description": "Progetta e interpreta: dai requisiti al modello concettuale.",
+      "objectives": [
+        "Distinguere i concetti e le loro condizioni di applicabilità.",
+        "Interpretare la notazione del corso e motivare una scelta progettuale.",
+        "Esplicitare ipotesi, controesempi e limiti della verifica automatica."
+      ],
+      "order": 19,
+      "prerequisites": [
+        "relazioni-domini"
+      ],
+      "relatedLessonIds": [
+        "er-entita"
+      ],
+      "quizPath": "quizzes/er-requisiti.json"
+    },
+    {
+      "id": "er-entita",
+      "moduleId": "progettazione-er",
+      "slug": "er-entita",
+      "title": "Entità, attributi e identificatori",
+      "mdxPath": "lessons/er-entita.md",
+      "version": 2,
+      "status": "needs-review",
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 10,
+          "pageEnd": 16,
+          "section": "Entità, attributi e identificatori"
+        }
+      ],
+      "concepts": [
+        "entita",
+        "attributi",
+        "identificatori"
+      ],
+      "description": "Progetta e interpreta: entità, attributi e identificatori.",
+      "objectives": [
+        "Distinguere i concetti e le loro condizioni di applicabilità.",
+        "Interpretare la notazione del corso e motivare una scelta progettuale.",
+        "Esplicitare ipotesi, controesempi e limiti della verifica automatica."
+      ],
+      "order": 20,
+      "prerequisites": [
+        "er-requisiti"
+      ],
+      "relatedLessonIds": [
+        "er-associazioni"
+      ],
+      "quizPath": "quizzes/er-entita.json"
+    },
+    {
+      "id": "er-associazioni",
+      "moduleId": "progettazione-er",
+      "slug": "er-associazioni",
+      "title": "Associazioni, ruoli e proprietà del legame",
+      "mdxPath": "lessons/er-associazioni.md",
+      "version": 2,
+      "status": "needs-review",
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 17,
+          "pageEnd": 22,
+          "section": "Associazioni, ruoli e proprietà del legame"
+        },
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 30,
+          "pageEnd": 30,
+          "section": "Associazioni, ruoli e proprietà del legame"
+        },
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 59,
+          "pageEnd": 59,
+          "section": "Richiamo già discusso nel testo, reso esplicito nei metadati"
+        }
+      ],
+      "concepts": [
+        "associazioni",
+        "ruoli",
+        "grado"
+      ],
+      "description": "Progetta e interpreta: associazioni, ruoli e proprietà del legame.",
+      "objectives": [
+        "Distinguere i concetti e le loro condizioni di applicabilità.",
+        "Interpretare la notazione del corso e motivare una scelta progettuale.",
+        "Esplicitare ipotesi, controesempi e limiti della verifica automatica."
+      ],
+      "order": 21,
+      "prerequisites": [
+        "er-entita"
+      ],
+      "relatedLessonIds": [
+        "er-vincoli"
+      ],
+      "quizPath": "quizzes/er-associazioni.json"
+    },
+    {
+      "id": "er-vincoli",
+      "moduleId": "progettazione-er",
+      "slug": "er-vincoli",
+      "title": "Cardinalità, chiave e partecipazione",
+      "mdxPath": "lessons/er-vincoli.md",
+      "version": 2,
+      "status": "needs-review",
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 23,
+          "pageEnd": 29,
+          "section": "Cardinalità, chiave e partecipazione"
+        },
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 34,
+          "pageEnd": 34,
+          "section": "Cardinalità, chiave e partecipazione"
+        }
+      ],
+      "concepts": [
+        "cardinalita",
+        "partecipazione",
+        "vincoli"
+      ],
+      "description": "Progetta e interpreta: cardinalità, chiave e partecipazione.",
+      "objectives": [
+        "Distinguere i concetti e le loro condizioni di applicabilità.",
+        "Interpretare la notazione del corso e motivare una scelta progettuale.",
+        "Esplicitare ipotesi, controesempi e limiti della verifica automatica."
+      ],
+      "order": 22,
+      "prerequisites": [
+        "er-associazioni"
+      ],
+      "relatedLessonIds": [
+        "er-deboli"
+      ],
+      "quizPath": "quizzes/er-vincoli.json"
+    },
+    {
+      "id": "er-deboli",
+      "moduleId": "progettazione-er",
+      "slug": "er-deboli",
+      "title": "Entità deboli e identificazione esterna",
+      "mdxPath": "lessons/er-deboli.md",
+      "version": 2,
+      "status": "needs-review",
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 31,
+          "pageEnd": 33,
+          "section": "Entità deboli e identificazione esterna"
+        },
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 55,
+          "pageEnd": 58,
+          "section": "Richiamo già discusso nel testo, reso esplicito nei metadati"
+        }
+      ],
+      "concepts": [
+        "deboli",
+        "identificazione",
+        "chiave-parziale"
+      ],
+      "description": "Progetta e interpreta: entità deboli e identificazione esterna.",
+      "objectives": [
+        "Distinguere i concetti e le loro condizioni di applicabilità.",
+        "Interpretare la notazione del corso e motivare una scelta progettuale.",
+        "Esplicitare ipotesi, controesempi e limiti della verifica automatica."
+      ],
+      "order": 23,
+      "prerequisites": [
+        "er-vincoli"
+      ],
+      "relatedLessonIds": [
+        "er-gerarchie"
+      ],
+      "quizPath": "quizzes/er-deboli.json"
+    },
+    {
+      "id": "er-gerarchie",
+      "moduleId": "progettazione-er",
+      "slug": "er-gerarchie",
+      "title": "Generalizzazione, specializzazione e ISA",
+      "mdxPath": "lessons/er-gerarchie.md",
+      "version": 2,
+      "status": "needs-review",
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 35,
+          "pageEnd": 40,
+          "section": "Generalizzazione, specializzazione e ISA"
+        },
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 53,
+          "pageEnd": 53,
+          "section": "Generalizzazione, specializzazione e ISA"
+        }
+      ],
+      "concepts": [
+        "isa",
+        "disgiunzione",
+        "copertura"
+      ],
+      "description": "Progetta e interpreta: generalizzazione, specializzazione e isa.",
+      "objectives": [
+        "Distinguere i concetti e le loro condizioni di applicabilità.",
+        "Interpretare la notazione del corso e motivare una scelta progettuale.",
+        "Esplicitare ipotesi, controesempi e limiti della verifica automatica."
+      ],
+      "order": 24,
+      "prerequisites": [
+        "er-deboli"
+      ],
+      "relatedLessonIds": [
+        "er-aggregazione"
+      ],
+      "quizPath": "quizzes/er-gerarchie.json"
+    },
+    {
+      "id": "er-aggregazione",
+      "moduleId": "progettazione-er",
+      "slug": "er-aggregazione",
+      "title": "Aggregazione e identità dei fatti",
+      "mdxPath": "lessons/er-aggregazione.md",
+      "version": 2,
+      "status": "needs-review",
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 41,
+          "pageEnd": 43,
+          "section": "Aggregazione e identità dei fatti"
+        },
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 60,
+          "pageEnd": 63,
+          "section": "Aggregazione e identità dei fatti"
+        }
+      ],
+      "concepts": [
+        "aggregazione",
+        "sponsorizzazione",
+        "limiti"
+      ],
+      "description": "Progetta e interpreta: aggregazione e identità dei fatti.",
+      "objectives": [
+        "Distinguere i concetti e le loro condizioni di applicabilità.",
+        "Interpretare la notazione del corso e motivare una scelta progettuale.",
+        "Esplicitare ipotesi, controesempi e limiti della verifica automatica."
+      ],
+      "order": 25,
+      "prerequisites": [
+        "er-gerarchie"
+      ],
+      "relatedLessonIds": [
+        "er-scelte"
+      ],
+      "quizPath": "quizzes/er-aggregazione.json"
+    },
+    {
+      "id": "er-scelte",
+      "moduleId": "progettazione-er",
+      "slug": "er-scelte",
+      "title": "Scelte progettuali, periodi e polizze",
+      "mdxPath": "lessons/er-scelte.md",
+      "version": 2,
+      "status": "needs-review",
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 44,
+          "pageEnd": 59,
+          "section": "Scelte progettuali, periodi e polizze"
+        },
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 12,
+          "pageEnd": 12,
+          "section": "Richiamo già discusso nel testo, reso esplicito nei metadati"
+        }
+      ],
+      "concepts": [
+        "modellazione",
+        "periodi",
+        "polizze"
+      ],
+      "description": "Progetta e interpreta: scelte progettuali, periodi e polizze.",
+      "objectives": [
+        "Distinguere i concetti e le loro condizioni di applicabilità.",
+        "Interpretare la notazione del corso e motivare una scelta progettuale.",
+        "Esplicitare ipotesi, controesempi e limiti della verifica automatica."
+      ],
+      "order": 26,
+      "prerequisites": [
+        "er-aggregazione"
+      ],
+      "relatedLessonIds": [
+        "er-requisiti"
+      ],
+      "quizPath": "quizzes/er-scelte.json"
+    },
+    {
+      "id": "sql-domande",
+      "moduleId": "sql",
+      "slug": "sql-domande",
+      "title": "Dalla domanda al contratto di una query",
+      "mdxPath": "lessons/sql-domande.md",
+      "version": 1,
+      "status": "needs-review",
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 1,
+          "pageEnd": 12,
+          "section": "Dalla domanda al contratto di una query"
+        },
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 77,
+          "pageEnd": 84,
+          "section": "Dalla domanda al contratto di una query"
+        }
+      ],
+      "concepts": [
+        "SQL",
+        "DDL",
+        "DML",
+        "contratto di output"
+      ],
+      "description": "Percorso ragionato: dalla domanda al contratto di una query, esempi, casi limite e compatibilità dichiarata.",
+      "objectives": [
+        "Spiegare SQL distinguendo definizione e uso pratico.",
+        "Prevedere risultati, casi mancanti ed errori degli esempi.",
+        "Riconoscere ciò che è eseguibile in SQLite e ciò che richiede un ambiente esterno."
+      ],
+      "order": 27,
+      "prerequisites": [
+        "schema-istanza"
+      ],
+      "relatedLessonIds": [],
+      "quizPath": "quizzes/sql-domande.json"
+    },
+    {
+      "id": "sql-select",
+      "moduleId": "sql",
+      "slug": "sql-select",
+      "title": "SELECT, alias, duplicati e ordinamento",
+      "mdxPath": "lessons/sql-select.md",
+      "version": 1,
+      "status": "needs-review",
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 13,
+          "pageEnd": 17,
+          "section": "SELECT, alias, duplicati e ordinamento"
+        },
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 86,
+          "pageEnd": 86,
+          "section": "SELECT, alias, duplicati e ordinamento"
+        }
+      ],
+      "concepts": [
+        "SELECT",
+        "DISTINCT",
+        "ORDER BY"
+      ],
+      "description": "Percorso ragionato: select, alias, duplicati e ordinamento, esempi, casi limite e compatibilità dichiarata.",
+      "objectives": [
+        "Spiegare SELECT distinguendo definizione e uso pratico.",
+        "Prevedere risultati, casi mancanti ed errori degli esempi.",
+        "Riconoscere ciò che è eseguibile in SQLite e ciò che richiede un ambiente esterno."
+      ],
+      "order": 28,
+      "prerequisites": [
+        "sql-domande"
+      ],
+      "relatedLessonIds": [],
+      "quizPath": "quizzes/sql-select.json"
+    },
+    {
+      "id": "sql-filtri",
+      "moduleId": "sql",
+      "slug": "sql-filtri",
+      "title": "Predicati, NULL, intervalli e pattern",
+      "mdxPath": "lessons/sql-filtri.md",
+      "version": 1,
+      "status": "needs-review",
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 18,
+          "pageEnd": 19,
+          "section": "Predicati, NULL, intervalli e pattern"
+        },
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 89,
+          "pageEnd": 89,
+          "section": "Predicati, NULL, intervalli e pattern"
+        }
+      ],
+      "concepts": [
+        "WHERE",
+        "NULL",
+        "LIKE",
+        "BETWEEN",
+        "IN"
+      ],
+      "description": "Percorso ragionato: predicati, null, intervalli e pattern, esempi, casi limite e compatibilità dichiarata.",
+      "objectives": [
+        "Spiegare WHERE distinguendo definizione e uso pratico.",
+        "Prevedere risultati, casi mancanti ed errori degli esempi.",
+        "Riconoscere ciò che è eseguibile in SQLite e ciò che richiede un ambiente esterno."
+      ],
+      "order": 29,
+      "prerequisites": [
+        "sql-select"
+      ],
+      "relatedLessonIds": [],
+      "quizPath": "quizzes/sql-filtri.json"
+    },
+    {
+      "id": "sql-aggregati",
+      "moduleId": "sql",
+      "slug": "sql-aggregati",
+      "title": "Aggregazioni e unità da contare",
+      "mdxPath": "lessons/sql-aggregati.md",
+      "version": 1,
+      "status": "needs-review",
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 20,
+          "pageEnd": 24,
+          "section": "Aggregazioni e unità da contare"
+        }
+      ],
+      "concepts": [
+        "COUNT",
+        "SUM",
+        "AVG",
+        "MIN",
+        "MAX"
+      ],
+      "description": "Percorso ragionato: aggregazioni e unità da contare, esempi, casi limite e compatibilità dichiarata.",
+      "objectives": [
+        "Spiegare COUNT distinguendo definizione e uso pratico.",
+        "Prevedere risultati, casi mancanti ed errori degli esempi.",
+        "Riconoscere ciò che è eseguibile in SQLite e ciò che richiede un ambiente esterno."
+      ],
+      "order": 30,
+      "prerequisites": [
+        "sql-filtri"
+      ],
+      "relatedLessonIds": [],
+      "quizPath": "quizzes/sql-aggregati.json"
+    },
+    {
+      "id": "sql-gruppi",
+      "moduleId": "sql",
+      "slug": "sql-gruppi",
+      "title": "GROUP BY e HAVING: ragionare per gruppi",
+      "mdxPath": "lessons/sql-gruppi.md",
+      "version": 1,
+      "status": "needs-review",
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 25,
+          "pageEnd": 30,
+          "section": "GROUP BY e HAVING: ragionare per gruppi"
+        }
+      ],
+      "concepts": [
+        "GROUP BY",
+        "HAVING",
+        "aggregazioni"
+      ],
+      "description": "Percorso ragionato: group by e having: ragionare per gruppi, esempi, casi limite e compatibilità dichiarata.",
+      "objectives": [
+        "Spiegare GROUP BY distinguendo definizione e uso pratico.",
+        "Prevedere risultati, casi mancanti ed errori degli esempi.",
+        "Riconoscere ciò che è eseguibile in SQLite e ciò che richiede un ambiente esterno."
+      ],
+      "order": 31,
+      "prerequisites": [
+        "sql-aggregati"
+      ],
+      "relatedLessonIds": [],
+      "quizPath": "quizzes/sql-gruppi.json"
+    },
+    {
+      "id": "sql-sottoquery",
+      "moduleId": "sql",
+      "slug": "sql-sottoquery",
+      "title": "Sottoquery scalari, IN ed EXISTS",
+      "mdxPath": "lessons/sql-sottoquery.md",
+      "version": 1,
+      "status": "needs-review",
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 31,
+          "pageEnd": 40,
+          "section": "Sottoquery scalari, IN ed EXISTS"
+        },
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 45,
+          "pageEnd": 45,
+          "section": "Sottoquery scalari, IN ed EXISTS"
+        }
+      ],
+      "concepts": [
+        "sottoquery",
+        "EXISTS",
+        "IN",
+        "correlazione"
+      ],
+      "description": "Percorso ragionato: sottoquery scalari, in ed exists, esempi, casi limite e compatibilità dichiarata.",
+      "objectives": [
+        "Spiegare sottoquery distinguendo definizione e uso pratico.",
+        "Prevedere risultati, casi mancanti ed errori degli esempi.",
+        "Riconoscere ciò che è eseguibile in SQLite e ciò che richiede un ambiente esterno."
+      ],
+      "order": 32,
+      "prerequisites": [
+        "sql-gruppi"
+      ],
+      "relatedLessonIds": [],
+      "quizPath": "quizzes/sql-sottoquery.json"
+    },
+    {
+      "id": "sql-quantificatori",
+      "moduleId": "sql",
+      "slug": "sql-quantificatori",
+      "title": "ANY e ALL: esistenza, universalità e NULL",
+      "mdxPath": "lessons/sql-quantificatori.md",
+      "version": 1,
+      "status": "needs-review",
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 41,
+          "pageEnd": 42,
+          "section": "ANY e ALL: esistenza, universalità e NULL"
+        }
+      ],
+      "concepts": [
+        "ANY",
+        "ALL",
+        "quantificazione",
+        "NULL"
+      ],
+      "description": "Percorso ragionato: any e all: esistenza, universalità e null, esempi, casi limite e compatibilità dichiarata.",
+      "objectives": [
+        "Spiegare ANY distinguendo definizione e uso pratico.",
+        "Prevedere risultati, casi mancanti ed errori degli esempi.",
+        "Riconoscere ciò che è eseguibile in SQLite e ciò che richiede un ambiente esterno."
+      ],
+      "order": 33,
+      "prerequisites": [
+        "sql-sottoquery"
+      ],
+      "relatedLessonIds": [],
+      "quizPath": "quizzes/sql-quantificatori.json"
+    },
+    {
+      "id": "sql-insiemi",
+      "moduleId": "sql",
+      "slug": "sql-insiemi",
+      "title": "UNION, INTERSECT ed EXCEPT",
+      "mdxPath": "lessons/sql-insiemi.md",
+      "version": 1,
+      "status": "needs-review",
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 43,
+          "pageEnd": 44,
+          "section": "UNION, INTERSECT ed EXCEPT"
+        },
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 90,
+          "pageEnd": 91,
+          "section": "UNION, INTERSECT ed EXCEPT"
+        }
+      ],
+      "concepts": [
+        "UNION",
+        "INTERSECT",
+        "EXCEPT",
+        "duplicati"
+      ],
+      "description": "Percorso ragionato: union, intersect ed except, esempi, casi limite e compatibilità dichiarata.",
+      "objectives": [
+        "Spiegare UNION distinguendo definizione e uso pratico.",
+        "Prevedere risultati, casi mancanti ed errori degli esempi.",
+        "Riconoscere ciò che è eseguibile in SQLite e ciò che richiede un ambiente esterno."
+      ],
+      "order": 34,
+      "prerequisites": [
+        "sql-quantificatori"
+      ],
+      "relatedLessonIds": [],
+      "quizPath": "quizzes/sql-insiemi.json"
+    },
+    {
+      "id": "sql-cte",
+      "moduleId": "sql",
+      "slug": "sql-cte",
+      "title": "Sottoquery, CTE, tabelle temporanee e viste",
+      "mdxPath": "lessons/sql-cte.md",
+      "version": 1,
+      "status": "needs-review",
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 46,
+          "pageEnd": 57,
+          "section": "Sottoquery, CTE, tabelle temporanee e viste"
+        }
+      ],
+      "concepts": [
+        "CTE",
+        "WITH",
+        "vista",
+        "tabella temporanea"
+      ],
+      "description": "Percorso ragionato: sottoquery, cte, tabelle temporanee e viste, esempi, casi limite e compatibilità dichiarata.",
+      "objectives": [
+        "Spiegare CTE distinguendo definizione e uso pratico.",
+        "Prevedere risultati, casi mancanti ed errori degli esempi.",
+        "Riconoscere ciò che è eseguibile in SQLite e ciò che richiede un ambiente esterno."
+      ],
+      "order": 35,
+      "prerequisites": [
+        "sql-insiemi"
+      ],
+      "relatedLessonIds": [],
+      "quizPath": "quizzes/sql-cte.json"
+    },
+    {
+      "id": "sql-join",
+      "moduleId": "sql",
+      "slug": "sql-join",
+      "title": "JOIN: ricostruire fatti e controllare molteplicità",
+      "mdxPath": "lessons/sql-join.md",
+      "version": 1,
+      "status": "needs-review",
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 58,
+          "pageEnd": 62,
+          "section": "JOIN: ricostruire fatti e controllare molteplicità"
+        },
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 87,
+          "pageEnd": 88,
+          "section": "JOIN: ricostruire fatti e controllare molteplicità"
+        }
+      ],
+      "concepts": [
+        "JOIN",
+        "ON",
+        "chiavi",
+        "molteplicità"
+      ],
+      "description": "Percorso ragionato: join: ricostruire fatti e controllare molteplicità, esempi, casi limite e compatibilità dichiarata.",
+      "objectives": [
+        "Spiegare JOIN distinguendo definizione e uso pratico.",
+        "Prevedere risultati, casi mancanti ed errori degli esempi.",
+        "Riconoscere ciò che è eseguibile in SQLite e ciò che richiede un ambiente esterno."
+      ],
+      "order": 36,
+      "prerequisites": [
+        "sql-cte"
+      ],
+      "relatedLessonIds": [],
+      "quizPath": "quizzes/sql-join.json"
+    },
+    {
+      "id": "sql-outer",
+      "moduleId": "sql",
+      "slug": "sql-outer",
+      "title": "Outer join, anti join e conteggi a zero",
+      "mdxPath": "lessons/sql-outer.md",
+      "version": 1,
+      "status": "needs-review",
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 63,
+          "pageEnd": 71,
+          "section": "Outer join, anti join e conteggi a zero"
+        }
+      ],
+      "concepts": [
+        "LEFT JOIN",
+        "RIGHT JOIN",
+        "FULL JOIN",
+        "anti join",
+        "NULL"
+      ],
+      "description": "Percorso ragionato: outer join, anti join e conteggi a zero, esempi, casi limite e compatibilità dichiarata.",
+      "objectives": [
+        "Spiegare LEFT JOIN distinguendo definizione e uso pratico.",
+        "Prevedere risultati, casi mancanti ed errori degli esempi.",
+        "Riconoscere ciò che è eseguibile in SQLite e ciò che richiede un ambiente esterno."
+      ],
+      "order": 37,
+      "prerequisites": [
+        "sql-join"
+      ],
+      "relatedLessonIds": [],
+      "quizPath": "quizzes/sql-outer.json"
+    },
+    {
+      "id": "sql-ddl",
+      "moduleId": "sql",
+      "slug": "sql-ddl",
+      "title": "Schemi SQL, vincoli e popolamento",
+      "mdxPath": "lessons/sql-ddl.md",
+      "version": 1,
+      "status": "needs-review",
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 72,
+          "pageEnd": 76,
+          "section": "Schemi SQL, vincoli e popolamento"
+        }
+      ],
+      "concepts": [
+        "CREATE TABLE",
+        "vincoli",
+        "INSERT",
+        "tipi"
+      ],
+      "description": "Percorso ragionato: schemi sql, vincoli e popolamento, esempi, casi limite e compatibilità dichiarata.",
+      "objectives": [
+        "Spiegare CREATE TABLE distinguendo definizione e uso pratico.",
+        "Prevedere risultati, casi mancanti ed errori degli esempi.",
+        "Riconoscere ciò che è eseguibile in SQLite e ciò che richiede un ambiente esterno."
+      ],
+      "order": 38,
+      "prerequisites": [
+        "sql-outer"
+      ],
+      "relatedLessonIds": [],
+      "quizPath": "quizzes/sql-ddl.json"
+    },
+    {
+      "id": "strumenti-ambiente",
+      "moduleId": "strumenti",
+      "slug": "strumenti-ambiente",
+      "title": "Server, client e installazioni locali",
+      "mdxPath": "lessons/strumenti-ambiente.md",
+      "version": 1,
+      "status": "needs-review",
+      "sourceRefs": [
+        {
+          "sourceId": "tools-source",
+          "file": "Introduzione MySQL e Dbeaver.pdf",
+          "pageStart": 1,
+          "pageEnd": 50,
+          "section": "Server, client e installazioni locali"
+        }
+      ],
+      "concepts": [
+        "client",
+        "server",
+        "MySQL",
+        "MariaDB",
+        "DBeaver"
+      ],
+      "description": "Percorso ragionato: server, client e installazioni locali, esempi, casi limite e compatibilità dichiarata.",
+      "objectives": [
+        "Spiegare client distinguendo definizione e uso pratico.",
+        "Prevedere risultati, casi mancanti ed errori degli esempi.",
+        "Riconoscere ciò che è eseguibile in SQLite e ciò che richiede un ambiente esterno."
+      ],
+      "order": 39,
+      "prerequisites": [
+        "dbms-dati"
+      ],
+      "relatedLessonIds": [],
+      "quizPath": "quizzes/strumenti-ambiente.json"
+    },
+    {
+      "id": "strumenti-script",
+      "moduleId": "strumenti",
+      "slug": "strumenti-script",
+      "title": "Connessione, schema e importazione con DBeaver",
+      "mdxPath": "lessons/strumenti-script.md",
+      "version": 1,
+      "status": "needs-review",
+      "sourceRefs": [
+        {
+          "sourceId": "tools-source",
+          "file": "Introduzione MySQL e Dbeaver.pdf",
+          "pageStart": 51,
+          "pageEnd": 63,
+          "section": "Connessione, schema e importazione con DBeaver"
+        }
+      ],
+      "concepts": [
+        "connessione",
+        "driver",
+        "script",
+        "NorthWind"
+      ],
+      "description": "Percorso ragionato: connessione, schema e importazione con dbeaver, esempi, casi limite e compatibilità dichiarata.",
+      "objectives": [
+        "Spiegare connessione distinguendo definizione e uso pratico.",
+        "Prevedere risultati, casi mancanti ed errori degli esempi.",
+        "Riconoscere ciò che è eseguibile in SQLite e ciò che richiede un ambiente esterno."
+      ],
+      "order": 40,
+      "prerequisites": [
+        "strumenti-ambiente"
+      ],
+      "relatedLessonIds": [],
+      "quizPath": "quizzes/strumenti-script.json"
+    },
+    {
+      "id": "strumenti-jdbc",
+      "moduleId": "strumenti",
+      "slug": "strumenti-jdbc",
+      "title": "JDBC: connessioni, parametri e risultati",
+      "mdxPath": "lessons/strumenti-jdbc.md",
+      "version": 1,
+      "status": "needs-review",
+      "sourceRefs": [
+        {
+          "sourceId": "tools-source",
+          "file": "Introduzione MySQL e Dbeaver.pdf",
+          "pageStart": 64,
+          "pageEnd": 78,
+          "section": "JDBC: connessioni, parametri e risultati"
+        }
+      ],
+      "concepts": [
+        "JDBC",
+        "PreparedStatement",
+        "ResultSet",
+        "parametri"
+      ],
+      "description": "Percorso ragionato: jdbc: connessioni, parametri e risultati, esempi, casi limite e compatibilità dichiarata.",
+      "objectives": [
+        "Spiegare JDBC distinguendo definizione e uso pratico.",
+        "Prevedere risultati, casi mancanti ed errori degli esempi.",
+        "Riconoscere ciò che è eseguibile in SQLite e ciò che richiede un ambiente esterno."
+      ],
+      "order": 41,
+      "prerequisites": [
+        "strumenti-script"
+      ],
+      "relatedLessonIds": [],
+      "quizPath": "quizzes/strumenti-jdbc.json"
+    },
+    {
+      "id": "strumenti-python",
+      "moduleId": "strumenti",
+      "slug": "strumenti-python",
+      "title": "Python DB-API: cursor, parametri e commit",
+      "mdxPath": "lessons/strumenti-python.md",
+      "version": 1,
+      "status": "needs-review",
+      "sourceRefs": [
+        {
+          "sourceId": "tools-source",
+          "file": "Introduzione MySQL e Dbeaver.pdf",
+          "pageStart": 79,
+          "pageEnd": 92,
+          "section": "Python DB-API: cursor, parametri e commit"
+        }
+      ],
+      "concepts": [
+        "Python",
+        "DB-API",
+        "cursor",
+        "commit",
+        "parametri"
+      ],
+      "description": "Percorso ragionato: python db-api: cursor, parametri e commit, esempi, casi limite e compatibilità dichiarata.",
+      "objectives": [
+        "Spiegare Python distinguendo definizione e uso pratico.",
+        "Prevedere risultati, casi mancanti ed errori degli esempi.",
+        "Riconoscere ciò che è eseguibile in SQLite e ciò che richiede un ambiente esterno."
+      ],
+      "order": 42,
+      "prerequisites": [
+        "strumenti-jdbc"
+      ],
+      "relatedLessonIds": [],
+      "quizPath": "quizzes/strumenti-python.json"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "sailors-01",
+      "moduleId": "sql",
+      "type": "sql",
+      "difficulty": "intermedio",
+      "prompt": "Per ogni colore di barca, trova la somma totale dei rating dei marinai \nche l'hanno prenotata, ma considera solo i colori con un rating\nmedio superiore a 7.",
+      "datasetId": "sailors",
+      "expectedColumns": [
+        "color",
+        "somma_rating"
+      ],
+      "orderMatters": false,
+      "gradingMode": "automatic",
+      "fixtures": [
+        "datasets/sailors/seed.sql",
+        "fixtures/sailors-edges.sql",
+        "fixtures/sailors-reversed.sql",
+        "fixtures/sailors-empty.sql",
+        "fixtures/sailors-variation.sql"
+      ],
+      "solutionPath": "solutions/sailors-01.sql",
+      "hints": [
+        "Collega Sailors, Reserves e Boats attraverso le chiavi.",
+        "Raggruppa per colore: SUM è nell’output, AVG filtra i gruppi."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sailors-exercises-source",
+          "file": "Esercizi 1 Sailor.txt",
+          "section": "Quesito #1"
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "sailors-02",
+      "moduleId": "sql",
+      "type": "sql",
+      "difficulty": "intermedio",
+      "prompt": "Trova i giorni (day) in cui sono state effettuate almeno 2 prenotazioni \ncomplessive, considerando solo marinai con almeno 18 anni.",
+      "datasetId": "sailors",
+      "expectedColumns": [
+        "day"
+      ],
+      "orderMatters": false,
+      "gradingMode": "automatic",
+      "fixtures": [
+        "datasets/sailors/seed.sql",
+        "fixtures/sailors-edges.sql",
+        "fixtures/sailors-reversed.sql",
+        "fixtures/sailors-empty.sql",
+        "fixtures/sailors-variation.sql"
+      ],
+      "solutionPath": "solutions/sailors-02.sql",
+      "hints": [
+        "Filtra l’età prima di raggruppare.",
+        "Conta le prenotazioni, non i marinai distinti."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sailors-exercises-source",
+          "file": "Esercizi 1 Sailor.txt",
+          "section": "Quesito #2"
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "sailors-03",
+      "moduleId": "sql",
+      "type": "sql",
+      "difficulty": "intermedio",
+      "prompt": "Trova i nomi dei marinai condivisi da più persone (omonimi) \nil cui divario tra età massima ed età minima sia inferiore a 10 anni.",
+      "datasetId": "sailors",
+      "expectedColumns": [
+        "sname"
+      ],
+      "orderMatters": false,
+      "gradingMode": "automatic",
+      "fixtures": [
+        "datasets/sailors/seed.sql",
+        "fixtures/sailors-edges.sql",
+        "fixtures/sailors-reversed.sql",
+        "fixtures/sailors-empty.sql",
+        "fixtures/sailors-variation.sql"
+      ],
+      "solutionPath": "solutions/sailors-03.sql",
+      "hints": [
+        "Raggruppa per nome e conta le persone.",
+        "MAX(age)-MIN(age) è il divario; la soglia è stretta."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sailors-exercises-source",
+          "file": "Esercizi 1 Sailor.txt",
+          "section": "Quesito #3"
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "sailors-04",
+      "moduleId": "sql",
+      "type": "sql",
+      "difficulty": "intermedio",
+      "prompt": "Trova l'età media e il numero di marinai per ogni livello di rating, \nconsiderando solo i marinai con rating superiore a 5, \nma mostra solo i livelli di rating che contengono almeno 2 marinai.",
+      "datasetId": "sailors",
+      "expectedColumns": [
+        "rating",
+        "eta_media",
+        "numero_marinai"
+      ],
+      "orderMatters": false,
+      "gradingMode": "automatic",
+      "fixtures": [
+        "datasets/sailors/seed.sql",
+        "fixtures/sailors-edges.sql",
+        "fixtures/sailors-reversed.sql",
+        "fixtures/sailors-empty.sql",
+        "fixtures/sailors-variation.sql"
+      ],
+      "solutionPath": "solutions/sailors-04.sql",
+      "hints": [
+        "WHERE seleziona rating > 5; HAVING seleziona gruppi con almeno due righe.",
+        "COUNT(*) include anche persone con età NULL; AVG ignora le età mancanti."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sailors-exercises-source",
+          "file": "Esercizi 1 Sailor.txt",
+          "section": "Quesito #4"
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "sailors-05",
+      "moduleId": "sql",
+      "type": "sql",
+      "difficulty": "intermedio",
+      "prompt": "Identifica le barche (con bid e bname) prenotate da marinai \nla cui età media è superiore a 40 anni, \nconsiderando solo barche prenotate almeno 2 volte.",
+      "datasetId": "sailors",
+      "expectedColumns": [
+        "bid",
+        "bname"
+      ],
+      "orderMatters": false,
+      "gradingMode": "automatic",
+      "fixtures": [
+        "datasets/sailors/seed.sql",
+        "fixtures/sailors-edges.sql",
+        "fixtures/sailors-reversed.sql",
+        "fixtures/sailors-empty.sql",
+        "fixtures/sailors-variation.sql"
+      ],
+      "solutionPath": "solutions/sailors-05.sql",
+      "hints": [
+        "Raggruppa per identificativo e nome della barca.",
+        "Una prenotazione è una riga di Reserves; la stessa persona può prenotare più volte."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sailors-exercises-source",
+          "file": "Esercizi 1 Sailor.txt",
+          "section": "Quesito #5"
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "ar-sailors-01",
+      "moduleId": "algebra-relazionale",
+      "type": "relational-algebra",
+      "difficulty": "intermedio",
+      "prompt": "Nomi di tutti i marinai che hanno noleggiato la barca #103",
+      "orderMatters": false,
+      "gradingMode": "automatic",
+      "fixtures": [
+        "sailors",
+        "sailors-algebra-edges",
+        "sailors-algebra-empty",
+        "sailors-algebra-no-reserves",
+        "sailors-algebra-reversed"
+      ],
+      "solutionPath": "algebra/solutions/ar-sailors-01.txt",
+      "hints": [
+        "Seleziona bid=103 in Reserves.",
+        "Collega il sid del prenotante a Sailors e proietta sname."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-self-source",
+          "file": "Argomento03.1 Algebra Relazionale Autoverifica.pdf",
+          "pageStart": 3,
+          "pageEnd": 3
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "ar-sailors-02",
+      "moduleId": "algebra-relazionale",
+      "type": "relational-algebra",
+      "difficulty": "intermedio",
+      "prompt": "Nomi dei marinai che hanno prenotato una barca rossa",
+      "orderMatters": false,
+      "gradingMode": "automatic",
+      "fixtures": [
+        "sailors",
+        "sailors-algebra-edges",
+        "sailors-algebra-empty",
+        "sailors-algebra-no-reserves",
+        "sailors-algebra-reversed"
+      ],
+      "solutionPath": "algebra/solutions/ar-sailors-02.txt",
+      "hints": [
+        "Filtra Boats con color='red', poi collega bid a Reserves.",
+        "Il sid identifica la persona; il nome serve soltanto alla proiezione finale."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-self-source",
+          "file": "Argomento03.1 Algebra Relazionale Autoverifica.pdf",
+          "pageStart": 5,
+          "pageEnd": 5
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "ar-sailors-03",
+      "moduleId": "algebra-relazionale",
+      "type": "relational-algebra",
+      "difficulty": "intermedio",
+      "prompt": "Nomi dei marinai che hanno prenotato una barca rossa o verde",
+      "orderMatters": false,
+      "gradingMode": "automatic",
+      "fixtures": [
+        "sailors",
+        "sailors-algebra-edges",
+        "sailors-algebra-empty",
+        "sailors-algebra-no-reserves",
+        "sailors-algebra-reversed"
+      ],
+      "solutionPath": "algebra/solutions/ar-sailors-03.txt",
+      "hints": [
+        "OR nella condizione sul colore e unione di due percorsi sono alternative.",
+        "Non usare AND tra due colori sulla stessa tupla."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-self-source",
+          "file": "Argomento03.1 Algebra Relazionale Autoverifica.pdf",
+          "pageStart": 6,
+          "pageEnd": 6
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "ar-sailors-04",
+      "moduleId": "algebra-relazionale",
+      "type": "relational-algebra",
+      "difficulty": "intermedio",
+      "prompt": "Nomi dei marinai che hanno prenotato una barca rossa e una barca verde",
+      "orderMatters": false,
+      "gradingMode": "automatic",
+      "fixtures": [
+        "sailors",
+        "sailors-algebra-edges",
+        "sailors-algebra-empty",
+        "sailors-algebra-no-reserves",
+        "sailors-algebra-reversed"
+      ],
+      "solutionPath": "algebra/solutions/ar-sailors-04.txt",
+      "hints": [
+        "Costruisci separatamente i sid dei prenotanti di rosse e verdi.",
+        "Interseca i sid prima di proiettare sname: gli omonimi sono un controesempio."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-self-source",
+          "file": "Argomento03.1 Algebra Relazionale Autoverifica.pdf",
+          "pageStart": 7,
+          "pageEnd": 7
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "ar-sailors-05",
+      "moduleId": "algebra-relazionale",
+      "type": "relational-algebra",
+      "difficulty": "avanzato",
+      "prompt": "Nomi dei marinai che hanno prenotato tutte le barche",
+      "orderMatters": false,
+      "gradingMode": "automatic",
+      "fixtures": [
+        "sailors",
+        "sailors-algebra-edges",
+        "sailors-algebra-empty",
+        "sailors-algebra-no-reserves",
+        "sailors-algebra-reversed"
+      ],
+      "solutionPath": "algebra/solutions/ar-sailors-05.txt",
+      "hints": [
+        "Il dividendo deve avere soltanto sid,bid; il divisore soltanto bid.",
+        "Per ogni sid, cerca una barca richiesta che manca. Ricorda il dominio candidato nel caso vuoto."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-self-source",
+          "file": "Argomento03.1 Algebra Relazionale Autoverifica.pdf",
+          "pageStart": 9,
+          "pageEnd": 9
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "ar-sailors-06",
+      "moduleId": "algebra-relazionale",
+      "type": "relational-algebra",
+      "difficulty": "avanzato",
+      "prompt": "Nomi dei marinai che hanno prenotato almeno 2 barche",
+      "orderMatters": false,
+      "gradingMode": "automatic",
+      "fixtures": [
+        "sailors",
+        "sailors-algebra-edges",
+        "sailors-algebra-empty",
+        "sailors-algebra-no-reserves",
+        "sailors-algebra-reversed"
+      ],
+      "solutionPath": "algebra/solutions/ar-sailors-06.txt",
+      "hints": [
+        "Rinomina una seconda copia di Reserves.",
+        "Richiedi sid uguali e bid diversi: date diverse sulla stessa barca non bastano."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-self-source",
+          "file": "Argomento03.1 Algebra Relazionale Autoverifica.pdf",
+          "pageStart": 10,
+          "pageEnd": 10
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "ar-sailors-04bis",
+      "moduleId": "algebra-relazionale",
+      "type": "relational-algebra",
+      "difficulty": "intermedio",
+      "prompt": "Nomi dei marinai che hanno prenotato una barca rossa e una barca verde.\nρ(Tempred, π_sname(σ_color='red'(Boats) ⋈ Reserves ⋈ Sailors))\nρ(Tempgreen, π_sname(σ_color='green'(Boats) ⋈ Reserves ⋈ Sailors))\nTempred ∩ Tempgreen\nPerché questa versione della query non sarebbe corretta? Indizio: sid è chiave in Sailors, sname no.",
+      "orderMatters": false,
+      "gradingMode": "guided",
+      "fixtures": [],
+      "solutionPath": "algebra/solutions/ar-sailors-04bis.txt",
+      "hints": [
+        "Individua prima le chiavi, poi applica i filtri.",
+        "Proietta gli attributi richiesti solo dopo avere conservato quelli necessari ai join."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-self-source",
+          "file": "Argomento03.1 Algebra Relazionale Autoverifica.pdf",
+          "pageStart": 8,
+          "pageEnd": 8
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "ar-impiegati-01",
+      "moduleId": "algebra-relazionale",
+      "type": "relational-algebra",
+      "difficulty": "intermedio",
+      "prompt": "Trovare matricola e cognome degli impiegati che guadagnano più di 50 milioni.",
+      "orderMatters": false,
+      "gradingMode": "automatic",
+      "fixtures": [
+        "impiegati-demo",
+        "impiegati-edges",
+        "impiegati-empty",
+        "impiegati-reversed"
+      ],
+      "solutionPath": "algebra/solutions/ar-impiegati-01.txt",
+      "hints": [
+        "La soglia è stretta: >, non >=.",
+        "Nel dataset illustrativo Stipendio è espresso in milioni; questa convenzione è della piattaforma."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-scan-source",
+          "file": "esercitazione_AR.pdf",
+          "pageStart": 1,
+          "pageEnd": 1
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "ar-impiegati-02",
+      "moduleId": "algebra-relazionale",
+      "type": "relational-algebra",
+      "difficulty": "intermedio",
+      "prompt": "Trovare cognome e stipendio degli impiegati che lavorano a Roma.",
+      "orderMatters": false,
+      "gradingMode": "automatic",
+      "fixtures": [
+        "impiegati-demo",
+        "impiegati-edges",
+        "impiegati-empty",
+        "impiegati-reversed"
+      ],
+      "solutionPath": "algebra/solutions/ar-impiegati-02.txt",
+      "hints": [
+        "La sede appartiene al dipartimento.",
+        "Collega Impiegato.Dipartimento a Dipartimento.Codice prima di filtrare Sede."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-scan-source",
+          "file": "esercitazione_AR.pdf",
+          "pageStart": 1,
+          "pageEnd": 1
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "ar-impiegati-03",
+      "moduleId": "algebra-relazionale",
+      "type": "relational-algebra",
+      "difficulty": "intermedio",
+      "prompt": "Trovare cognome degli impiegati e nome del dipartimento in cui lavorano.",
+      "orderMatters": false,
+      "gradingMode": "automatic",
+      "fixtures": [
+        "impiegati-demo",
+        "impiegati-edges",
+        "impiegati-empty",
+        "impiegati-reversed"
+      ],
+      "solutionPath": "algebra/solutions/ar-impiegati-03.txt",
+      "hints": [
+        "Il collegamento usa Dipartimento e Codice, non i due campi Nome.",
+        "Proietta prima Cognome, poi il Nome del dipartimento."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-scan-source",
+          "file": "esercitazione_AR.pdf",
+          "pageStart": 1,
+          "pageEnd": 1
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "ar-impiegati-04",
+      "moduleId": "algebra-relazionale",
+      "type": "relational-algebra",
+      "difficulty": "intermedio",
+      "prompt": "Trovare cognome degli impiegati che sono direttori di dipartimento.",
+      "orderMatters": false,
+      "gradingMode": "automatic",
+      "fixtures": [
+        "impiegati-demo",
+        "impiegati-edges",
+        "impiegati-empty",
+        "impiegati-reversed"
+      ],
+      "solutionPath": "algebra/solutions/ar-impiegati-04.txt",
+      "hints": [
+        "Il direttore è identificato da Dipartimento.Direttore.",
+        "Non basta lavorare in un dipartimento per esserne direttore."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-scan-source",
+          "file": "esercitazione_AR.pdf",
+          "pageStart": 1,
+          "pageEnd": 1
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "ar-impiegati-05",
+      "moduleId": "algebra-relazionale",
+      "type": "relational-algebra",
+      "difficulty": "avanzato",
+      "prompt": "Trovare i nomi dei progetti e i cognomi dei responsabili.",
+      "orderMatters": false,
+      "gradingMode": "automatic",
+      "fixtures": [
+        "impiegati-demo",
+        "impiegati-edges",
+        "impiegati-empty",
+        "impiegati-reversed"
+      ],
+      "solutionPath": "algebra/solutions/ar-impiegati-05.txt",
+      "hints": [
+        "Progetto.Responsabile identifica un Impiegato.",
+        "Il responsabile non coincide necessariamente con un partecipante al progetto."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-scan-source",
+          "file": "esercitazione_AR.pdf",
+          "pageStart": 1,
+          "pageEnd": 1
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "ar-impiegati-06",
+      "moduleId": "algebra-relazionale",
+      "type": "relational-algebra",
+      "difficulty": "avanzato",
+      "prompt": "Trovare i nomi dei progetti con bilancio maggiore di 100K e i cognomi degli impiegati che lavorano su di essi.",
+      "orderMatters": false,
+      "gradingMode": "automatic",
+      "fixtures": [
+        "impiegati-demo",
+        "impiegati-edges",
+        "impiegati-empty",
+        "impiegati-reversed"
+      ],
+      "solutionPath": "algebra/solutions/ar-impiegati-06.txt",
+      "hints": [
+        "Passa attraverso Partecipazione per sapere chi lavora a un progetto.",
+        "La soglia Bilancio>100 è stretta nella scala didattica in migliaia."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-scan-source",
+          "file": "esercitazione_AR.pdf",
+          "pageStart": 1,
+          "pageEnd": 1
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "ar-impiegati-07",
+      "moduleId": "algebra-relazionale",
+      "type": "relational-algebra",
+      "difficulty": "intermedio",
+      "prompt": "Trovare il cognome degli impiegati che guadagnano più del loro direttore di dipartimento.",
+      "orderMatters": false,
+      "gradingMode": "automatic",
+      "fixtures": [
+        "impiegati-demo",
+        "impiegati-edges",
+        "impiegati-empty",
+        "impiegati-reversed"
+      ],
+      "solutionPath": "algebra/solutions/ar-impiegati-07.txt",
+      "hints": [
+        "Servono due copie di Impiegato: lavoratore e direttore.",
+        "Collega il lavoratore al dipartimento e Direttore alla seconda copia; poi confronta gli stipendi."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-scan-source",
+          "file": "esercitazione_AR.pdf",
+          "pageStart": 1,
+          "pageEnd": 1
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "ar-impiegati-08",
+      "moduleId": "algebra-relazionale",
+      "type": "relational-algebra",
+      "difficulty": "intermedio",
+      "prompt": "Trovare cognome dei direttori di dipartimento e dei responsabili di progetto.",
+      "orderMatters": false,
+      "gradingMode": "automatic",
+      "fixtures": [
+        "impiegati-demo",
+        "impiegati-edges",
+        "impiegati-empty",
+        "impiegati-reversed"
+      ],
+      "solutionPath": "algebra/solutions/ar-impiegati-08.txt",
+      "hints": [
+        "Il contratto della piattaforma interpreta i due ruoli come alternative.",
+        "Calcola i cognomi nei due percorsi e uniscili, eliminando duplicati."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-scan-source",
+          "file": "esercitazione_AR.pdf",
+          "pageStart": 1,
+          "pageEnd": 1
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "ar-impiegati-09",
+      "moduleId": "algebra-relazionale",
+      "type": "relational-algebra",
+      "difficulty": "intermedio",
+      "prompt": "Trovare nomi dei dipartimenti in cui lavorano impiegati che guadagnano più di 60K.",
+      "orderMatters": false,
+      "gradingMode": "guided",
+      "fixtures": [],
+      "solutionPath": "algebra/solutions/ar-impiegati-09.txt",
+      "hints": [
+        "Chiarisci la scala di Stipendio: 50 milioni e 60K non sono immediatamente coerenti.",
+        "Dopo la selezione degli impiegati, collega il dipartimento e proietta il nome."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-scan-source",
+          "file": "esercitazione_AR.pdf",
+          "pageStart": 1,
+          "pageEnd": 1
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "ar-impiegati-10",
+      "moduleId": "algebra-relazionale",
+      "type": "relational-algebra",
+      "difficulty": "intermedio",
+      "prompt": "Trovare nomi dei dipartimenti in cui tutti gli impiegati guadagnano più di 60K.",
+      "orderMatters": false,
+      "gradingMode": "guided",
+      "fixtures": [],
+      "solutionPath": "algebra/solutions/ar-impiegati-10.txt",
+      "hints": [
+        "Chiarisci unità e inclusione dei dipartimenti vuoti.",
+        "Cerca prima i dipartimenti con almeno un controesempio sotto soglia, poi sottraili."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-scan-source",
+          "file": "esercitazione_AR.pdf",
+          "pageStart": 1,
+          "pageEnd": 1
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "ar-impiegati-11",
+      "moduleId": "algebra-relazionale",
+      "type": "relational-algebra",
+      "difficulty": "intermedio",
+      "prompt": "Trovare cognome degli impiegati di stipendio massimo.",
+      "orderMatters": false,
+      "gradingMode": "automatic",
+      "fixtures": [
+        "impiegati-demo",
+        "impiegati-edges",
+        "impiegati-empty",
+        "impiegati-reversed"
+      ],
+      "solutionPath": "algebra/solutions/ar-impiegati-11.txt",
+      "hints": [
+        "Confronta due copie di Impiegato con alias diversi.",
+        "Elimina chi ha almeno una persona con stipendio superiore. In caso di parità, conserva tutti i massimi."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-scan-source",
+          "file": "esercitazione_AR.pdf",
+          "pageStart": 1,
+          "pageEnd": 1
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "ar-impiegati-12",
+      "moduleId": "algebra-relazionale",
+      "type": "relational-algebra",
+      "difficulty": "intermedio",
+      "prompt": "Trovare matricola e cognome degli impiegati che non lavorano a nessun progetto.",
+      "orderMatters": false,
+      "gradingMode": "automatic",
+      "fixtures": [
+        "impiegati-demo",
+        "impiegati-edges",
+        "impiegati-empty",
+        "impiegati-reversed"
+      ],
+      "solutionPath": "algebra/solutions/ar-impiegati-12.txt",
+      "hints": [
+        "Parti dall’insieme di tutte le matricole e cognomi.",
+        "Sottrai gli impiegati che compaiono nel join con Partecipazione."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-scan-source",
+          "file": "esercitazione_AR.pdf",
+          "pageStart": 1,
+          "pageEnd": 1
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "ar-impiegati-13",
+      "moduleId": "algebra-relazionale",
+      "type": "relational-algebra",
+      "difficulty": "intermedio",
+      "prompt": "Trovare matricola e cognome degli impiegati che lavorano a più di un progetto.",
+      "orderMatters": false,
+      "gradingMode": "automatic",
+      "fixtures": [
+        "impiegati-demo",
+        "impiegati-edges",
+        "impiegati-empty",
+        "impiegati-reversed"
+      ],
+      "solutionPath": "algebra/solutions/ar-impiegati-13.txt",
+      "hints": [
+        "Confronta due partecipazioni della stessa matricola.",
+        "I codici Progetto devono essere diversi. Conserva la matricola per non confondere gli omonimi."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-scan-source",
+          "file": "esercitazione_AR.pdf",
+          "pageStart": 1,
+          "pageEnd": 1
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "ar-impiegati-14",
+      "moduleId": "algebra-relazionale",
+      "type": "relational-algebra",
+      "difficulty": "intermedio",
+      "prompt": "Trovare matricola e cognome degli impiegati che lavorano a un solo progetto.",
+      "orderMatters": false,
+      "gradingMode": "automatic",
+      "fixtures": [
+        "impiegati-demo",
+        "impiegati-edges",
+        "impiegati-empty",
+        "impiegati-reversed"
+      ],
+      "solutionPath": "algebra/solutions/ar-impiegati-14.txt",
+      "hints": [
+        "Calcola chi ha almeno una partecipazione e chi ha almeno due progetti distinti.",
+        "Sottrai il secondo insieme dal primo: zero progetti non significa uno solo."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-scan-source",
+          "file": "esercitazione_AR.pdf",
+          "pageStart": 1,
+          "pageEnd": 1
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "ar-scan-interpretazione-01",
+      "moduleId": "algebra-relazionale",
+      "type": "relational-algebra",
+      "difficulty": "intermedio",
+      "prompt": "Descrivere in linguaggio naturale: π_Cognome(ρ_{Matricola←Responsabile}(Progetto) ⋈ Impiegato).",
+      "orderMatters": false,
+      "gradingMode": "guided",
+      "fixtures": [],
+      "solutionPath": "algebra/solutions/ar-scan-interpretazione-01.txt",
+      "hints": [
+        "Individua prima le chiavi, poi applica i filtri.",
+        "Proietta gli attributi richiesti solo dopo avere conservato quelli necessari ai join."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-scan-source",
+          "file": "esercitazione_AR.pdf",
+          "pageStart": 1,
+          "pageEnd": 1
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "ar-scan-interpretazione-02",
+      "moduleId": "algebra-relazionale",
+      "type": "relational-algebra",
+      "difficulty": "intermedio",
+      "prompt": "Descrivere in linguaggio naturale: π_Cognome(ρ_{Matricola←Direttore}(Dipartimento) ⋈ (Impiegato ⋈ ρ_{Dipartimento←Codice}(Dipartimento))).",
+      "orderMatters": false,
+      "gradingMode": "guided",
+      "fixtures": [],
+      "solutionPath": "algebra/solutions/ar-scan-interpretazione-02.txt",
+      "hints": [
+        "Individua prima le chiavi, poi applica i filtri.",
+        "Proietta gli attributi richiesti solo dopo avere conservato quelli necessari ai join."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-scan-source",
+          "file": "esercitazione_AR.pdf",
+          "pageStart": 1,
+          "pageEnd": 1
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "ar-albero-01",
+      "moduleId": "algebra-relazionale",
+      "type": "relational-algebra",
+      "difficulty": "intermedio",
+      "prompt": "A quale domanda corrisponde questo Query Tree? π_sname sopra σ_{bid=100 ∧ rating>5}, con join sid=sid tra Reserves e Sailors.",
+      "orderMatters": false,
+      "gradingMode": "guided",
+      "fixtures": [],
+      "solutionPath": "algebra/solutions/ar-albero-01.txt",
+      "hints": [
+        "Individua prima le chiavi, poi applica i filtri.",
+        "Proietta gli attributi richiesti solo dopo avere conservato quelli necessari ai join."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 45,
+          "pageEnd": 45
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "ar-albero-02",
+      "moduleId": "algebra-relazionale",
+      "type": "relational-algebra",
+      "difficulty": "intermedio",
+      "prompt": "Possiamo ottimizzare il piano di esecuzione a sinistra? Perché (intuitivamente) il piano di esecuzione a destra è migliore di quello a sinistra?",
+      "orderMatters": false,
+      "gradingMode": "guided",
+      "fixtures": [],
+      "solutionPath": "algebra/solutions/ar-albero-02.txt",
+      "hints": [
+        "Individua prima le chiavi, poi applica i filtri.",
+        "Proietta gli attributi richiesti solo dopo avere conservato quelli necessari ai join."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 47,
+          "pageEnd": 47
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "er-company",
+      "moduleId": "progettazione-er",
+      "type": "er-guided",
+      "difficulty": "intermedio",
+      "prompt": "Attività Database Academy: a partire dai requisiti COMPANY delle pp. 7–8, individua dipendenti, dipartimenti e progetti; modella il lavoro presso un dipartimento e il controllo dei progetti. Registra nelle note ciò che manca per completare COMPANY.",
+      "orderMatters": false,
+      "gradingMode": "guided",
+      "fixtures": [],
+      "solutionPath": "er/solutions/er-company.md",
+      "hints": [
+        "Parti dai nomi del testo, ma chiediti quali abbiano identità propria.",
+        "I minimi non dichiarati, sedi, supervisori e ore non si possono inventare."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 7,
+          "pageEnd": 8
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "er-lavora",
+      "moduleId": "progettazione-er",
+      "type": "er-guided",
+      "difficulty": "intermedio",
+      "prompt": "Cosa significherebbe mettere un vincolo di chiave da EMPLOYEES verso la relazione WORKS_IN?",
+      "orderMatters": false,
+      "gradingMode": "guided",
+      "fixtures": [],
+      "solutionPath": "er/solutions/er-lavora.md",
+      "hints": [
+        "La freccia parte dall’entità vincolata e punta al rombo.",
+        "Combina massimo uno e partecipazione totale già presente nel diagramma."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 27,
+          "pageEnd": 29
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "er-periodi",
+      "moduleId": "progettazione-er",
+      "type": "er-guided",
+      "difficulty": "intermedio",
+      "prompt": "E se fosse richiesto di registrare diversi periodi di lavoro di un impiegato in un certo dipartimento?",
+      "orderMatters": false,
+      "gradingMode": "guided",
+      "fixtures": [],
+      "solutionPath": "er/solutions/er-periodi.md",
+      "hints": [
+        "Un attributo descrittivo non distingue due istanze della stessa coppia.",
+        "Confronta il raffinamento delle pp. 49–50: quale nuovo concetto rende distinguibili i periodi?"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 20,
+          "pageEnd": 20
+        },
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 49,
+          "pageEnd": 50
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "er-indirizzo",
+      "moduleId": "progettazione-er",
+      "type": "er-guided",
+      "difficulty": "intermedio",
+      "prompt": "Immaginiamo di voler associare ai dipendenti anche informazione sul loro indirizzo. Lo facciamo aggiungendo un attributo o creando un’entity type INDIRIZZO?",
+      "orderMatters": false,
+      "gradingMode": "guided",
+      "fixtures": [],
+      "solutionPath": "er/solutions/er-indirizzo.md",
+      "hints": [
+        "Distingui un solo valore atomico da più indirizzi o componenti interrogabili.",
+        "Spiega quali requisiti richiederebbero il concetto autonomo; le chiavi non dichiarate sono ipotesi."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 48,
+          "pageEnd": 48
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "er-polizze",
+      "moduleId": "progettazione-er",
+      "type": "er-guided",
+      "difficulty": "intermedio",
+      "prompt": "Ogni polizza deve essere posseduta da un impiegato. Una polizza non può essere posseduta congiuntamente da 2 o più impiegati. Come è preferibile modellare questo scenario?",
+      "orderMatters": false,
+      "gradingMode": "guided",
+      "fixtures": [],
+      "solutionPath": "er/solutions/er-polizze.md",
+      "hints": [
+        "Separare il possessore della polizza dai beneficiari permette polizze senza familiari coperti.",
+        "Rileggi gli effetti indesiderati dei vincoli sulla ternaria alle pp. 56–57."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 55,
+          "pageEnd": 58
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "er-isa",
+      "moduleId": "progettazione-er",
+      "type": "er-guided",
+      "difficulty": "intermedio",
+      "prompt": "Attività Database Academy: costruisci una specializzazione di EMPLOYEE in HOURLY_EMPS e CONTRACT_EMPS, disgiunta e parziale. Motiva che cosa cambierebbe con O o con copertura totale.",
+      "orderMatters": false,
+      "gradingMode": "guided",
+      "fixtures": [],
+      "solutionPath": "er/solutions/er-isa.md",
+      "hints": [
+        "Non duplicare la chiave ereditata solo per far sparire un errore.",
+        "D/O e copertura sono dimensioni indipendenti."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 35,
+          "pageEnd": 40
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "er-aggregazione",
+      "moduleId": "progettazione-er",
+      "type": "er-guided",
+      "difficulty": "intermedio",
+      "prompt": "Avremmo potuto usare una relazione ternaria al posto dell’aggregazione per modellare l’esempio?",
+      "orderMatters": false,
+      "gradingMode": "guided",
+      "fixtures": [],
+      "solutionPath": "er/solutions/er-aggregazione.md",
+      "hints": [
+        "Il canvas non supporta aggregazione: usa le note per il ragionamento, senza fingere di averla disegnata.",
+        "Distingui l’esistenza di SPONSORS dal monitoraggio, l’attributo until e il vincolo di massimo un monitor."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 43,
+          "pageEnd": 43
+        },
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 60,
+          "pageEnd": 63
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "academy-sailors-01",
+      "moduleId": "sql",
+      "type": "sql",
+      "difficulty": "base",
+      "prompt": "Restituisci sid e sname dei marinai con rating almeno 8, una riga per persona.",
+      "datasetId": "sailors",
+      "expectedColumns": [
+        "sid",
+        "sname"
+      ],
+      "orderMatters": false,
+      "gradingMode": "automatic",
+      "fixtures": [
+        "sailors",
+        "academy-sailors-edges",
+        "academy-sailors-reversed",
+        "academy-sailors-empty"
+      ],
+      "solutionPath": "solutions/academy-sailors-01.sql",
+      "hints": [
+        "Individua la popolazione richiesta e le colonne: sid, sname.",
+        "Almeno 8 include 8; il nome non identifica una persona."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 14,
+          "pageEnd": 19,
+          "section": "Costrutti del corso; enunciato originale Database Academy"
+        },
+        {
+          "sourceId": "sailors-source",
+          "file": "Schema per generare DB Sailors.txt",
+          "section": "Schema e dati ufficiali, invariati"
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "academy-sailors-02",
+      "moduleId": "sql",
+      "type": "sql",
+      "difficulty": "base",
+      "prompt": "Restituisci sid e age dei marinai con età nota, ordinati per age crescente e sid crescente a parità.",
+      "datasetId": "sailors",
+      "expectedColumns": [
+        "sid",
+        "age"
+      ],
+      "orderMatters": true,
+      "gradingMode": "automatic",
+      "fixtures": [
+        "sailors",
+        "academy-sailors-edges",
+        "academy-sailors-reversed",
+        "academy-sailors-empty"
+      ],
+      "solutionPath": "solutions/academy-sailors-02.sql",
+      "hints": [
+        "Individua la popolazione richiesta e le colonne: sid, age.",
+        "Escludi NULL e ordina age, poi sid per le parità."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 14,
+          "pageEnd": 19,
+          "section": "Costrutti del corso; enunciato originale Database Academy"
+        },
+        {
+          "sourceId": "sailors-source",
+          "file": "Schema per generare DB Sailors.txt",
+          "section": "Schema e dati ufficiali, invariati"
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "academy-sailors-03",
+      "moduleId": "sql",
+      "type": "sql",
+      "difficulty": "intermedio",
+      "prompt": "Restituisci i sid distinti dei marinai che hanno prenotato almeno una barca rossa.",
+      "datasetId": "sailors",
+      "expectedColumns": [
+        "sid"
+      ],
+      "orderMatters": false,
+      "gradingMode": "automatic",
+      "fixtures": [
+        "sailors",
+        "academy-sailors-edges",
+        "academy-sailors-reversed",
+        "academy-sailors-empty"
+      ],
+      "solutionPath": "solutions/academy-sailors-03.sql",
+      "hints": [
+        "Individua la popolazione richiesta e le colonne: sid.",
+        "Usa sid distinti oppure EXISTS per non ripetere chi prenota più volte."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 58,
+          "pageEnd": 62,
+          "section": "Costrutti del corso; enunciato originale Database Academy"
+        },
+        {
+          "sourceId": "sailors-source",
+          "file": "Schema per generare DB Sailors.txt",
+          "section": "Schema e dati ufficiali, invariati"
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "academy-sailors-04",
+      "moduleId": "sql",
+      "type": "sql",
+      "difficulty": "intermedio",
+      "prompt": "Per ogni marinaio restituisci sid e numero delle sue prenotazioni, includendo zero per chi non prenota.",
+      "datasetId": "sailors",
+      "expectedColumns": [
+        "sid",
+        "prenotazioni"
+      ],
+      "orderMatters": false,
+      "gradingMode": "automatic",
+      "fixtures": [
+        "sailors",
+        "academy-sailors-edges",
+        "academy-sailors-reversed",
+        "academy-sailors-empty"
+      ],
+      "solutionPath": "solutions/academy-sailors-04.sql",
+      "hints": [
+        "Individua la popolazione richiesta e le colonne: sid, prenotazioni.",
+        "Parti da Sailors con LEFT JOIN; conta r.sid, non COUNT(*)."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 63,
+          "pageEnd": 65,
+          "section": "Costrutti del corso; enunciato originale Database Academy"
+        },
+        {
+          "sourceId": "sailors-source",
+          "file": "Schema per generare DB Sailors.txt",
+          "section": "Schema e dati ufficiali, invariati"
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "academy-sailors-05",
+      "moduleId": "sql",
+      "type": "sql",
+      "difficulty": "intermedio",
+      "prompt": "Tra i marinai con age almeno 18, restituisci rating, numero di persone ed età media per rating; mantieni solo gruppi con almeno due persone.",
+      "datasetId": "sailors",
+      "expectedColumns": [
+        "rating",
+        "persone",
+        "eta_media"
+      ],
+      "orderMatters": false,
+      "gradingMode": "automatic",
+      "fixtures": [
+        "sailors",
+        "academy-sailors-edges",
+        "academy-sailors-reversed",
+        "academy-sailors-empty"
+      ],
+      "solutionPath": "solutions/academy-sailors-05.sql",
+      "hints": [
+        "Individua la popolazione richiesta e le colonne: rating, persone, eta_media.",
+        "Filtra maggiorenni prima dei gruppi; applica COUNT(*)>=2 in HAVING."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 25,
+          "pageEnd": 30,
+          "section": "Costrutti del corso; enunciato originale Database Academy"
+        },
+        {
+          "sourceId": "sailors-source",
+          "file": "Schema per generare DB Sailors.txt",
+          "section": "Schema e dati ufficiali, invariati"
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "academy-sailors-06",
+      "moduleId": "sql",
+      "type": "sql",
+      "difficulty": "intermedio",
+      "prompt": "Restituisci sid e rating di tutti i marinai con rating massimo, mantenendo tutte le parità.",
+      "datasetId": "sailors",
+      "expectedColumns": [
+        "sid",
+        "rating"
+      ],
+      "orderMatters": false,
+      "gradingMode": "automatic",
+      "fixtures": [
+        "sailors",
+        "academy-sailors-edges",
+        "academy-sailors-reversed",
+        "academy-sailors-empty"
+      ],
+      "solutionPath": "solutions/academy-sailors-06.sql",
+      "hints": [
+        "Individua la popolazione richiesta e le colonne: sid, rating.",
+        "Confronta ogni rating con il massimo globale, mantenendo le parità."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 31,
+          "pageEnd": 40,
+          "section": "Costrutti del corso; enunciato originale Database Academy"
+        },
+        {
+          "sourceId": "sailors-source",
+          "file": "Schema per generare DB Sailors.txt",
+          "section": "Schema e dati ufficiali, invariati"
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "academy-sailors-07",
+      "moduleId": "sql",
+      "type": "sql",
+      "difficulty": "intermedio",
+      "prompt": "Restituisci sid e sname dei marinai che non hanno alcuna prenotazione.",
+      "datasetId": "sailors",
+      "expectedColumns": [
+        "sid",
+        "sname"
+      ],
+      "orderMatters": false,
+      "gradingMode": "automatic",
+      "fixtures": [
+        "sailors",
+        "academy-sailors-edges",
+        "academy-sailors-reversed",
+        "academy-sailors-empty"
+      ],
+      "solutionPath": "solutions/academy-sailors-07.sql",
+      "hints": [
+        "Individua la popolazione richiesta e le colonne: sid, sname.",
+        "Correla NOT EXISTS con r.sid=s.sid."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 35,
+          "pageEnd": 40,
+          "section": "Costrutti del corso; enunciato originale Database Academy"
+        },
+        {
+          "sourceId": "sailors-source",
+          "file": "Schema per generare DB Sailors.txt",
+          "section": "Schema e dati ufficiali, invariati"
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "academy-sailors-08",
+      "moduleId": "sql",
+      "type": "sql",
+      "difficulty": "intermedio",
+      "prompt": "Restituisci sid e numero di prenotazioni dei soli marinai con almeno due prenotazioni. Puoi usare CTE, sottoquery o HAVING.",
+      "datasetId": "sailors",
+      "expectedColumns": [
+        "sid",
+        "prenotazioni"
+      ],
+      "orderMatters": false,
+      "gradingMode": "automatic",
+      "fixtures": [
+        "sailors",
+        "academy-sailors-edges",
+        "academy-sailors-reversed",
+        "academy-sailors-empty"
+      ],
+      "solutionPath": "solutions/academy-sailors-08.sql",
+      "hints": [
+        "Individua la popolazione richiesta e le colonne: sid, prenotazioni.",
+        "COUNT(*) include date diverse per la stessa barca; DISTINCT bid cambia misura."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 46,
+          "pageEnd": 57,
+          "section": "Costrutti del corso; enunciato originale Database Academy"
+        },
+        {
+          "sourceId": "sailors-source",
+          "file": "Schema per generare DB Sailors.txt",
+          "section": "Schema e dati ufficiali, invariati"
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "academy-sailors-09",
+      "moduleId": "sql",
+      "type": "sql",
+      "difficulty": "avanzato",
+      "prompt": "Restituisci i sid distinti di chi ha prenotato almeno una barca rossa ma nessuna barca verde.",
+      "datasetId": "sailors",
+      "expectedColumns": [
+        "sid"
+      ],
+      "orderMatters": false,
+      "gradingMode": "automatic",
+      "fixtures": [
+        "sailors",
+        "academy-sailors-edges",
+        "academy-sailors-reversed",
+        "academy-sailors-empty"
+      ],
+      "solutionPath": "solutions/academy-sailors-09.sql",
+      "hints": [
+        "Individua la popolazione richiesta e le colonne: sid.",
+        "Sottrai i sid prenotanti verde da quelli prenotanti rosso."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 90,
+          "pageEnd": 91,
+          "section": "Costrutti del corso; enunciato originale Database Academy"
+        },
+        {
+          "sourceId": "sailors-source",
+          "file": "Schema per generare DB Sailors.txt",
+          "section": "Schema e dati ufficiali, invariati"
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "academy-northwind-01",
+      "moduleId": "sql",
+      "type": "sql",
+      "difficulty": "base",
+      "prompt": "Restituisci ProductID e ProductName dei prodotti con Discontinued=0 e UnitPrice strettamente maggiore di 20.",
+      "datasetId": "northwind",
+      "expectedColumns": [
+        "ProductID",
+        "ProductName"
+      ],
+      "orderMatters": false,
+      "gradingMode": "automatic",
+      "fixtures": [
+        "northwind",
+        "academy-northwind-edges",
+        "academy-northwind-reversed",
+        "academy-northwind-empty"
+      ],
+      "solutionPath": "solutions/academy-northwind-01.sql",
+      "hints": [
+        "Individua la popolazione richiesta e le colonne: ProductID, ProductName.",
+        "AND tra i filtri; >20 esclude esattamente 20."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 14,
+          "pageEnd": 19,
+          "section": "Costrutti del corso; enunciato originale Database Academy"
+        },
+        {
+          "sourceId": "northwind-source",
+          "file": "Schema per generare DB NorthWind.txt",
+          "section": "Schema e dati ufficiali, invariati"
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "academy-northwind-02",
+      "moduleId": "sql",
+      "type": "sql",
+      "difficulty": "base",
+      "prompt": "Restituisci ProductID e UnitPrice dei prodotti con prezzo noto, dal prezzo più alto al più basso, poi ProductID crescente a parità.",
+      "datasetId": "northwind",
+      "expectedColumns": [
+        "ProductID",
+        "UnitPrice"
+      ],
+      "orderMatters": true,
+      "gradingMode": "automatic",
+      "fixtures": [
+        "northwind",
+        "academy-northwind-edges",
+        "academy-northwind-reversed",
+        "academy-northwind-empty"
+      ],
+      "solutionPath": "solutions/academy-northwind-02.sql",
+      "hints": [
+        "Individua la popolazione richiesta e le colonne: ProductID, UnitPrice.",
+        "Prezzo DESC, identificativo ASC per le parità."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 14,
+          "pageEnd": 19,
+          "section": "Costrutti del corso; enunciato originale Database Academy"
+        },
+        {
+          "sourceId": "northwind-source",
+          "file": "Schema per generare DB NorthWind.txt",
+          "section": "Schema e dati ufficiali, invariati"
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "academy-northwind-03",
+      "moduleId": "sql",
+      "type": "sql",
+      "difficulty": "intermedio",
+      "prompt": "Restituisci ProductID, ProductName e CategoryName per ogni prodotto con una categoria corrispondente. Una riga per prodotto.",
+      "datasetId": "northwind",
+      "expectedColumns": [
+        "ProductID",
+        "ProductName",
+        "CategoryName"
+      ],
+      "orderMatters": false,
+      "gradingMode": "automatic",
+      "fixtures": [
+        "northwind",
+        "academy-northwind-edges",
+        "academy-northwind-reversed",
+        "academy-northwind-empty"
+      ],
+      "solutionPath": "solutions/academy-northwind-03.sql",
+      "hints": [
+        "Individua la popolazione richiesta e le colonne: ProductID, ProductName, CategoryName.",
+        "Collega CategoryID dei due lati, non ProductID=CategoryID."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 58,
+          "pageEnd": 62,
+          "section": "Costrutti del corso; enunciato originale Database Academy"
+        },
+        {
+          "sourceId": "northwind-source",
+          "file": "Schema per generare DB NorthWind.txt",
+          "section": "Schema e dati ufficiali, invariati"
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "academy-northwind-04",
+      "moduleId": "sql",
+      "type": "sql",
+      "difficulty": "intermedio",
+      "prompt": "Restituisci CategoryID e numero di prodotti per ogni CategoryID non NULL presente in products, solo se contiene almeno due prodotti.",
+      "datasetId": "northwind",
+      "expectedColumns": [
+        "CategoryID",
+        "prodotti"
+      ],
+      "orderMatters": false,
+      "gradingMode": "automatic",
+      "fixtures": [
+        "northwind",
+        "academy-northwind-edges",
+        "academy-northwind-reversed",
+        "academy-northwind-empty"
+      ],
+      "solutionPath": "solutions/academy-northwind-04.sql",
+      "hints": [
+        "Individua la popolazione richiesta e le colonne: CategoryID, prodotti.",
+        "Escludi CategoryID NULL prima dei gruppi; conta almeno due prodotti."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 25,
+          "pageEnd": 30,
+          "section": "Costrutti del corso; enunciato originale Database Academy"
+        },
+        {
+          "sourceId": "northwind-source",
+          "file": "Schema per generare DB NorthWind.txt",
+          "section": "Schema e dati ufficiali, invariati"
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "academy-northwind-05",
+      "moduleId": "sql",
+      "type": "sql",
+      "difficulty": "intermedio",
+      "prompt": "Restituisci ProductID e quantità totale di unità in order_details per i prodotti con totale almeno 10. Conta le quantità, non le righe.",
+      "datasetId": "northwind",
+      "expectedColumns": [
+        "ProductID",
+        "quantita"
+      ],
+      "orderMatters": false,
+      "gradingMode": "automatic",
+      "fixtures": [
+        "northwind",
+        "academy-northwind-edges",
+        "academy-northwind-reversed",
+        "academy-northwind-empty"
+      ],
+      "solutionPath": "solutions/academy-northwind-05.sql",
+      "hints": [
+        "Individua la popolazione richiesta e le colonne: ProductID, quantita.",
+        "SUM(Quantity) misura unità: COUNT(*) misura righe."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 23,
+          "pageEnd": 30,
+          "section": "Costrutti del corso; enunciato originale Database Academy"
+        },
+        {
+          "sourceId": "northwind-source",
+          "file": "Schema per generare DB NorthWind.txt",
+          "section": "Schema e dati ufficiali, invariati"
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "academy-northwind-06",
+      "moduleId": "sql",
+      "type": "sql",
+      "difficulty": "intermedio",
+      "prompt": "Restituisci ProductID e UnitPrice dei prodotti il cui prezzo è strettamente superiore alla media dei prezzi non NULL di tutti i prodotti.",
+      "datasetId": "northwind",
+      "expectedColumns": [
+        "ProductID",
+        "UnitPrice"
+      ],
+      "orderMatters": false,
+      "gradingMode": "automatic",
+      "fixtures": [
+        "northwind",
+        "academy-northwind-edges",
+        "academy-northwind-reversed",
+        "academy-northwind-empty"
+      ],
+      "solutionPath": "solutions/academy-northwind-06.sql",
+      "hints": [
+        "Individua la popolazione richiesta e le colonne: ProductID, UnitPrice.",
+        "Confronta ogni prezzo con AVG globale, che ignora NULL."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 31,
+          "pageEnd": 40,
+          "section": "Costrutti del corso; enunciato originale Database Academy"
+        },
+        {
+          "sourceId": "northwind-source",
+          "file": "Schema per generare DB NorthWind.txt",
+          "section": "Schema e dati ufficiali, invariati"
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "academy-northwind-07",
+      "moduleId": "sql",
+      "type": "sql",
+      "difficulty": "intermedio",
+      "prompt": "Per ogni cliente restituisci CustomerID e numero di ordini, includendo zero. Non attribuire ordini con CustomerID NULL a un cliente.",
+      "datasetId": "northwind",
+      "expectedColumns": [
+        "CustomerID",
+        "ordini"
+      ],
+      "orderMatters": false,
+      "gradingMode": "automatic",
+      "fixtures": [
+        "northwind",
+        "academy-northwind-edges",
+        "academy-northwind-reversed",
+        "academy-northwind-empty"
+      ],
+      "solutionPath": "solutions/academy-northwind-07.sql",
+      "hints": [
+        "Individua la popolazione richiesta e le colonne: CustomerID, ordini.",
+        "LEFT JOIN da customers; conta OrderID del lato opzionale."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 63,
+          "pageEnd": 65,
+          "section": "Costrutti del corso; enunciato originale Database Academy"
+        },
+        {
+          "sourceId": "northwind-source",
+          "file": "Schema per generare DB NorthWind.txt",
+          "section": "Schema e dati ufficiali, invariati"
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "academy-northwind-08",
+      "moduleId": "sql",
+      "type": "sql",
+      "difficulty": "avanzato",
+      "prompt": "Per ogni ProductID presente in order_details restituisci ProductID e somma di UnitPrice*Quantity*(1-Discount). Usa il prezzo storico del dettaglio. Nessun arrotondamento richiesto; escludi tasse e trasporto.",
+      "datasetId": "northwind",
+      "expectedColumns": [
+        "ProductID",
+        "importo"
+      ],
+      "orderMatters": false,
+      "gradingMode": "automatic",
+      "fixtures": [
+        "northwind",
+        "academy-northwind-edges",
+        "academy-northwind-reversed",
+        "academy-northwind-empty"
+      ],
+      "solutionPath": "solutions/academy-northwind-08.sql",
+      "hints": [
+        "Individua la popolazione richiesta e le colonne: ProductID, importo.",
+        "Usa prezzo storico e sconto frazionario su ogni riga, poi somma per ProductID."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 23,
+          "pageEnd": 30,
+          "section": "Costrutti del corso; enunciato originale Database Academy"
+        },
+        {
+          "sourceId": "northwind-source",
+          "file": "Schema per generare DB NorthWind.txt",
+          "section": "Schema e dati ufficiali, invariati"
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    },
+    {
+      "id": "academy-northwind-09",
+      "moduleId": "sql",
+      "type": "sql",
+      "difficulty": "intermedio",
+      "prompt": "Restituisci ProductID dei prodotti che non compaiono in alcuna riga di order_details. Una riga per prodotto.",
+      "datasetId": "northwind",
+      "expectedColumns": [
+        "ProductID"
+      ],
+      "orderMatters": false,
+      "gradingMode": "automatic",
+      "fixtures": [
+        "northwind",
+        "academy-northwind-edges",
+        "academy-northwind-reversed",
+        "academy-northwind-empty"
+      ],
+      "solutionPath": "solutions/academy-northwind-09.sql",
+      "hints": [
+        "Individua la popolazione richiesta e le colonne: ProductID.",
+        "Correla i dettagli a ProductID esterno; i prodotti mai acquistati non hanno dettagli."
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 35,
+          "pageEnd": 40,
+          "section": "Costrutti del corso; enunciato originale Database Academy"
+        },
+        {
+          "sourceId": "northwind-source",
+          "file": "Schema per generare DB NorthWind.txt",
+          "section": "Schema e dati ufficiali, invariati"
+        }
+      ],
+      "version": 1,
+      "status": "needs-review"
+    }
+  ],
+  "datasets": [
+    {
+      "id": "sailors",
+      "dialect": "sqlite",
+      "schemaPath": "datasets/sailors/schema.sql",
+      "seedPath": "datasets/sailors/seed.sql",
+      "fixturePaths": [
+        "datasets/sailors/seed.sql",
+        "fixtures/sailors-edges.sql",
+        "fixtures/sailors-reversed.sql",
+        "fixtures/sailors-empty.sql",
+        "fixtures/sailors-variation.sql",
+        "fixtures/academy-sailors-edges.sql",
+        "fixtures/academy-sailors-reversed.sql",
+        "fixtures/academy-sailors-empty.sql"
+      ],
+      "provenance": [
+        {
+          "sourceId": "sailors-source",
+          "file": "Schema per generare DB Sailors.txt",
+          "section": "Script completo"
+        }
+      ],
+      "supportedCapabilities": [
+        "select",
+        "join",
+        "group-by",
+        "having",
+        "cte"
+      ]
+    },
+    {
+      "id": "northwind",
+      "dialect": "sqlite",
+      "schemaPath": "datasets/northwind/schema.sql",
+      "seedPath": "datasets/northwind/seed.sql",
+      "fixturePaths": [
+        "datasets/northwind/seed.sql",
+        "fixtures/academy-northwind-edges.sql",
+        "fixtures/academy-northwind-reversed.sql",
+        "fixtures/academy-northwind-empty.sql"
+      ],
+      "provenance": [
+        {
+          "sourceId": "northwind-source",
+          "file": "Schema per generare DB NorthWind.txt",
+          "section": "Script completo"
+        }
+      ],
+      "supportedCapabilities": [
+        "select",
+        "join",
+        "group-by",
+        "having",
+        "cte"
+      ]
+    }
+  ]
+}

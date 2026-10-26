@@ -1,0 +1,1 @@
+π_{sname}(σ_{color='red'}(Boats) ⋈ Reserves ⋈ Sailors)

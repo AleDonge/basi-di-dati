@@ -1,0 +1,130 @@
+{
+  "lessonId": "er-vincoli",
+  "version": 2,
+  "status": "needs-review",
+  "questions": [
+    {
+      "id": "er-vincoli-q1",
+      "version": 2,
+      "type": "single",
+      "prompt": "La freccia di chiave del corso punta…",
+      "concepts": [
+        "cardinalita",
+        "partecipazione",
+        "vincoli"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 23,
+          "pageEnd": 29,
+          "section": "Cardinalità, chiave e partecipazione"
+        },
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 34,
+          "pageEnd": 34,
+          "section": "Cardinalità, chiave e partecipazione"
+        }
+      ],
+      "options": [
+        {
+          "id": "errata",
+          "text": "Dal rombo verso un piede di corvo."
+        },
+        {
+          "id": "corretta",
+          "text": "Dall’entità vincolata verso il rombo."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "La notazione del corso orienta la freccia dall’entità vincolata al rombo per massimo uno. Non si sostituisce con simboli di altri standard."
+    },
+    {
+      "id": "er-vincoli-q2",
+      "version": 2,
+      "type": "single",
+      "prompt": "Una partecipazione (1,1) significa…",
+      "concepts": [
+        "cardinalita",
+        "partecipazione",
+        "vincoli"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 23,
+          "pageEnd": 29,
+          "section": "Cardinalità, chiave e partecipazione"
+        },
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 34,
+          "pageEnd": 34,
+          "section": "Cardinalità, chiave e partecipazione"
+        }
+      ],
+      "options": [
+        {
+          "id": "corretta",
+          "text": "Almeno e al massimo una istanza del legame per l’entità."
+        },
+        {
+          "id": "errata",
+          "text": "Una sola entità nell’intero database."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "Si contano i legami della singola entità in quel ruolo: minimo uno e massimo uno. Non si limita a una il numero totale delle entità."
+    },
+    {
+      "id": "er-vincoli-q3",
+      "version": 2,
+      "type": "single",
+      "prompt": "Il default senza vincoli min–max è…",
+      "concepts": [
+        "cardinalita",
+        "partecipazione",
+        "vincoli"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 23,
+          "pageEnd": 29,
+          "section": "Cardinalità, chiave e partecipazione"
+        },
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 34,
+          "pageEnd": 34,
+          "section": "Cardinalità, chiave e partecipazione"
+        }
+      ],
+      "options": [
+        {
+          "id": "errata",
+          "text": "Sempre (1,1)."
+        },
+        {
+          "id": "corretta",
+          "text": "(0,N), secondo la p. 29."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "La p. 29 non impone obbligatorietà o unicità in assenza di vincoli: minimo zero e massimo N. (1,1) aggiungerebbe due condizioni."
+    }
+  ]
+}

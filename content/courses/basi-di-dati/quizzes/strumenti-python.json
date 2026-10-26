@@ -1,0 +1,115 @@
+{
+  "lessonId": "strumenti-python",
+  "version": 1,
+  "status": "needs-review",
+  "questions": [
+    {
+      "id": "strumenti-python-q1",
+      "version": 1,
+      "type": "single",
+      "prompt": "Per un parametro singolo, quale struttura Python è una tupla?",
+      "concepts": [
+        "Python",
+        "DB-API",
+        "cursor",
+        "commit",
+        "parametri"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "tools-source",
+          "file": "Introduzione MySQL e Dbeaver.pdf",
+          "pageStart": 79,
+          "pageEnd": 92,
+          "section": "Python DB-API: cursor, parametri e commit"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "(surname)"
+        },
+        {
+          "id": "opzione-2",
+          "text": "(surname,)"
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-2"
+      ],
+      "explanation": "È la virgola a costruire la tupla a un elemento; le sole parentesi non cambiano il valore."
+    },
+    {
+      "id": "strumenti-python-q2",
+      "version": 1,
+      "type": "single",
+      "prompt": "Con autocommit disattivato, chiudere il cursor conferma un INSERT?",
+      "concepts": [
+        "Python",
+        "DB-API",
+        "cursor",
+        "commit",
+        "parametri"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "tools-source",
+          "file": "Introduzione MySQL e Dbeaver.pdf",
+          "pageStart": 79,
+          "pageEnd": 92,
+          "section": "Python DB-API: cursor, parametri e commit"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "Sì, equivale a commit."
+        },
+        {
+          "id": "opzione-2",
+          "text": "No, occorre una conferma della transazione secondo il driver."
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-2"
+      ],
+      "explanation": "Chiusura della risorsa e commit sono operazioni distinte. Gli esempi DML della fonte chiamano conn.commit()."
+    },
+    {
+      "id": "strumenti-python-q3",
+      "version": 1,
+      "type": "single",
+      "prompt": "Per usare un valore nella WHERE con Connector/Python bisogna…",
+      "concepts": [
+        "Python",
+        "DB-API",
+        "cursor",
+        "commit",
+        "parametri"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "tools-source",
+          "file": "Introduzione MySQL e Dbeaver.pdf",
+          "pageStart": 79,
+          "pageEnd": 92,
+          "section": "Python DB-API: cursor, parametri e commit"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "Passare SQL e parametri separatamente a execute."
+        },
+        {
+          "id": "opzione-2",
+          "text": "Costruire una f-string con il valore dentro il comando."
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-1"
+      ],
+      "explanation": "Il binding mantiene i valori separati dalla grammatica e tratta correttamente apici e tipi. Il segnaposto %s non è un invito all’interpolazione manuale."
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+π_{sname}((π_{sid,bid}(Reserves) ÷ π_{bid}(Boats)) ⋈ Sailors)

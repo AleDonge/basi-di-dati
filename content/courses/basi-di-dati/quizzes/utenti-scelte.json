@@ -1,0 +1,123 @@
+{
+  "lessonId": "utenti-scelte",
+  "version": 1,
+  "status": "needs-review",
+  "questions": [
+    {
+      "id": "utenti-scelte-q1",
+      "version": 1,
+      "type": "single",
+      "prompt": "Chi definisce principalmente schema e vincoli raccogliendo le necessità degli utenti?",
+      "concepts": [
+        "utenti",
+        "dba",
+        "requisiti"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "intro-source",
+          "file": "Argomento01 Basi di Dati e loro utenti.pdf",
+          "pageStart": 20,
+          "pageEnd": 20,
+          "section": "Utenti, responsabilità e scelta di un DBMS"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "Il progettista della base di dati"
+        },
+        {
+          "id": "opzione-2",
+          "text": "L’utente parametrico in ogni singola operazione"
+        },
+        {
+          "id": "opzione-3",
+          "text": "Soltanto lo sviluppatore del software del DBMS"
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-1"
+      ],
+      "explanation": "La pagina 20 attribuisce queste responsabilità al Database Designer."
+    },
+    {
+      "id": "utenti-scelte-q2",
+      "version": 1,
+      "type": "true-false",
+      "prompt": "Un utente parametrico può utilizzare operazioni predefinite senza scrivere le interrogazioni.",
+      "concepts": [
+        "utenti",
+        "dba",
+        "requisiti"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "intro-source",
+          "file": "Argomento01 Basi di Dati e loro utenti.pdf",
+          "pageStart": 21,
+          "pageEnd": 21,
+          "section": "Utenti, responsabilità e scelta di un DBMS"
+        }
+      ],
+      "options": [
+        {
+          "id": "vero",
+          "text": "Vero"
+        },
+        {
+          "id": "falso",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionIds": [
+        "vero"
+      ],
+      "explanation": "La pagina 21 parla di funzioni predefinite, o canned transactions."
+    },
+    {
+      "id": "utenti-scelte-q3",
+      "version": 1,
+      "type": "multiple",
+      "prompt": "Quali fattori vanno valutati prima di adottare un DBMS general purpose?",
+      "concepts": [
+        "utenti",
+        "dba",
+        "requisiti"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "intro-source",
+          "file": "Argomento01 Basi di Dati e loro utenti.pdf",
+          "pageStart": 22,
+          "pageEnd": 22,
+          "section": "Utenti, responsabilità e scelta di un DBMS"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "Semplicità e stabilità dell’applicazione"
+        },
+        {
+          "id": "opzione-2",
+          "text": "Necessità di accesso multiutente"
+        },
+        {
+          "id": "opzione-3",
+          "text": "Risorse disponibili e costi delle funzioni richieste"
+        },
+        {
+          "id": "opzione-4",
+          "text": "Il solo colore dell’interfaccia"
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-1",
+        "opzione-2",
+        "opzione-3"
+      ],
+      "explanation": "Le pagine 22–23 discutono esigenze, risorse, complessità e costi. Il colore non sostituisce questi criteri."
+    }
+  ]
+}

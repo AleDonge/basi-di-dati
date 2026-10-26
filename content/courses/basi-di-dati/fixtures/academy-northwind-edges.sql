@@ -1,0 +1,25 @@
+-- Fixture sintetica Database Academy, separata dal dataset ufficiale.
+INSERT INTO "categories" (CategoryID,CategoryName) VALUES (1,'Bev');
+INSERT INTO "categories" (CategoryID,CategoryName) VALUES (2,'Food');
+INSERT INTO "categories" (CategoryID,CategoryName) VALUES (3,'Empty');
+INSERT INTO "suppliers" (SupplierID,CompanyName) VALUES (1,'Maker');
+INSERT INTO "customers" (CustomerID,CompanyName) VALUES ('A','Alfa');
+INSERT INTO "customers" (CustomerID,CompanyName) VALUES ('B','Beta');
+INSERT INTO "customers" (CustomerID,CompanyName) VALUES ('C','Gamma');
+INSERT INTO "employees" (EmployeeID,LastName,FirstName) VALUES (1,'Rossi','Ada');
+INSERT INTO "shippers" (ShipperID,CompanyName) VALUES (1,'Ship');
+INSERT INTO "products" (ProductID,ProductName,CategoryID,SupplierID,UnitPrice,Discontinued) VALUES (1,'Tea',1,1,20,0);
+INSERT INTO "products" (ProductID,ProductName,CategoryID,SupplierID,UnitPrice,Discontinued) VALUES (2,'Tea',1,1,30,0);
+INSERT INTO "products" (ProductID,ProductName,CategoryID,SupplierID,UnitPrice,Discontinued) VALUES (3,'Jam',2,1,30,1);
+INSERT INTO "products" (ProductID,ProductName,CategoryID,SupplierID,UnitPrice,Discontinued) VALUES (4,'Bread',2,1,NULL,0);
+INSERT INTO "products" (ProductID,ProductName,CategoryID,SupplierID,UnitPrice,Discontinued) VALUES (5,'Salt',NULL,1,10,0);
+INSERT INTO "products" (ProductID,ProductName,CategoryID,SupplierID,UnitPrice,Discontinued) VALUES (6,'Water',1,1,10,0);
+INSERT INTO "orders" (OrderID,CustomerID,EmployeeID,ShipVia) VALUES (10,'A',1,1);
+INSERT INTO "orders" (OrderID,CustomerID,EmployeeID,ShipVia) VALUES (11,'A',1,1);
+INSERT INTO "orders" (OrderID,CustomerID,EmployeeID,ShipVia) VALUES (12,'B',1,1);
+INSERT INTO "orders" (OrderID,CustomerID,EmployeeID,ShipVia) VALUES (13,NULL,1,1);
+INSERT INTO "order_details" (OrderID,ProductID,UnitPrice,Quantity,Discount) VALUES (10,1,10,2,0.1);
+INSERT INTO "order_details" (OrderID,ProductID,UnitPrice,Quantity,Discount) VALUES (10,2,20,5,0);
+INSERT INTO "order_details" (OrderID,ProductID,UnitPrice,Quantity,Discount) VALUES (11,1,12,3,0);
+INSERT INTO "order_details" (OrderID,ProductID,UnitPrice,Quantity,Discount) VALUES (12,3,8,10,0.5);
+INSERT INTO "order_details" (OrderID,ProductID,UnitPrice,Quantity,Discount) VALUES (13,5,10,1,0);

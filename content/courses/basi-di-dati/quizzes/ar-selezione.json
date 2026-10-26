@@ -1,0 +1,109 @@
+{
+  "lessonId": "ar-selezione",
+  "version": 2,
+  "status": "needs-review",
+  "questions": [
+    {
+      "id": "ar-selezione-q1",
+      "version": 2,
+      "type": "single",
+      "prompt": "Quale parte di una relazione modifica la selezione?",
+      "concepts": [
+        "algebra",
+        "selezione",
+        "predicati"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 2,
+          "pageEnd": 12,
+          "section": "Algebra, chiusura e selezione"
+        }
+      ],
+      "options": [
+        {
+          "id": "errata",
+          "text": "Gli attributi, eliminando le colonne non richieste."
+        },
+        {
+          "id": "corretta",
+          "text": "Le tuple, conservando gli attributi dello schema."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "La selezione conserva lo schema e decide quali tuple soddisfano il predicato; scegliere colonne è invece proiezione."
+    },
+    {
+      "id": "ar-selezione-q2",
+      "version": 2,
+      "type": "single",
+      "prompt": "Quale tupla supera age>30?",
+      "concepts": [
+        "algebra",
+        "selezione",
+        "predicati"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 2,
+          "pageEnd": 12,
+          "section": "Algebra, chiusura e selezione"
+        }
+      ],
+      "options": [
+        {
+          "id": "corretta",
+          "text": "Una tupla con age=31."
+        },
+        {
+          "id": "errata",
+          "text": "Una tupla con age=30."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "Il confronto è stretto: 31>30 è vero, 30>30 è falso. Con >=30 passerebbe anche la tupla sul confine."
+    },
+    {
+      "id": "ar-selezione-q3",
+      "version": 2,
+      "type": "single",
+      "prompt": "Due selezioni consecutive sullo stesso schema possono essere combinate con…",
+      "concepts": [
+        "algebra",
+        "selezione",
+        "predicati"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 2,
+          "pageEnd": 12,
+          "section": "Algebra, chiusura e selezione"
+        }
+      ],
+      "options": [
+        {
+          "id": "errata",
+          "text": "Una proiezione su tutti gli attributi."
+        },
+        {
+          "id": "corretta",
+          "text": "AND tra le due condizioni."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "Ogni tupla deve superare entrambi i filtri: AND esprime questa congiunzione. Proiettare tutte le colonne non applica nessuna condizione."
+    }
+  ]
+}

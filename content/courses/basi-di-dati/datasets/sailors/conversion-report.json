@@ -1,0 +1,48 @@
+{
+  "id": "sailors",
+  "converterVersion": 1,
+  "source": "Schema per generare DB Sailors.txt",
+  "sourceSha256": "cdb06a409a72340a1227fc4a24214be783ea06a2e434a5c65d84aeb47f47d19d",
+  "sourceStatements": 8,
+  "commands": {
+    "CREATE": 3,
+    "INSERT": 3,
+    "ALTER": 2
+  },
+  "tables": {
+    "Sailors": {
+      "rows": 10,
+      "columns": 4,
+      "everyValueCompared": true
+    },
+    "Boats": {
+      "rows": 4,
+      "columns": 3,
+      "everyValueCompared": true
+    },
+    "Reserves": {
+      "rows": 10,
+      "columns": 3,
+      "everyValueCompared": true
+    }
+  },
+  "binaryValues": [],
+  "binaryValuesSkipped": 0,
+  "rowsSkipped": 0,
+  "columnsSkipped": 0,
+  "changes": [
+    "Reserves.day: 1998-1-11 → 1998-01-11 (normalizzazione ISO, stessa data).",
+    "FK Sailors spostata da ALTER TABLE a CREATE TABLE.",
+    "FK Sailors spostata da ALTER TABLE a CREATE TABLE."
+  ],
+  "integrityCheck": "ok",
+  "foreignKeyCheck": [],
+  "inferredLinkChecks": [],
+  "limitations": [
+    "Tipi SQLite con affinità; VARCHAR(n) non limita la lunghezza.",
+    "DECIMAL e FLOAT convertiti in REAL: nessuna garanzia decimale esatta.",
+    "Date/datetime memorizzate come testo; nessuna semantica MySQL completa.",
+    "AUTO_INCREMENT non replicato: query utente solo in lettura.",
+    "Collation SQLite non replica automaticamente quella MySQL."
+  ]
+}

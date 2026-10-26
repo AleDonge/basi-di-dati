@@ -1,0 +1,109 @@
+{
+  "lessonId": "ar-divisione",
+  "version": 2,
+  "status": "needs-review",
+  "questions": [
+    {
+      "id": "ar-divisione-q1",
+      "version": 2,
+      "type": "single",
+      "prompt": "Cosa richiede la divisione per un candidato?",
+      "concepts": [
+        "divisione",
+        "quantificazione",
+        "insiemi"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 38,
+          "pageEnd": 39,
+          "section": "Divisione e domande con “tutti”"
+        }
+      ],
+      "options": [
+        {
+          "id": "errata",
+          "text": "Almeno una coppia nel dividendo per una tupla del divisore."
+        },
+        {
+          "id": "corretta",
+          "text": "Una coppia nel dividendo per ogni tupla del divisore."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "Per ogni y del divisore deve esistere (x,y) nel dividendo. Un solo match esprime esistenza, non universalità."
+    },
+    {
+      "id": "ar-divisione-q2",
+      "version": 2,
+      "type": "single",
+      "prompt": "Con divisore vuoto, il dominio candidato implementato è…",
+      "concepts": [
+        "divisione",
+        "quantificazione",
+        "insiemi"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 38,
+          "pageEnd": 39,
+          "section": "Divisione e domande con “tutti”"
+        }
+      ],
+      "options": [
+        {
+          "id": "corretta",
+          "text": "π_X(R), non un universo esterno."
+        },
+        {
+          "id": "errata",
+          "text": "Sempre tutti gli individui del database."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "Il lab parte dai candidati π_X(R). Sul divisore vuoto tutti questi candidati passano, senza introdurre persone assenti dal dividendo."
+    },
+    {
+      "id": "ar-divisione-q3",
+      "version": 2,
+      "type": "single",
+      "prompt": "Due prenotazioni della stessa barca sostituiscono una barca richiesta ma assente?",
+      "concepts": [
+        "divisione",
+        "quantificazione",
+        "insiemi"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 38,
+          "pageEnd": 39,
+          "section": "Divisione e domande con “tutti”"
+        }
+      ],
+      "options": [
+        {
+          "id": "errata",
+          "text": "Sì: conta solo il numero di prenotazioni."
+        },
+        {
+          "id": "corretta",
+          "text": "No: la divisione richiede ogni valore del divisore."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "Ripetere una barca non crea il valore mancante: la proiezione elimina coppie duplicate e la divisione controlla copertura di ciascun bid richiesto."
+    }
+  ]
+}

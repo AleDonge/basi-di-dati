@@ -1,0 +1,26 @@
+[
+  {
+    "id": "selezione-proiezione",
+    "title": "1 · Da Sailors ai nomi: selezione e proiezione",
+    "expression": "π_sname(σ_age>30(Sailors))",
+    "explanation": "Esegui e seleziona prima la foglia Sailors, poi σ e infine π: ogni nodo conserva il suo schema e le tuple calcolate."
+  },
+  {
+    "id": "join",
+    "title": "2 · Chi ha prenotato la barca 103?",
+    "expression": "π_{sname}(Sailors ⋈ σ_{bid=103}(Reserves))",
+    "explanation": "Il join naturale collega sid; il filtro su Reserves precede il join. Fonte: Autoverifica p. 3, sintassi tradotta dalla piattaforma."
+  },
+  {
+    "id": "divisione",
+    "title": "3 · Tutte le barche: divisione",
+    "expression": "π_{sname}(Sailors ⋈ (π_{sid,bid}(Reserves) ÷ π_{bid}(Boats)))",
+    "explanation": "Confronta ogni sid candidato con tutti i bid di Boats. Il divisore e il dividendo sono visibili come nodi separati. Autoverifica p. 9."
+  },
+  {
+    "id": "self-join",
+    "title": "4 · Almeno due barche distinte",
+    "expression": "π_{sname}(Sailors ⋈ π_{Reserves.sid}(Reserves ⋈_{Reserves.sid=A.sid AND Reserves.bid!=A.bid} ρ_{A}(Reserves)))",
+    "explanation": "Rinomina la seconda copia per distinguere gli attributi. Due prenotazioni della stessa barca non bastano. Autoverifica p. 10."
+  }
+]

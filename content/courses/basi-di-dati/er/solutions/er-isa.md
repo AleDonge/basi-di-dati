@@ -1,0 +1,1 @@
+Specializzazione disgiunta e parziale: le due sottoclassi non si sovrappongono, ma non necessariamente coprono EMPLOYEE. O permette sovrapposizione; copertura totale richiede che ogni impiegato appartenga ad almeno una sottoclasse. L’app verifica riferimenti e cicli, non l’aderenza delle istanze reali.

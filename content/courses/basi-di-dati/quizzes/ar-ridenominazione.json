@@ -1,0 +1,109 @@
+{
+  "lessonId": "ar-ridenominazione",
+  "version": 2,
+  "status": "needs-review",
+  "questions": [
+    {
+      "id": "ar-ridenominazione-q1",
+      "version": 2,
+      "type": "single",
+      "prompt": "La rinomina modifica le tuple della relazione?",
+      "concepts": [
+        "rinomina",
+        "self-join",
+        "schema"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 28,
+          "pageEnd": 30,
+          "section": "Ridenominazione e self-join"
+        }
+      ],
+      "options": [
+        {
+          "id": "errata",
+          "text": "Sì: filtra le righe con nomi duplicati."
+        },
+        {
+          "id": "corretta",
+          "text": "No: modifica i nomi, conservando i valori."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "La rinomina cambia lo schema nominale, conservando valori e cardinalità; non applica un filtro alle tuple."
+    },
+    {
+      "id": "ar-ridenominazione-q2",
+      "version": 2,
+      "type": "single",
+      "prompt": "Quale confronto è disambiguato da due alias diversi?",
+      "concepts": [
+        "rinomina",
+        "self-join",
+        "schema"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 28,
+          "pageEnd": 30,
+          "section": "Ridenominazione e self-join"
+        }
+      ],
+      "options": [
+        {
+          "id": "corretta",
+          "text": "A.age>B.age tra due copie di Sailors."
+        },
+        {
+          "id": "errata",
+          "text": "age>age senza qualificatori nel prodotto delle due copie."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "A e B identificano due copie indipendenti della sorgente. Senza qualificatori non si sa quale age appartenga a quale copia."
+    },
+    {
+      "id": "ar-ridenominazione-q3",
+      "version": 2,
+      "type": "single",
+      "prompt": "Rinominare una stringa in id ne cambia il dominio?",
+      "concepts": [
+        "rinomina",
+        "self-join",
+        "schema"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 28,
+          "pageEnd": 30,
+          "section": "Ridenominazione e self-join"
+        }
+      ],
+      "options": [
+        {
+          "id": "errata",
+          "text": "Sì: ogni id diventa numerico."
+        },
+        {
+          "id": "corretta",
+          "text": "No: cambia il nome, non il tipo."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "Un nome nuovo non converte il valore: una stringa resta stringa e non diventa compatibile con un dominio numerico."
+    }
+  ]
+}

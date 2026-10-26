@@ -1,0 +1,186 @@
+{
+  "id": "er-aggregazione",
+  "title": "Aggregazione o relazione ternaria?",
+  "version": 1,
+  "status": "needs-review",
+  "origin": "course-question",
+  "prompt": "Avremmo potuto usare una relazione ternaria al posto dell’aggregazione per modellare l’esempio?",
+  "difficulty": "intermedio",
+  "sourceRefs": [
+    {
+      "sourceId": "er-source",
+      "file": "Argomento05 Entity Relationship.pdf",
+      "pageStart": 43,
+      "pageEnd": 43
+    },
+    {
+      "sourceId": "er-source",
+      "file": "Argomento05 Entity Relationship.pdf",
+      "pageStart": 60,
+      "pageEnd": 63
+    }
+  ],
+  "hints": [
+    "Il canvas non supporta aggregazione: usa le note per il ragionamento, senza fingere di averla disegnata.",
+    "Distingui l’esistenza di SPONSORS dal monitoraggio, l’attributo until e il vincolo di massimo un monitor."
+  ],
+  "initial": {
+    "schemaVersion": 1,
+    "metadata": {
+      "id": "example-aggregation",
+      "title": "Sponsorizzazioni: subset senza aggregazione",
+      "revision": 0,
+      "createdAt": "2026-10-25T00:00:00Z",
+      "modifiedAt": "2026-10-25T00:00:00Z",
+      "notation": "unitn-er-v1",
+      "status": "needs-review"
+    },
+    "semantic": {
+      "entities": [
+        {
+          "id": "project",
+          "name": "PROJECTS",
+          "weak": false
+        },
+        {
+          "id": "dept",
+          "name": "DEPARTMENTS",
+          "weak": false
+        },
+        {
+          "id": "emp",
+          "name": "EMPLOYEES",
+          "weak": false
+        }
+      ],
+      "attributes": [
+        {
+          "id": "a-project",
+          "name": "pid",
+          "ownerId": "project",
+          "domain": "testo"
+        },
+        {
+          "id": "a-dept",
+          "name": "did",
+          "ownerId": "dept",
+          "domain": "testo"
+        },
+        {
+          "id": "a-emp",
+          "name": "ssn",
+          "ownerId": "emp",
+          "domain": "testo"
+        },
+        {
+          "id": "since",
+          "name": "since",
+          "ownerId": "sponsors",
+          "domain": "data"
+        }
+      ],
+      "identifiers": [
+        {
+          "id": "k-project",
+          "entityId": "project",
+          "attributeIds": [
+            "a-project"
+          ],
+          "kind": "primary"
+        },
+        {
+          "id": "k-dept",
+          "entityId": "dept",
+          "attributeIds": [
+            "a-dept"
+          ],
+          "kind": "primary"
+        },
+        {
+          "id": "k-emp",
+          "entityId": "emp",
+          "attributeIds": [
+            "a-emp"
+          ],
+          "kind": "primary"
+        }
+      ],
+      "relationships": [
+        {
+          "id": "sponsors",
+          "name": "SPONSORS",
+          "identifying": false
+        }
+      ],
+      "participations": [
+        {
+          "id": "p-sponsors-0",
+          "entityId": "project",
+          "relationshipId": "sponsors",
+          "role": "",
+          "min": 0,
+          "max": "N"
+        },
+        {
+          "id": "p-sponsors-1",
+          "entityId": "dept",
+          "relationshipId": "sponsors",
+          "role": "",
+          "min": 0,
+          "max": "N"
+        }
+      ],
+      "generalizations": [],
+      "notes": "L’aggregazione delle pp. 41–43/61–63 non è implementata sul canvas. Questo è solo il sottoschema di partenza: descrivere nelle note MONITORS, until e vincolo su una sponsorizzazione; non sostituire silenziosamente con una ternaria."
+    },
+    "layout": {
+      "positions": {
+        "project": {
+          "x": 160,
+          "y": 380
+        },
+        "a-project": {
+          "x": 160,
+          "y": 280
+        },
+        "dept": {
+          "x": 800,
+          "y": 380
+        },
+        "a-dept": {
+          "x": 800,
+          "y": 280
+        },
+        "emp": {
+          "x": 480,
+          "y": 100
+        },
+        "a-emp": {
+          "x": 480,
+          "y": 0
+        },
+        "sponsors": {
+          "x": 480,
+          "y": 380
+        },
+        "since": {
+          "x": 480,
+          "y": 540
+        }
+      },
+      "viewport": {
+        "x": 0,
+        "y": 0,
+        "zoom": 1
+      }
+    }
+  },
+  "solutionPath": "er/solutions/er-aggregazione.md",
+  "referenceDiagramPath": "er/diagrams/aggregation.json",
+  "checks": [],
+  "limitations": [
+    "Validazione strutturale e osservazioni parziali sui nomi: nessuna equivalenza semantica generale.",
+    "Diagrammi e commenti eseguibili sono adattamenti Database Academy needs-review; il PDF contiene le figure del docente.",
+    "Tutti i vincoli non esplicitati vanno discussi e annotati, non inventati."
+  ]
+}

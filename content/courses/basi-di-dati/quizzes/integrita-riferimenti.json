@@ -1,0 +1,123 @@
+{
+  "lessonId": "integrita-riferimenti",
+  "version": 1,
+  "status": "needs-review",
+  "questions": [
+    {
+      "id": "integrita-riferimenti-q1",
+      "version": 1,
+      "type": "single",
+      "prompt": "Enrolled.sid riferisce Students.sid. Qual è la relazione referenziante?",
+      "concepts": [
+        "foreign-key",
+        "integrita",
+        "schema-database"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "relational-source",
+          "file": "Argomento02 Modello Relazionale.pdf",
+          "pageStart": 21,
+          "pageEnd": 21,
+          "section": "Integrità referenziale e schema della base di dati"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "Students"
+        },
+        {
+          "id": "opzione-2",
+          "text": "Enrolled"
+        },
+        {
+          "id": "opzione-3",
+          "text": "Nessuna, se i nomi coincidono"
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-2"
+      ],
+      "explanation": "La FK appartiene a Enrolled, che è quindi la relazione referenziante."
+    },
+    {
+      "id": "integrita-riferimenti-q2",
+      "version": 1,
+      "type": "true-false",
+      "prompt": "Una chiave esterna può riferirsi alla stessa relazione in cui compare.",
+      "concepts": [
+        "foreign-key",
+        "integrita",
+        "schema-database"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "relational-source",
+          "file": "Argomento02 Modello Relazionale.pdf",
+          "pageStart": 23,
+          "pageEnd": 23,
+          "section": "Integrità referenziale e schema della base di dati"
+        }
+      ],
+      "options": [
+        {
+          "id": "vero",
+          "text": "Vero"
+        },
+        {
+          "id": "falso",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionIds": [
+        "vero"
+      ],
+      "explanation": "La pagina 23 ammette esplicitamente i riferimenti alla stessa relazione."
+    },
+    {
+      "id": "integrita-riferimenti-q3",
+      "version": 1,
+      "type": "multiple",
+      "prompt": "Per una FK semplice, quali affermazioni sono corrette?",
+      "concepts": [
+        "foreign-key",
+        "integrita",
+        "schema-database"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "relational-source",
+          "file": "Argomento02 Modello Relazionale.pdf",
+          "pageStart": 21,
+          "pageEnd": 23,
+          "section": "Integrità referenziale e schema della base di dati"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "Può riferire una chiave con un nome di attributo diverso"
+        },
+        {
+          "id": "opzione-2",
+          "text": "Può essere ripetuta in più tuple se nessun altro vincolo lo vieta"
+        },
+        {
+          "id": "opzione-3",
+          "text": "Può contenere qualunque valore anche privo di destinazione"
+        },
+        {
+          "id": "opzione-4",
+          "text": "Può essere NULL quando lo schema e l’integrità dell’entità lo consentono"
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-1",
+        "opzione-2",
+        "opzione-4"
+      ],
+      "explanation": "Conta il vincolo dichiarato, non l’uguaglianza dei nomi. Un valore non NULL deve trovare destinazione. La FK non è automaticamente univoca."
+    }
+  ]
+}

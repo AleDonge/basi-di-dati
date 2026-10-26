@@ -1,0 +1,1 @@
+Anticipare bid=100 su Reserves e rating>5 su Sailors prima del join. Si conservano gli attributi necessari al join sid e alla proiezione sname. I risultati coincidono, ma diminuiscono normalmente le tuple intermedie; non segue una garanzia universale sui tempi fisici. Confrontare i due piani usando l’albero calcolato.

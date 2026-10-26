@@ -1,0 +1,33 @@
+{
+  "id": "ar-impiegati-10",
+  "title": "Scheda · Q10",
+  "version": 1,
+  "status": "needs-review",
+  "originalPrompt": "Trovare nomi dei dipartimenti in cui tutti gli impiegati guadagnano più di 60K.",
+  "sourceRefs": [
+    {
+      "sourceId": "algebra-scan-source",
+      "file": "esercitazione_AR.pdf",
+      "pageStart": 1,
+      "pageEnd": 1
+    }
+  ],
+  "datasetId": "impiegati-demo",
+  "difficulty": "intermedio",
+  "gradingMode": "guided",
+  "fixtureIds": [],
+  "solutionPath": "algebra/solutions/ar-impiegati-10.txt",
+  "hints": [
+    "Chiarisci unità e inclusione dei dipartimenti vuoti.",
+    "Cerca prima i dipartimenti con almeno un controesempio sotto soglia, poi sottraili."
+  ],
+  "interpretation": "Schema della scansione, righe esclusivamente sintetiche Database Academy. Convenzioni didattiche: Stipendio in milioni e Bilancio in migliaia (100K -> 100); queste unità non sono dichiarate nella scansione. Q8 interpreta «e» come unione dei due ruoli; Q14 conta progetti distinti. Prima della verifica accetta questo contratto, che resta needs-review.",
+  "limitations": [
+    "Verifica su istanze finite: nessuna prova di equivalenza generale.",
+    "Nomi, ordine delle colonne e domini devono coincidere; ordine delle tuple ignorato.",
+    "Algebra classica senza NULL, aggregazioni o outer join nel parser.",
+    "Modalità guidata: nessun verdetto automatico e nessun completamento per correttezza."
+  ],
+  "solutionOrigin": "Database Academy: traduzione e spiegazione needs-review; non soluzione ufficiale del docente.",
+  "expectedColumns": []
+}

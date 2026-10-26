@@ -1,0 +1,1 @@
+Nomi dei marinai con rating maggiore di 5 che hanno prenotato la barca 100. È una lettura del piano, non una richiesta di cambiare 100 in una barca presente nel seed. Sul dataset ufficiale la risposta è vuota: un risultato vuoto non rende errata l’interpretazione.

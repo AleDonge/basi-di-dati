@@ -1,0 +1,215 @@
+{
+  "id": "northwind",
+  "converterVersion": 1,
+  "source": "Schema per generare DB NorthWind.txt",
+  "sourceSha256": "ccc889df337696fbc890802a3efe6e2aa216f00a367545f36346a03ba4800e39",
+  "sourceStatements": 3219,
+  "commands": {
+    "SET": 1,
+    "DROP": 8,
+    "CREATE": 8,
+    "INSERT": 3202
+  },
+  "tables": {
+    "categories": {
+      "rows": 8,
+      "columns": 3,
+      "everyValueCompared": true
+    },
+    "customers": {
+      "rows": 91,
+      "columns": 13,
+      "everyValueCompared": true
+    },
+    "employees": {
+      "rows": 9,
+      "columns": 17,
+      "everyValueCompared": true
+    },
+    "order_details": {
+      "rows": 2155,
+      "columns": 5,
+      "everyValueCompared": true
+    },
+    "orders": {
+      "rows": 830,
+      "columns": 14,
+      "everyValueCompared": true
+    },
+    "products": {
+      "rows": 77,
+      "columns": 10,
+      "everyValueCompared": true
+    },
+    "shippers": {
+      "rows": 3,
+      "columns": 3,
+      "everyValueCompared": true
+    },
+    "suppliers": {
+      "rows": 29,
+      "columns": 12,
+      "everyValueCompared": true
+    }
+  },
+  "binaryValues": [
+    {
+      "table": "employees",
+      "row": 1,
+      "column": "Photo",
+      "bytes": 21626,
+      "sha256": "0fefea1c00180a14f01278e124445c03578914caac1ede2318d3a328a7a11fe9"
+    },
+    {
+      "table": "employees",
+      "row": 2,
+      "column": "Photo",
+      "bytes": 21626,
+      "sha256": "ebdacf91715c0845e2cf2cf2cd04655c09c51b94fc30a6cfa274946761ff6ebe"
+    },
+    {
+      "table": "employees",
+      "row": 3,
+      "column": "Photo",
+      "bytes": 21722,
+      "sha256": "0357df27103e6c6b31b4c82608cc829512c12ad2d608a8aacb913aecccf42b10"
+    },
+    {
+      "table": "employees",
+      "row": 4,
+      "column": "Photo",
+      "bytes": 21626,
+      "sha256": "ac78ba1dcc0f6c6f6d887be02feb5c826f5aa18a57f12253bed2a7bf3abd0718"
+    },
+    {
+      "table": "employees",
+      "row": 5,
+      "column": "Photo",
+      "bytes": 21626,
+      "sha256": "473920c06bf5ae82cba57d9c647457bba10694ea4b83fa9111af5020a288c4a6"
+    },
+    {
+      "table": "employees",
+      "row": 6,
+      "column": "Photo",
+      "bytes": 21626,
+      "sha256": "e77afbbfbcb2f8b38bb7b33078196be45f61b5ecaf2056baca09a36f486fdbcc"
+    },
+    {
+      "table": "employees",
+      "row": 7,
+      "column": "Photo",
+      "bytes": 21626,
+      "sha256": "38205489c0c13691915ad442baf60e677c4bef9e2081908c686e4ee6cfe9f17c"
+    },
+    {
+      "table": "employees",
+      "row": 8,
+      "column": "Photo",
+      "bytes": 21626,
+      "sha256": "3227d15bdd883aef1ef7331c2c911264c617d28591734c51849214d427ddc16a"
+    },
+    {
+      "table": "employees",
+      "row": 9,
+      "column": "Photo",
+      "bytes": 21626,
+      "sha256": "1f01044248a3b39bd5ad04d93e77a5659a73652f91efd42994eaa7f30d6f4c19"
+    }
+  ],
+  "binaryValuesSkipped": 0,
+  "rowsSkipped": 0,
+  "columnsSkipped": 0,
+  "changes": [
+    "SET FOREIGN_KEY_CHECKS=0 non eseguito: il dump non dichiara FK.",
+    "DROP TABLE IF EXISTS `categories` ignorato: conversione in database nuovo.",
+    "categories.CategoryID: AUTO_INCREMENT rimosso; ID espliciti preservati, laboratorio in sola lettura.",
+    "DROP TABLE IF EXISTS `customers` ignorato: conversione in database nuovo.",
+    "DROP TABLE IF EXISTS `employees` ignorato: conversione in database nuovo.",
+    "employees.EmployeeID: AUTO_INCREMENT rimosso; ID espliciti preservati, laboratorio in sola lettura.",
+    "DROP TABLE IF EXISTS `order_details` ignorato: conversione in database nuovo.",
+    "DROP TABLE IF EXISTS `orders` ignorato: conversione in database nuovo.",
+    "orders.OrderID: AUTO_INCREMENT rimosso; ID espliciti preservati, laboratorio in sola lettura.",
+    "DROP TABLE IF EXISTS `products` ignorato: conversione in database nuovo.",
+    "products.ProductID: AUTO_INCREMENT rimosso; ID espliciti preservati, laboratorio in sola lettura.",
+    "DROP TABLE IF EXISTS `shippers` ignorato: conversione in database nuovo.",
+    "shippers.ShipperID: AUTO_INCREMENT rimosso; ID espliciti preservati, laboratorio in sola lettura.",
+    "DROP TABLE IF EXISTS `suppliers` ignorato: conversione in database nuovo.",
+    "suppliers.SupplierID: AUTO_INCREMENT rimosso; ID espliciti preservati, laboratorio in sola lettura."
+  ],
+  "integrityCheck": "ok",
+  "foreignKeyCheck": [],
+  "inferredLinkChecks": [
+    {
+      "child": "orders",
+      "column": "CustomerID",
+      "parent": "customers",
+      "targetColumn": "CustomerID",
+      "missing": 0,
+      "declaredInOriginal": false
+    },
+    {
+      "child": "orders",
+      "column": "EmployeeID",
+      "parent": "employees",
+      "targetColumn": "EmployeeID",
+      "missing": 0,
+      "declaredInOriginal": false
+    },
+    {
+      "child": "orders",
+      "column": "ShipVia",
+      "parent": "shippers",
+      "targetColumn": "ShipperID",
+      "missing": 0,
+      "declaredInOriginal": false
+    },
+    {
+      "child": "order_details",
+      "column": "OrderID",
+      "parent": "orders",
+      "targetColumn": "OrderID",
+      "missing": 0,
+      "declaredInOriginal": false
+    },
+    {
+      "child": "order_details",
+      "column": "ProductID",
+      "parent": "products",
+      "targetColumn": "ProductID",
+      "missing": 0,
+      "declaredInOriginal": false
+    },
+    {
+      "child": "products",
+      "column": "CategoryID",
+      "parent": "categories",
+      "targetColumn": "CategoryID",
+      "missing": 0,
+      "declaredInOriginal": false
+    },
+    {
+      "child": "products",
+      "column": "SupplierID",
+      "parent": "suppliers",
+      "targetColumn": "SupplierID",
+      "missing": 0,
+      "declaredInOriginal": false
+    },
+    {
+      "child": "employees",
+      "column": "ReportsTo",
+      "parent": "employees",
+      "targetColumn": "EmployeeID",
+      "missing": 0,
+      "declaredInOriginal": false
+    }
+  ],
+  "limitations": [
+    "Tipi SQLite con affinità; VARCHAR(n) non limita la lunghezza.",
+    "DECIMAL e FLOAT convertiti in REAL: nessuna garanzia decimale esatta.",
+    "Date/datetime memorizzate come testo; nessuna semantica MySQL completa.",
+    "AUTO_INCREMENT non replicato: query utente solo in lettura.",
+    "Collation SQLite non replica automaticamente quella MySQL."
+  ]
+}

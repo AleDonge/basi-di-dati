@@ -1,0 +1,133 @@
+{
+  "lessonId": "sql-sottoquery",
+  "version": 1,
+  "status": "needs-review",
+  "questions": [
+    {
+      "id": "sql-sottoquery-q1",
+      "version": 1,
+      "type": "single",
+      "prompt": "Per ottenere tutti i rating massimi, quale scelta conserva le parità?",
+      "concepts": [
+        "sottoquery",
+        "EXISTS",
+        "IN",
+        "correlazione"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 31,
+          "pageEnd": 40,
+          "section": "Sottoquery scalari, IN ed EXISTS"
+        },
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 45,
+          "pageEnd": 45,
+          "section": "Sottoquery scalari, IN ed EXISTS"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "Confrontare rating con SELECT MAX(rating)."
+        },
+        {
+          "id": "opzione-2",
+          "text": "Ordinare e prendere sempre LIMIT 1."
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-1"
+      ],
+      "explanation": "Il confronto include ogni riga con quel massimo. LIMIT 1 conserva una sola riga anche se più persone condividono il massimo."
+    },
+    {
+      "id": "sql-sottoquery-q2",
+      "version": 1,
+      "type": "single",
+      "prompt": "Una sottoquery è correlata quando…",
+      "concepts": [
+        "sottoquery",
+        "EXISTS",
+        "IN",
+        "correlazione"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 31,
+          "pageEnd": 40,
+          "section": "Sottoquery scalari, IN ed EXISTS"
+        },
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 45,
+          "pageEnd": 45,
+          "section": "Sottoquery scalari, IN ed EXISTS"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "Fa riferimento a colonne della query esterna."
+        },
+        {
+          "id": "opzione-2",
+          "text": "Contiene qualsiasi aggregato."
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-1"
+      ],
+      "explanation": "La dipendenza da un valore esterno definisce la correlazione; MAX globale può essere del tutto indipendente."
+    },
+    {
+      "id": "sql-sottoquery-q3",
+      "version": 1,
+      "type": "single",
+      "prompt": "EXISTS(SELECT 1 FROM Reserves) senza correlazione controlla…",
+      "concepts": [
+        "sottoquery",
+        "EXISTS",
+        "IN",
+        "correlazione"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 31,
+          "pageEnd": 40,
+          "section": "Sottoquery scalari, IN ed EXISTS"
+        },
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 45,
+          "pageEnd": 45,
+          "section": "Sottoquery scalari, IN ed EXISTS"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "Le prenotazioni del singolo marinaio automaticamente."
+        },
+        {
+          "id": "opzione-2",
+          "text": "Se esiste almeno una prenotazione nell’intera tabella."
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-2"
+      ],
+      "explanation": "Senza r.sid=s.sid manca il legame con la persona. Il medesimo valore di esistenza vale per ogni riga esterna."
+    }
+  ]
+}

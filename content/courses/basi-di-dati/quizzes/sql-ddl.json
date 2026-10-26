@@ -1,0 +1,112 @@
+{
+  "lessonId": "sql-ddl",
+  "version": 1,
+  "status": "needs-review",
+  "questions": [
+    {
+      "id": "sql-ddl-q1",
+      "version": 1,
+      "type": "single",
+      "prompt": "Con PRIMARY KEY(a,b), ripetere a con b diverso…",
+      "concepts": [
+        "CREATE TABLE",
+        "vincoli",
+        "INSERT",
+        "tipi"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 72,
+          "pageEnd": 76,
+          "section": "Schemi SQL, vincoli e popolamento"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "Viola sempre la primaria."
+        },
+        {
+          "id": "opzione-2",
+          "text": "Può essere ammesso: è la coppia a essere unica."
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-2"
+      ],
+      "explanation": "Una primaria composta identifica attraverso la combinazione, non rende unico separatamente ciascun componente."
+    },
+    {
+      "id": "sql-ddl-q2",
+      "version": 1,
+      "type": "single",
+      "prompt": "CHECK(voto>=18) vieta da solo voto NULL?",
+      "concepts": [
+        "CREATE TABLE",
+        "vincoli",
+        "INSERT",
+        "tipi"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 72,
+          "pageEnd": 76,
+          "section": "Schemi SQL, vincoli e popolamento"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "No, serve NOT NULL se il valore è obbligatorio."
+        },
+        {
+          "id": "opzione-2",
+          "text": "Sì, ogni CHECK vieta tutti i NULL."
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-1"
+      ],
+      "explanation": "Un CHECK non fallisce per UNKNOWN. Obbligatorietà e intervallo sono vincoli distinti."
+    },
+    {
+      "id": "sql-ddl-q3",
+      "version": 1,
+      "type": "single",
+      "prompt": "La presenza di DEFAULT garantisce integrità referenziale?",
+      "concepts": [
+        "CREATE TABLE",
+        "vincoli",
+        "INSERT",
+        "tipi"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 72,
+          "pageEnd": 76,
+          "section": "Schemi SQL, vincoli e popolamento"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "No, il default deve comunque essere valido rispetto alla FK."
+        },
+        {
+          "id": "opzione-2",
+          "text": "Sì, qualsiasi valore predefinito è una destinazione valida."
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-1"
+      ],
+      "explanation": "Il valore scelto non crea automaticamente la tupla referenziata. Vanno controllati tutti i vincoli applicabili."
+    }
+  ]
+}

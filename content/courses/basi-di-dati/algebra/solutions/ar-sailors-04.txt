@@ -1,0 +1,1 @@
+π_{sname}((π_{sid}(σ_{color='red'}(Boats) ⋈ Reserves) ∩ π_{sid}(σ_{color='green'}(Boats) ⋈ Reserves)) ⋈ Sailors)

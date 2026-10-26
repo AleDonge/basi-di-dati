@@ -1,0 +1,130 @@
+{
+  "lessonId": "er-requisiti",
+  "version": 2,
+  "status": "needs-review",
+  "questions": [
+    {
+      "id": "er-requisiti-q1",
+      "version": 2,
+      "type": "single",
+      "prompt": "Quale domanda precede la scelta dei simboli?",
+      "concepts": [
+        "requisiti",
+        "concettuale",
+        "progettazione"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 2,
+          "pageEnd": 9,
+          "section": "Dai requisiti al modello concettuale"
+        },
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 64,
+          "pageEnd": 71,
+          "section": "Dai requisiti al modello concettuale"
+        }
+      ],
+      "options": [
+        {
+          "id": "errata",
+          "text": "Quale colore assegnare a ogni tabella?"
+        },
+        {
+          "id": "corretta",
+          "text": "Quali fatti e vincoli del mini-mondo dobbiamo rappresentare?"
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "I requisiti definiscono fatti, identità e situazioni ammesse. Il colore è una scelta di presentazione e non sostituisce questa analisi."
+    },
+    {
+      "id": "er-requisiti-q2",
+      "version": 2,
+      "type": "single",
+      "prompt": "Un vincolo non esplicitato va inventato per completare il disegno?",
+      "concepts": [
+        "requisiti",
+        "concettuale",
+        "progettazione"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 2,
+          "pageEnd": 9,
+          "section": "Dai requisiti al modello concettuale"
+        },
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 64,
+          "pageEnd": 71,
+          "section": "Dai requisiti al modello concettuale"
+        }
+      ],
+      "options": [
+        {
+          "id": "corretta",
+          "text": "No: si chiedono chiarimenti e si annotano le ipotesi."
+        },
+        {
+          "id": "errata",
+          "text": "Sì: ogni associazione deve ricevere vincoli plausibili."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "Un vincolo plausibile ma non giustificato può vietare casi leciti. Annotare ipotesi e chiedere chiarimenti preserva la distinzione tra requisito e scelta."
+    },
+    {
+      "id": "er-requisiti-q3",
+      "version": 2,
+      "type": "single",
+      "prompt": "Validità strutturale implica completezza rispetto al cliente?",
+      "concepts": [
+        "requisiti",
+        "concettuale",
+        "progettazione"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 2,
+          "pageEnd": 9,
+          "section": "Dai requisiti al modello concettuale"
+        },
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 64,
+          "pageEnd": 71,
+          "section": "Dai requisiti al modello concettuale"
+        }
+      ],
+      "options": [
+        {
+          "id": "errata",
+          "text": "Sì: se non mancano collegamenti il progetto è completo."
+        },
+        {
+          "id": "corretta",
+          "text": "No: serve confrontare il modello con i requisiti."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "Un modello può avere riferimenti e nomi validi e omettere un requisito intero. La verifica strutturale non valuta la completezza del mini-mondo."
+    }
+  ]
+}

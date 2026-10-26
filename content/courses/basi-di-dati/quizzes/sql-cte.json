@@ -1,0 +1,112 @@
+{
+  "lessonId": "sql-cte",
+  "version": 1,
+  "status": "needs-review",
+  "questions": [
+    {
+      "id": "sql-cte-q1",
+      "version": 1,
+      "type": "single",
+      "prompt": "Una CTE definita da WITH è disponibile…",
+      "concepts": [
+        "CTE",
+        "WITH",
+        "vista",
+        "tabella temporanea"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 46,
+          "pageEnd": 57,
+          "section": "Sottoquery, CTE, tabelle temporanee e viste"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "Soltanto nell’istruzione a cui appartiene."
+        },
+        {
+          "id": "opzione-2",
+          "text": "In tutte le query future del browser."
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-1"
+      ],
+      "explanation": "L’ambito è la singola istruzione. Non viene creata una tabella persistente né una vista."
+    },
+    {
+      "id": "sql-cte-q2",
+      "version": 1,
+      "type": "single",
+      "prompt": "MONTH(data)=MONTH(CURDATE()) identifica sempre il mese corrente completo?",
+      "concepts": [
+        "CTE",
+        "WITH",
+        "vista",
+        "tabella temporanea"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 46,
+          "pageEnd": 57,
+          "section": "Sottoquery, CTE, tabelle temporanee e viste"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "Sì, l’anno è implicito."
+        },
+        {
+          "id": "opzione-2",
+          "text": "No, può includere lo stesso mese di anni diversi."
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-2"
+      ],
+      "explanation": "Il confronto ignora l’anno. Un intervallo con limiti espliciti o controllo anche dell’anno è necessario per quel requisito."
+    },
+    {
+      "id": "sql-cte-q3",
+      "version": 1,
+      "type": "single",
+      "prompt": "CREATE VIEW è eseguibile in SQL Lab?",
+      "concepts": [
+        "CTE",
+        "WITH",
+        "vista",
+        "tabella temporanea"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 46,
+          "pageEnd": 57,
+          "section": "Sottoquery, CTE, tabelle temporanee e viste"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "Sì, perché una vista non salva i risultati."
+        },
+        {
+          "id": "opzione-2",
+          "text": "No, modifica lo schema ed è fuori dal subset di sola lettura."
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-2"
+      ],
+      "explanation": "Anche se la vista ordinaria non materializza i dati, crearne la definizione è DDL e viene rifiutato."
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+π_{Cognome}(Impiegato − π_{E.Matricola,E.Cognome,E.Stipendio,E.Dipartimento}(σ_{E.Stipendio<B.Stipendio}(ρ_{E}(Impiegato) × ρ_{B}(Impiegato))))

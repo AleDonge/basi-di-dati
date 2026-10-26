@@ -1,0 +1,112 @@
+{
+  "lessonId": "strumenti-jdbc",
+  "version": 1,
+  "status": "needs-review",
+  "questions": [
+    {
+      "id": "strumenti-jdbc-q1",
+      "version": 1,
+      "type": "single",
+      "prompt": "Il primo parametro JDBC si associa con indice…",
+      "concepts": [
+        "JDBC",
+        "PreparedStatement",
+        "ResultSet",
+        "parametri"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "tools-source",
+          "file": "Introduzione MySQL e Dbeaver.pdf",
+          "pageStart": 64,
+          "pageEnd": 78,
+          "section": "JDBC: connessioni, parametri e risultati"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "0"
+        },
+        {
+          "id": "opzione-2",
+          "text": "1"
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-2"
+      ],
+      "explanation": "Gli indici dei parametri JDBC partono da uno. L’ordine deve corrispondere ai punti interrogativi nel testo SQL."
+    },
+    {
+      "id": "strumenti-jdbc-q2",
+      "version": 1,
+      "type": "single",
+      "prompt": "Prima di leggere la prima riga del ResultSet occorre…",
+      "concepts": [
+        "JDBC",
+        "PreparedStatement",
+        "ResultSet",
+        "parametri"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "tools-source",
+          "file": "Introduzione MySQL e Dbeaver.pdf",
+          "pageStart": 64,
+          "pageEnd": 78,
+          "section": "JDBC: connessioni, parametri e risultati"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "Una chiamata next() riuscita."
+        },
+        {
+          "id": "opzione-2",
+          "text": "Leggere sempre getString(0)."
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-1"
+      ],
+      "explanation": "Il cursore parte prima della prima riga; next() restituisce false se il risultato è vuoto."
+    },
+    {
+      "id": "strumenti-jdbc-q3",
+      "version": 1,
+      "type": "single",
+      "prompt": "Un parametro ? può rappresentare un nome di tabella arbitrario?",
+      "concepts": [
+        "JDBC",
+        "PreparedStatement",
+        "ResultSet",
+        "parametri"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "tools-source",
+          "file": "Introduzione MySQL e Dbeaver.pdf",
+          "pageStart": 64,
+          "pageEnd": 78,
+          "section": "JDBC: connessioni, parametri e risultati"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "Sì, sostituisce qualsiasi parte SQL."
+        },
+        {
+          "id": "opzione-2",
+          "text": "No, rappresenta un valore."
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-2"
+      ],
+      "explanation": "La grammatica del comando resta definita dal testo SQL. I parametri separano valori e sintassi, non generano clausole o identificatori."
+    }
+  ]
+}

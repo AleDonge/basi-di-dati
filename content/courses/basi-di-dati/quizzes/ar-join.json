@@ -1,0 +1,109 @@
+{
+  "lessonId": "ar-join",
+  "version": 2,
+  "status": "needs-review",
+  "questions": [
+    {
+      "id": "ar-join-q1",
+      "version": 2,
+      "type": "single",
+      "prompt": "Su quali attributi confronta i valori un join naturale?",
+      "concepts": [
+        "join",
+        "equijoin",
+        "join-naturale"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 31,
+          "pageEnd": 37,
+          "section": "Theta join, equijoin e join naturale"
+        }
+      ],
+      "options": [
+        {
+          "id": "errata",
+          "text": "Soltanto sulla prima colonna dei due operandi."
+        },
+        {
+          "id": "corretta",
+          "text": "Su tutti gli attributi con lo stesso nome nei due operandi."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "Il naturale usa tutti i nomi comuni, non solo una chiave immaginata. Un Nome condiviso può aggiungere un confronto indesiderato."
+    },
+    {
+      "id": "ar-join-q2",
+      "version": 2,
+      "type": "single",
+      "prompt": "Senza nomi di attributi comuni, il join naturale coincide con…",
+      "concepts": [
+        "join",
+        "equijoin",
+        "join-naturale"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 31,
+          "pageEnd": 37,
+          "section": "Theta join, equijoin e join naturale"
+        }
+      ],
+      "options": [
+        {
+          "id": "corretta",
+          "text": "Il prodotto cartesiano."
+        },
+        {
+          "id": "errata",
+          "text": "La relazione vuota."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "La condizione sui nomi comuni è vacuamente soddisfatta: tutte le coppie passano, quindi si ottiene il prodotto."
+    },
+    {
+      "id": "ar-join-q3",
+      "version": 2,
+      "type": "single",
+      "prompt": "Il theta join del laboratorio su uguaglianza conserva entrambe le colonne confrontate?",
+      "concepts": [
+        "join",
+        "equijoin",
+        "join-naturale"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 31,
+          "pageEnd": 37,
+          "section": "Theta join, equijoin e join naturale"
+        }
+      ],
+      "options": [
+        {
+          "id": "errata",
+          "text": "No: il parser ne elimina sempre una."
+        },
+        {
+          "id": "corretta",
+          "text": "Sì: una proiezione esplicita può rimuoverne una."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "Il theta join eseguibile mantiene entrambe le colonne. Questa convenzione differisce dalla figura equijoin p. 34; una proiezione può riprodurne lo schema ridotto."
+    }
+  ]
+}

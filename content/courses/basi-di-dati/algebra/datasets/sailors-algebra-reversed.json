@@ -1,0 +1,198 @@
+{
+  "id": "sailors-algebra-reversed",
+  "title": "Ordine inverso e tuple duplicate all’ingresso",
+  "provenance": "Database Academy, dati sintetici separati dall’originale: omonimi, colori, confini, prenotazioni ripetute, barche mai prenotate.",
+  "relations": {
+    "Sailors": {
+      "columns": [
+        {
+          "name": "sid",
+          "type": "number"
+        },
+        {
+          "name": "sname",
+          "type": "string"
+        },
+        {
+          "name": "rating",
+          "type": "number"
+        },
+        {
+          "name": "age",
+          "type": "number"
+        }
+      ],
+      "rows": [
+        [
+          7,
+          "Verde",
+          7,
+          35
+        ],
+        [
+          6,
+          "Mai",
+          3,
+          20
+        ],
+        [
+          5,
+          "Tutti",
+          10,
+          50
+        ],
+        [
+          4,
+          "Nora",
+          5,
+          29
+        ],
+        [
+          3,
+          "Luca",
+          9,
+          40
+        ],
+        [
+          2,
+          "Ada",
+          7,
+          31
+        ],
+        [
+          1,
+          "Ada",
+          8,
+          30
+        ],
+        [
+          1,
+          "Ada",
+          8,
+          30
+        ]
+      ]
+    },
+    "Boats": {
+      "columns": [
+        {
+          "name": "bid",
+          "type": "number"
+        },
+        {
+          "name": "bname",
+          "type": "string"
+        },
+        {
+          "name": "color",
+          "type": "string"
+        }
+      ],
+      "rows": [
+        [
+          104,
+          "D",
+          "red"
+        ],
+        [
+          103,
+          "C",
+          "blue"
+        ],
+        [
+          102,
+          "B",
+          "green"
+        ],
+        [
+          101,
+          "A",
+          "red"
+        ],
+        [
+          101,
+          "A",
+          "red"
+        ]
+      ]
+    },
+    "Reserves": {
+      "columns": [
+        {
+          "name": "sid",
+          "type": "number"
+        },
+        {
+          "name": "bid",
+          "type": "number"
+        },
+        {
+          "name": "day",
+          "type": "date"
+        }
+      ],
+      "rows": [
+        [
+          5,
+          104,
+          "2000-01-01"
+        ],
+        [
+          5,
+          103,
+          "2000-01-01"
+        ],
+        [
+          5,
+          102,
+          "2000-01-01"
+        ],
+        [
+          5,
+          101,
+          "2000-01-01"
+        ],
+        [
+          7,
+          102,
+          "2000-01-01"
+        ],
+        [
+          4,
+          101,
+          "2000-01-01"
+        ],
+        [
+          3,
+          102,
+          "2000-01-01"
+        ],
+        [
+          3,
+          101,
+          "2000-01-01"
+        ],
+        [
+          2,
+          102,
+          "2000-01-01"
+        ],
+        [
+          1,
+          101,
+          "2000-01-02"
+        ],
+        [
+          1,
+          101,
+          "2000-01-01"
+        ],
+        [
+          1,
+          101,
+          "2000-01-01"
+        ]
+      ]
+    }
+  }
+}

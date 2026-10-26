@@ -1,0 +1,535 @@
+{
+  "id": "northwind",
+  "title": "NorthWind",
+  "dialect": "sqlite",
+  "source": "Schema per generare DB NorthWind.txt",
+  "sourceSha256": "ccc889df337696fbc890802a3efe6e2aa216f00a367545f36346a03ba4800e39",
+  "tables": [
+    {
+      "name": "categories",
+      "rowCount": 8,
+      "columns": [
+        {
+          "name": "CategoryID",
+          "type": "INT",
+          "notNull": true,
+          "primaryKey": true
+        },
+        {
+          "name": "CategoryName",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKey": false
+        },
+        {
+          "name": "Description",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKey": false
+        }
+      ],
+      "foreignKeys": [],
+      "ddl": "CREATE TABLE \"categories\" (\n  \"CategoryID\" INT NOT NULL,\n  \"CategoryName\" TEXT NOT NULL,\n  \"Description\" TEXT,\n  PRIMARY KEY (`CategoryID`),\n  UNIQUE (`CategoryName`)\n);"
+    },
+    {
+      "name": "customers",
+      "rowCount": 91,
+      "columns": [
+        {
+          "name": "CustomerID",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKey": true
+        },
+        {
+          "name": "CompanyName",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKey": false
+        },
+        {
+          "name": "ContactName",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "ContactTitle",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "Address",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "City",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "Region",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "PostalCode",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "Country",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "Phone",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "Fax",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "Image",
+          "type": "BLOB",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "ImageThumbnail",
+          "type": "BLOB",
+          "notNull": false,
+          "primaryKey": false
+        }
+      ],
+      "foreignKeys": [],
+      "ddl": "CREATE TABLE \"customers\" (\n  \"CustomerID\" TEXT NOT NULL,\n  \"CompanyName\" TEXT NOT NULL,\n  \"ContactName\" TEXT DEFAULT NULL,\n  \"ContactTitle\" TEXT DEFAULT NULL,\n  \"Address\" TEXT DEFAULT NULL,\n  \"City\" TEXT DEFAULT NULL,\n  \"Region\" TEXT DEFAULT NULL,\n  \"PostalCode\" TEXT DEFAULT NULL,\n  \"Country\" TEXT DEFAULT NULL,\n  \"Phone\" TEXT DEFAULT NULL,\n  \"Fax\" TEXT DEFAULT NULL,\n  \"Image\" BLOB,\n  \"ImageThumbnail\" BLOB,\n  PRIMARY KEY (`CustomerID`)\n);"
+    },
+    {
+      "name": "employees",
+      "rowCount": 9,
+      "columns": [
+        {
+          "name": "EmployeeID",
+          "type": "INT",
+          "notNull": true,
+          "primaryKey": true
+        },
+        {
+          "name": "LastName",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKey": false
+        },
+        {
+          "name": "FirstName",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKey": false
+        },
+        {
+          "name": "Title",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "TitleOfCourtesy",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "BirthDate",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "HireDate",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "Address",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "City",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "Region",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "PostalCode",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "Country",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "HomePhone",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "Extension",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "Photo",
+          "type": "BLOB",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "Notes",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "ReportsTo",
+          "type": "INT",
+          "notNull": false,
+          "primaryKey": false
+        }
+      ],
+      "foreignKeys": [],
+      "ddl": "CREATE TABLE \"employees\" (\n  \"EmployeeID\" INT NOT NULL,\n  \"LastName\" TEXT NOT NULL,\n  \"FirstName\" TEXT NOT NULL,\n  \"Title\" TEXT DEFAULT NULL,\n  \"TitleOfCourtesy\" TEXT DEFAULT NULL,\n  \"BirthDate\" TEXT DEFAULT NULL,\n  \"HireDate\" TEXT DEFAULT NULL,\n  \"Address\" TEXT DEFAULT NULL,\n  \"City\" TEXT DEFAULT NULL,\n  \"Region\" TEXT DEFAULT NULL,\n  \"PostalCode\" TEXT DEFAULT NULL,\n  \"Country\" TEXT DEFAULT NULL,\n  \"HomePhone\" TEXT DEFAULT NULL,\n  \"Extension\" TEXT DEFAULT NULL,\n  \"Photo\" BLOB,\n  \"Notes\" TEXT,\n  \"ReportsTo\" INT DEFAULT NULL,\n  PRIMARY KEY (`EmployeeID`)\n);"
+    },
+    {
+      "name": "order_details",
+      "rowCount": 2155,
+      "columns": [
+        {
+          "name": "OrderID",
+          "type": "INT",
+          "notNull": true,
+          "primaryKey": true
+        },
+        {
+          "name": "ProductID",
+          "type": "INT",
+          "notNull": true,
+          "primaryKey": true
+        },
+        {
+          "name": "UnitPrice",
+          "type": "REAL",
+          "notNull": true,
+          "primaryKey": false
+        },
+        {
+          "name": "Quantity",
+          "type": "INT",
+          "notNull": true,
+          "primaryKey": false
+        },
+        {
+          "name": "Discount",
+          "type": "REAL",
+          "notNull": true,
+          "primaryKey": false
+        }
+      ],
+      "foreignKeys": [],
+      "ddl": "CREATE TABLE \"order_details\" (\n  \"OrderID\" INT NOT NULL,\n  \"ProductID\" INT NOT NULL,\n  \"UnitPrice\" REAL NOT NULL DEFAULT '0.0000',\n  \"Quantity\" INT NOT NULL DEFAULT '1',\n  \"Discount\" REAL NOT NULL DEFAULT '0',\n  PRIMARY KEY (`OrderID`,`ProductID`)\n);"
+    },
+    {
+      "name": "orders",
+      "rowCount": 830,
+      "columns": [
+        {
+          "name": "OrderID",
+          "type": "INT",
+          "notNull": true,
+          "primaryKey": true
+        },
+        {
+          "name": "CustomerID",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "EmployeeID",
+          "type": "INT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "OrderDate",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "RequiredDate",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "ShippedDate",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "ShipVia",
+          "type": "INT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "Freight",
+          "type": "REAL",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "ShipName",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "ShipAddress",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "ShipCity",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "ShipRegion",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "ShipPostalCode",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "ShipCountry",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKey": false
+        }
+      ],
+      "foreignKeys": [],
+      "ddl": "CREATE TABLE \"orders\" (\n  \"OrderID\" INT NOT NULL,\n  \"CustomerID\" TEXT DEFAULT NULL,\n  \"EmployeeID\" INT DEFAULT NULL,\n  \"OrderDate\" TEXT DEFAULT NULL,\n  \"RequiredDate\" TEXT DEFAULT NULL,\n  \"ShippedDate\" TEXT DEFAULT NULL,\n  \"ShipVia\" INT DEFAULT NULL,\n  \"Freight\" REAL DEFAULT '0.0000',\n  \"ShipName\" TEXT DEFAULT NULL,\n  \"ShipAddress\" TEXT DEFAULT NULL,\n  \"ShipCity\" TEXT DEFAULT NULL,\n  \"ShipRegion\" TEXT DEFAULT NULL,\n  \"ShipPostalCode\" TEXT DEFAULT NULL,\n  \"ShipCountry\" TEXT DEFAULT NULL,\n  PRIMARY KEY (`OrderID`)\n);"
+    },
+    {
+      "name": "products",
+      "rowCount": 77,
+      "columns": [
+        {
+          "name": "ProductID",
+          "type": "INT",
+          "notNull": true,
+          "primaryKey": true
+        },
+        {
+          "name": "ProductName",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKey": false
+        },
+        {
+          "name": "SupplierID",
+          "type": "INT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "CategoryID",
+          "type": "INT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "QuantityPerUnit",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "UnitPrice",
+          "type": "REAL",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "UnitsInStock",
+          "type": "INT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "UnitsOnOrder",
+          "type": "INT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "ReorderLevel",
+          "type": "INT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "Discontinued",
+          "type": "INT",
+          "notNull": false,
+          "primaryKey": false
+        }
+      ],
+      "foreignKeys": [],
+      "ddl": "CREATE TABLE \"products\" (\n  \"ProductID\" INT NOT NULL,\n  \"ProductName\" TEXT NOT NULL,\n  \"SupplierID\" INT DEFAULT NULL,\n  \"CategoryID\" INT DEFAULT NULL,\n  \"QuantityPerUnit\" TEXT DEFAULT NULL,\n  \"UnitPrice\" REAL DEFAULT '0.0000',\n  \"UnitsInStock\" INT DEFAULT '0',\n  \"UnitsOnOrder\" INT DEFAULT '0',\n  \"ReorderLevel\" INT DEFAULT '0',\n  \"Discontinued\" INT DEFAULT '0',\n  PRIMARY KEY (`ProductID`)\n);"
+    },
+    {
+      "name": "shippers",
+      "rowCount": 3,
+      "columns": [
+        {
+          "name": "ShipperID",
+          "type": "INT",
+          "notNull": true,
+          "primaryKey": true
+        },
+        {
+          "name": "CompanyName",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKey": false
+        },
+        {
+          "name": "Phone",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKey": false
+        }
+      ],
+      "foreignKeys": [],
+      "ddl": "CREATE TABLE \"shippers\" (\n  \"ShipperID\" INT NOT NULL,\n  \"CompanyName\" TEXT NOT NULL,\n  \"Phone\" TEXT DEFAULT NULL,\n  PRIMARY KEY (`ShipperID`)\n);"
+    },
+    {
+      "name": "suppliers",
+      "rowCount": 29,
+      "columns": [
+        {
+          "name": "SupplierID",
+          "type": "INT",
+          "notNull": true,
+          "primaryKey": true
+        },
+        {
+          "name": "CompanyName",
+          "type": "TEXT",
+          "notNull": true,
+          "primaryKey": false
+        },
+        {
+          "name": "ContactName",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "ContactTitle",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "Address",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "City",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "Region",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "PostalCode",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "Country",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "Phone",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "Fax",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKey": false
+        },
+        {
+          "name": "HomePage",
+          "type": "TEXT",
+          "notNull": false,
+          "primaryKey": false
+        }
+      ],
+      "foreignKeys": [],
+      "ddl": "CREATE TABLE \"suppliers\" (\n  \"SupplierID\" INT NOT NULL,\n  \"CompanyName\" TEXT NOT NULL,\n  \"ContactName\" TEXT DEFAULT NULL,\n  \"ContactTitle\" TEXT DEFAULT NULL,\n  \"Address\" TEXT DEFAULT NULL,\n  \"City\" TEXT DEFAULT NULL,\n  \"Region\" TEXT DEFAULT NULL,\n  \"PostalCode\" TEXT DEFAULT NULL,\n  \"Country\" TEXT DEFAULT NULL,\n  \"Phone\" TEXT DEFAULT NULL,\n  \"Fax\" TEXT DEFAULT NULL,\n  \"HomePage\" TEXT,\n  PRIMARY KEY (`SupplierID`)\n);"
+    }
+  ]
+}

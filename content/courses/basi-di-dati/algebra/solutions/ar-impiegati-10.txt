@@ -1,0 +1,1 @@
+Guidata: chiarire unità e inclusione dei dipartimenti vuoti. Dopo aver fissato la soglia T, sottrarre dai codici dei dipartimenti quelli con almeno un impiegato con Stipendio<=T; proiettare poi Nome. Questa formulazione include i dipartimenti vuoti (verità vacua); escluderli richiede l’intersezione con i dipartimenti che hanno impiegati.

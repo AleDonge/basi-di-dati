@@ -1,0 +1,126 @@
+{
+  "lessonId": "schema-istanza",
+  "version": 1,
+  "status": "needs-review",
+  "questions": [
+    {
+      "id": "schema-istanza-q1",
+      "version": 1,
+      "type": "single",
+      "prompt": "Una relazione con cinque attributi e tre tuple ha…",
+      "concepts": [
+        "schema",
+        "istanza",
+        "grado",
+        "cardinalita"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "relational-source",
+          "file": "Argomento02 Modello Relazionale.pdf",
+          "pageStart": 10,
+          "pageEnd": 11,
+          "section": "Schema, istanza, grado e cardinalità"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "Grado 3 e cardinalità 5"
+        },
+        {
+          "id": "opzione-2",
+          "text": "Grado 5 e cardinalità 3"
+        },
+        {
+          "id": "opzione-3",
+          "text": "Grado 8 e cardinalità 1"
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-2"
+      ],
+      "explanation": "Il grado conta attributi; la cardinalità conta tuple nello stato."
+    },
+    {
+      "id": "schema-istanza-q2",
+      "version": 1,
+      "type": "true-false",
+      "prompt": "Cambiare soltanto l’ordine delle righe cambia l’istanza di una relazione matematica.",
+      "concepts": [
+        "schema",
+        "istanza",
+        "grado",
+        "cardinalita"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "relational-source",
+          "file": "Argomento02 Modello Relazionale.pdf",
+          "pageStart": 11,
+          "pageEnd": 11,
+          "section": "Schema, istanza, grado e cardinalità"
+        }
+      ],
+      "options": [
+        {
+          "id": "vero",
+          "text": "Vero"
+        },
+        {
+          "id": "falso",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionIds": [
+        "falso"
+      ],
+      "explanation": "Un’istanza è un insieme: l’ordine delle tuple non ha significato."
+    },
+    {
+      "id": "schema-istanza-q3",
+      "version": 1,
+      "type": "multiple",
+      "prompt": "Quali proprietà appartengono allo schema?",
+      "concepts": [
+        "schema",
+        "istanza",
+        "grado",
+        "cardinalita"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "relational-source",
+          "file": "Argomento02 Modello Relazionale.pdf",
+          "pageStart": 9,
+          "pageEnd": 9,
+          "section": "Schema, istanza, grado e cardinalità"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "Il nome della relazione"
+        },
+        {
+          "id": "opzione-2",
+          "text": "I domini degli attributi"
+        },
+        {
+          "id": "opzione-3",
+          "text": "Le sole tre tuple presenti oggi"
+        },
+        {
+          "id": "opzione-4",
+          "text": "I nomi degli attributi"
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-1",
+        "opzione-2",
+        "opzione-4"
+      ],
+      "explanation": "Lo schema descrive nome, attributi e domini; le tuple presenti appartengono allo stato."
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "lessonId": "sql-join",
+  "version": 1,
+  "status": "needs-review",
+  "questions": [
+    {
+      "id": "sql-join-q1",
+      "version": 1,
+      "type": "single",
+      "prompt": "Una persona ha due prenotazioni: inner join su sid produce per quella persona…",
+      "concepts": [
+        "JOIN",
+        "ON",
+        "chiavi",
+        "molteplicità"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 58,
+          "pageEnd": 62,
+          "section": "JOIN: ricostruire fatti e controllare molteplicità"
+        },
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 87,
+          "pageEnd": 88,
+          "section": "JOIN: ricostruire fatti e controllare molteplicità"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "Una sola riga automaticamente."
+        },
+        {
+          "id": "opzione-2",
+          "text": "Due righe prima di eventuali proiezioni DISTINCT."
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-2"
+      ],
+      "explanation": "Il join produce una coppia per ciascuna corrispondenza. Le prenotazioni distinte mantengono la molteplicità."
+    },
+    {
+      "id": "sql-join-q2",
+      "version": 1,
+      "type": "single",
+      "prompt": "Un predicato di join mancante può…",
+      "concepts": [
+        "JOIN",
+        "ON",
+        "chiavi",
+        "molteplicità"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 58,
+          "pageEnd": 62,
+          "section": "JOIN: ricostruire fatti e controllare molteplicità"
+        },
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 87,
+          "pageEnd": 88,
+          "section": "JOIN: ricostruire fatti e controllare molteplicità"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "Generare un prodotto cartesiano sintatticamente valido."
+        },
+        {
+          "id": "opzione-2",
+          "text": "Essere sempre ricostruito dal DBMS usando nomi simili."
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-1"
+      ],
+      "explanation": "Il motore non conosce il requisito. Senza il legame ogni coppia può contribuire al risultato."
+    },
+    {
+      "id": "sql-join-q3",
+      "version": 1,
+      "type": "single",
+      "prompt": "Nel dump NorthWind della piattaforma le FK convenzionali sono…",
+      "concepts": [
+        "JOIN",
+        "ON",
+        "chiavi",
+        "molteplicità"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 58,
+          "pageEnd": 62,
+          "section": "JOIN: ricostruire fatti e controllare molteplicità"
+        },
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 87,
+          "pageEnd": 88,
+          "section": "JOIN: ricostruire fatti e controllare molteplicità"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "Tutte dichiarate esplicitamente nello script originale."
+        },
+        {
+          "id": "opzione-2",
+          "text": "Collegamenti aggiuntivi controllati, distinti dai vincoli dichiarati."
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-2"
+      ],
+      "explanation": "Il dump ricevuto non dichiara FOREIGN KEY. La piattaforma verifica i riferimenti convenzionali senza attribuirli al testo DDL originale."
+    }
+  ]
+}

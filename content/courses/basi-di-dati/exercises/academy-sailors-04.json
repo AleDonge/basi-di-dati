@@ -1,0 +1,56 @@
+{
+  "id": "academy-sailors-04",
+  "title": "Anche chi non prenota",
+  "version": 1,
+  "status": "needs-review",
+  "origin": "platform-activity",
+  "originalPrompt": "Per ogni marinaio restituisci sid e numero delle sue prenotazioni, includendo zero per chi non prenota.",
+  "datasetId": "sailors",
+  "topics": [
+    "LEFT JOIN",
+    "COUNT",
+    "GROUP BY"
+  ],
+  "difficulty": "intermedio",
+  "lessonIds": [
+    "sql-outer"
+  ],
+  "orderMatters": false,
+  "gradingMode": "automatic",
+  "fixtureIds": [
+    "sailors",
+    "academy-sailors-edges",
+    "academy-sailors-reversed",
+    "academy-sailors-empty"
+  ],
+  "solutionPath": "solutions/academy-sailors-04.sql",
+  "hints": [
+    "Individua la popolazione richiesta e le colonne: sid, prenotazioni.",
+    "Parti da Sailors con LEFT JOIN; conta r.sid, non COUNT(*)."
+  ],
+  "outputContract": [
+    "sid",
+    "prenotazioni"
+  ],
+  "interpretation": "Esercizio e soluzione originali Database Academy, needs-review. Nessun ordine richiesto. ",
+  "limitations": [
+    "Confronto su quattro fixture finite: coerenza osservata, non equivalenza generale.",
+    "Numero e posizione delle colonne obbligatori; alias liberi. NULL distinto da zero e testo; tolleranza relativa 1e-9 per numeri non interi.",
+    "LIMIT/OFFSET esclusi dalla verifica. SQLite non certifica le regole MySQL GROUP BY o le collazioni.",
+    "Ordine delle righe ignorato; duplicati confrontati con la loro molteplicità."
+  ],
+  "sourceRefs": [
+    {
+      "sourceId": "sql-source",
+      "file": "Argomento04 SQL.pdf",
+      "pageStart": 63,
+      "pageEnd": 65,
+      "section": "Costrutti del corso; enunciato originale Database Academy"
+    },
+    {
+      "sourceId": "sailors-source",
+      "file": "Schema per generare DB Sailors.txt",
+      "section": "Schema e dati ufficiali, invariati"
+    }
+  ]
+}

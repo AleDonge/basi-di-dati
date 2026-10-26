@@ -1,0 +1,1 @@
+Guidata: prima chiarire l’unità di Stipendio (50 milioni al quesito 1, 60K qui). Scelta una scala coerente, selezionare gli impiegati sopra soglia, collegare Dipartimento=Codice e proiettare Nome. Nessuna soglia convertita viene attribuita al docente.

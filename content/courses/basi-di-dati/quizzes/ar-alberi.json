@@ -1,0 +1,109 @@
+{
+  "lessonId": "ar-alberi",
+  "version": 2,
+  "status": "needs-review",
+  "questions": [
+    {
+      "id": "ar-alberi-q1",
+      "version": 2,
+      "type": "single",
+      "prompt": "Che cosa rappresentano le foglie di un query tree?",
+      "concepts": [
+        "composizione",
+        "alberi",
+        "ottimizzazione"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 44,
+          "pageEnd": 48,
+          "section": "Composizione, query tree e ottimizzazione"
+        }
+      ],
+      "options": [
+        {
+          "id": "errata",
+          "text": "Sempre le proiezioni finali."
+        },
+        {
+          "id": "corretta",
+          "text": "Le relazioni di partenza."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "Le foglie forniscono i dati iniziali; gli operatori interni dipendono dai figli e la radice produce la risposta finale."
+    },
+    {
+      "id": "ar-alberi-q2",
+      "version": 2,
+      "type": "single",
+      "prompt": "Per anticipare una proiezione prima del join devi conservare…",
+      "concepts": [
+        "composizione",
+        "alberi",
+        "ottimizzazione"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 44,
+          "pageEnd": 48,
+          "section": "Composizione, query tree e ottimizzazione"
+        }
+      ],
+      "options": [
+        {
+          "id": "corretta",
+          "text": "Gli attributi necessari al collegamento e ai filtri successivi."
+        },
+        {
+          "id": "errata",
+          "text": "Solo gli attributi della risposta finale."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "Eliminare sid prima di collegarlo o age prima del filtro rende i passi successivi non definiti. Servono anche dipendenze intermedie, non solo output finale."
+    },
+    {
+      "id": "ar-alberi-q3",
+      "version": 2,
+      "type": "single",
+      "prompt": "Meno tuple intermedie garantiscono sempre meno tempo in qualsiasi DBMS?",
+      "concepts": [
+        "composizione",
+        "alberi",
+        "ottimizzazione"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "algebra-source",
+          "file": "Argomento03 Algebra Relazionale.pdf",
+          "pageStart": 44,
+          "pageEnd": 48,
+          "section": "Composizione, query tree e ottimizzazione"
+        }
+      ],
+      "options": [
+        {
+          "id": "errata",
+          "text": "Sì: non servono altre informazioni."
+        },
+        {
+          "id": "corretta",
+          "text": "No: il costo fisico dipende anche da algoritmi e indici."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "Indici, algoritmi e distribuzioni influiscono sui costi. Un albero logico con meno tuple non è una misura universale del tempo fisico."
+    }
+  ]
+}

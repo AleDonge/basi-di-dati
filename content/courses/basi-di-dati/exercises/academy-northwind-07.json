@@ -1,0 +1,55 @@
+{
+  "id": "academy-northwind-07",
+  "title": "Ordini anche a zero",
+  "version": 1,
+  "status": "needs-review",
+  "origin": "platform-activity",
+  "originalPrompt": "Per ogni cliente restituisci CustomerID e numero di ordini, includendo zero. Non attribuire ordini con CustomerID NULL a un cliente.",
+  "datasetId": "northwind",
+  "topics": [
+    "LEFT JOIN",
+    "COUNT"
+  ],
+  "difficulty": "intermedio",
+  "lessonIds": [
+    "sql-outer"
+  ],
+  "orderMatters": false,
+  "gradingMode": "automatic",
+  "fixtureIds": [
+    "northwind",
+    "academy-northwind-edges",
+    "academy-northwind-reversed",
+    "academy-northwind-empty"
+  ],
+  "solutionPath": "solutions/academy-northwind-07.sql",
+  "hints": [
+    "Individua la popolazione richiesta e le colonne: CustomerID, ordini.",
+    "LEFT JOIN da customers; conta OrderID del lato opzionale."
+  ],
+  "outputContract": [
+    "CustomerID",
+    "ordini"
+  ],
+  "interpretation": "Esercizio e soluzione originali Database Academy, needs-review. Nessun ordine richiesto. ",
+  "limitations": [
+    "Confronto su quattro fixture finite: coerenza osservata, non equivalenza generale.",
+    "Numero e posizione delle colonne obbligatori; alias liberi. NULL distinto da zero e testo; tolleranza relativa 1e-9 per numeri non interi.",
+    "LIMIT/OFFSET esclusi dalla verifica. SQLite non certifica le regole MySQL GROUP BY o le collazioni.",
+    "Ordine delle righe ignorato; duplicati confrontati con la loro molteplicità."
+  ],
+  "sourceRefs": [
+    {
+      "sourceId": "sql-source",
+      "file": "Argomento04 SQL.pdf",
+      "pageStart": 63,
+      "pageEnd": 65,
+      "section": "Costrutti del corso; enunciato originale Database Academy"
+    },
+    {
+      "sourceId": "northwind-source",
+      "file": "Schema per generare DB NorthWind.txt",
+      "section": "Schema e dati ufficiali, invariati"
+    }
+  ]
+}

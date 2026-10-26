@@ -1,0 +1,126 @@
+{
+  "lessonId": "chiavi-vincoli",
+  "version": 1,
+  "status": "needs-review",
+  "questions": [
+    {
+      "id": "chiavi-vincoli-q1",
+      "version": 1,
+      "type": "single",
+      "prompt": "Se sid è chiave candidata, perché {sid, nome} non è minimale?",
+      "concepts": [
+        "chiavi",
+        "superchiave",
+        "minimalita",
+        "null"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "relational-source",
+          "file": "Argomento02 Modello Relazionale.pdf",
+          "pageStart": 17,
+          "pageEnd": 17,
+          "section": "Chiavi e integrità delle entità"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "Perché sid non può identificare"
+        },
+        {
+          "id": "opzione-2",
+          "text": "Perché si può togliere nome conservando l’identificazione"
+        },
+        {
+          "id": "opzione-3",
+          "text": "Perché una chiave può avere solo numeri"
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-2"
+      ],
+      "explanation": "L’attributo nome è superfluo: sid da solo è già superchiave."
+    },
+    {
+      "id": "chiavi-vincoli-q2",
+      "version": 1,
+      "type": "true-false",
+      "prompt": "In una primaria composta è sufficiente che uno dei componenti non sia NULL.",
+      "concepts": [
+        "chiavi",
+        "superchiave",
+        "minimalita",
+        "null"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "relational-source",
+          "file": "Argomento02 Modello Relazionale.pdf",
+          "pageStart": 19,
+          "pageEnd": 19,
+          "section": "Chiavi e integrità delle entità"
+        }
+      ],
+      "options": [
+        {
+          "id": "vero",
+          "text": "Vero"
+        },
+        {
+          "id": "falso",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionIds": [
+        "falso"
+      ],
+      "explanation": "Nessun attributo della primaria può essere NULL: il requisito vale per ogni componente."
+    },
+    {
+      "id": "chiavi-vincoli-q3",
+      "version": 1,
+      "type": "multiple",
+      "prompt": "Quali affermazioni sulle chiavi sono corrette?",
+      "concepts": [
+        "chiavi",
+        "superchiave",
+        "minimalita",
+        "null"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "relational-source",
+          "file": "Argomento02 Modello Relazionale.pdf",
+          "pageStart": 16,
+          "pageEnd": 16,
+          "section": "Chiavi e integrità delle entità"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "Ogni candidata è una superchiave"
+        },
+        {
+          "id": "opzione-2",
+          "text": "Ogni superchiave è necessariamente candidata"
+        },
+        {
+          "id": "opzione-3",
+          "text": "La proprietà deve valere in ogni stato valido"
+        },
+        {
+          "id": "opzione-4",
+          "text": "Una superchiave può contenere attributi superflui"
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-1",
+        "opzione-3",
+        "opzione-4"
+      ],
+      "explanation": "La candidata richiede anche minimalità. Una superchiave può identificare pur contenendo attributi eliminabili."
+    }
+  ]
+}

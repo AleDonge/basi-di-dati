@@ -1,0 +1,109 @@
+{
+  "lessonId": "er-scelte",
+  "version": 2,
+  "status": "needs-review",
+  "questions": [
+    {
+      "id": "er-scelte-q1",
+      "version": 2,
+      "type": "single",
+      "prompt": "Per rappresentare più periodi della stessa coppia basta aggiungere from e to alla binaria?",
+      "concepts": [
+        "modellazione",
+        "periodi",
+        "polizze"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 44,
+          "pageEnd": 59,
+          "section": "Scelte progettuali, periodi e polizze"
+        }
+      ],
+      "options": [
+        {
+          "id": "errata",
+          "text": "Sì: le date diventano automaticamente parte dell’identità."
+        },
+        {
+          "id": "corretta",
+          "text": "No: la coppia continua a identificare un solo legame."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "La coppia identifica ancora un solo fatto, anche con due attributi temporali. Un concetto di periodo può distinguere più occorrenze sotto ipotesi esplicite."
+    },
+    {
+      "id": "er-scelte-q2",
+      "version": 2,
+      "type": "single",
+      "prompt": "Un budget complessivo del manager va ripetuto su ogni incarico?",
+      "concepts": [
+        "modellazione",
+        "periodi",
+        "polizze"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 44,
+          "pageEnd": 59,
+          "section": "Scelte progettuali, periodi e polizze"
+        }
+      ],
+      "options": [
+        {
+          "id": "corretta",
+          "text": "No: va modellata la proprietà del manager nel requisito considerato."
+        },
+        {
+          "id": "errata",
+          "text": "Sì: duplicarlo chiarisce che è complessivo."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "Il totale appartiene al manager: ripeterlo su ogni incarico introduce ridondanza e attribuisce il valore alla coppia sbagliata."
+    },
+    {
+      "id": "er-scelte-q3",
+      "version": 2,
+      "type": "single",
+      "prompt": "Due relazioni binarie sostituiscono sempre una ternaria?",
+      "concepts": [
+        "modellazione",
+        "periodi",
+        "polizze"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 44,
+          "pageEnd": 59,
+          "section": "Scelte progettuali, periodi e polizze"
+        }
+      ],
+      "options": [
+        {
+          "id": "errata",
+          "text": "Sì: tre partecipanti possono sempre essere separati senza perdita."
+        },
+        {
+          "id": "corretta",
+          "text": "No: dipende dai fatti e dai vincoli da conservare."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "Separare proiezioni binarie può perdere quali tre partecipanti formassero insieme un fatto. L’equivalenza dipende dai vincoli, non dal numero di linee."
+    }
+  ]
+}

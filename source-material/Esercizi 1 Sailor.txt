@@ -1,0 +1,34 @@
+Progettare le query SQL che rispondono a queste domande:
+
+# 1
+# Per ogni colore di barca, trova la somma totale dei rating dei marinai 
+# che l'hanno prenotata, ma considera solo i colori con un rating
+# medio superiore a 7.
+
+...
+
+# 2
+# Trova i giorni (day) in cui sono state effettuate almeno 2 prenotazioni 
+# complessive, considerando solo marinai con almeno 18 anni.
+
+...
+
+# 3
+# Trova i nomi dei marinai condivisi da più persone (omonimi) 
+# il cui divario tra età massima ed età minima sia inferiore a 10 anni.
+
+...
+
+# 4
+# Trova l'età media e il numero di marinai per ogni livello di rating, 
+# considerando solo i marinai con rating superiore a 5, 
+# ma mostra solo i livelli di rating che contengono almeno 2 marinai.
+
+...
+
+# 5
+# Identifica le barche (con bid e bname) prenotate da marinai 
+# la cui età media è superiore a 40 anni, 
+# considerando solo barche prenotate almeno 2 volte.
+
+...

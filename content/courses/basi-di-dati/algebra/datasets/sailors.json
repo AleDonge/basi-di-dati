@@ -1,0 +1,195 @@
+{
+  "id": "sailors",
+  "title": "sailors",
+  "provenance": "Script ufficiale Sailors convertito nello Sprint 2: valori invariati, data ISO; non è la diversa istanza S3 delle slide.",
+  "relations": {
+    "Sailors": {
+      "columns": [
+        {
+          "name": "sid",
+          "type": "number"
+        },
+        {
+          "name": "sname",
+          "type": "string"
+        },
+        {
+          "name": "rating",
+          "type": "number"
+        },
+        {
+          "name": "age",
+          "type": "number"
+        }
+      ],
+      "rows": [
+        [
+          22,
+          "Dustin",
+          7,
+          45.0
+        ],
+        [
+          29,
+          "Brutus",
+          1,
+          33.0
+        ],
+        [
+          31,
+          "lubber",
+          8,
+          55.5
+        ],
+        [
+          32,
+          "Andy",
+          8,
+          25.5
+        ],
+        [
+          58,
+          "Rusty",
+          10,
+          35.0
+        ],
+        [
+          64,
+          "Horatio",
+          7,
+          35.0
+        ],
+        [
+          71,
+          "Zorba",
+          10,
+          16.0
+        ],
+        [
+          74,
+          "Horatio",
+          9,
+          35.0
+        ],
+        [
+          85,
+          "Art",
+          3,
+          22.5
+        ],
+        [
+          95,
+          "Bob",
+          3,
+          63.5
+        ]
+      ]
+    },
+    "Boats": {
+      "columns": [
+        {
+          "name": "bid",
+          "type": "number"
+        },
+        {
+          "name": "bname",
+          "type": "string"
+        },
+        {
+          "name": "color",
+          "type": "string"
+        }
+      ],
+      "rows": [
+        [
+          101,
+          "Interlake",
+          "blue"
+        ],
+        [
+          102,
+          "Interlake",
+          "red"
+        ],
+        [
+          103,
+          "Clipper",
+          "green"
+        ],
+        [
+          104,
+          "Marine",
+          "red"
+        ]
+      ]
+    },
+    "Reserves": {
+      "columns": [
+        {
+          "name": "sid",
+          "type": "number"
+        },
+        {
+          "name": "bid",
+          "type": "number"
+        },
+        {
+          "name": "day",
+          "type": "date"
+        }
+      ],
+      "rows": [
+        [
+          22,
+          101,
+          "1998-10-10"
+        ],
+        [
+          22,
+          102,
+          "1998-10-10"
+        ],
+        [
+          22,
+          103,
+          "1998-08-10"
+        ],
+        [
+          22,
+          104,
+          "1998-07-10"
+        ],
+        [
+          31,
+          102,
+          "1998-10-11"
+        ],
+        [
+          31,
+          103,
+          "1998-06-11"
+        ],
+        [
+          31,
+          104,
+          "1998-01-11"
+        ],
+        [
+          64,
+          101,
+          "1998-05-09"
+        ],
+        [
+          64,
+          102,
+          "1998-08-09"
+        ],
+        [
+          74,
+          103,
+          "1998-08-09"
+        ]
+      ]
+    }
+  }
+}

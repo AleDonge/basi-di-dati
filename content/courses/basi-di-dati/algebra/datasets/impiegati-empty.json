@@ -1,0 +1,83 @@
+{
+  "id": "impiegati-empty",
+  "title": "Impiegati: relazioni vuote",
+  "provenance": "Schema trascritto da esercitazione_AR.pdf p. 1. Tutte le righe sono inventate dalla piattaforma per lo studio, non fornite dal docente. Stipendio in milioni; Bilancio in migliaia: convenzioni didattiche, non riconciliano 60K nel testo.",
+  "relations": {
+    "Impiegato": {
+      "columns": [
+        {
+          "name": "Matricola",
+          "type": "number"
+        },
+        {
+          "name": "Cognome",
+          "type": "string"
+        },
+        {
+          "name": "Stipendio",
+          "type": "number"
+        },
+        {
+          "name": "Dipartimento",
+          "type": "number"
+        }
+      ],
+      "rows": []
+    },
+    "Dipartimento": {
+      "columns": [
+        {
+          "name": "Codice",
+          "type": "number"
+        },
+        {
+          "name": "Nome",
+          "type": "string"
+        },
+        {
+          "name": "Sede",
+          "type": "string"
+        },
+        {
+          "name": "Direttore",
+          "type": "number"
+        }
+      ],
+      "rows": []
+    },
+    "Progetto": {
+      "columns": [
+        {
+          "name": "Sigla",
+          "type": "string"
+        },
+        {
+          "name": "Nome",
+          "type": "string"
+        },
+        {
+          "name": "Bilancio",
+          "type": "number"
+        },
+        {
+          "name": "Responsabile",
+          "type": "number"
+        }
+      ],
+      "rows": []
+    },
+    "Partecipazione": {
+      "columns": [
+        {
+          "name": "Impiegato",
+          "type": "number"
+        },
+        {
+          "name": "Progetto",
+          "type": "string"
+        }
+      ],
+      "rows": []
+    }
+  }
+}

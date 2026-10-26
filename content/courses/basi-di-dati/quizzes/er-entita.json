@@ -1,0 +1,109 @@
+{
+  "lessonId": "er-entita",
+  "version": 2,
+  "status": "needs-review",
+  "questions": [
+    {
+      "id": "er-entita-q1",
+      "version": 2,
+      "type": "single",
+      "prompt": "Un rettangolo EMPLOYEES rappresenta…",
+      "concepts": [
+        "entita",
+        "attributi",
+        "identificatori"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 10,
+          "pageEnd": 16,
+          "section": "Entità, attributi e identificatori"
+        }
+      ],
+      "options": [
+        {
+          "id": "errata",
+          "text": "Sempre una persona concreta."
+        },
+        {
+          "id": "corretta",
+          "text": "Un tipo di entità, non una singola persona."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "Il rettangolo descrive un tipo. Le singole persone costituiscono le sue istanze e non richiedono un rettangolo ciascuna."
+    },
+    {
+      "id": "er-entita-q2",
+      "version": 2,
+      "type": "single",
+      "prompt": "Un identificatore composto richiede…",
+      "concepts": [
+        "entita",
+        "attributi",
+        "identificatori"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 10,
+          "pageEnd": 16,
+          "section": "Entità, attributi e identificatori"
+        }
+      ],
+      "options": [
+        {
+          "id": "corretta",
+          "text": "La combinazione dei valori dei suoi attributi."
+        },
+        {
+          "id": "errata",
+          "text": "Che ogni componente sia unica da sola."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "Una chiave composta rende unica la combinazione; ciascun valore isolato può ripetersi. Due chiavi candidate separate rappresentano una scelta diversa."
+    },
+    {
+      "id": "er-entita-q3",
+      "version": 2,
+      "type": "single",
+      "prompt": "Quali attributi usa principalmente il subset del corso?",
+      "concepts": [
+        "entita",
+        "attributi",
+        "identificatori"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "er-source",
+          "file": "Argomento05 Entity Relationship.pdf",
+          "pageStart": 10,
+          "pageEnd": 16,
+          "section": "Entità, attributi e identificatori"
+        }
+      ],
+      "options": [
+        {
+          "id": "errata",
+          "text": "Solo multivalore con doppio ovale."
+        },
+        {
+          "id": "corretta",
+          "text": "Semplici; i casi composti e multivalore vengono riformulati."
+        }
+      ],
+      "correctOptionIds": [
+        "corretta"
+      ],
+      "explanation": "La p. 12 sceglie attributi semplici per il corso. Composti e multivalore sono riconosciuti, ma richiedono riformulazioni nel subset usato."
+    }
+  ]
+}

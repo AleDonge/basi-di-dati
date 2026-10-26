@@ -1,0 +1,33 @@
+{
+  "id": "ar-sailors-04bis",
+  "title": "Q4bis · Perché non basta il nome?",
+  "version": 1,
+  "status": "needs-review",
+  "originalPrompt": "Nomi dei marinai che hanno prenotato una barca rossa e una barca verde.\nρ(Tempred, π_sname(σ_color='red'(Boats) ⋈ Reserves ⋈ Sailors))\nρ(Tempgreen, π_sname(σ_color='green'(Boats) ⋈ Reserves ⋈ Sailors))\nTempred ∩ Tempgreen\nPerché questa versione della query non sarebbe corretta? Indizio: sid è chiave in Sailors, sname no.",
+  "sourceRefs": [
+    {
+      "sourceId": "algebra-self-source",
+      "file": "Argomento03.1 Algebra Relazionale Autoverifica.pdf",
+      "pageStart": 8,
+      "pageEnd": 8
+    }
+  ],
+  "datasetId": "sailors",
+  "difficulty": "intermedio",
+  "gradingMode": "guided",
+  "fixtureIds": [],
+  "solutionPath": "algebra/solutions/ar-sailors-04bis.txt",
+  "hints": [
+    "Individua prima le chiavi, poi applica i filtri.",
+    "Proietta gli attributi richiesti solo dopo avere conservato quelli necessari ai join."
+  ],
+  "interpretation": "Output richiesto secondo l’enunciato, con nomi e ordine degli attributi della proiezione finale. I nomi uguali di persone distinte non identificano la stessa persona.",
+  "limitations": [
+    "Verifica su istanze finite: nessuna prova di equivalenza generale.",
+    "Nomi, ordine delle colonne e domini devono coincidere; ordine delle tuple ignorato.",
+    "Algebra classica senza NULL, aggregazioni o outer join nel parser.",
+    "Modalità guidata: nessun verdetto automatico e nessun completamento per correttezza."
+  ],
+  "solutionOrigin": "Database Academy: traduzione e spiegazione needs-review; non soluzione ufficiale del docente.",
+  "expectedColumns": []
+}

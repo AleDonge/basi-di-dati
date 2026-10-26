@@ -1,0 +1,109 @@
+{
+  "lessonId": "sql-gruppi",
+  "version": 1,
+  "status": "needs-review",
+  "questions": [
+    {
+      "id": "sql-gruppi-q1",
+      "version": 1,
+      "type": "single",
+      "prompt": "Dove filtrare gruppi con almeno due righe?",
+      "concepts": [
+        "GROUP BY",
+        "HAVING",
+        "aggregazioni"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 25,
+          "pageEnd": 30,
+          "section": "GROUP BY e HAVING: ragionare per gruppi"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "WHERE COUNT(*)>=2"
+        },
+        {
+          "id": "opzione-2",
+          "text": "HAVING COUNT(*)>=2 dopo GROUP BY"
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-2"
+      ],
+      "explanation": "WHERE agisce prima dei gruppi. HAVING può usare il conteggio calcolato per gruppo."
+    },
+    {
+      "id": "sql-gruppi-q2",
+      "version": 1,
+      "type": "single",
+      "prompt": "Una tabella vuota con GROUP BY rating produce…",
+      "concepts": [
+        "GROUP BY",
+        "HAVING",
+        "aggregazioni"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 25,
+          "pageEnd": 30,
+          "section": "GROUP BY e HAVING: ragionare per gruppi"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "Zero gruppi e zero righe."
+        },
+        {
+          "id": "opzione-2",
+          "text": "Un gruppo obbligatorio con rating NULL."
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-1"
+      ],
+      "explanation": "Senza righe non esistono valori da raggruppare. L’aggregato globale senza GROUP BY ha un comportamento differente."
+    },
+    {
+      "id": "sql-gruppi-q3",
+      "version": 1,
+      "type": "single",
+      "prompt": "SQLite accetta SELECT sname,AVG(age) senza GROUP BY: questo prova che la query risponde a una media per nome?",
+      "concepts": [
+        "GROUP BY",
+        "HAVING",
+        "aggregazioni"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 25,
+          "pageEnd": 30,
+          "section": "GROUP BY e HAVING: ragionare per gruppi"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "Sì, l’esecuzione è una prova."
+        },
+        {
+          "id": "opzione-2",
+          "text": "No, la colonna non aggregata non definisce un gruppo per nome."
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-2"
+      ],
+      "explanation": "Un motore permissivo può scegliere una bare column. Serve GROUP BY sname per il requisito dichiarato, con attenzione agli omonimi."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "ar-sailors-04",
+  "title": "Q4 · Rossa e verde",
+  "version": 1,
+  "status": "needs-review",
+  "originalPrompt": "Nomi dei marinai che hanno prenotato una barca rossa e una barca verde",
+  "sourceRefs": [
+    {
+      "sourceId": "algebra-self-source",
+      "file": "Argomento03.1 Algebra Relazionale Autoverifica.pdf",
+      "pageStart": 7,
+      "pageEnd": 7
+    }
+  ],
+  "datasetId": "sailors",
+  "difficulty": "intermedio",
+  "gradingMode": "automatic",
+  "fixtureIds": [
+    "sailors",
+    "sailors-algebra-edges",
+    "sailors-algebra-empty",
+    "sailors-algebra-no-reserves",
+    "sailors-algebra-reversed"
+  ],
+  "solutionPath": "algebra/solutions/ar-sailors-04.txt",
+  "hints": [
+    "Costruisci separatamente i sid dei prenotanti di rosse e verdi.",
+    "Interseca i sid prima di proiettare sname: gli omonimi sono un controesempio."
+  ],
+  "interpretation": "Schema dello script Sailors ufficiale, non l’istanza S3 della figura. Output: sname. Q5 usa il dominio candidato π_sid(Reserves), anche con divisore vuoto; Q6 richiede bid distinti, non due date per la stessa barca.",
+  "limitations": [
+    "Verifica su istanze finite: nessuna prova di equivalenza generale.",
+    "Nomi, ordine delle colonne e domini devono coincidere; ordine delle tuple ignorato.",
+    "Algebra classica senza NULL, aggregazioni o outer join nel parser."
+  ],
+  "solutionOrigin": "Database Academy: traduzione e spiegazione needs-review; non soluzione ufficiale del docente.",
+  "expectedColumns": [
+    "sname"
+  ]
+}

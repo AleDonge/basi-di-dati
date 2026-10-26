@@ -1,0 +1,137 @@
+{
+  "lessonId": "sql-insiemi",
+  "version": 1,
+  "status": "needs-review",
+  "questions": [
+    {
+      "id": "sql-insiemi-q1",
+      "version": 1,
+      "type": "single",
+      "prompt": "R contiene 1,1,2 e S contiene 2,3: UNION ALL produce quante righe?",
+      "concepts": [
+        "UNION",
+        "INTERSECT",
+        "EXCEPT",
+        "duplicati"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 43,
+          "pageEnd": 44,
+          "section": "UNION, INTERSECT ed EXCEPT"
+        },
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 90,
+          "pageEnd": 91,
+          "section": "UNION, INTERSECT ed EXCEPT"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "3"
+        },
+        {
+          "id": "opzione-2",
+          "text": "4"
+        },
+        {
+          "id": "opzione-3",
+          "text": "5"
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-3"
+      ],
+      "explanation": "Conserva tutte le tre righe del primo ramo e le due del secondo: cinque. UNION senza ALL ne produrrebbe tre distinte."
+    },
+    {
+      "id": "sql-insiemi-q2",
+      "version": 1,
+      "type": "single",
+      "prompt": "Per trovare persone che prenotano sia rosso sia verde conviene intersecare…",
+      "concepts": [
+        "UNION",
+        "INTERSECT",
+        "EXCEPT",
+        "duplicati"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 43,
+          "pageEnd": 44,
+          "section": "UNION, INTERSECT ed EXCEPT"
+        },
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 90,
+          "pageEnd": 91,
+          "section": "UNION, INTERSECT ed EXCEPT"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "I sid, per non fondere omonimi."
+        },
+        {
+          "id": "opzione-2",
+          "text": "I nomi senza preoccuparsi degli omonimi."
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-1"
+      ],
+      "explanation": "Gli identificativi mantengono la persona. Due individui con stesso nome possono soddisfare separatamente i due rami."
+    },
+    {
+      "id": "sql-insiemi-q3",
+      "version": 1,
+      "type": "single",
+      "prompt": "R EXCEPT S è sempre uguale a S EXCEPT R?",
+      "concepts": [
+        "UNION",
+        "INTERSECT",
+        "EXCEPT",
+        "duplicati"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 43,
+          "pageEnd": 44,
+          "section": "UNION, INTERSECT ed EXCEPT"
+        },
+        {
+          "sourceId": "sql-source",
+          "file": "Argomento04 SQL.pdf",
+          "pageStart": 90,
+          "pageEnd": 91,
+          "section": "UNION, INTERSECT ed EXCEPT"
+        }
+      ],
+      "options": [
+        {
+          "id": "opzione-1",
+          "text": "Sì, come UNION."
+        },
+        {
+          "id": "opzione-2",
+          "text": "No, la differenza è orientata."
+        }
+      ],
+      "correctOptionIds": [
+        "opzione-2"
+      ],
+      "explanation": "Il primo operando stabilisce i candidati da cui escludere quelli del secondo. Invertirli cambia la domanda."
+    }
+  ]
+}

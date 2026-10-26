@@ -1,0 +1,1 @@
+La coppia dipendente/dipartimento non distingue periodi ripetuti. La p. 50 introduce Duration e una relazione ternaria. Nel nostro adattamento PERIODO riceve IdPeriodo, scelta aggiuntiva della piattaforma da revisionare. Date ordinate, sovrapposizioni e unicità temporale rimangono vincoli da discutere, non certificati dal validatore.

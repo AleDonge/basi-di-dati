@@ -1,0 +1,1 @@
+π_{P.Nome,E.Cognome}(σ_{P.Bilancio>100}(((ρ_{E}(Impiegato) ⋈_{E.Matricola=A.Impiegato} ρ_{A}(Partecipazione)) ⋈_{A.Progetto=P.Sigla} ρ_{P}(Progetto))))

@@ -1,0 +1,45 @@
+{
+  "id": "sailors-05",
+  "title": "Barche ed età media",
+  "version": 1,
+  "status": "needs-review",
+  "originalPrompt": "Identifica le barche (con bid e bname) prenotate da marinai \nla cui età media è superiore a 40 anni, \nconsiderando solo barche prenotate almeno 2 volte.",
+  "datasetId": "sailors",
+  "topics": [
+    "GROUP BY",
+    "HAVING",
+    "JOIN"
+  ],
+  "difficulty": "intermedio",
+  "gradingMode": "automatic",
+  "fixtureIds": [
+    "sailors",
+    "sailors-edges",
+    "sailors-reversed",
+    "sailors-empty",
+    "sailors-variation"
+  ],
+  "solutionPath": "solutions/sailors-05.sql",
+  "hints": [
+    "Raggruppa per identificativo e nome della barca.",
+    "Una prenotazione è una riga di Reserves; la stessa persona può prenotare più volte."
+  ],
+  "outputContract": [
+    "bid",
+    "bname"
+  ],
+  "interpretation": "Interpretazione della piattaforma, da revisionare: si contano le righe di prenotazione, anche se la stessa persona compare più volte; AVG/SUM ignorano NULL. Non è una soluzione fornita dal docente.",
+  "limitations": [
+    "Confronto su cinque fixture finite, non prova di equivalenza generale.",
+    "Ordine delle righe ignorato perché non richiesto; numero e posizione delle colonne obbligatori. Alias liberi.",
+    "Tipi preservati: testo non equivale a numero, NULL distinto da zero; tolleranza relativa 1e-9 solo per valori non interi.",
+    "SQLite non controlla tutte le regole GROUP BY di MySQL; un esito sulle fixture non certifica la compatibilità MySQL."
+  ],
+  "sourceRefs": [
+    {
+      "sourceId": "sailors-exercises-source",
+      "file": "Esercizi 1 Sailor.txt",
+      "section": "Quesito #5"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+Sottoschema Database Academy da discutere, non soluzione completa COMPANY. Ogni dipendente lavora per un dipartimento. Occorre ancora modellare sedi, gestione con data, progetti con identificatori candidati, ore settimanali, supervisione e familiari. Non attribuire minimi non specificati al solo testo.

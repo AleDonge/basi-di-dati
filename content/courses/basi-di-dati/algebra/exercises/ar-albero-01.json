@@ -1,0 +1,33 @@
+{
+  "id": "ar-albero-01",
+  "title": "Albero · Dalla struttura alla domanda",
+  "version": 1,
+  "status": "needs-review",
+  "originalPrompt": "A quale domanda corrisponde questo Query Tree? π_sname sopra σ_{bid=100 ∧ rating>5}, con join sid=sid tra Reserves e Sailors.",
+  "sourceRefs": [
+    {
+      "sourceId": "algebra-source",
+      "file": "Argomento03 Algebra Relazionale.pdf",
+      "pageStart": 45,
+      "pageEnd": 45
+    }
+  ],
+  "datasetId": "sailors",
+  "difficulty": "intermedio",
+  "gradingMode": "guided",
+  "fixtureIds": [],
+  "solutionPath": "algebra/solutions/ar-albero-01.txt",
+  "hints": [
+    "Individua prima le chiavi, poi applica i filtri.",
+    "Proietta gli attributi richiesti solo dopo avere conservato quelli necessari ai join."
+  ],
+  "interpretation": "Output richiesto secondo l’enunciato, con nomi e ordine degli attributi della proiezione finale. I nomi uguali di persone distinte non identificano la stessa persona.",
+  "limitations": [
+    "Verifica su istanze finite: nessuna prova di equivalenza generale.",
+    "Nomi, ordine delle colonne e domini devono coincidere; ordine delle tuple ignorato.",
+    "Algebra classica senza NULL, aggregazioni o outer join nel parser.",
+    "Modalità guidata: nessun verdetto automatico e nessun completamento per correttezza."
+  ],
+  "solutionOrigin": "Database Academy: traduzione e spiegazione needs-review; non soluzione ufficiale del docente.",
+  "expectedColumns": []
+}

@@ -1,0 +1,40 @@
+{
+  "id": "ar-sailors-02",
+  "title": "Q2 · Barche rosse",
+  "version": 1,
+  "status": "needs-review",
+  "originalPrompt": "Nomi dei marinai che hanno prenotato una barca rossa",
+  "sourceRefs": [
+    {
+      "sourceId": "algebra-self-source",
+      "file": "Argomento03.1 Algebra Relazionale Autoverifica.pdf",
+      "pageStart": 5,
+      "pageEnd": 5
+    }
+  ],
+  "datasetId": "sailors",
+  "difficulty": "intermedio",
+  "gradingMode": "automatic",
+  "fixtureIds": [
+    "sailors",
+    "sailors-algebra-edges",
+    "sailors-algebra-empty",
+    "sailors-algebra-no-reserves",
+    "sailors-algebra-reversed"
+  ],
+  "solutionPath": "algebra/solutions/ar-sailors-02.txt",
+  "hints": [
+    "Filtra Boats con color='red', poi collega bid a Reserves.",
+    "Il sid identifica la persona; il nome serve soltanto alla proiezione finale."
+  ],
+  "interpretation": "Schema dello script Sailors ufficiale, non l’istanza S3 della figura. Output: sname. Q5 usa il dominio candidato π_sid(Reserves), anche con divisore vuoto; Q6 richiede bid distinti, non due date per la stessa barca.",
+  "limitations": [
+    "Verifica su istanze finite: nessuna prova di equivalenza generale.",
+    "Nomi, ordine delle colonne e domini devono coincidere; ordine delle tuple ignorato.",
+    "Algebra classica senza NULL, aggregazioni o outer join nel parser."
+  ],
+  "solutionOrigin": "Database Academy: traduzione e spiegazione needs-review; non soluzione ufficiale del docente.",
+  "expectedColumns": [
+    "sname"
+  ]
+}

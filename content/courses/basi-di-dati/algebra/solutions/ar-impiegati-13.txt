@@ -1,0 +1,1 @@
+π_{E.Matricola,E.Cognome}(σ_{E.Matricola=B.Matricola AND A.Progetto!=C.Progetto}((ρ_{E}(Impiegato) ⋈_{E.Matricola=A.Impiegato} ρ_{A}(Partecipazione)) × (ρ_{B}(Impiegato) ⋈_{B.Matricola=C.Impiegato} ρ_{C}(Partecipazione))))

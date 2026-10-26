@@ -1,0 +1,1 @@
+π_{sname}(Sailors ⋈ π_{Reserves.sid}(σ_{Reserves.sid=A.sid AND Reserves.bid!=A.bid}(Reserves × ρ_{A}(Reserves))))

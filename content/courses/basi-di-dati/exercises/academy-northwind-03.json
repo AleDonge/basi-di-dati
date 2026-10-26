@@ -1,0 +1,55 @@
+{
+  "id": "academy-northwind-03",
+  "title": "Categorie dei prodotti",
+  "version": 1,
+  "status": "needs-review",
+  "origin": "platform-activity",
+  "originalPrompt": "Restituisci ProductID, ProductName e CategoryName per ogni prodotto con una categoria corrispondente. Una riga per prodotto.",
+  "datasetId": "northwind",
+  "topics": [
+    "JOIN"
+  ],
+  "difficulty": "intermedio",
+  "lessonIds": [
+    "sql-join"
+  ],
+  "orderMatters": false,
+  "gradingMode": "automatic",
+  "fixtureIds": [
+    "northwind",
+    "academy-northwind-edges",
+    "academy-northwind-reversed",
+    "academy-northwind-empty"
+  ],
+  "solutionPath": "solutions/academy-northwind-03.sql",
+  "hints": [
+    "Individua la popolazione richiesta e le colonne: ProductID, ProductName, CategoryName.",
+    "Collega CategoryID dei due lati, non ProductID=CategoryID."
+  ],
+  "outputContract": [
+    "ProductID",
+    "ProductName",
+    "CategoryName"
+  ],
+  "interpretation": "Esercizio e soluzione originali Database Academy, needs-review. Nessun ordine richiesto. ",
+  "limitations": [
+    "Confronto su quattro fixture finite: coerenza osservata, non equivalenza generale.",
+    "Numero e posizione delle colonne obbligatori; alias liberi. NULL distinto da zero e testo; tolleranza relativa 1e-9 per numeri non interi.",
+    "LIMIT/OFFSET esclusi dalla verifica. SQLite non certifica le regole MySQL GROUP BY o le collazioni.",
+    "Ordine delle righe ignorato; duplicati confrontati con la loro molteplicità."
+  ],
+  "sourceRefs": [
+    {
+      "sourceId": "sql-source",
+      "file": "Argomento04 SQL.pdf",
+      "pageStart": 58,
+      "pageEnd": 62,
+      "section": "Costrutti del corso; enunciato originale Database Academy"
+    },
+    {
+      "sourceId": "northwind-source",
+      "file": "Schema per generare DB NorthWind.txt",
+      "section": "Schema e dati ufficiali, invariati"
+    }
+  ]
+}

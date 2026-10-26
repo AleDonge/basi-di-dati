@@ -1,0 +1,5 @@
+"use client";
+import Link from "next/link";
+import type {ErExercise} from "@/lib/er/content";
+import {useProgress} from "@/components/progress-provider";
+export function ErExerciseList({exercises}:{exercises:ErExercise[]}){const{data,ready}=useProgress();return <section id="er" className="algebra-exercise-list"><h2>Progettazione ER · attività guidate</h2><p>Domande delle slide e attività della piattaforma sono distinte. Nessun correttore di equivalenza generale; completamenti solo manuali.</p><div className="exercise-grid">{exercises.map(e=><Link key={e.id} href={`/practice/${e.id}`} className="exercise-card"><span className="mini-label">{e.origin==="course-question"?"DOMANDA DELLE SLIDE":"ATTIVITÀ DATABASE ACADEMY"} · {e.difficulty}</span><h3>{e.title}</h3><p>{e.prompt}</p><p>{ready?data.erDiagrams.some(r=>r.exerciseId===e.id&&r.exerciseVersion===e.version&&r.manuallyCompletedAt)?"Revisionata manualmente":"Da progettare o revisionare":"Caricamento progressi…"}</p><span>{e.sourceRefs[0].file} · p. {e.sourceRefs[0].pageStart} · needs-review →</span></Link>)}</div></section>;}
